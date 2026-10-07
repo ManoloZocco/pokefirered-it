@@ -26,7 +26,11 @@ static const struct InGameTrade sInGameTrades[] = {
         .personality = 0x498a2e1d,
         .heldItem = ITEM_FAB_MAIL,
         .mailNum = 0,
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        .otName = _("RINO"),
+#else
         .otName = _("DONTAE"),
+#endif
         .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_POLIWHIRL
@@ -181,6 +185,22 @@ static const struct InGameTrade sInGameTrades[] = {
     }
 };
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u16 sInGameTradeMailMessages[][10] = {
+    {
+        0x100B,
+        0x1020,
+        0x2A7C,
+        0x1438,
+        0x141B,
+        0x0C00,
+        0xFFFF,
+        0xFFFF,
+        0xFFFF,
+        0x0000
+    }
+};
+#else
 static const u16 sInGameTradeMailMessages[][10] = {
     {
         EC_WORD_THAT_S,
@@ -194,3 +214,4 @@ static const u16 sInGameTradeMailMessages[][10] = {
         EC_WORD_IT
     }
 };
+#endif

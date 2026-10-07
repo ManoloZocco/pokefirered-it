@@ -1,374 +1,66 @@
-#ifndef GUARD_ITEMS_IT_H
-#define GUARD_ITEMS_IT_H
+//
+// DO NOT MODIFY THIS FILE! It is auto-generated from src/data/items.json and Inja template src/data/items.json.txt
+//
 
-// Generato automaticamente da extract_items_it.py da Pokemon - Versione Rosso Fuoco (Italy).gba
-
-const u8 gItemDescription_ITEM_MASTER_BALL[] = _("La BALL migliore: cattura un\nPOKéMON infallibilmente.");
-const u8 gItemDescription_ITEM_ULTRA_BALL[] = _("BALL molto buona, più efficace\ndella MEGA BALL.");
-const u8 gItemDescription_ITEM_GREAT_BALL[] = _("Una buona BALL, più efficace\ndella POKé BALL.");
-const u8 gItemDescription_ITEM_POKE_BALL[] = _("Strumento usato per catturare\nPOKéMON selvatici.");
-const u8 gItemDescription_ITEM_SAFARI_BALL[] = _("BALL speciale, usata soltanto\nnella ZONA SAFARI.");
-const u8 gItemDescription_ITEM_NET_BALL[] = _("Più efficace sui POKéMON di tipo\nACQUA e COLEOTTERO.");
-const u8 gItemDescription_ITEM_DIVE_BALL[] = _("Più efficace sui POKéMON in fondo\nal mare.");
-const u8 gItemDescription_ITEM_NEST_BALL[] = _("Più efficace sui POKéMON di livello\ninferiore.");
-const u8 gItemDescription_ITEM_REPEAT_BALL[] = _("Funziona meglio con i POKéMON già\ncatturati prima.");
-const u8 gItemDescription_ITEM_TIMER_BALL[] = _("Più efficace se la lotta dura da\nmolti turni.");
-const u8 gItemDescription_ITEM_LUXURY_BALL[] = _("Una BALL graziosa che rende subito\namichevoli i POKéMON catturati.");
-const u8 gItemDescription_ITEM_PREMIER_BALL[] = _("Una BALL rara che commemora un\nparticolare evento.");
-const u8 gItemDescription_ITEM_POTION[] = _("Restituisce ad un POKéMON 20 PS.");
-const u8 gItemDescription_ITEM_ANTIDOTE[] = _("Cura un POKéMON dall’avvelenamento.");
-const u8 gItemDescription_ITEM_BURN_HEAL[] = _("Cura un POKéMON da una scottatura.");
-const u8 gItemDescription_ITEM_ICE_HEAL[] = _("Libera un POKéMON dal\ncongelamento.");
-const u8 gItemDescription_ITEM_AWAKENING[] = _("Sveglia un POKéMON addormentato.");
-const u8 gItemDescription_ITEM_PARALYZE_HEAL[] = _("Cura un POKéMON dalla paralisi.");
-const u8 gItemDescription_ITEM_FULL_RESTORE[] = _("Restituisce tutti i PS ad un\nPOKéMON e risolve i problemi\ndi stato.");
-const u8 gItemDescription_ITEM_MAX_POTION[] = _("Restituisce ad un POKéMON tutti\ni PS.");
-const u8 gItemDescription_ITEM_HYPER_POTION[] = _("Restituisce ad un POKéMON\n200 PS.");
-const u8 gItemDescription_ITEM_SUPER_POTION[] = _("Restituisce ad un POKéMON\n50 PS.");
-const u8 gItemDescription_ITEM_FULL_HEAL[] = _("Risolve tutti i problemi di stato\ndi un POKéMON.");
-const u8 gItemDescription_ITEM_REVIVE[] = _("Un POKéMON esausto recupera\nmetà dei PS.");
-const u8 gItemDescription_ITEM_MAX_REVIVE[] = _("Un POKéMON esausto recupera\ntutti i PS.");
-const u8 gItemDescription_ITEM_FRESH_WATER[] = _("Acqua minerale che restituisce\n50 PS ad un POKéMON.");
-const u8 gItemDescription_ITEM_SODA_POP[] = _("Bevanda frizzante che restituisce\n60 PS ad un POKéMON.");
-const u8 gItemDescription_ITEM_LEMONADE[] = _("Bevanda molto dolce che restituisce\n80 PS ad un POKéMON.");
-const u8 gItemDescription_ITEM_MOOMOO_MILK[] = _("Latte nutriente che restituisce\n100 PS ad un POKéMON.");
-const u8 gItemDescription_ITEM_ENERGY_POWDER[] = _("Polvere amara che restituisce\n50 PS ad un POKéMON.");
-const u8 gItemDescription_ITEM_ENERGY_ROOT[] = _("Radice amara che restituisce\n200 PS ad un POKéMON.");
-const u8 gItemDescription_ITEM_HEAL_POWDER[] = _("Polvere amara che risolve tutti i\nproblemi di stato di un POKéMON.");
-const u8 gItemDescription_ITEM_REVIVAL_HERB[] = _("Erba molto amara che rianima un\nPOKéMON esausto restituendogli\ntutti i PS.");
-const u8 gItemDescription_ITEM_ETHER[] = _("Restituisce 10 PP alla mossa\nselezionata di un POKéMON.");
-const u8 gItemDescription_ITEM_MAX_ETHER[] = _("Restituisce tutti i PP alla mossa\nselezionata di un POKéMON.");
-const u8 gItemDescription_ITEM_ELIXIR[] = _("Restituisce 10 PP a tutte le mosse\ndi un POKéMON.");
-const u8 gItemDescription_ITEM_MAX_ELIXIR[] = _("Restituisce tutti i PP delle mosse\ndi un POKéMON.");
-const u8 gItemDescription_ITEM_LAVA_COOKIE[] = _("Specialità locale che risolve tutti\ni problemi di stato di un\nPOKéMON.");
-const u8 gItemDescription_ITEM_BLUE_FLUTE[] = _("Flauto di vetro che sveglia un\nPOKéMON addormentato.");
-const u8 gItemDescription_ITEM_YELLOW_FLUTE[] = _("Flauto di vetro che libera un\nPOKéMON dalla confusione.");
-const u8 gItemDescription_ITEM_RED_FLUTE[] = _("Flauto di vetro che libera un\nPOKéMON dall’attrazione.");
-const u8 gItemDescription_ITEM_BLACK_FLUTE[] = _("Flauto di vetro che tiene alla\nlarga i POKéMON selvatici.");
-const u8 gItemDescription_ITEM_WHITE_FLUTE[] = _("Flauto di vetro che attrae i\nPOKéMON selvatici.");
-const u8 gItemDescription_ITEM_BERRY_JUICE[] = _("Puro succo di frutta che\nrestituisce 20 PS ad un\nPOKéMON.");
-const u8 gItemDescription_ITEM_SACRED_ASH[] = _("Ristabilisce completamente ogni\nPOKéMON esausto.");
-const u8 gItemDescription_ITEM_SHOAL_SALT[] = _("Sale che si trova in fondo alla\nGROTTA ONDOSA.");
-const u8 gItemDescription_ITEM_SHOAL_SHELL[] = _("Guscio che si trova in fondo alla\nGROTTA ONDOSA.");
-const u8 gItemDescription_ITEM_RED_SHARD[] = _("Coccio di un antico strumento.\nSi vende a basso prezzo.");
-const u8 gItemDescription_ITEM_BLUE_SHARD[] = _("Coccio di un antico strumento.\nSi vende a basso prezzo.");
-const u8 gItemDescription_ITEM_YELLOW_SHARD[] = _("Coccio di un antico strumento.\nSi vende a basso prezzo.");
-const u8 gItemDescription_ITEM_GREEN_SHARD[] = _("Coccio di un antico strumento.\nSi vende a basso prezzo.");
-const u8 gItemDescription_ITEM_HP_UP[] = _("Aumenta i PS di un POKéMON.");
-const u8 gItemDescription_ITEM_PROTEIN[] = _("Aumenta l’ATTACCO di un POKéMON.");
-const u8 gItemDescription_ITEM_IRON[] = _("Aumenta la DIFESA di un POKéMON.");
-const u8 gItemDescription_ITEM_CARBOS[] = _("Aumenta la VELOCITÀ di un POKéMON.");
-const u8 gItemDescription_ITEM_CALCIUM[] = _("Aumenta l’ATTACCO SPECIALE\ndi un POKéMON.");
-const u8 gItemDescription_ITEM_RARE_CANDY[] = _("Fa salire un POKéMON di un livello.");
-const u8 gItemDescription_ITEM_PP_UP[] = _("Aumenta di poco i PP massimi della\nmossa selezionata di un POKéMON.");
-const u8 gItemDescription_ITEM_ZINC[] = _("Aumenta la DIFESA SPECIALE\ndi un POKéMON.");
-const u8 gItemDescription_ITEM_PP_MAX[] = _("Porta al limite i PP massimi di una \nmossa selezionata.");
-const u8 gItemDescription_ITEM_GUARD_SPEC[] = _("Impedisce la riduzione delle\nstatistiche nella lotta.");
-const u8 gItemDescription_ITEM_DIRE_HIT[] = _("Brutti colpi più probabili per\nuna lotta. L’effetto svanisce\nse il POKéMON è sostituito.");
-const u8 gItemDescription_ITEM_X_ATTACK[] = _("Aumenta l’ATTACCO per una lotta.\nL’effetto svanisce se il POKéMON\nè sostituito.");
-const u8 gItemDescription_ITEM_X_DEFEND[] = _("Aumenta la DIFESA per una lotta.\nL’effetto svanisce se il POKéMON\nè sostituito.");
-const u8 gItemDescription_ITEM_X_SPEED[] = _("Aumenta la VELOCITÀ per una lotta.\nL’effetto svanisce se il POKéMON\nè sostituito.");
-const u8 gItemDescription_ITEM_X_ACCURACY[] = _("Aumenta la precisione per una\nlotta. L’effetto svanisce se il\nPOKéMON è sostituito.");
-const u8 gItemDescription_ITEM_X_SPECIAL[] = _("Aumenta l’ATTACCO SPECIALE\nper una lotta. L’effetto svanisce se\nil POKéMON è sostituito.");
-const u8 gItemDescription_ITEM_POKE_DOLL[] = _("Utile per fuggire dalla lotta con\nun POKéMON selvatico.");
-const u8 gItemDescription_ITEM_FLUFFY_TAIL[] = _("Utile per fuggire dalla lotta con\nun POKéMON selvatico.");
-const u8 gItemDescription_ITEM_SUPER_REPEL[] = _("Allontana i POKéMON selvatici\ndeboli per 200 passi.");
-const u8 gItemDescription_ITEM_MAX_REPEL[] = _("Allontana i POKéMON selvatici\ndeboli per 250 passi.");
-const u8 gItemDescription_ITEM_ESCAPE_ROPE[] = _("Per fuggire da grotte o\nsotterranei.");
-const u8 gItemDescription_ITEM_REPEL[] = _("Allontana i POKéMON selvatici\ndeboli per 100 passi.");
-const u8 gItemDescription_ITEM_SUN_STONE[] = _("Fa evolvere determinate specie\ndi POKéMON.");
-const u8 gItemDescription_ITEM_MOON_STONE[] = _("Fa evolvere determinate specie\ndi POKéMON.");
-const u8 gItemDescription_ITEM_FIRE_STONE[] = _("Fa evolvere determinate specie\ndi POKéMON.");
-const u8 gItemDescription_ITEM_THUNDER_STONE[] = _("Fa evolvere determinate specie\ndi POKéMON.");
-const u8 gItemDescription_ITEM_WATER_STONE[] = _("Fa evolvere determinate specie\ndi POKéMON.");
-const u8 gItemDescription_ITEM_LEAF_STONE[] = _("Fa evolvere determinate specie\ndi POKéMON.");
-const u8 gItemDescription_ITEM_TINY_MUSHROOM[] = _("Fungo raro, apprezzato dagli\nintenditori.");
-const u8 gItemDescription_ITEM_BIG_MUSHROOM[] = _("Fungo raro, molto apprezzato\ndagli intenditori.");
-const u8 gItemDescription_ITEM_PEARL[] = _("Una bella perla. Si può vendere a\nbasso prezzo.");
-const u8 gItemDescription_ITEM_BIG_PEARL[] = _("Una bella e grande perla che si\nvende a caro prezzo.");
-const u8 gItemDescription_ITEM_STARDUST[] = _("Bella sabbia rossa che si vende a\ncaro prezzo.");
-const u8 gItemDescription_ITEM_STAR_PIECE[] = _("Frammento di gemma rossa. Si vende\na caro prezzo.");
-const u8 gItemDescription_ITEM_NUGGET[] = _("Pepita d’oro puro. Si vende a caro\nprezzo.");
-const u8 gItemDescription_ITEM_HEART_SCALE[] = _("Una squama graziosa, rarissima.\nRiflette tutti i colori dell’iride.");
-const u8 gItemDescription_ITEM_ORANGE_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di ZIGZAGOON.");
-const u8 gItemDescription_ITEM_HARBOR_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di WINGULL.");
-const u8 gItemDescription_ITEM_GLITTER_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di PIKACHU.");
-const u8 gItemDescription_ITEM_MECH_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di MAGNEMITE.");
-const u8 gItemDescription_ITEM_WOOD_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di SLAKOTH.");
-const u8 gItemDescription_ITEM_WAVE_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di WAILMER.");
-const u8 gItemDescription_ITEM_BEAD_MAIL[] = _("MESSAGGIO con l’immagine del\nPOKéMON che lo tiene.");
-const u8 gItemDescription_ITEM_SHADOW_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di DUSKULL.");
-const u8 gItemDescription_ITEM_TROPIC_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di BELLOSSOM.");
-const u8 gItemDescription_ITEM_DREAM_MAIL[] = _("MESSAGGIO con l’immagine del\nPOKéMON che lo tiene.");
-const u8 gItemDescription_ITEM_FAB_MAIL[] = _("MESSAGGIO tenuto che presenta\nuna stupenda immagine.");
-const u8 gItemDescription_ITEM_RETRO_MAIL[] = _("MESSAGGIO con l’immagine di tre\nPOKéMON.");
-const u8 gItemDescription_ITEM_CHERI_BERRY[] = _("Strumento tenuto che, nella lotta,\ncura dalla paralisi.");
-const u8 gItemDescription_ITEM_CHESTO_BERRY[] = _("Strumento tenuto che, nella lotta,\nrisveglia un POKéMON addormentato.");
-const u8 gItemDescription_ITEM_PECHA_BERRY[] = _("Strumento tenuto che, nella lotta,\ncura dall’avvelenamento.");
-const u8 gItemDescription_ITEM_RAWST_BERRY[] = _("Strumento tenuto che, nella lotta,\ncura dalla scottatura.");
-const u8 gItemDescription_ITEM_ASPEAR_BERRY[] = _("Strumento tenuto che, nella lotta,\ncura dal congelamento.");
-const u8 gItemDescription_ITEM_LEPPA_BERRY[] = _("Strumento tenuto che, nella lotta,\nrestituisce 10 PP.");
-const u8 gItemDescription_ITEM_ORAN_BERRY[] = _("Strumento tenuto che, nella lotta,\nrestituisce 10 PS.");
-const u8 gItemDescription_ITEM_PERSIM_BERRY[] = _("Strumento tenuto che, nella lotta,\ncura dalla confusione.");
-const u8 gItemDescription_ITEM_LUM_BERRY[] = _("Strumento tenuto che, nella lotta,\nrisolve i problemi di stato.");
-const u8 gItemDescription_ITEM_SITRUS_BERRY[] = _("Strumento tenuto che, nella lotta,\nrestituisce 30 PS.");
-const u8 gItemDescription_ITEM_FIGY_BERRY[] = _("Strumento tenuto che restituisce\nPS, ma può confondere.");
-const u8 gItemDescription_ITEM_WIKI_BERRY[] = _("Strumento tenuto che restituisce\nPS, ma può confondere.");
-const u8 gItemDescription_ITEM_MAGO_BERRY[] = _("Strumento tenuto che restituisce\nPS, ma può confondere.");
-const u8 gItemDescription_ITEM_AGUAV_BERRY[] = _("Strumento tenuto che restituisce\nPS, ma può confondere.");
-const u8 gItemDescription_ITEM_IAPAPA_BERRY[] = _("Strumento tenuto che restituisce\nPS, ma può confondere.");
-const u8 gItemDescription_ITEM_RAZZ_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_BLUK_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_NANAB_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_WEPEAR_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_PINAP_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_POMEG_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_KELPSY_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_QUALOT_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_HONDEW_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_GREPA_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_TAMATO_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_CORNN_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_MAGOST_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_RABUTA_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_NOMEL_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_SPELON_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_PAMTRE_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_WATMEL_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_DURIN_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_BELUE_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_LIECHI_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta l’ATTACCO.");
-const u8 gItemDescription_ITEM_GANLON_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta la DIFESA.");
-const u8 gItemDescription_ITEM_SALAC_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta la VELOCITÀ.");
-const u8 gItemDescription_ITEM_PETAYA_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta l’ATTACCO SPECIALE.");
-const u8 gItemDescription_ITEM_APICOT_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta la DIFESA SPECIALE.");
-const u8 gItemDescription_ITEM_LANSAT_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta i brutti colpi.");
-const u8 gItemDescription_ITEM_STARF_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta di molto una statistica.");
-const u8 gItemDescription_ITEM_ENIGMA_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");
-const u8 gItemDescription_ITEM_BRIGHT_POWDER[] = _("Strumento tenuto che abbaglia\nper ridurre la precisione\ndell’avversario.");
-const u8 gItemDescription_ITEM_WHITE_HERB[] = _("Strumento tenuto che annulla la\ndiminuzione delle statistiche.\nSi può usare una sola volta.");
-const u8 gItemDescription_ITEM_MACHO_BRACE[] = _("Strumento tenuto che aiuta la\ncrescita, ma riduce la VELOCITÀ.");
-const u8 gItemDescription_ITEM_EXP_SHARE[] = _("Strumento tenuto: il POKéMON\nottiene punti ESP. dalla lotta\nanche se non vi partecipa.");
-const u8 gItemDescription_ITEM_QUICK_CLAW[] = _("Strumento tenuto che, a volte,\npermette di colpire per primi.");
-const u8 gItemDescription_ITEM_SOOTHE_BELL[] = _("Strumento tenuto che placa gli\nanimi e cementa l’amicizia.");
-const u8 gItemDescription_ITEM_MENTAL_HERB[] = _("Strumento tenuto che libera un\nPOKéMON dall’infatuazione.\nSi può usare una sola volta.");
-const u8 gItemDescription_ITEM_CHOICE_BAND[] = _("Strumento tenuto che potenzia una\nmossa, ma obbliga ad usare soltanto\nquella.");
-const u8 gItemDescription_ITEM_KINGS_ROCK[] = _("Strumento tenuto che può far\ntentennare il nemico colpito.");
-const u8 gItemDescription_ITEM_SILVER_POWDER[] = _("Strumento tenuto che migliora le\nmosse di tipo COLEOTTERO.");
-const u8 gItemDescription_ITEM_AMULET_COIN[] = _("Strumento tenuto che raddoppia\ni guadagni nella lotta se chi lo\ntiene vi partecipa.");
-const u8 gItemDescription_ITEM_CLEANSE_TAG[] = _("Strumento tenuto che aiuta a\nallontanare i POKéMON selvatici.");
-const u8 gItemDescription_ITEM_SOUL_DEW[] = _("Strumento tenuto che aumenta\nl’ATTACCO SPECIALE e la DIFESA\nSPECIALE di LATIOS e LATIAS.");
-const u8 gItemDescription_ITEM_DEEP_SEA_TOOTH[] = _("Strumento tenuto che aumenta\nl’ATTACCO SPECIALE di\nCLAMPERL.");
-const u8 gItemDescription_ITEM_DEEP_SEA_SCALE[] = _("Strumento tenuto che aumenta \nla DIFESA SPECIALE di\nCLAMPERL.");
-const u8 gItemDescription_ITEM_SMOKE_BALL[] = _("Strumento tenuto: per fuggire da un\nPOKéMON selvatico.");
-const u8 gItemDescription_ITEM_EVERSTONE[] = _("Strumento tenuto: pietra magica che\nblocca l’evoluzione.");
-const u8 gItemDescription_ITEM_FOCUS_BAND[] = _("Strumento tenuto che può evitare\nil KO, lasciando un solo PS.");
-const u8 gItemDescription_ITEM_LUCKY_EGG[] = _("Strumento tenuto che aumenta i\npunti ESP. ottenuti lottando.");
-const u8 gItemDescription_ITEM_SCOPE_LENS[] = _("Strumento tenuto: brutti colpi più\nprobabili.");
-const u8 gItemDescription_ITEM_METAL_COAT[] = _("Strumento tenuto che migliora le\nmosse di tipo ACCIAIO.");
-const u8 gItemDescription_ITEM_LEFTOVERS[] = _("Strumento tenuto che aumenta di\npoco i PS nella lotta.");
-const u8 gItemDescription_ITEM_DRAGON_SCALE[] = _("Squama che può essere tenuta\nda un POKéMON di tipo DRAGO.");
-const u8 gItemDescription_ITEM_LIGHT_BALL[] = _("Strumento tenuto che aumenta\nl’ATTACCO SPECIALE di PIKACHU.");
-const u8 gItemDescription_ITEM_SOFT_SAND[] = _("Strumento tenuto che migliora le\nmosse di tipo TERRA.");
-const u8 gItemDescription_ITEM_HARD_STONE[] = _("Strumento tenuto che migliora le\nmosse di tipo ROCCIA.");
-const u8 gItemDescription_ITEM_MIRACLE_SEED[] = _("Strumento tenuto che migliora le\nmosse di tipo ERBA.");
-const u8 gItemDescription_ITEM_BLACK_GLASSES[] = _("Strumento tenuto che migliora le\nmosse di tipo BUIO.");
-const u8 gItemDescription_ITEM_BLACK_BELT[] = _("Strumento tenuto che migliora le\nmosse di tipo LOTTA.");
-const u8 gItemDescription_ITEM_MAGNET[] = _("Strumento tenuto che migliora le\nmosse di tipo ELETTRO.");
-const u8 gItemDescription_ITEM_MYSTIC_WATER[] = _("Strumento tenuto che migliora le\nmosse di tipo ACQUA.");
-const u8 gItemDescription_ITEM_SHARP_BEAK[] = _("Strumento tenuto che migliora le\nmosse di tipo VOLANTE.");
-const u8 gItemDescription_ITEM_POISON_BARB[] = _("Strumento tenuto che migliora le\nmosse di tipo VELENO.");
-const u8 gItemDescription_ITEM_NEVER_MELT_ICE[] = _("Strumento tenuto che migliora le\nmosse di tipo GHIACCIO.");
-const u8 gItemDescription_ITEM_SPELL_TAG[] = _("Strumento tenuto che migliora le\nmosse di tipo SPETTRO.");
-const u8 gItemDescription_ITEM_TWISTED_SPOON[] = _("Strumento tenuto che migliora le\nmosse di tipo PSICO.");
-const u8 gItemDescription_ITEM_CHARCOAL[] = _("Strumento tenuto che migliora le\nmosse di tipo FUOCO.");
-const u8 gItemDescription_ITEM_DRAGON_FANG[] = _("Strumento tenuto che migliora le\nmosse di tipo DRAGO.");
-const u8 gItemDescription_ITEM_SILK_SCARF[] = _("Strumento tenuto che migliora le\nmosse di tipo NORMALE.");
-const u8 gItemDescription_ITEM_UP_GRADE[] = _("Scatola speciale prodotta dalla\nSILPH SpA.");
-const u8 gItemDescription_ITEM_SHELL_BELL[] = _("Strumento tenuto che restituisce PS\nse si colpisce un nemico.");
-const u8 gItemDescription_ITEM_SEA_INCENSE[] = _("Strumento tenuto che migliora di\npoco le mosse di tipo ACQUA.");
-const u8 gItemDescription_ITEM_LAX_INCENSE[] = _("Strumento tenuto che riduce di poco\nla precisione del nemico.");
-const u8 gItemDescription_ITEM_LUCKY_PUNCH[] = _("Strumento tenuto che aumenta i\nbrutti colpi messi a segno da\nCHANSEY.");
-const u8 gItemDescription_ITEM_METAL_POWDER[] = _("Strumento tenuto che aumenta la\nDIFESA di DITTO.");
-const u8 gItemDescription_ITEM_THICK_CLUB[] = _("Un osso da far tenere a MAROWAK\no CUBONE per aumentarne\nl’ATTACCO.");
-const u8 gItemDescription_ITEM_STICK[] = _("Gambo di porro: tenuto da\nFARFETCH’D, aumenta la sua\nprobabilità di brutti colpi.");
-const u8 gItemDescription_ITEM_RED_SCARF[] = _("Strumento tenuto che aumenta la\nCLASSE nelle GARE.");
-const u8 gItemDescription_ITEM_BLUE_SCARF[] = _("Strumento tenuto che aumenta la\nBELLEZZA nelle GARE.");
-const u8 gItemDescription_ITEM_PINK_SCARF[] = _("Strumento tenuto che aumenta la\nGRAZIA nelle GARE.");
-const u8 gItemDescription_ITEM_GREEN_SCARF[] = _("Strumento tenuto che aumenta\nl’ACUME nelle GARE.");
-const u8 gItemDescription_ITEM_YELLOW_SCARF[] = _("Strumento tenuto che aumenta la\nGRINTA nelle GARE.");
-const u8 gItemDescription_ITEM_MACH_BIKE[] = _("Bici pieghevole: la velocità è\npiù che raddoppiata.");
-const u8 gItemDescription_ITEM_COIN_CASE[] = _("Può contenere fino a 9.999\nGETTONI ottenuti al CASINÒ.");
-const u8 gItemDescription_ITEM_ITEMFINDER[] = _("Individua oggetti invisibili grazie\nal suono.");
-const u8 gItemDescription_ITEM_OLD_ROD[] = _("Pesca POKéMON selvatici in ogni\nspecchio d’acqua.");
-const u8 gItemDescription_ITEM_GOOD_ROD[] = _("Discreto amo usato per pescare\nPOKéMON selvatici.");
-const u8 gItemDescription_ITEM_SUPER_ROD[] = _("L’amo migliore per pescare POKéMON\nselvatici.");
-const u8 gItemDescription_ITEM_SS_TICKET[] = _("Biglietto per salire sulla\nM/N ANNA.");
-const u8 gItemDescription_ITEM_CONTEST_PASS[] = _("Tessera per partecipare alle\nGARE POKéMON.");
-const u8 gItemDescription_ITEM_WAILMER_PAIL[] = _("Si usa per annaffiare BACCHE\npiantate nel terreno soffice.");
-const u8 gItemDescription_ITEM_DEVON_GOODS[] = _("Pacchetto contenente pezzi\nmeccanici prodotti dalla DEVON.");
-const u8 gItemDescription_ITEM_SOOT_SACK[] = _("Sacco usato per raccogliere\ncenere vulcanica.");
-const u8 gItemDescription_ITEM_BASEMENT_KEY[] = _("Chiave per CICLANOVA, costruita\nsotto CICLAMIPOLI.");
-const u8 gItemDescription_ITEM_ACRO_BIKE[] = _("Bici pieghevole: permette salti\ne impennate.");
-const u8 gItemDescription_ITEM_POKEBLOCK_CASE[] = _("Contiene le セソタチテ fatte con\nil MIXER BACCHE.");
-const u8 gItemDescription_ITEM_LETTER[] = _("Lettera per ROCCO dal PRESIDENTE\ndella DEVON SpA.");
-const u8 gItemDescription_ITEM_EON_TICKET[] = _("Biglietto per un traghetto che\nporta ad una remota isola a sud.");
-const u8 gItemDescription_ITEM_RED_ORB[] = _("Sfera rossa luminosa con un antico\npotere.");
-const u8 gItemDescription_ITEM_BLUE_ORB[] = _("Sfera blu luminosa con un antico\npotere.");
-const u8 gItemDescription_ITEM_SCANNER[] = _("Strumento di difficile utilizzo, che\nserve per trovare forme di vita\nnell’acqua.");
-const u8 gItemDescription_ITEM_GO_GOGGLES[] = _("Proteggono dalle tempeste di\nsabbia.");
-const u8 gItemDescription_ITEM_METEORITE[] = _("Meteorite durissimo, caduto dallo\nspazio su MONTE LUNA.");
-const u8 gItemDescription_ITEM_ROOM_1_KEY[] = _("Chiave che apre la porta della\ncabina 1 nella VECCHIA NAVE.");
-const u8 gItemDescription_ITEM_ROOM_2_KEY[] = _("Chiave che apre la porta della\ncabina 2 nella VECCHIA NAVE.");
-const u8 gItemDescription_ITEM_ROOM_4_KEY[] = _("Chiave che apre la porta della\ncabina 4 nella VECCHIA NAVE.");
-const u8 gItemDescription_ITEM_ROOM_6_KEY[] = _("Chiave che apre la porta della\ncabina 6 nella VECCHIA NAVE.");
-const u8 gItemDescription_ITEM_STORAGE_KEY[] = _("Apre la STIVA nella VECCHIA\nNAVE.");
-const u8 gItemDescription_ITEM_ROOT_FOSSIL[] = _("Fossile di un antico POKéMON che\nviveva sui fondali.");
-const u8 gItemDescription_ITEM_CLAW_FOSSIL[] = _("Fossile di un antico POKéMON che\nviveva sui fondali.");
-const u8 gItemDescription_ITEM_DEVON_SCOPE[] = _("Strumento della DEVON per scovare\ni POKéMON invisibili.");
-extern const u8 gMoveDescription_FocusPunch[];
-const u8 gItemDescription_ITEM_TM01[] = _("Potente, ma chi la usa tentenna se\ncolpito dal nemico.");
-extern const u8 gMoveDescription_DragonClaw[];
-const u8 gItemDescription_ITEM_TM02[] = _("Lunghi artigli affilati sferzano\nil nemico.");
-extern const u8 gMoveDescription_WaterPulse[];
-const u8 gItemDescription_ITEM_TM03[] = _("Onde che possono confondere\nil nemico.");
-extern const u8 gMoveDescription_CalmMind[];
-const u8 gItemDescription_ITEM_TM04[] = _("Concentrazione che aumenta\nl’ATTACCO SPECIALE e la\nDIFESA SPECIALE.");
-extern const u8 gMoveDescription_Roar[];
-const u8 gItemDescription_ITEM_TM05[] = _("Mette in fuga il nemico per porre \ntermine alla lotta.");
-extern const u8 gMoveDescription_Toxic[];
-const u8 gItemDescription_ITEM_TM06[] = _("Avvelena il nemico con intensità\ncrescente.");
-extern const u8 gMoveDescription_Hail[];
-const u8 gItemDescription_ITEM_TM07[] = _("Grandinata di 5 turni, che colpisce\ntutti i POKéMON tranne quelli di\ntipo GHIACCIO.");
-extern const u8 gMoveDescription_BulkUp[];
-const u8 gItemDescription_ITEM_TM08[] = _("Il corpo s’ingrossa e salgono\nDIFESA e ATTACCO.");
-extern const u8 gMoveDescription_BulletSeed[];
-const u8 gItemDescription_ITEM_TM09[] = _("Da 2 a 5 raffiche di semi sul\nnemico.");
-extern const u8 gMoveDescription_HiddenPower[];
-const u8 gItemDescription_ITEM_TM10[] = _("Il tipo e la potenza dell’attacco\nvariano secondo il POKéMON\nche lo usa.");
-extern const u8 gMoveDescription_SunnyDay[];
-const u8 gItemDescription_ITEM_TM11[] = _("Migliora per 5 turni le mosse di\ntipo FUOCO.");
-extern const u8 gMoveDescription_Taunt[];
-const u8 gItemDescription_ITEM_TM12[] = _("Provoca il nemico perché usi solo\nmosse d’attacco.");
-extern const u8 gMoveDescription_IceBeam[];
-const u8 gItemDescription_ITEM_TM13[] = _("Un raggio gelido che può congelare\nchi ne è colpito.");
-extern const u8 gMoveDescription_Blizzard[];
-const u8 gItemDescription_ITEM_TM14[] = _("Attacco di neve e vento che può\ncongelare tutti i nemici in campo.");
-extern const u8 gMoveDescription_HyperBeam[];
-const u8 gItemDescription_ITEM_TM15[] = _("È potente, ma chi la usa perde il\nturno successivo.");
-extern const u8 gMoveDescription_LightScreen[];
-const u8 gItemDescription_ITEM_TM16[] = _("Parete di luce che per 5 turni\nriduce i danni dell’ATTACCO\nSPECIALE.");
-extern const u8 gMoveDescription_Protect[];
-const u8 gItemDescription_ITEM_TM17[] = _("Elude gli attacchi per 1 turno.\nSe usato ripetutamente può\nfallire.");
-extern const u8 gMoveDescription_RainDance[];
-const u8 gItemDescription_ITEM_TM18[] = _("Migliora per 5 turni le mosse di\ntipo ACQUA.");
-extern const u8 gMoveDescription_GigaDrain[];
-const u8 gItemDescription_ITEM_TM19[] = _("Assorbe metà dei PS sottratti\nal nemico.");
-extern const u8 gMoveDescription_Safeguard[];
-const u8 gItemDescription_ITEM_TM20[] = _("Forza magica: protegge la squadra\ndai problemi di stato per 5 turni.");
-extern const u8 gMoveDescription_Frustration[];
-const u8 gItemDescription_ITEM_TM21[] = _("Più efficace se chi la usa non è\namico del suo ALLENATORE.");
-extern const u8 gMoveDescription_SolarBeam[];
-const u8 gItemDescription_ITEM_TM22[] = _("Al primo turno assorbe la luce, al\nsecondo attacca.");
-extern const u8 gMoveDescription_IronTail[];
-const u8 gItemDescription_ITEM_TM23[] = _("Coda coriacea che colpisce il\nnemico. Può ridurre la DIFESA.");
-extern const u8 gMoveDescription_Thunderbolt[];
-const u8 gItemDescription_ITEM_TM24[] = _("Potente attacco elettrico che può\ncausare paralisi.");
-extern const u8 gMoveDescription_Thunder[];
-const u8 gItemDescription_ITEM_TM25[] = _("Il nemico è colpito da un tuono.\nPuò paralizzare.");
-extern const u8 gMoveDescription_Earthquake[];
-const u8 gItemDescription_ITEM_TM26[] = _("Terremoto che colpisce tutti i\nPOKéMON in campo, eccetto\nchi lo usa.");
-extern const u8 gMoveDescription_Return[];
-const u8 gItemDescription_ITEM_TM27[] = _("Più potente se il POKéMON è\namico dell’ALLENATORE.");
-extern const u8 gMoveDescription_Dig[];
-const u8 gItemDescription_ITEM_TM28[] = _("Al primo turno scava per\nattaccare al secondo. Si può\nusare per uscire da certi luoghi.");
-extern const u8 gMoveDescription_Psychic[];
-const u8 gItemDescription_ITEM_TM29[] = _("Potente attacco psichico: può\nridurre la DIFESA SPECIALE.");
-extern const u8 gMoveDescription_ShadowBall[];
-const u8 gItemDescription_ITEM_TM30[] = _("Una sfera nera si abbatte sul\nnemico. Può ridurre la DIFESA\nSPECIALE.");
-extern const u8 gMoveDescription_BrickBreak[];
-const u8 gItemDescription_ITEM_TM31[] = _("Arreca danno e distrugge barriere\ncome RIFLESSO e SCHERMOLUCE.");
-extern const u8 gMoveDescription_DoubleTeam[];
-const u8 gItemDescription_ITEM_TM32[] = _("Copie illusorie aumentano\nl’elusione.");
-extern const u8 gMoveDescription_Reflect[];
-const u8 gItemDescription_ITEM_TM33[] = _("Parete che per 5 turni indebolisce\ngli attacchi fisici.");
-extern const u8 gMoveDescription_ShockWave[];
-const u8 gItemDescription_ITEM_TM34[] = _("Infallibile scarica elettrica.");
-extern const u8 gMoveDescription_Flamethrower[];
-const u8 gItemDescription_ITEM_TM35[] = _("Un flusso di fuoco che può scottare\nil nemico.");
-extern const u8 gMoveDescription_SludgeBomb[];
-const u8 gItemDescription_ITEM_TM36[] = _("Fango lanciato sul nemico. Può\navvelenarlo.");
-extern const u8 gMoveDescription_Sandstorm[];
-const u8 gItemDescription_ITEM_TM37[] = _("Una tempesta di sabbia colpisce\nper diversi turni. I tipi ROCCIA,\nTERRA e ACCIAIO ne sono immuni.");
-extern const u8 gMoveDescription_FireBlast[];
-const u8 gItemDescription_ITEM_TM38[] = _("Potente attacco di fuoco che può\nscottare il nemico.");
-extern const u8 gMoveDescription_RockTomb[];
-const u8 gItemDescription_ITEM_TM39[] = _("Attacco di rocce che bloccano il\nnemico e possono ridurne la\nVELOCITÀ.");
-extern const u8 gMoveDescription_AerialAce[];
-const u8 gItemDescription_ITEM_TM40[] = _("Attacco rapidissimo e inevitabile.");
-extern const u8 gMoveDescription_Torment[];
-const u8 gItemDescription_ITEM_TM41[] = _("Impedisce al nemico di usare la\nstessa mossa due volte di seguito.");
-extern const u8 gMoveDescription_Facade[];
-const u8 gItemDescription_ITEM_TM42[] = _("Più potente se il nemico è\nscottato, avvelenato o paralizzato.");
-extern const u8 gMoveDescription_SecretPower[];
-const u8 gItemDescription_ITEM_TM43[] = _("Aggiunge un effetto all’attacco\nsecondo il luogo.");
-extern const u8 gMoveDescription_Rest[];
-const u8 gItemDescription_ITEM_TM44[] = _("Chi la usa dorme per 2 turni e\nrecupera PS e stato.");
-extern const u8 gMoveDescription_Attract[];
-const u8 gItemDescription_ITEM_TM45[] = _("Nemici del sesso opposto attaccano\nmeno facilmente.");
-extern const u8 gMoveDescription_Thief[];
-const u8 gItemDescription_ITEM_TM46[] = _("Può rubare lo strumento tenuto\ndal nemico.");
-extern const u8 gMoveDescription_SteelWing[];
-const u8 gItemDescription_ITEM_TM47[] = _("Si lancia ad ali spiegate contro\nil nemico. Può aumentare la\nDIFESA di chi la usa.");
-extern const u8 gMoveDescription_SkillSwap[];
-const u8 gItemDescription_ITEM_TM48[] = _("Chi la usa scambia abilità speciali\ncon un altro POKéMON.");
-extern const u8 gMoveDescription_Snatch[];
-const u8 gItemDescription_ITEM_TM49[] = _("Ruba l’effetto della mossa che il\nnemico vuole usare.");
-extern const u8 gMoveDescription_Overheat[];
-const u8 gItemDescription_ITEM_TM50[] = _("Potente attacco, ma riduce di\nmolto l’ATTACCO SPECIALE.");
-extern const u8 gMoveDescription_Cut[];
-const u8 gItemDescription_ITEM_HM01[] = _("Attacca il nemico con lame o\nartigli affilati. Fuori dalla lotta\nsi usa per abbattere piccoli alberi.");
-extern const u8 gMoveDescription_Fly[];
-const u8 gItemDescription_ITEM_HM02[] = _("Vola alto al primo turno e attacca\nnel successivo. Fuori dalla lotta si\nusa per spostarsi tra le città.");
-extern const u8 gMoveDescription_Surf[];
-const u8 gItemDescription_ITEM_HM03[] = _("Un’onda enorme si abbatte sul \nnemico. Fuori dalla lotta si usa\nper spostarsi sull’acqua.");
-extern const u8 gMoveDescription_Strength[];
-const u8 gItemDescription_ITEM_HM04[] = _("Raccoglie un mare d’energia per\npoi colpire. Fuori dalla lotta si\nusa per spostare massi pesanti.");
-extern const u8 gMoveDescription_Flash[];
-const u8 gItemDescription_ITEM_HM05[] = _("Potente abbaglio che riduce la\nprecisione. Fuori dalla lotta si usa\nper illuminare le grotte.");
-extern const u8 gMoveDescription_RockSmash[];
-const u8 gItemDescription_ITEM_HM06[] = _("Un lancio di pietre che può ridurre\nla DIFESA. Fuori dalla lotta si usa\nper frantumare le rocce crepate.");
-extern const u8 gMoveDescription_Waterfall[];
-const u8 gItemDescription_ITEM_HM07[] = _("Potente carica. Fuori dalla lotta\nsi può usare per risalire una\ncascata");
-extern const u8 gMoveDescription_Dive[];
-const u8 gItemDescription_ITEM_HM08[] = _("Chi la usa s’immerge al primo\nturno e attacca in quello seguente.");
-const u8 gItemDescription_ITEM_OAKS_PARCEL[] = _("Un pacchetto per il PROF. OAK\ndal POKéMON-MARKET di\nSMERALDOPOLI.");
-const u8 gItemDescription_ITEM_POKE_FLUTE[] = _("Flauto melodioso che sembra poter\nrisvegliare qualsiasi POKéMON\naddormentato.");
-const u8 gItemDescription_ITEM_SECRET_KEY[] = _("Chiave della PALESTRA dell’ISOLA\nCANNELLA. È rossa e ornata da\ngraziose decorazioni.");
-const u8 gItemDescription_ITEM_BIKE_VOUCHER[] = _("Buono per una BICICLETTA al\nNEGOZIO di BICI di CELESTOPOLI.");
-const u8 gItemDescription_ITEM_GOLD_TEETH[] = _("Dentiera scintillante, persa dal\nGUARDIANO della ZONA SAFARI.");
-const u8 gItemDescription_ITEM_OLD_AMBER[] = _("Ambra rossastra che contiene i geni\ndi un POKéMON antico. ");
-const u8 gItemDescription_ITEM_CARD_KEY[] = _("Chiave a scheda per sbloccare le\nporte nella DIREZIONE della SILPH\nSpA, a ZAFFERANOPOLI.");
-const u8 gItemDescription_ITEM_LIFT_KEY[] = _("Chiave per l’ascensore nel RIFUGIO\ndi TEAM ROCKET. Presenta il\nlogo di TEAM ROCKET.");
-const u8 gItemDescription_ITEM_HELIX_FOSSIL[] = _("Fossile di un POKéMON antico che\nviveva sui fondali marini. Fa parte\ndi una conchiglia.");
-const u8 gItemDescription_ITEM_DOME_FOSSIL[] = _("Fossile di un POKéMON antico che\nviveva sui fondali marini. Fa parte\ndi una conchiglia.");
-const u8 gItemDescription_ITEM_SILPH_SCOPE[] = _("Sonda che rivela i POKéMON\ninvisibili, prodotta dalla\nSILPH SpA.");
-const u8 gItemDescription_ITEM_BICYCLE[] = _("Bici pieghevole, più veloce\ndelle SCARPE da CORSA.");
-const u8 gItemDescription_ITEM_TOWN_MAP[] = _("Comoda mappa, consultabile in\nogni situazione.");
-const u8 gItemDescription_ITEM_VS_SEEKER[] = _("Apparecchio per trovare gli\nALLENATORI che vogliono lottare.\nLa batteria si ricarica camminando.");
-const u8 gItemDescription_ITEM_FAME_CHECKER[] = _("Apparecchio che permette di\nregistrare ciò che vieni a sapere\nsui personaggi importanti.");
-const u8 gItemDescription_ITEM_TM_CASE[] = _("Contenitore per le MT e le MN.\nSi trova nello ZAINO.");
-const u8 gItemDescription_ITEM_BERRY_POUCH[] = _("Contenitore per le BACCHE.\nSi trova nello ZAINO.");
-const u8 gItemDescription_ITEM_TEACHY_TV[] = _("Televisore sintonizzato su un\ncanale che dà informazioni\nper gli ALLENATORI in erba.");
-const u8 gItemDescription_ITEM_TRI_PASS[] = _("Pass per viaggiare tra PRIMISOLA,\nSECONDISOLA e TERZISOLA.");
-const u8 gItemDescription_ITEM_RAINBOW_PASS[] = _("Pass per viaggiare tra ARANCIOPOLI\ne il SETTIPELAGO.");
-const u8 gItemDescription_ITEM_TEA[] = _("Tè aromatico preparato da\nun’anziana signora.\nMolto dissetante.");
-const u8 gItemDescription_ITEM_MYSTIC_TICKET[] = _("Biglietto per la nave che porta al\nMONTE CORDONE. Brilla di una\nluce magica.");
-const u8 gItemDescription_ITEM_AURORA_TICKET[] = _("Biglietto per la nave che porta\nall’ISOLA MATERNA. Brilla di una\nluce magica.");
-const u8 gItemDescription_ITEM_POWDER_JAR[] = _("Ampolla per raccogliere la FARINA\ndi BACCHE ottenuta usando il\nMACINABACCHE.");
-const u8 gItemDescription_ITEM_RUBY[] = _("Magnifica gemma di un rosso\nscintillante, che simboleggia\nla passione.");
-const u8 gItemDescription_ITEM_SAPPHIRE[] = _("Magnifica gemma di un blu\nscintillante, che simboleggia\nl’onestà.");
-const u8 gItemDescription_ITEM_NONE[] = _("?????");
+const u8 gItemDescription_ITEM_MASTER_BALL[] = _("La BALL migliore: cattura un\nPOKéMON infallibilmente.");const u8 gItemDescription_ITEM_ULTRA_BALL[] = _("BALL molto buona, più efficace\ndella MEGA BALL.");const u8 gItemDescription_ITEM_GREAT_BALL[] = _("Una buona BALL, più efficace\ndella POKé BALL.");const u8 gItemDescription_ITEM_POKE_BALL[] = _("Strumento usato per catturare\nPOKéMON selvatici.");const u8 gItemDescription_ITEM_SAFARI_BALL[] = _("BALL speciale, usata soltanto\nnella ZONA SAFARI.");const u8 gItemDescription_ITEM_NET_BALL[] = _("Più efficace sui POKéMON di tipo\nACQUA e COLEOTTERO.");const u8 gItemDescription_ITEM_DIVE_BALL[] = _("Più efficace sui POKéMON in fondo\nal mare.");const u8 gItemDescription_ITEM_NEST_BALL[] = _("Più efficace sui POKéMON di livello\ninferiore.");const u8 gItemDescription_ITEM_REPEAT_BALL[] = _("Funziona meglio con i POKéMON già\ncatturati prima.");const u8 gItemDescription_ITEM_TIMER_BALL[] = _("Più efficace se la lotta dura da\nmolti turni.");const u8 gItemDescription_ITEM_LUXURY_BALL[] = _("Una BALL graziosa che rende subito\namichevoli i POKéMON catturati.");const u8 gItemDescription_ITEM_PREMIER_BALL[] = _("Una BALL rara che commemora un\nparticolare evento.");const u8 gItemDescription_ITEM_POTION[] = _("Restituisce ad un POKéMON 20 PS.");const u8 gItemDescription_ITEM_ANTIDOTE[] = _("Cura un POKéMON dall’avvelenamento.");const u8 gItemDescription_ITEM_BURN_HEAL[] = _("Cura un POKéMON da una scottatura.");const u8 gItemDescription_ITEM_ICE_HEAL[] = _("Libera un POKéMON dal\ncongelamento.");const u8 gItemDescription_ITEM_AWAKENING[] = _("Sveglia un POKéMON addormentato.");const u8 gItemDescription_ITEM_PARALYZE_HEAL[] = _("Cura un POKéMON dalla paralisi.");const u8 gItemDescription_ITEM_FULL_RESTORE[] = _("Restituisce tutti i PS ad un\nPOKéMON e risolve i problemi\ndi stato.");const u8 gItemDescription_ITEM_MAX_POTION[] = _("Restituisce ad un POKéMON tutti\ni PS.");const u8 gItemDescription_ITEM_HYPER_POTION[] = _("Restituisce ad un POKéMON\n200 PS.");const u8 gItemDescription_ITEM_SUPER_POTION[] = _("Restituisce ad un POKéMON\n50 PS.");const u8 gItemDescription_ITEM_FULL_HEAL[] = _("Risolve tutti i problemi di stato\ndi un POKéMON.");const u8 gItemDescription_ITEM_REVIVE[] = _("Un POKéMON esausto recupera\nmetà dei PS.");const u8 gItemDescription_ITEM_MAX_REVIVE[] = _("Un POKéMON esausto recupera\ntutti i PS.");const u8 gItemDescription_ITEM_FRESH_WATER[] = _("Acqua minerale che restituisce\n50 PS ad un POKéMON.");const u8 gItemDescription_ITEM_SODA_POP[] = _("Bevanda frizzante che restituisce\n60 PS ad un POKéMON.");const u8 gItemDescription_ITEM_LEMONADE[] = _("Bevanda molto dolce che restituisce\n80 PS ad un POKéMON.");const u8 gItemDescription_ITEM_MOOMOO_MILK[] = _("Latte nutriente che restituisce\n100 PS ad un POKéMON.");const u8 gItemDescription_ITEM_ENERGY_POWDER[] = _("Polvere amara che restituisce\n50 PS ad un POKéMON.");const u8 gItemDescription_ITEM_ENERGY_ROOT[] = _("Radice amara che restituisce\n200 PS ad un POKéMON.");const u8 gItemDescription_ITEM_HEAL_POWDER[] = _("Polvere amara che risolve tutti i\nproblemi di stato di un POKéMON.");const u8 gItemDescription_ITEM_REVIVAL_HERB[] = _("Erba molto amara che rianima un\nPOKéMON esausto restituendogli\ntutti i PS.");const u8 gItemDescription_ITEM_ETHER[] = _("Restituisce 10 PP alla mossa\nselezionata di un POKéMON.");const u8 gItemDescription_ITEM_MAX_ETHER[] = _("Restituisce tutti i PP alla mossa\nselezionata di un POKéMON.");const u8 gItemDescription_ITEM_ELIXIR[] = _("Restituisce 10 PP a tutte le mosse\ndi un POKéMON.");const u8 gItemDescription_ITEM_MAX_ELIXIR[] = _("Restituisce tutti i PP delle mosse\ndi un POKéMON.");const u8 gItemDescription_ITEM_LAVA_COOKIE[] = _("Specialità locale che risolve tutti\ni problemi di stato di un\nPOKéMON.");const u8 gItemDescription_ITEM_BLUE_FLUTE[] = _("Flauto di vetro che sveglia un\nPOKéMON addormentato.");const u8 gItemDescription_ITEM_YELLOW_FLUTE[] = _("Flauto di vetro che libera un\nPOKéMON dalla confusione.");const u8 gItemDescription_ITEM_RED_FLUTE[] = _("Flauto di vetro che libera un\nPOKéMON dall’attrazione.");const u8 gItemDescription_ITEM_BLACK_FLUTE[] = _("Flauto di vetro che tiene alla\nlarga i POKéMON selvatici.");const u8 gItemDescription_ITEM_WHITE_FLUTE[] = _("Flauto di vetro che attrae i\nPOKéMON selvatici.");const u8 gItemDescription_ITEM_BERRY_JUICE[] = _("Puro succo di frutta che\nrestituisce 20 PS ad un\nPOKéMON.");const u8 gItemDescription_ITEM_SACRED_ASH[] = _("Ristabilisce completamente ogni\nPOKéMON esausto.");const u8 gItemDescription_ITEM_SHOAL_SALT[] = _("Sale che si trova in fondo alla\nGROTTA ONDOSA.");const u8 gItemDescription_ITEM_SHOAL_SHELL[] = _("Guscio che si trova in fondo alla\nGROTTA ONDOSA.");const u8 gItemDescription_ITEM_RED_SHARD[] = _("Coccio di un antico strumento.\nSi vende a basso prezzo.");const u8 gItemDescription_ITEM_BLUE_SHARD[] = _("Coccio di un antico strumento.\nSi vende a basso prezzo.");const u8 gItemDescription_ITEM_YELLOW_SHARD[] = _("Coccio di un antico strumento.\nSi vende a basso prezzo.");const u8 gItemDescription_ITEM_GREEN_SHARD[] = _("Coccio di un antico strumento.\nSi vende a basso prezzo.");const u8 gItemDescription_ITEM_HP_UP[] = _("Aumenta i PS di un POKéMON.");const u8 gItemDescription_ITEM_PROTEIN[] = _("Aumenta l’ATTACCO di un POKéMON.");const u8 gItemDescription_ITEM_IRON[] = _("Aumenta la DIFESA di un POKéMON.");const u8 gItemDescription_ITEM_CARBOS[] = _("Aumenta la VELOCITÀ di un POKéMON.");const u8 gItemDescription_ITEM_CALCIUM[] = _("Aumenta l’ATTACCO SPECIALE\ndi un POKéMON.");const u8 gItemDescription_ITEM_RARE_CANDY[] = _("Fa salire un POKéMON di un livello.");const u8 gItemDescription_ITEM_PP_UP[] = _("Aumenta di poco i PP massimi della\nmossa selezionata di un POKéMON.");const u8 gItemDescription_ITEM_ZINC[] = _("Aumenta la DIFESA SPECIALE\ndi un POKéMON.");const u8 gItemDescription_ITEM_PP_MAX[] = _("Porta al limite i PP massimi di una \nmossa selezionata.");const u8 gItemDescription_ITEM_GUARD_SPEC[] = _("Impedisce la riduzione delle\nstatistiche nella lotta.");const u8 gItemDescription_ITEM_DIRE_HIT[] = _("Brutti colpi più probabili per\nuna lotta. L’effetto svanisce\nse il POKéMON è sostituito.");const u8 gItemDescription_ITEM_X_ATTACK[] = _("Aumenta l’ATTACCO per una lotta.\nL’effetto svanisce se il POKéMON\nè sostituito.");const u8 gItemDescription_ITEM_X_DEFEND[] = _("Aumenta la DIFESA per una lotta.\nL’effetto svanisce se il POKéMON\nè sostituito.");const u8 gItemDescription_ITEM_X_SPEED[] = _("Aumenta la VELOCITÀ per una lotta.\nL’effetto svanisce se il POKéMON\nè sostituito.");const u8 gItemDescription_ITEM_X_ACCURACY[] = _("Aumenta la precisione per una\nlotta. L’effetto svanisce se il\nPOKéMON è sostituito.");const u8 gItemDescription_ITEM_X_SPECIAL[] = _("Aumenta l’ATTACCO SPECIALE\nper una lotta. L’effetto svanisce se\nil POKéMON è sostituito.");const u8 gItemDescription_ITEM_POKE_DOLL[] = _("Utile per fuggire dalla lotta con\nun POKéMON selvatico.");const u8 gItemDescription_ITEM_FLUFFY_TAIL[] = _("Utile per fuggire dalla lotta con\nun POKéMON selvatico.");const u8 gItemDescription_ITEM_SUPER_REPEL[] = _("Allontana i POKéMON selvatici\ndeboli per 200 passi.");const u8 gItemDescription_ITEM_MAX_REPEL[] = _("Allontana i POKéMON selvatici\ndeboli per 250 passi.");const u8 gItemDescription_ITEM_ESCAPE_ROPE[] = _("Per fuggire da grotte o\nsotterranei.");const u8 gItemDescription_ITEM_REPEL[] = _("Allontana i POKéMON selvatici\ndeboli per 100 passi.");const u8 gItemDescription_ITEM_SUN_STONE[] = _("Fa evolvere determinate specie\ndi POKéMON.");const u8 gItemDescription_ITEM_MOON_STONE[] = _("Fa evolvere determinate specie\ndi POKéMON.");const u8 gItemDescription_ITEM_FIRE_STONE[] = _("Fa evolvere determinate specie\ndi POKéMON.");const u8 gItemDescription_ITEM_THUNDER_STONE[] = _("Fa evolvere determinate specie\ndi POKéMON.");const u8 gItemDescription_ITEM_WATER_STONE[] = _("Fa evolvere determinate specie\ndi POKéMON.");const u8 gItemDescription_ITEM_LEAF_STONE[] = _("Fa evolvere determinate specie\ndi POKéMON.");const u8 gItemDescription_ITEM_TINY_MUSHROOM[] = _("Fungo raro, apprezzato dagli\nintenditori.");const u8 gItemDescription_ITEM_BIG_MUSHROOM[] = _("Fungo raro, molto apprezzato\ndagli intenditori.");const u8 gItemDescription_ITEM_PEARL[] = _("Una bella perla. Si può vendere a\nbasso prezzo.");const u8 gItemDescription_ITEM_BIG_PEARL[] = _("Una bella e grande perla che si\nvende a caro prezzo.");const u8 gItemDescription_ITEM_STARDUST[] = _("Bella sabbia rossa che si vende a\ncaro prezzo.");const u8 gItemDescription_ITEM_STAR_PIECE[] = _("Frammento di gemma rossa. Si vende\na caro prezzo.");const u8 gItemDescription_ITEM_NUGGET[] = _("Pepita d’oro puro. Si vende a caro\nprezzo.");const u8 gItemDescription_ITEM_HEART_SCALE[] = _("Una squama graziosa, rarissima.\nRiflette tutti i colori dell’iride.");const u8 gItemDescription_ITEM_ORANGE_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di ZIGZAGOON.");const u8 gItemDescription_ITEM_HARBOR_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di WINGULL.");const u8 gItemDescription_ITEM_GLITTER_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di PIKACHU.");const u8 gItemDescription_ITEM_MECH_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di MAGNEMITE.");const u8 gItemDescription_ITEM_WOOD_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di SLAKOTH.");const u8 gItemDescription_ITEM_WAVE_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di WAILMER.");const u8 gItemDescription_ITEM_BEAD_MAIL[] = _("MESSAGGIO con l’immagine del\nPOKéMON che lo tiene.");const u8 gItemDescription_ITEM_SHADOW_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di DUSKULL.");const u8 gItemDescription_ITEM_TROPIC_MAIL[] = _("MESSAGGIO tenuto che presenta\nl’immagine di BELLOSSOM.");const u8 gItemDescription_ITEM_DREAM_MAIL[] = _("MESSAGGIO con l’immagine del\nPOKéMON che lo tiene.");const u8 gItemDescription_ITEM_FAB_MAIL[] = _("MESSAGGIO tenuto che presenta\nuna stupenda immagine.");const u8 gItemDescription_ITEM_RETRO_MAIL[] = _("MESSAGGIO con l’immagine di tre\nPOKéMON.");const u8 gItemDescription_ITEM_CHERI_BERRY[] = _("Strumento tenuto che, nella lotta,\ncura dalla paralisi.");const u8 gItemDescription_ITEM_CHESTO_BERRY[] = _("Strumento tenuto che, nella lotta,\nrisveglia un POKéMON addormentato.");const u8 gItemDescription_ITEM_PECHA_BERRY[] = _("Strumento tenuto che, nella lotta,\ncura dall’avvelenamento.");const u8 gItemDescription_ITEM_RAWST_BERRY[] = _("Strumento tenuto che, nella lotta,\ncura dalla scottatura.");const u8 gItemDescription_ITEM_ASPEAR_BERRY[] = _("Strumento tenuto che, nella lotta,\ncura dal congelamento.");const u8 gItemDescription_ITEM_LEPPA_BERRY[] = _("Strumento tenuto che, nella lotta,\nrestituisce 10 PP.");const u8 gItemDescription_ITEM_ORAN_BERRY[] = _("Strumento tenuto che, nella lotta,\nrestituisce 10 PS.");const u8 gItemDescription_ITEM_PERSIM_BERRY[] = _("Strumento tenuto che, nella lotta,\ncura dalla confusione.");const u8 gItemDescription_ITEM_LUM_BERRY[] = _("Strumento tenuto che, nella lotta,\nrisolve i problemi di stato.");const u8 gItemDescription_ITEM_SITRUS_BERRY[] = _("Strumento tenuto che, nella lotta,\nrestituisce 30 PS.");const u8 gItemDescription_ITEM_FIGY_BERRY[] = _("Strumento tenuto che restituisce\nPS, ma può confondere.");const u8 gItemDescription_ITEM_WIKI_BERRY[] = _("Strumento tenuto che restituisce\nPS, ma può confondere.");const u8 gItemDescription_ITEM_MAGO_BERRY[] = _("Strumento tenuto che restituisce\nPS, ma può confondere.");const u8 gItemDescription_ITEM_AGUAV_BERRY[] = _("Strumento tenuto che restituisce\nPS, ma può confondere.");const u8 gItemDescription_ITEM_IAPAPA_BERRY[] = _("Strumento tenuto che restituisce\nPS, ma può confondere.");const u8 gItemDescription_ITEM_RAZZ_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_BLUK_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_NANAB_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_WEPEAR_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_PINAP_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_POMEG_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_KELPSY_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_QUALOT_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_HONDEW_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_GREPA_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_TAMATO_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_CORNN_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_MAGOST_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_RABUTA_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_NOMEL_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_SPELON_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_PAMTRE_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_WATMEL_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_DURIN_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_BELUE_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_LIECHI_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta l’ATTACCO.");const u8 gItemDescription_ITEM_GANLON_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta la DIFESA.");const u8 gItemDescription_ITEM_SALAC_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta la VELOCITÀ.");const u8 gItemDescription_ITEM_PETAYA_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta l’ATTACCO SPECIALE.");const u8 gItemDescription_ITEM_APICOT_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta la DIFESA SPECIALE.");const u8 gItemDescription_ITEM_LANSAT_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta i brutti colpi.");const u8 gItemDescription_ITEM_STARF_BERRY[] = _("Strumento tenuto che, in difficoltà,\naumenta di molto una statistica.");const u8 gItemDescription_ITEM_ENIGMA_BERRY[] = _("Se ne può ricavare una farina\nutilizzata come medicamento.");const u8 gItemDescription_ITEM_BRIGHT_POWDER[] = _("Strumento tenuto che abbaglia\nper ridurre la precisione\ndell’avversario.");const u8 gItemDescription_ITEM_WHITE_HERB[] = _("Strumento tenuto che annulla la\ndiminuzione delle statistiche.\nSi può usare una sola volta.");const u8 gItemDescription_ITEM_MACHO_BRACE[] = _("Strumento tenuto che aiuta la\ncrescita, ma riduce la VELOCITÀ.");const u8 gItemDescription_ITEM_EXP_SHARE[] = _("Strumento tenuto: il POKéMON\nottiene punti ESP. dalla lotta\nanche se non vi partecipa.");const u8 gItemDescription_ITEM_QUICK_CLAW[] = _("Strumento tenuto che, a volte,\npermette di colpire per primi.");const u8 gItemDescription_ITEM_SOOTHE_BELL[] = _("Strumento tenuto che placa gli\nanimi e cementa l’amicizia.");const u8 gItemDescription_ITEM_MENTAL_HERB[] = _("Strumento tenuto che libera un\nPOKéMON dall’infatuazione.\nSi può usare una sola volta.");const u8 gItemDescription_ITEM_CHOICE_BAND[] = _("Strumento tenuto che potenzia una\nmossa, ma obbliga ad usare soltanto\nquella.");const u8 gItemDescription_ITEM_KINGS_ROCK[] = _("Strumento tenuto che può far\ntentennare il nemico colpito.");const u8 gItemDescription_ITEM_SILVER_POWDER[] = _("Strumento tenuto che migliora le\nmosse di tipo COLEOTTERO.");const u8 gItemDescription_ITEM_AMULET_COIN[] = _("Strumento tenuto che raddoppia\ni guadagni nella lotta se chi lo\ntiene vi partecipa.");const u8 gItemDescription_ITEM_CLEANSE_TAG[] = _("Strumento tenuto che aiuta a\nallontanare i POKéMON selvatici.");const u8 gItemDescription_ITEM_SOUL_DEW[] = _("Strumento tenuto che aumenta\nl’ATTACCO SPECIALE e la DIFESA\nSPECIALE di LATIOS e LATIAS.");const u8 gItemDescription_ITEM_DEEP_SEA_TOOTH[] = _("Strumento tenuto che aumenta\nl’ATTACCO SPECIALE di\nCLAMPERL.");const u8 gItemDescription_ITEM_DEEP_SEA_SCALE[] = _("Strumento tenuto che aumenta \nla DIFESA SPECIALE di\nCLAMPERL.");const u8 gItemDescription_ITEM_SMOKE_BALL[] = _("Strumento tenuto: per fuggire da un\nPOKéMON selvatico.");const u8 gItemDescription_ITEM_EVERSTONE[] = _("Strumento tenuto: pietra magica che\nblocca l’evoluzione.");const u8 gItemDescription_ITEM_FOCUS_BAND[] = _("Strumento tenuto che può evitare\nil KO, lasciando un solo PS.");const u8 gItemDescription_ITEM_LUCKY_EGG[] = _("Strumento tenuto che aumenta i\npunti ESP. ottenuti lottando.");const u8 gItemDescription_ITEM_SCOPE_LENS[] = _("Strumento tenuto: brutti colpi più\nprobabili.");const u8 gItemDescription_ITEM_METAL_COAT[] = _("Strumento tenuto che migliora le\nmosse di tipo ACCIAIO.");const u8 gItemDescription_ITEM_LEFTOVERS[] = _("Strumento tenuto che aumenta di\npoco i PS nella lotta.");const u8 gItemDescription_ITEM_DRAGON_SCALE[] = _("Squama che può essere tenuta\nda un POKéMON di tipo DRAGO.");const u8 gItemDescription_ITEM_LIGHT_BALL[] = _("Strumento tenuto che aumenta\nl’ATTACCO SPECIALE di PIKACHU.");const u8 gItemDescription_ITEM_SOFT_SAND[] = _("Strumento tenuto che migliora le\nmosse di tipo TERRA.");const u8 gItemDescription_ITEM_HARD_STONE[] = _("Strumento tenuto che migliora le\nmosse di tipo ROCCIA.");const u8 gItemDescription_ITEM_MIRACLE_SEED[] = _("Strumento tenuto che migliora le\nmosse di tipo ERBA.");const u8 gItemDescription_ITEM_BLACK_GLASSES[] = _("Strumento tenuto che migliora le\nmosse di tipo BUIO.");const u8 gItemDescription_ITEM_BLACK_BELT[] = _("Strumento tenuto che migliora le\nmosse di tipo LOTTA.");const u8 gItemDescription_ITEM_MAGNET[] = _("Strumento tenuto che migliora le\nmosse di tipo ELETTRO.");const u8 gItemDescription_ITEM_MYSTIC_WATER[] = _("Strumento tenuto che migliora le\nmosse di tipo ACQUA.");const u8 gItemDescription_ITEM_SHARP_BEAK[] = _("Strumento tenuto che migliora le\nmosse di tipo VOLANTE.");const u8 gItemDescription_ITEM_POISON_BARB[] = _("Strumento tenuto che migliora le\nmosse di tipo VELENO.");const u8 gItemDescription_ITEM_NEVER_MELT_ICE[] = _("Strumento tenuto che migliora le\nmosse di tipo GHIACCIO.");const u8 gItemDescription_ITEM_SPELL_TAG[] = _("Strumento tenuto che migliora le\nmosse di tipo SPETTRO.");const u8 gItemDescription_ITEM_TWISTED_SPOON[] = _("Strumento tenuto che migliora le\nmosse di tipo PSICO.");const u8 gItemDescription_ITEM_CHARCOAL[] = _("Strumento tenuto che migliora le\nmosse di tipo FUOCO.");const u8 gItemDescription_ITEM_DRAGON_FANG[] = _("Strumento tenuto che migliora le\nmosse di tipo DRAGO.");const u8 gItemDescription_ITEM_SILK_SCARF[] = _("Strumento tenuto che migliora le\nmosse di tipo NORMALE.");const u8 gItemDescription_ITEM_UP_GRADE[] = _("Scatola speciale prodotta dalla\nSILPH SpA.");const u8 gItemDescription_ITEM_SHELL_BELL[] = _("Strumento tenuto che restituisce PS\nse si colpisce un nemico.");const u8 gItemDescription_ITEM_SEA_INCENSE[] = _("Strumento tenuto che migliora di\npoco le mosse di tipo ACQUA.");const u8 gItemDescription_ITEM_LAX_INCENSE[] = _("Strumento tenuto che riduce di poco\nla precisione del nemico.");const u8 gItemDescription_ITEM_LUCKY_PUNCH[] = _("Strumento tenuto che aumenta i\nbrutti colpi messi a segno da\nCHANSEY.");const u8 gItemDescription_ITEM_METAL_POWDER[] = _("Strumento tenuto che aumenta la\nDIFESA di DITTO.");const u8 gItemDescription_ITEM_THICK_CLUB[] = _("Un osso da far tenere a MAROWAK\no CUBONE per aumentarne\nl’ATTACCO.");const u8 gItemDescription_ITEM_STICK[] = _("Gambo di porro: tenuto da\nFARFETCH’D, aumenta la sua\nprobabilità di brutti colpi.");const u8 gItemDescription_ITEM_RED_SCARF[] = _("Strumento tenuto che aumenta la\nCLASSE nelle GARE.");const u8 gItemDescription_ITEM_BLUE_SCARF[] = _("Strumento tenuto che aumenta la\nBELLEZZA nelle GARE.");const u8 gItemDescription_ITEM_PINK_SCARF[] = _("Strumento tenuto che aumenta la\nGRAZIA nelle GARE.");const u8 gItemDescription_ITEM_GREEN_SCARF[] = _("Strumento tenuto che aumenta\nl’ACUME nelle GARE.");const u8 gItemDescription_ITEM_YELLOW_SCARF[] = _("Strumento tenuto che aumenta la\nGRINTA nelle GARE.");const u8 gItemDescription_ITEM_MACH_BIKE[] = _("Bici pieghevole: la velocità è\npiù che raddoppiata.");const u8 gItemDescription_ITEM_COIN_CASE[] = _("Può contenere fino a 9.999\nGETTONI ottenuti al CASINÒ.");const u8 gItemDescription_ITEM_ITEMFINDER[] = _("Individua oggetti invisibili grazie\nal suono.");const u8 gItemDescription_ITEM_OLD_ROD[] = _("Pesca POKéMON selvatici in ogni\nspecchio d’acqua.");const u8 gItemDescription_ITEM_GOOD_ROD[] = _("Discreto amo usato per pescare\nPOKéMON selvatici.");const u8 gItemDescription_ITEM_SUPER_ROD[] = _("L’amo migliore per pescare POKéMON\nselvatici.");const u8 gItemDescription_ITEM_SS_TICKET[] = _("Biglietto per salire sulla\nM/N ANNA.");const u8 gItemDescription_ITEM_CONTEST_PASS[] = _("Tessera per partecipare alle\nGARE POKéMON.");const u8 gItemDescription_ITEM_WAILMER_PAIL[] = _("Si usa per annaffiare BACCHE\npiantate nel terreno soffice.");const u8 gItemDescription_ITEM_DEVON_GOODS[] = _("Pacchetto contenente pezzi\nmeccanici prodotti dalla DEVON.");const u8 gItemDescription_ITEM_SOOT_SACK[] = _("Sacco usato per raccogliere\ncenere vulcanica.");const u8 gItemDescription_ITEM_BASEMENT_KEY[] = _("Chiave per CICLANOVA, costruita\nsotto CICLAMIPOLI.");const u8 gItemDescription_ITEM_ACRO_BIKE[] = _("Bici pieghevole: permette salti\ne impennate.");const u8 gItemDescription_ITEM_POKEBLOCK_CASE[] = _("Contiene le セソタチテ fatte con\nil MIXER BACCHE.");const u8 gItemDescription_ITEM_LETTER[] = _("Lettera per ROCCO dal PRESIDENTE\ndella DEVON SpA.");const u8 gItemDescription_ITEM_EON_TICKET[] = _("Biglietto per un traghetto che\nporta ad una remota isola a sud.");const u8 gItemDescription_ITEM_RED_ORB[] = _("Sfera rossa luminosa con un antico\npotere.");const u8 gItemDescription_ITEM_BLUE_ORB[] = _("Sfera blu luminosa con un antico\npotere.");const u8 gItemDescription_ITEM_SCANNER[] = _("Strumento di difficile utilizzo, che\nserve per trovare forme di vita\nnell’acqua.");const u8 gItemDescription_ITEM_GO_GOGGLES[] = _("Proteggono dalle tempeste di\nsabbia.");const u8 gItemDescription_ITEM_METEORITE[] = _("Meteorite durissimo, caduto dallo\nspazio su MONTE LUNA.");const u8 gItemDescription_ITEM_ROOM_1_KEY[] = _("Chiave che apre la porta della\ncabina 1 nella VECCHIA NAVE.");const u8 gItemDescription_ITEM_ROOM_2_KEY[] = _("Chiave che apre la porta della\ncabina 2 nella VECCHIA NAVE.");const u8 gItemDescription_ITEM_ROOM_4_KEY[] = _("Chiave che apre la porta della\ncabina 4 nella VECCHIA NAVE.");const u8 gItemDescription_ITEM_ROOM_6_KEY[] = _("Chiave che apre la porta della\ncabina 6 nella VECCHIA NAVE.");const u8 gItemDescription_ITEM_STORAGE_KEY[] = _("Apre la STIVA nella VECCHIA\nNAVE.");const u8 gItemDescription_ITEM_ROOT_FOSSIL[] = _("Fossile di un antico POKéMON che\nviveva sui fondali.");const u8 gItemDescription_ITEM_CLAW_FOSSIL[] = _("Fossile di un antico POKéMON che\nviveva sui fondali.");const u8 gItemDescription_ITEM_DEVON_SCOPE[] = _("Strumento della DEVON per scovare\ni POKéMON invisibili.");extern const u8 gMoveDescription_FocusPunch[];
+const u8 gItemDescription_ITEM_TM01[] = _("An extremely powerful attack.\nHowever, if the user is hit before\nusing the move, they will flinch.");extern const u8 gMoveDescription_DragonClaw[];
+const u8 gItemDescription_ITEM_TM02[] = _("Sharp, huge claws hook and slash\nthe foe quickly and with great\npower.");extern const u8 gMoveDescription_WaterPulse[];
+const u8 gItemDescription_ITEM_TM03[] = _("The foe is hit with a pulsing blast\nof water. It may also confuse the\ntarget.");extern const u8 gMoveDescription_CalmMind[];
+const u8 gItemDescription_ITEM_TM04[] = _("The user calms its spirit and\nfocuses its mind to raise its\nSP. ATK and SP. DEF stats.");extern const u8 gMoveDescription_Roar[];
+const u8 gItemDescription_ITEM_TM05[] = _("A savage roar that causes the foe\nto switch out of battle. In the\nwild, ROAR ends the battle.");extern const u8 gMoveDescription_Toxic[];
+const u8 gItemDescription_ITEM_TM06[] = _("A move that leaves the foe badly\npoisoned. Its poison damage worsens\nevery turn.");extern const u8 gMoveDescription_Hail[];
+const u8 gItemDescription_ITEM_TM07[] = _("Summons a hailstorm that lasts for\nfive turns. The hailstorm damages\nall types except the ICE type.");extern const u8 gMoveDescription_BulkUp[];
+const u8 gItemDescription_ITEM_TM08[] = _("The user tightens all its muscles\nand bulks up, boosting both its\nATTACK and DEFENSE stats.");extern const u8 gMoveDescription_BulletSeed[];
+const u8 gItemDescription_ITEM_TM09[] = _("The user shoots seeds at the foe\nin rapid succession. Two to five\nseeds are shot at once.");extern const u8 gMoveDescription_HiddenPower[];
+const u8 gItemDescription_ITEM_TM10[] = _("A variable move that changes type\nand power depending on the POKéMON\nusing it.");extern const u8 gMoveDescription_SunnyDay[];
+const u8 gItemDescription_ITEM_TM11[] = _("The weather is turned sunny for\nfive turns. Over that time, FIRE-\ntype moves are powered up.");extern const u8 gMoveDescription_Taunt[];
+const u8 gItemDescription_ITEM_TM12[] = _("A taunted foe may become enraged.\nIt will then only be able to use\nattack moves.");extern const u8 gMoveDescription_IceBeam[];
+const u8 gItemDescription_ITEM_TM13[] = _("An icy-cold beam is shot at the\nfoe. It may leave the target\nfrozen.");extern const u8 gMoveDescription_Blizzard[];
+const u8 gItemDescription_ITEM_TM14[] = _("A vicious snow-and-wind attack that\nstrikes all foes in battle. It may\ncause freezing.");extern const u8 gMoveDescription_HyperBeam[];
+const u8 gItemDescription_ITEM_TM15[] = _("A harsh attack that inflicts severe\ndamage on the foe. However, the\nuser must rest the next turn.");extern const u8 gMoveDescription_LightScreen[];
+const u8 gItemDescription_ITEM_TM16[] = _("A wall of light is created over\nfive turns. It reduces damage from\nSP. ATK attacks.");extern const u8 gMoveDescription_Protect[];
+const u8 gItemDescription_ITEM_TM17[] = _("The user is completely protected\nfrom attack in the turn it is used.\nIt may fail if used in succession.");extern const u8 gMoveDescription_RainDance[];
+const u8 gItemDescription_ITEM_TM18[] = _("A heavy rain is summoned for five\nturns. Over that time, WATER-type\nmoves are powered up.");extern const u8 gMoveDescription_GigaDrain[];
+const u8 gItemDescription_ITEM_TM19[] = _("The user strikes the foe with\ntentacles or roots, stealing the\ntarget's HP and healing itself.");extern const u8 gMoveDescription_Safeguard[];
+const u8 gItemDescription_ITEM_TM20[] = _("Protects the party with a shield\nagainst all status problems over\nfive turns.");extern const u8 gMoveDescription_Frustration[];
+const u8 gItemDescription_ITEM_TM21[] = _("This attack move grows more\npowerful the more the POKéMON\ndislikes its TRAINER.");extern const u8 gMoveDescription_SolarBeam[];
+const u8 gItemDescription_ITEM_TM22[] = _("A 2-turn attack that uses the first\nturn for absorbing sunlight, then\nblasting the foe in the next turn.");extern const u8 gMoveDescription_IronTail[];
+const u8 gItemDescription_ITEM_TM23[] = _("The foe is slammed with a sturdy\ntail of steel. It may lower the\ntarget's DEFENSE stat.");extern const u8 gMoveDescription_Thunderbolt[];
+const u8 gItemDescription_ITEM_TM24[] = _("A massive jolt of electricity is\nlaunched at the foe. It may cause\nparalysis.");extern const u8 gMoveDescription_Thunder[];
+const u8 gItemDescription_ITEM_TM25[] = _("Strikes the foe with a huge\nthunderbolt. It may cause\nparalysis.");extern const u8 gMoveDescription_Earthquake[];
+const u8 gItemDescription_ITEM_TM26[] = _("Causes an earthquake that strikes\nall POKéMON in battle, excluding\nthe user.");extern const u8 gMoveDescription_Return[];
+const u8 gItemDescription_ITEM_TM27[] = _("This attack move grows more\npowerful the more the POKéMON\nlikes its TRAINER.");extern const u8 gMoveDescription_Dig[];
+const u8 gItemDescription_ITEM_TM28[] = _("A 2-turn attack in which the user\ndigs underground, then strikes.\nIt can be used to exit dungeons.");extern const u8 gMoveDescription_Psychic[];
+const u8 gItemDescription_ITEM_TM29[] = _("A powerful blast of telekinetic\nenergy strikes the foe. It may\nlower the target's SP. DEF stat.");extern const u8 gMoveDescription_ShadowBall[];
+const u8 gItemDescription_ITEM_TM30[] = _("The foe is attacked with a shadowy\nlump. It may lower the target's\nSP. DEF stat.");extern const u8 gMoveDescription_BrickBreak[];
+const u8 gItemDescription_ITEM_TM31[] = _("Strikes the foe with a rock-hard\nfist, etc. It shatters barriers such\nas REFLECT and LIGHT SCREEN.");extern const u8 gMoveDescription_DoubleTeam[];
+const u8 gItemDescription_ITEM_TM32[] = _("The user begins moving so quickly\nthat it creates illusory copies to\nraise its evasiveness.");extern const u8 gMoveDescription_Reflect[];
+const u8 gItemDescription_ITEM_TM33[] = _("A tough barrier is put up over five\nturns. It reduces damage from\nphysical attacks over that time.");extern const u8 gMoveDescription_ShockWave[];
+const u8 gItemDescription_ITEM_TM34[] = _("A rapid jolt of electricity strikes\nthe foe. This attack is impossible\nto evade.");extern const u8 gMoveDescription_Flamethrower[];
+const u8 gItemDescription_ITEM_TM35[] = _("The foe is roasted with a heavy\nblast of fire. It may leave the\ntarget with a burn.");extern const u8 gMoveDescription_SludgeBomb[];
+const u8 gItemDescription_ITEM_TM36[] = _("Toxic sludge is hurled at the foe\nwith great force. It may also\npoison the target.");extern const u8 gMoveDescription_Sandstorm[];
+const u8 gItemDescription_ITEM_TM37[] = _("Summons a sandstorm that lasts for\nfive turns. It damages all types\nexcept ROCK, GROUND, and STEEL.");extern const u8 gMoveDescription_FireBlast[];
+const u8 gItemDescription_ITEM_TM38[] = _("The foe is incinerated with an\nintense flame. It may leave the\ntarget with a burn.");extern const u8 gMoveDescription_RockTomb[];
+const u8 gItemDescription_ITEM_TM39[] = _("Boulders are hurled at the foe.\nIt also lowers the target's SPEED\nstat if it hits.");extern const u8 gMoveDescription_AerialAce[];
+const u8 gItemDescription_ITEM_TM40[] = _("An extremely fast attack against\none target. It is impossible to\nevade.");extern const u8 gMoveDescription_Torment[];
+const u8 gItemDescription_ITEM_TM41[] = _("If enraged by this move, the target\nbecomes incapable of using the same\nmove twice in a row.");extern const u8 gMoveDescription_Facade[];
+const u8 gItemDescription_ITEM_TM42[] = _("An attack move that becomes very\npowerful if the user is poisoned,\nburned, or paralyzed.");extern const u8 gMoveDescription_SecretPower[];
+const u8 gItemDescription_ITEM_TM43[] = _("An attack move that may have an\nadditional effect depending on the\nbattle terrain.");extern const u8 gMoveDescription_Rest[];
+const u8 gItemDescription_ITEM_TM44[] = _("A move that makes the user fall\nasleep over two turns to restore HP\nand heal any status problems.");extern const u8 gMoveDescription_Attract[];
+const u8 gItemDescription_ITEM_TM45[] = _("The foe, if it is the opposite\ngender as the user, becomes\ninfatuated and may not attack.");extern const u8 gMoveDescription_Thief[];
+const u8 gItemDescription_ITEM_TM46[] = _("An attack that gives the user an\nopportunity to steal the foe's hold\nitem.");extern const u8 gMoveDescription_SteelWing[];
+const u8 gItemDescription_ITEM_TM47[] = _("The foe is struck with steel-hard\nwings. It may also raise the user's\nDEFENSE stat.");extern const u8 gMoveDescription_SkillSwap[];
+const u8 gItemDescription_ITEM_TM48[] = _("A special power is transmitted to\nthe foe, causing it to switch\nabilities with the user.");extern const u8 gMoveDescription_Snatch[];
+const u8 gItemDescription_ITEM_TM49[] = _("A move that steals the effects of\nany status-changing or healing move\nthat the foe tries to use.");extern const u8 gMoveDescription_Overheat[];
+const u8 gItemDescription_ITEM_TM50[] = _("A maximum-power attack of great\nferocity, but one that also sharply\nreduces the user's SP. ATK stat.");extern const u8 gMoveDescription_Cut[];
+const u8 gItemDescription_ITEM_HM01[] = _("Attacks the foe with sharp blades\nor claws. It can also cut down thin\ntrees and grass outside of battle.");extern const u8 gMoveDescription_Fly[];
+const u8 gItemDescription_ITEM_HM02[] = _("The user flies up on the first turn,\nthen attacks next turn. It can be\nused to fly to any known town.");extern const u8 gMoveDescription_Surf[];
+const u8 gItemDescription_ITEM_HM03[] = _("Creates a huge wave, then crashes\nit down on the foe. It can be used\nfor traveling on water.");extern const u8 gMoveDescription_Strength[];
+const u8 gItemDescription_ITEM_HM04[] = _("The user builds enormous power,\nthen slams the foe. It can be used\nfor moving large, round boulders.");extern const u8 gMoveDescription_Flash[];
+const u8 gItemDescription_ITEM_HM05[] = _("Looses a powerful blast of light\nthat reduces the foe's accuracy.\nIt also lights up dark caves.");extern const u8 gMoveDescription_RockSmash[];
+const u8 gItemDescription_ITEM_HM06[] = _("Hits the foe with a rock-crushingly\ntough attack. It can smash cracked\nboulders.");extern const u8 gMoveDescription_Waterfall[];
+const u8 gItemDescription_ITEM_HM07[] = _("A powerful charge attack. It can\nbe used for climbing a torrential\nwaterfall.");extern const u8 gMoveDescription_Dive[];
+const u8 gItemDescription_ITEM_HM08[] = _("A 2-turn attack in which the user\ndives underwater on the first turn,\nthen strikes in the next turn.");const u8 gItemDescription_ITEM_OAKS_PARCEL[] = _("Un pacchetto per il PROF. OAK\ndal POKéMON-MARKET di\nSMERALDOPOLI.");const u8 gItemDescription_ITEM_POKE_FLUTE[] = _("Flauto melodioso che sembra poter\nrisvegliare qualsiasi POKéMON\naddormentato.");const u8 gItemDescription_ITEM_SECRET_KEY[] = _("Chiave della PALESTRA dell’ISOLA\nCANNELLA. È rossa e ornata da\ngraziose decorazioni.");const u8 gItemDescription_ITEM_BIKE_VOUCHER[] = _("Buono per una BICICLETTA al\nNEGOZIO di BICI di CELESTOPOLI.");const u8 gItemDescription_ITEM_GOLD_TEETH[] = _("Dentiera scintillante, persa dal\nGUARDIANO della ZONA SAFARI.");const u8 gItemDescription_ITEM_OLD_AMBER[] = _("Ambra rossastra che contiene i geni\ndi un POKéMON antico. ");const u8 gItemDescription_ITEM_CARD_KEY[] = _("Chiave a scheda per sbloccare le\nporte nella DIREZIONE della SILPH\nSpA, a ZAFFERANOPOLI.");const u8 gItemDescription_ITEM_LIFT_KEY[] = _("Chiave per l’ascensore nel RIFUGIO\ndi TEAM ROCKET. Presenta il\nlogo di TEAM ROCKET.");const u8 gItemDescription_ITEM_HELIX_FOSSIL[] = _("Fossile di un POKéMON antico che\nviveva sui fondali marini. Fa parte\ndi una conchiglia.");const u8 gItemDescription_ITEM_DOME_FOSSIL[] = _("Fossile di un POKéMON antico che\nviveva sui fondali marini. Fa parte\ndi una conchiglia.");const u8 gItemDescription_ITEM_SILPH_SCOPE[] = _("Sonda che rivela i POKéMON\ninvisibili, prodotta dalla\nSILPH SpA.");const u8 gItemDescription_ITEM_BICYCLE[] = _("Bici pieghevole, più veloce\ndelle SCARPE da CORSA.");const u8 gItemDescription_ITEM_TOWN_MAP[] = _("Comoda mappa, consultabile in\nogni situazione.");const u8 gItemDescription_ITEM_VS_SEEKER[] = _("Apparecchio per trovare gli\nALLENATORI che vogliono lottare.\nLa batteria si ricarica camminando.");const u8 gItemDescription_ITEM_FAME_CHECKER[] = _("Apparecchio che permette di\nregistrare ciò che vieni a sapere\nsui personaggi importanti.");const u8 gItemDescription_ITEM_TM_CASE[] = _("Contenitore per le MT e le MN.\nSi trova nello ZAINO.");const u8 gItemDescription_ITEM_BERRY_POUCH[] = _("Contenitore per le BACCHE.\nSi trova nello ZAINO.");const u8 gItemDescription_ITEM_TEACHY_TV[] = _("Televisore sintonizzato su un\ncanale che dà informazioni\nper gli ALLENATORI in erba.");const u8 gItemDescription_ITEM_TRI_PASS[] = _("Pass per viaggiare tra PRIMISOLA,\nSECONDISOLA e TERZISOLA.");const u8 gItemDescription_ITEM_RAINBOW_PASS[] = _("Pass per viaggiare tra ARANCIOPOLI\ne il SETTIPELAGO.");const u8 gItemDescription_ITEM_TEA[] = _("Tè aromatico preparato da\nun’anziana signora.\nMolto dissetante.");const u8 gItemDescription_ITEM_MYSTIC_TICKET[] = _("Biglietto per la nave che porta al\nMONTE CORDONE. Brilla di una\nluce magica.");const u8 gItemDescription_ITEM_AURORA_TICKET[] = _("Biglietto per la nave che porta\nall’ISOLA MATERNA. Brilla di una\nluce magica.");const u8 gItemDescription_ITEM_POWDER_JAR[] = _("Ampolla per raccogliere la FARINA\ndi BACCHE ottenuta usando il\nMACINABACCHE.");const u8 gItemDescription_ITEM_RUBY[] = _("Magnifica gemma di un rosso\nscintillante, che simboleggia\nla passione.");const u8 gItemDescription_ITEM_SAPPHIRE[] = _("Magnifica gemma di un blu\nscintillante, che simboleggia\nl’onestà.");const u8 gItemDescription_ITEM_NONE[] = _("?????");
 
 const struct Item gItems[] = {
     {
@@ -386,8 +78,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MASTER BALL"),
         .itemId = ITEM_MASTER_BALL,
         .price = 0,
@@ -402,8 +93,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeBallEtc,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ULTRA BALL"),
         .itemId = ITEM_ULTRA_BALL,
         .price = 1200,
@@ -418,8 +108,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeBallEtc,
         .secondaryId = 1
-    },
-    {
+    }, {
         .name = _("MEGA BALL"),
         .itemId = ITEM_GREAT_BALL,
         .price = 600,
@@ -434,8 +123,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeBallEtc,
         .secondaryId = 2
-    },
-    {
+    }, {
         .name = _("POKé BALL"),
         .itemId = ITEM_POKE_BALL,
         .price = 200,
@@ -450,8 +138,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeBallEtc,
         .secondaryId = 3
-    },
-    {
+    }, {
         .name = _("SAFARI BALL"),
         .itemId = ITEM_SAFARI_BALL,
         .price = 0,
@@ -466,8 +153,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeBallEtc,
         .secondaryId = 4
-    },
-    {
+    }, {
         .name = _("RETE BALL"),
         .itemId = ITEM_NET_BALL,
         .price = 1000,
@@ -482,8 +168,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeBallEtc,
         .secondaryId = 5
-    },
-    {
+    }, {
         .name = _("SUB BALL"),
         .itemId = ITEM_DIVE_BALL,
         .price = 1000,
@@ -498,8 +183,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeBallEtc,
         .secondaryId = 6
-    },
-    {
+    }, {
         .name = _("MINOR BALL"),
         .itemId = ITEM_NEST_BALL,
         .price = 1000,
@@ -514,8 +198,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeBallEtc,
         .secondaryId = 7
-    },
-    {
+    }, {
         .name = _("BIS BALL"),
         .itemId = ITEM_REPEAT_BALL,
         .price = 1000,
@@ -530,8 +213,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeBallEtc,
         .secondaryId = 8
-    },
-    {
+    }, {
         .name = _("TIMER BALL"),
         .itemId = ITEM_TIMER_BALL,
         .price = 1000,
@@ -546,8 +228,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeBallEtc,
         .secondaryId = 9
-    },
-    {
+    }, {
         .name = _("CHIC BALL"),
         .itemId = ITEM_LUXURY_BALL,
         .price = 1000,
@@ -562,8 +243,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeBallEtc,
         .secondaryId = 10
-    },
-    {
+    }, {
         .name = _("PREMIER BALL"),
         .itemId = ITEM_PREMIER_BALL,
         .price = 200,
@@ -578,8 +258,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeBallEtc,
         .secondaryId = 11
-    },
-    {
+    }, {
         .name = _("POZIONE"),
         .itemId = ITEM_POTION,
         .price = 300,
@@ -594,8 +273,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ANTIDOTO"),
         .itemId = ITEM_ANTIDOTE,
         .price = 100,
@@ -610,8 +288,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ANTISCOTTAT."),
         .itemId = ITEM_BURN_HEAL,
         .price = 250,
@@ -626,8 +303,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ANTIGELO"),
         .itemId = ITEM_ICE_HEAL,
         .price = 250,
@@ -642,8 +318,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SVEGLIA"),
         .itemId = ITEM_AWAKENING,
         .price = 250,
@@ -658,8 +333,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ANTIPARALISI"),
         .itemId = ITEM_PARALYZE_HEAL,
         .price = 200,
@@ -674,8 +348,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("RICARICA TOT"),
         .itemId = ITEM_FULL_RESTORE,
         .price = 3000,
@@ -690,8 +363,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("POZIONE MAX"),
         .itemId = ITEM_MAX_POTION,
         .price = 2500,
@@ -706,8 +378,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("IPERPOZIONE"),
         .itemId = ITEM_HYPER_POTION,
         .price = 1200,
@@ -722,8 +393,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SUPERPOZIONE"),
         .itemId = ITEM_SUPER_POTION,
         .price = 700,
@@ -738,8 +408,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CURA TOTALE"),
         .itemId = ITEM_FULL_HEAL,
         .price = 600,
@@ -754,8 +423,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("REVITALIZ."),
         .itemId = ITEM_REVIVE,
         .price = 1500,
@@ -770,8 +438,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("REVITAL. MAX"),
         .itemId = ITEM_MAX_REVIVE,
         .price = 4000,
@@ -786,8 +453,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ACQUA FRESCA"),
         .itemId = ITEM_FRESH_WATER,
         .price = 200,
@@ -802,8 +468,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("GASSOSA"),
         .itemId = ITEM_SODA_POP,
         .price = 300,
@@ -818,8 +483,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("LEMONSUCCO"),
         .itemId = ITEM_LEMONADE,
         .price = 350,
@@ -834,8 +498,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("LATTE MUMU"),
         .itemId = ITEM_MOOMOO_MILK,
         .price = 500,
@@ -850,8 +513,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("POLVENERGIA"),
         .itemId = ITEM_ENERGY_POWDER,
         .price = 500,
@@ -866,8 +528,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("RADICENERGIA"),
         .itemId = ITEM_ENERGY_ROOT,
         .price = 800,
@@ -882,8 +543,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("POLVOCURA"),
         .itemId = ITEM_HEAL_POWDER,
         .price = 450,
@@ -898,8 +558,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("VITALERBA"),
         .itemId = ITEM_REVIVAL_HERB,
         .price = 2800,
@@ -914,8 +573,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ETERE"),
         .itemId = ITEM_ETHER,
         .price = 1200,
@@ -930,8 +588,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Ether,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ETERE MAX"),
         .itemId = ITEM_MAX_ETHER,
         .price = 2000,
@@ -946,8 +603,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Ether,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ELISIR"),
         .itemId = ITEM_ELIXIR,
         .price = 3000,
@@ -962,8 +618,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Ether,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ELISIR MAX"),
         .itemId = ITEM_MAX_ELIXIR,
         .price = 4500,
@@ -978,8 +633,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Ether,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("LAVOTTINO"),
         .itemId = ITEM_LAVA_COOKIE,
         .price = 200,
@@ -994,8 +648,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FLAUTO BLU"),
         .itemId = ITEM_BLUE_FLUTE,
         .price = 100,
@@ -1010,8 +663,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FLAUTO GIAL."),
         .itemId = ITEM_YELLOW_FLUTE,
         .price = 200,
@@ -1026,8 +678,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FLAUTO ROSSO"),
         .itemId = ITEM_RED_FLUTE,
         .price = 300,
@@ -1042,8 +693,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FLAUTO NERO"),
         .itemId = ITEM_BLACK_FLUTE,
         .price = 400,
@@ -1058,8 +708,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FLAUTO B.NCO"),
         .itemId = ITEM_WHITE_FLUTE,
         .price = 500,
@@ -1074,8 +723,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SUCCODIBACCA"),
         .itemId = ITEM_BERRY_JUICE,
         .price = 100,
@@ -1090,8 +738,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CENEREMAGICA"),
         .itemId = ITEM_SACRED_ASH,
         .price = 200,
@@ -1106,8 +753,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SALE ONDOSO"),
         .itemId = ITEM_SHOAL_SALT,
         .price = 20,
@@ -1122,8 +768,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("GUSCIONDOSO"),
         .itemId = ITEM_SHOAL_SHELL,
         .price = 20,
@@ -1138,8 +783,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("COCCIO ROSSO"),
         .itemId = ITEM_RED_SHARD,
         .price = 200,
@@ -1154,8 +798,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("COCCIO BLU"),
         .itemId = ITEM_BLUE_SHARD,
         .price = 200,
@@ -1170,8 +813,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("COCCIO GIAL."),
         .itemId = ITEM_YELLOW_SHARD,
         .price = 200,
@@ -1186,8 +828,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("COCCIO VERDE"),
         .itemId = ITEM_GREEN_SHARD,
         .price = 200,
@@ -1202,8 +843,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1218,8 +858,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1234,8 +873,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1250,8 +888,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1266,8 +903,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1282,8 +918,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1298,8 +933,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1314,8 +948,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1330,8 +963,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1346,8 +978,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1362,8 +993,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1378,8 +1008,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PS-SU"),
         .itemId = ITEM_HP_UP,
         .price = 9800,
@@ -1394,8 +1023,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PROTEINA"),
         .itemId = ITEM_PROTEIN,
         .price = 9800,
@@ -1410,8 +1038,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FERRO"),
         .itemId = ITEM_IRON,
         .price = 9800,
@@ -1426,8 +1053,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CARBURANTE"),
         .itemId = ITEM_CARBOS,
         .price = 9800,
@@ -1442,8 +1068,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CALCIO"),
         .itemId = ITEM_CALCIUM,
         .price = 9800,
@@ -1458,8 +1083,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CARAM. RARA"),
         .itemId = ITEM_RARE_CANDY,
         .price = 4800,
@@ -1474,8 +1098,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PP-SU"),
         .itemId = ITEM_PP_UP,
         .price = 9800,
@@ -1490,8 +1113,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ZINCO"),
         .itemId = ITEM_ZINC,
         .price = 9800,
@@ -1506,8 +1128,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PP-MAX"),
         .itemId = ITEM_PP_MAX,
         .price = 9800,
@@ -1522,8 +1143,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1538,8 +1158,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SUPERGUARDIA"),
         .itemId = ITEM_GUARD_SPEC,
         .price = 700,
@@ -1554,8 +1173,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_StatBooster,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SUPERCOLPO"),
         .itemId = ITEM_DIRE_HIT,
         .price = 650,
@@ -1570,8 +1188,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_StatBooster,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ATTACCO X"),
         .itemId = ITEM_X_ATTACK,
         .price = 500,
@@ -1586,8 +1203,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_StatBooster,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("DIFESA X"),
         .itemId = ITEM_X_DEFEND,
         .price = 550,
@@ -1602,8 +1218,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_StatBooster,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("VELOCITÀ X"),
         .itemId = ITEM_X_SPEED,
         .price = 350,
@@ -1618,8 +1233,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_StatBooster,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PRECISIONE X"),
         .itemId = ITEM_X_ACCURACY,
         .price = 950,
@@ -1634,8 +1248,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_StatBooster,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SPECIAL X"),
         .itemId = ITEM_X_SPECIAL,
         .price = 350,
@@ -1650,8 +1263,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_StatBooster,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("POKé BAMBOLA"),
         .itemId = ITEM_POKE_DOLL,
         .price = 1000,
@@ -1666,8 +1278,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeDoll,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CODA SKITTY"),
         .itemId = ITEM_FLUFFY_TAIL,
         .price = 1000,
@@ -1682,8 +1293,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeDoll,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1698,8 +1308,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SUPERREPELL."),
         .itemId = ITEM_SUPER_REPEL,
         .price = 500,
@@ -1714,8 +1323,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("REPELL. MAX"),
         .itemId = ITEM_MAX_REPEL,
         .price = 700,
@@ -1730,8 +1338,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FUNE DI FUGA"),
         .itemId = ITEM_ESCAPE_ROPE,
         .price = 550,
@@ -1746,8 +1353,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("REPELLENTE"),
         .itemId = ITEM_REPEL,
         .price = 350,
@@ -1762,8 +1368,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1778,8 +1383,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1794,8 +1398,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1810,8 +1413,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1826,8 +1428,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1842,8 +1443,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1858,8 +1458,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PIETRASOLARE"),
         .itemId = ITEM_SUN_STONE,
         .price = 2100,
@@ -1874,8 +1473,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PIETRALUNARE"),
         .itemId = ITEM_MOON_STONE,
         .price = 0,
@@ -1890,8 +1488,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PIETRAFOCAIA"),
         .itemId = ITEM_FIRE_STONE,
         .price = 2100,
@@ -1906,8 +1503,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PIETRATUONO"),
         .itemId = ITEM_THUNDER_STONE,
         .price = 2100,
@@ -1922,8 +1518,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PIETRAIDRICA"),
         .itemId = ITEM_WATER_STONE,
         .price = 2100,
@@ -1938,8 +1533,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PIETRAFOGLIA"),
         .itemId = ITEM_LEAF_STONE,
         .price = 2100,
@@ -1954,8 +1548,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1970,8 +1563,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -1986,8 +1578,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -2002,8 +1593,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -2018,8 +1608,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MINIFUNGO"),
         .itemId = ITEM_TINY_MUSHROOM,
         .price = 500,
@@ -2034,8 +1623,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("GRANDE FUNGO"),
         .itemId = ITEM_BIG_MUSHROOM,
         .price = 5000,
@@ -2050,8 +1638,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -2066,8 +1653,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PERLA"),
         .itemId = ITEM_PEARL,
         .price = 1400,
@@ -2082,8 +1668,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("GRANDE PERLA"),
         .itemId = ITEM_BIG_PEARL,
         .price = 7500,
@@ -2098,8 +1683,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("POLVOSTELLA"),
         .itemId = ITEM_STARDUST,
         .price = 2000,
@@ -2114,8 +1698,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PEZZO STELLA"),
         .itemId = ITEM_STAR_PIECE,
         .price = 9800,
@@ -2130,8 +1713,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PEPITA"),
         .itemId = ITEM_NUGGET,
         .price = 10000,
@@ -2146,8 +1728,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SQUAMA CUORE"),
         .itemId = ITEM_HEART_SCALE,
         .price = 100,
@@ -2162,8 +1743,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -2178,8 +1758,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -2194,8 +1773,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -2210,8 +1788,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -2226,8 +1803,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -2242,8 +1818,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -2258,8 +1833,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -2274,8 +1848,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -2290,8 +1863,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -2306,8 +1878,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MESS. AGRUME"),
         .itemId = ITEM_ORANGE_MAIL,
         .price = 50,
@@ -2322,8 +1893,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MESS. PORTO"),
         .itemId = ITEM_HARBOR_MAIL,
         .price = 50,
@@ -2338,8 +1908,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 1
-    },
-    {
+    }, {
         .name = _("MESS. LUCI"),
         .itemId = ITEM_GLITTER_MAIL,
         .price = 50,
@@ -2354,8 +1923,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 2
-    },
-    {
+    }, {
         .name = _("MESS. TECNO"),
         .itemId = ITEM_MECH_MAIL,
         .price = 50,
@@ -2370,8 +1938,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 3
-    },
-    {
+    }, {
         .name = _("MESS. BOSCO"),
         .itemId = ITEM_WOOD_MAIL,
         .price = 50,
@@ -2386,8 +1953,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 4
-    },
-    {
+    }, {
         .name = _("MESS. ONDA"),
         .itemId = ITEM_WAVE_MAIL,
         .price = 50,
@@ -2402,8 +1968,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 5
-    },
-    {
+    }, {
         .name = _("MESS. PERLE"),
         .itemId = ITEM_BEAD_MAIL,
         .price = 50,
@@ -2418,8 +1983,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 6
-    },
-    {
+    }, {
         .name = _("MESS. OMBRA"),
         .itemId = ITEM_SHADOW_MAIL,
         .price = 50,
@@ -2434,8 +1998,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 7
-    },
-    {
+    }, {
         .name = _("MESS. TROPIC"),
         .itemId = ITEM_TROPIC_MAIL,
         .price = 50,
@@ -2450,8 +2013,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 8
-    },
-    {
+    }, {
         .name = _("MESS. SOGNO"),
         .itemId = ITEM_DREAM_MAIL,
         .price = 50,
@@ -2466,8 +2028,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 9
-    },
-    {
+    }, {
         .name = _("MESS. LUSSO"),
         .itemId = ITEM_FAB_MAIL,
         .price = 50,
@@ -2482,8 +2043,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 10
-    },
-    {
+    }, {
         .name = _("MESS. RÉTRO"),
         .itemId = ITEM_RETRO_MAIL,
         .price = 50,
@@ -2498,8 +2058,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 11
-    },
-    {
+    }, {
         .name = _("BACCALIEGIA"),
         .itemId = ITEM_CHERI_BERRY,
         .price = 20,
@@ -2514,8 +2073,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCASTAGNA"),
         .itemId = ITEM_CHESTO_BERRY,
         .price = 20,
@@ -2530,8 +2088,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAPESCA"),
         .itemId = ITEM_PECHA_BERRY,
         .price = 20,
@@ -2546,8 +2103,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAFRAGO"),
         .itemId = ITEM_RAWST_BERRY,
         .price = 20,
@@ -2562,8 +2118,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAPERINA"),
         .itemId = ITEM_ASPEAR_BERRY,
         .price = 20,
@@ -2578,8 +2133,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAMELA"),
         .itemId = ITEM_LEPPA_BERRY,
         .price = 20,
@@ -2594,8 +2148,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Ether,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCARANCIA"),
         .itemId = ITEM_ORAN_BERRY,
         .price = 20,
@@ -2610,8 +2163,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAKI"),
         .itemId = ITEM_PERSIM_BERRY,
         .price = 20,
@@ -2626,8 +2178,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAPRUGNA"),
         .itemId = ITEM_LUM_BERRY,
         .price = 20,
@@ -2642,8 +2193,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCACEDRO"),
         .itemId = ITEM_SITRUS_BERRY,
         .price = 20,
@@ -2658,8 +2208,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = BattleUseFunc_Medicine,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAFICO"),
         .itemId = ITEM_FIGY_BERRY,
         .price = 20,
@@ -2674,8 +2223,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAKIWI"),
         .itemId = ITEM_WIKI_BERRY,
         .price = 20,
@@ -2690,8 +2238,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAMANGO"),
         .itemId = ITEM_MAGO_BERRY,
         .price = 20,
@@ -2706,8 +2253,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAGUAVA"),
         .itemId = ITEM_AGUAV_BERRY,
         .price = 20,
@@ -2722,8 +2268,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAPAIA"),
         .itemId = ITEM_IAPAPA_BERRY,
         .price = 20,
@@ -2738,8 +2283,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCALAMPON"),
         .itemId = ITEM_RAZZ_BERRY,
         .price = 20,
@@ -2754,8 +2298,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAMORA"),
         .itemId = ITEM_BLUK_BERRY,
         .price = 20,
@@ -2770,8 +2313,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCABANA"),
         .itemId = ITEM_NANAB_BERRY,
         .price = 20,
@@ -2786,8 +2328,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAPERA"),
         .itemId = ITEM_WEPEAR_BERRY,
         .price = 20,
@@ -2802,8 +2343,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCANANAS"),
         .itemId = ITEM_PINAP_BERRY,
         .price = 20,
@@ -2818,8 +2358,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAGRANA"),
         .itemId = ITEM_POMEG_BERRY,
         .price = 20,
@@ -2834,8 +2373,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCALGA"),
         .itemId = ITEM_KELPSY_BERRY,
         .price = 20,
@@ -2850,8 +2388,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCALOQUAT"),
         .itemId = ITEM_QUALOT_BERRY,
         .price = 20,
@@ -2866,8 +2403,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAMELON"),
         .itemId = ITEM_HONDEW_BERRY,
         .price = 20,
@@ -2882,8 +2418,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAUVA"),
         .itemId = ITEM_GREPA_BERRY,
         .price = 20,
@@ -2898,8 +2433,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAMODORO"),
         .itemId = ITEM_TAMATO_BERRY,
         .price = 20,
@@ -2914,8 +2448,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAVENA"),
         .itemId = ITEM_CORNN_BERRY,
         .price = 20,
@@ -2930,8 +2463,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAGOSTAN"),
         .itemId = ITEM_MAGOST_BERRY,
         .price = 20,
@@ -2946,8 +2478,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAMBUTAN"),
         .itemId = ITEM_RABUTA_BERRY,
         .price = 20,
@@ -2962,8 +2493,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCALEMON"),
         .itemId = ITEM_NOMEL_BERRY,
         .price = 20,
@@ -2978,8 +2508,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAMELOS"),
         .itemId = ITEM_SPELON_BERRY,
         .price = 20,
@@ -2994,8 +2523,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAPALMA"),
         .itemId = ITEM_PAMTRE_BERRY,
         .price = 20,
@@ -3010,8 +2538,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCACOMERO"),
         .itemId = ITEM_WATMEL_BERRY,
         .price = 20,
@@ -3026,8 +2553,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCADURIAN"),
         .itemId = ITEM_DURIN_BERRY,
         .price = 20,
@@ -3042,8 +2568,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCARTILLO"),
         .itemId = ITEM_BELUE_BERRY,
         .price = 20,
@@ -3058,8 +2583,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCALICI"),
         .itemId = ITEM_LIECHI_BERRY,
         .price = 20,
@@ -3074,8 +2598,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCALONGAN"),
         .itemId = ITEM_GANLON_BERRY,
         .price = 20,
@@ -3090,8 +2613,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCASALAK"),
         .itemId = ITEM_SALAC_BERRY,
         .price = 20,
@@ -3106,8 +2628,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAPITAYA"),
         .itemId = ITEM_PETAYA_BERRY,
         .price = 20,
@@ -3122,8 +2643,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCACOCCA"),
         .itemId = ITEM_APICOT_BERRY,
         .price = 20,
@@ -3138,8 +2658,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCALANGSA"),
         .itemId = ITEM_LANSAT_BERRY,
         .price = 20,
@@ -3154,8 +2673,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAMBOLA"),
         .itemId = ITEM_STARF_BERRY,
         .price = 20,
@@ -3170,8 +2688,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BACCAENIGMA"),
         .itemId = ITEM_ENIGMA_BERRY,
         .price = 20,
@@ -3186,8 +2703,7 @@ const struct Item gItems[] = {
         .battleUsage = 1,
         .battleUseFunc = ItemUseInBattle_EnigmaBerry,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -3202,8 +2718,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -3218,8 +2733,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -3234,8 +2748,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("LUMINPOLVERE"),
         .itemId = ITEM_BRIGHT_POWDER,
         .price = 10,
@@ -3250,8 +2763,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ERBACHIARA"),
         .itemId = ITEM_WHITE_HERB,
         .price = 100,
@@ -3266,8 +2778,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CRESCICAPPA"),
         .itemId = ITEM_MACHO_BRACE,
         .price = 3000,
@@ -3282,8 +2793,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CONDIV. ESP."),
         .itemId = ITEM_EXP_SHARE,
         .price = 3000,
@@ -3298,8 +2808,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("RAPIDARTIGLI"),
         .itemId = ITEM_QUICK_CLAW,
         .price = 100,
@@ -3314,8 +2823,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CALMANELLA"),
         .itemId = ITEM_SOOTHE_BELL,
         .price = 100,
@@ -3330,8 +2838,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MENTALERBA"),
         .itemId = ITEM_MENTAL_HERB,
         .price = 100,
@@ -3346,8 +2853,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BENDASCELTA"),
         .itemId = ITEM_CHOICE_BAND,
         .price = 100,
@@ -3362,8 +2868,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ROCCIA DI RE"),
         .itemId = ITEM_KINGS_ROCK,
         .price = 100,
@@ -3378,8 +2883,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ARGENPOLVERE"),
         .itemId = ITEM_SILVER_POWDER,
         .price = 100,
@@ -3394,8 +2898,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MONETAMULETO"),
         .itemId = ITEM_AMULET_COIN,
         .price = 100,
@@ -3410,8 +2913,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("VELOPURO"),
         .itemId = ITEM_CLEANSE_TAG,
         .price = 200,
@@ -3426,8 +2928,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CUORUGIADA"),
         .itemId = ITEM_SOUL_DEW,
         .price = 200,
@@ -3442,8 +2943,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("DENTE ABISSI"),
         .itemId = ITEM_DEEP_SEA_TOOTH,
         .price = 200,
@@ -3458,8 +2958,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SQUAMABISSI"),
         .itemId = ITEM_DEEP_SEA_SCALE,
         .price = 200,
@@ -3474,8 +2973,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PALLA FUMO"),
         .itemId = ITEM_SMOKE_BALL,
         .price = 200,
@@ -3490,8 +2988,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PIETRASTANTE"),
         .itemId = ITEM_EVERSTONE,
         .price = 200,
@@ -3506,8 +3003,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BANDANA"),
         .itemId = ITEM_FOCUS_BAND,
         .price = 200,
@@ -3522,8 +3018,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FORTUNUOVO"),
         .itemId = ITEM_LUCKY_EGG,
         .price = 200,
@@ -3538,8 +3033,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MIRINO"),
         .itemId = ITEM_SCOPE_LENS,
         .price = 200,
@@ -3554,8 +3048,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("METALCOPERTA"),
         .itemId = ITEM_METAL_COAT,
         .price = 100,
@@ -3570,8 +3063,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("AVANZI"),
         .itemId = ITEM_LEFTOVERS,
         .price = 200,
@@ -3586,8 +3078,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SQUAMA DRAGO"),
         .itemId = ITEM_DRAGON_SCALE,
         .price = 2100,
@@ -3602,8 +3093,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ELETTROPALLA"),
         .itemId = ITEM_LIGHT_BALL,
         .price = 100,
@@ -3618,8 +3108,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SABBIA SOFF."),
         .itemId = ITEM_SOFT_SAND,
         .price = 100,
@@ -3634,8 +3123,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PIETRADURA"),
         .itemId = ITEM_HARD_STONE,
         .price = 100,
@@ -3650,8 +3138,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MIRACOLSEME"),
         .itemId = ITEM_MIRACLE_SEED,
         .price = 100,
@@ -3666,8 +3153,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("OCCHIALINERI"),
         .itemId = ITEM_BLACK_GLASSES,
         .price = 100,
@@ -3682,8 +3168,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CINTURANERA"),
         .itemId = ITEM_BLACK_BELT,
         .price = 100,
@@ -3698,8 +3183,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CALAMITA"),
         .itemId = ITEM_MAGNET,
         .price = 100,
@@ -3714,8 +3198,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ACQUA MAGICA"),
         .itemId = ITEM_MYSTIC_WATER,
         .price = 100,
@@ -3730,8 +3213,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BECCAFFILATO"),
         .itemId = ITEM_SHARP_BEAK,
         .price = 100,
@@ -3746,8 +3228,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("VELENACULEO"),
         .itemId = ITEM_POISON_BARB,
         .price = 100,
@@ -3762,8 +3243,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("GELOMAI"),
         .itemId = ITEM_NEVER_MELT_ICE,
         .price = 100,
@@ -3778,8 +3258,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SPETTROTARGA"),
         .itemId = ITEM_SPELL_TAG,
         .price = 100,
@@ -3794,8 +3273,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CUCCH. TORTO"),
         .itemId = ITEM_TWISTED_SPOON,
         .price = 100,
@@ -3810,8 +3288,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CARBONELLA"),
         .itemId = ITEM_CHARCOAL,
         .price = 9800,
@@ -3826,8 +3303,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("DENTEDIDRAGO"),
         .itemId = ITEM_DRAGON_FANG,
         .price = 100,
@@ -3842,8 +3318,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SCIARPA SETA"),
         .itemId = ITEM_SILK_SCARF,
         .price = 100,
@@ -3858,8 +3333,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("UPGRADE"),
         .itemId = ITEM_UP_GRADE,
         .price = 2100,
@@ -3874,8 +3348,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CONCHINELLA"),
         .itemId = ITEM_SHELL_BELL,
         .price = 200,
@@ -3890,8 +3363,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MAREAROMA"),
         .itemId = ITEM_SEA_INCENSE,
         .price = 9600,
@@ -3906,8 +3378,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("DISTRAROMA"),
         .itemId = ITEM_LAX_INCENSE,
         .price = 9600,
@@ -3922,8 +3393,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FORTUNPUGNO"),
         .itemId = ITEM_LUCKY_PUNCH,
         .price = 10,
@@ -3938,8 +3408,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("METALPOLVERE"),
         .itemId = ITEM_METAL_POWDER,
         .price = 10,
@@ -3954,8 +3423,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("OSSOSPESSO"),
         .itemId = ITEM_THICK_CLUB,
         .price = 500,
@@ -3970,8 +3438,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("GAMBO"),
         .itemId = ITEM_STICK,
         .price = 200,
@@ -3986,8 +3453,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4002,8 +3468,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4018,8 +3483,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4034,8 +3498,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4050,8 +3513,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4066,8 +3528,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4082,8 +3543,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4098,8 +3558,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4114,8 +3573,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4130,8 +3588,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4146,8 +3603,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4162,8 +3618,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4178,8 +3633,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4194,8 +3648,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4210,8 +3663,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4226,8 +3678,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4242,8 +3693,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4258,8 +3708,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4274,8 +3723,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4290,8 +3738,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4306,8 +3753,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4322,8 +3768,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4338,8 +3783,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4354,8 +3798,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4370,8 +3813,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4386,8 +3828,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4402,8 +3843,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4418,8 +3858,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4434,8 +3873,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FASCIA ROSSA"),
         .itemId = ITEM_RED_SCARF,
         .price = 100,
@@ -4450,8 +3888,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FASCIA BLU"),
         .itemId = ITEM_BLUE_SCARF,
         .price = 100,
@@ -4466,8 +3903,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FASCIA ROSA"),
         .itemId = ITEM_PINK_SCARF,
         .price = 100,
@@ -4482,8 +3918,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FASCIA VERDE"),
         .itemId = ITEM_GREEN_SCARF,
         .price = 100,
@@ -4498,8 +3933,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FASCIA GIAL."),
         .itemId = ITEM_YELLOW_SCARF,
         .price = 100,
@@ -4514,8 +3948,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BICI CORSA"),
         .itemId = ITEM_MACH_BIKE,
         .price = 0,
@@ -4530,8 +3963,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SALVADANAIO"),
         .itemId = ITEM_COIN_CASE,
         .price = 0,
@@ -4546,8 +3978,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("DETECTOR"),
         .itemId = ITEM_ITEMFINDER,
         .price = 0,
@@ -4562,8 +3993,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("AMO VECCHIO"),
         .itemId = ITEM_OLD_ROD,
         .price = 0,
@@ -4578,8 +4008,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = OLD_ROD
-    },
-    {
+    }, {
         .name = _("AMO BUONO"),
         .itemId = ITEM_GOOD_ROD,
         .price = 0,
@@ -4594,8 +4023,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = GOOD_ROD
-    },
-    {
+    }, {
         .name = _("SUPER AMO"),
         .itemId = ITEM_SUPER_ROD,
         .price = 0,
@@ -4610,8 +4038,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = SUPER_ROD
-    },
-    {
+    }, {
         .name = _("BIGL. NAVE"),
         .itemId = ITEM_SS_TICKET,
         .price = 0,
@@ -4626,8 +4053,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("TESSERA GARE"),
         .itemId = ITEM_CONTEST_PASS,
         .price = 0,
@@ -4642,8 +4068,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -4658,8 +4083,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("VASO WAILMER"),
         .itemId = ITEM_WAILMER_PAIL,
         .price = 0,
@@ -4674,8 +4098,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MERCE DEVON"),
         .itemId = ITEM_DEVON_GOODS,
         .price = 0,
@@ -4690,8 +4113,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SACCO CENERE"),
         .itemId = ITEM_SOOT_SACK,
         .price = 0,
@@ -4706,8 +4128,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CHIAVE SOTT."),
         .itemId = ITEM_BASEMENT_KEY,
         .price = 0,
@@ -4722,8 +4143,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BICI CROSS"),
         .itemId = ITEM_ACRO_BIKE,
         .price = 0,
@@ -4738,8 +4158,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 1
-    },
-    {
+    }, {
         .name = _("PORTAセソタチテ"),
         .itemId = ITEM_POKEBLOCK_CASE,
         .price = 0,
@@ -4754,8 +4173,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("LETTERA"),
         .itemId = ITEM_LETTER,
         .price = 0,
@@ -4770,8 +4188,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BIGL. EONE"),
         .itemId = ITEM_EON_TICKET,
         .price = 0,
@@ -4786,8 +4203,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 1
-    },
-    {
+    }, {
         .name = _("SFERA ROSSA"),
         .itemId = ITEM_RED_ORB,
         .price = 0,
@@ -4802,8 +4218,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SFERA BLU"),
         .itemId = ITEM_BLUE_ORB,
         .price = 0,
@@ -4818,8 +4233,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SCANNER"),
         .itemId = ITEM_SCANNER,
         .price = 0,
@@ -4834,8 +4248,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("OCCHIALONI"),
         .itemId = ITEM_GO_GOGGLES,
         .price = 0,
@@ -4850,8 +4263,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("METEORITE"),
         .itemId = ITEM_METEORITE,
         .price = 0,
@@ -4866,8 +4278,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CHIAVE CAB.1"),
         .itemId = ITEM_ROOM_1_KEY,
         .price = 0,
@@ -4882,8 +4293,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CHIAVE CAB.2"),
         .itemId = ITEM_ROOM_2_KEY,
         .price = 0,
@@ -4898,8 +4308,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CHIAVE CAB.4"),
         .itemId = ITEM_ROOM_4_KEY,
         .price = 0,
@@ -4914,8 +4323,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CHIAVE CAB.6"),
         .itemId = ITEM_ROOM_6_KEY,
         .price = 0,
@@ -4930,8 +4338,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CHIAVE STIVA"),
         .itemId = ITEM_STORAGE_KEY,
         .price = 0,
@@ -4946,8 +4353,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("RADIFOSSILE"),
         .itemId = ITEM_ROOT_FOSSIL,
         .price = 0,
@@ -4962,8 +4368,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("FOSSILUNGHIA"),
         .itemId = ITEM_CLAW_FOSSIL,
         .price = 0,
@@ -4978,8 +4383,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("DEVONSCOPIO"),
         .itemId = ITEM_DEVON_SCOPE,
         .price = 0,
@@ -4994,8 +4398,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT01"),
         .itemId = ITEM_TM01,
         .price = 3000,
@@ -5010,8 +4413,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT02"),
         .itemId = ITEM_TM02,
         .price = 3000,
@@ -5026,8 +4428,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT03"),
         .itemId = ITEM_TM03,
         .price = 3000,
@@ -5042,8 +4443,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT04"),
         .itemId = ITEM_TM04,
         .price = 3000,
@@ -5058,8 +4458,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT05"),
         .itemId = ITEM_TM05,
         .price = 1000,
@@ -5074,8 +4473,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT06"),
         .itemId = ITEM_TM06,
         .price = 3000,
@@ -5090,8 +4488,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT07"),
         .itemId = ITEM_TM07,
         .price = 3000,
@@ -5106,8 +4503,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT08"),
         .itemId = ITEM_TM08,
         .price = 3000,
@@ -5122,8 +4518,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT09"),
         .itemId = ITEM_TM09,
         .price = 3000,
@@ -5138,8 +4533,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT10"),
         .itemId = ITEM_TM10,
         .price = 3000,
@@ -5154,8 +4548,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT11"),
         .itemId = ITEM_TM11,
         .price = 2000,
@@ -5170,8 +4563,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT12"),
         .itemId = ITEM_TM12,
         .price = 3000,
@@ -5186,8 +4578,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT13"),
         .itemId = ITEM_TM13,
         .price = 3000,
@@ -5202,8 +4593,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT14"),
         .itemId = ITEM_TM14,
         .price = 5500,
@@ -5218,8 +4608,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT15"),
         .itemId = ITEM_TM15,
         .price = 7500,
@@ -5234,8 +4623,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT16"),
         .itemId = ITEM_TM16,
         .price = 3000,
@@ -5250,8 +4638,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT17"),
         .itemId = ITEM_TM17,
         .price = 3000,
@@ -5266,8 +4653,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT18"),
         .itemId = ITEM_TM18,
         .price = 2000,
@@ -5282,8 +4668,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT19"),
         .itemId = ITEM_TM19,
         .price = 3000,
@@ -5298,8 +4683,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT20"),
         .itemId = ITEM_TM20,
         .price = 3000,
@@ -5314,8 +4698,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT21"),
         .itemId = ITEM_TM21,
         .price = 1000,
@@ -5330,8 +4713,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT22"),
         .itemId = ITEM_TM22,
         .price = 3000,
@@ -5346,8 +4728,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT23"),
         .itemId = ITEM_TM23,
         .price = 3000,
@@ -5362,8 +4743,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT24"),
         .itemId = ITEM_TM24,
         .price = 3000,
@@ -5378,8 +4758,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT25"),
         .itemId = ITEM_TM25,
         .price = 5500,
@@ -5394,8 +4773,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT26"),
         .itemId = ITEM_TM26,
         .price = 3000,
@@ -5410,8 +4788,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT27"),
         .itemId = ITEM_TM27,
         .price = 1000,
@@ -5426,8 +4803,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT28"),
         .itemId = ITEM_TM28,
         .price = 2000,
@@ -5442,8 +4818,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT29"),
         .itemId = ITEM_TM29,
         .price = 2000,
@@ -5458,8 +4833,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT30"),
         .itemId = ITEM_TM30,
         .price = 3000,
@@ -5474,8 +4848,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT31"),
         .itemId = ITEM_TM31,
         .price = 3000,
@@ -5490,8 +4863,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT32"),
         .itemId = ITEM_TM32,
         .price = 2000,
@@ -5506,8 +4878,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT33"),
         .itemId = ITEM_TM33,
         .price = 3000,
@@ -5522,8 +4893,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT34"),
         .itemId = ITEM_TM34,
         .price = 3000,
@@ -5538,8 +4908,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT35"),
         .itemId = ITEM_TM35,
         .price = 3000,
@@ -5554,8 +4923,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT36"),
         .itemId = ITEM_TM36,
         .price = 1000,
@@ -5570,8 +4938,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT37"),
         .itemId = ITEM_TM37,
         .price = 2000,
@@ -5586,8 +4953,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT38"),
         .itemId = ITEM_TM38,
         .price = 5500,
@@ -5602,8 +4968,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT39"),
         .itemId = ITEM_TM39,
         .price = 3000,
@@ -5618,8 +4983,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT40"),
         .itemId = ITEM_TM40,
         .price = 3000,
@@ -5634,8 +4998,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT41"),
         .itemId = ITEM_TM41,
         .price = 3000,
@@ -5650,8 +5013,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT42"),
         .itemId = ITEM_TM42,
         .price = 3000,
@@ -5666,8 +5028,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT43"),
         .itemId = ITEM_TM43,
         .price = 3000,
@@ -5682,8 +5043,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT44"),
         .itemId = ITEM_TM44,
         .price = 3000,
@@ -5698,8 +5058,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT45"),
         .itemId = ITEM_TM45,
         .price = 3000,
@@ -5714,8 +5073,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT46"),
         .itemId = ITEM_TM46,
         .price = 3000,
@@ -5730,8 +5088,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT47"),
         .itemId = ITEM_TM47,
         .price = 3000,
@@ -5746,8 +5103,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT48"),
         .itemId = ITEM_TM48,
         .price = 3000,
@@ -5762,8 +5118,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT49"),
         .itemId = ITEM_TM49,
         .price = 3000,
@@ -5778,8 +5133,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MT50"),
         .itemId = ITEM_TM50,
         .price = 3000,
@@ -5794,8 +5148,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MN01"),
         .itemId = ITEM_HM01,
         .price = 0,
@@ -5810,8 +5163,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MN02"),
         .itemId = ITEM_HM02,
         .price = 0,
@@ -5826,8 +5178,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MN03"),
         .itemId = ITEM_HM03,
         .price = 0,
@@ -5842,8 +5193,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MN04"),
         .itemId = ITEM_HM04,
         .price = 0,
@@ -5858,8 +5208,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MN05"),
         .itemId = ITEM_HM05,
         .price = 0,
@@ -5874,8 +5223,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MN06"),
         .itemId = ITEM_HM06,
         .price = 0,
@@ -5890,8 +5238,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MN07"),
         .itemId = ITEM_HM07,
         .price = 0,
@@ -5906,8 +5253,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MN08"),
         .itemId = ITEM_HM08,
         .price = 0,
@@ -5922,8 +5268,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -5938,8 +5283,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("????????"),
         .itemId = ITEM_NONE,
         .price = 0,
@@ -5954,8 +5298,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PACCO DI OAK"),
         .itemId = ITEM_OAKS_PARCEL,
         .price = 0,
@@ -5970,8 +5313,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("POKé FLAUTO"),
         .itemId = ITEM_POKE_FLUTE,
         .price = 0,
@@ -5986,8 +5328,7 @@ const struct Item gItems[] = {
         .battleUsage = 2,
         .battleUseFunc = BattleUseFunc_PokeFlute,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CHIAVE SEGR."),
         .itemId = ITEM_SECRET_KEY,
         .price = 0,
@@ -6002,8 +5343,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BUONO BICI"),
         .itemId = ITEM_BIKE_VOUCHER,
         .price = 0,
@@ -6018,8 +5358,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("DENTI D’ORO"),
         .itemId = ITEM_GOLD_TEETH,
         .price = 0,
@@ -6034,8 +5373,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("AMBRA ANTICA"),
         .itemId = ITEM_OLD_AMBER,
         .price = 0,
@@ -6050,8 +5388,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("APRIPORTA"),
         .itemId = ITEM_CARD_KEY,
         .price = 0,
@@ -6066,8 +5403,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CHIAVE ASC."),
         .itemId = ITEM_LIFT_KEY,
         .price = 0,
@@ -6082,8 +5418,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("HELIXFOSSILE"),
         .itemId = ITEM_HELIX_FOSSIL,
         .price = 0,
@@ -6098,8 +5433,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("DOMOFOSSILE"),
         .itemId = ITEM_DOME_FOSSIL,
         .price = 0,
@@ -6114,8 +5448,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SPETTROSONDA"),
         .itemId = ITEM_SILPH_SCOPE,
         .price = 0,
@@ -6130,8 +5463,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BICICLETTA"),
         .itemId = ITEM_BICYCLE,
         .price = 0,
@@ -6146,8 +5478,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("MAPPA CITTÀ"),
         .itemId = ITEM_TOWN_MAP,
         .price = 0,
@@ -6162,8 +5493,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("CERCASFIDE"),
         .itemId = ITEM_VS_SEEKER,
         .price = 0,
@@ -6178,8 +5508,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("POKéVIP"),
         .itemId = ITEM_FAME_CHECKER,
         .price = 0,
@@ -6194,8 +5523,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PORTA-MT"),
         .itemId = ITEM_TM_CASE,
         .price = 0,
@@ -6210,8 +5538,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PORTABACCHE"),
         .itemId = ITEM_BERRY_POUCH,
         .price = 0,
@@ -6226,8 +5553,7 @@ const struct Item gItems[] = {
         .battleUsage = 3,
         .battleUseFunc = BattleUseFunc_BerryPouch,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("POKéTIVÙ"),
         .itemId = ITEM_TEACHY_TV,
         .price = 0,
@@ -6242,8 +5568,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("TRIS PASS"),
         .itemId = ITEM_TRI_PASS,
         .price = 0,
@@ -6258,8 +5583,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("SETTE PASS"),
         .itemId = ITEM_RAINBOW_PASS,
         .price = 0,
@@ -6274,8 +5598,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("TÈ"),
         .itemId = ITEM_TEA,
         .price = 0,
@@ -6290,8 +5613,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BIGL. MAGICO"),
         .itemId = ITEM_MYSTIC_TICKET,
         .price = 0,
@@ -6306,8 +5628,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("BIGL. AURORA"),
         .itemId = ITEM_AURORA_TICKET,
         .price = 0,
@@ -6322,8 +5643,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("PORTAFARINA"),
         .itemId = ITEM_POWDER_JAR,
         .price = 0,
@@ -6338,8 +5658,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("RUBINO"),
         .itemId = ITEM_RUBY,
         .price = 0,
@@ -6354,8 +5673,7 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-    {
+    }, {
         .name = _("ZAFFIRO"),
         .itemId = ITEM_SAPPHIRE,
         .price = 0,
@@ -6370,7 +5688,4 @@ const struct Item gItems[] = {
         .battleUsage = 0,
         .battleUseFunc = NULL,
         .secondaryId = 0
-    },
-};
-
-#endif // GUARD_ITEMS_IT_H
+    }, };

@@ -425,6 +425,29 @@ const u8 gTypeEffectiveness[336] =
     TYPE_ENDTABLE, TYPE_ENDTABLE, TYPE_MUL_NO_EFFECT
 };
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
+{
+    [TYPE_NORMAL] = _("NORM"),
+    [TYPE_FIGHTING] = _("LOTTA"),
+    [TYPE_FLYING] = _("VOLAN"),
+    [TYPE_POISON] = _("VELENO"),
+    [TYPE_GROUND] = _("TERRA"),
+    [TYPE_ROCK] = _("ROCCIA"),
+    [TYPE_BUG] = _("COLEOT"),
+    [TYPE_GHOST] = _("SP.TRO"),
+    [TYPE_STEEL] = _("ACC.IO"),
+    [TYPE_MYSTERY] = _("???"),
+    [TYPE_FIRE] = _("FUOCO"),
+    [TYPE_WATER] = _("ACQUA"),
+    [TYPE_GRASS] = _("ERBA"),
+    [TYPE_ELECTRIC] = _("ELETT"),
+    [TYPE_PSYCHIC] = _("PSICO"),
+    [TYPE_ICE] = _("GHIACC"),
+    [TYPE_DRAGON] = _("DRAGO"),
+    [TYPE_DARK] = _("BUIO"),
+};
+#else
 const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
 {
     [TYPE_NORMAL] = _("NORMAL"),
@@ -446,6 +469,7 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
     [TYPE_DRAGON] = _("DRAGON"),
     [TYPE_DARK] = _("DARK"),
 };
+#endif
 
 // This is a factor in how much money you get for beating a trainer.
 const struct TrainerMoney gTrainerMoneyTable[] =
