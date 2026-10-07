@@ -63,6 +63,9 @@ u8 Menu_InitCursorInternal(u8 windowId, u8 fontId, u8 left, u8 top, u8 cursorHei
 void TopBarWindowPrintTwoStrings(const u8 *string, const u8 *string2, bool8 fgColorChooser, u8 notUsed, bool8 copyToVram);
 void TopBarWindowPrintString(const u8 *string, u8 unUsed, bool8 copyToVram);
 void ClearTopBarWindow(void);
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+void ClearTopBarWindowTryCopyToVram(bool8 copyToVram);
+#endif
 void DestroyTopBarWindow(void);
 u8 CreateTopBarWindowLoadPalette(u8 bg, u8 width, u8 yPos, u8 palette, u16 baseTile);
 void ClearStdWindowAndFrameToTransparent(u8 windowId, bool8 copyToVram);

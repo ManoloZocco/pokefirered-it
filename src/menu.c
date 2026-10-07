@@ -248,6 +248,18 @@ void ClearTopBarWindow(void)
     }
 }
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+void ClearTopBarWindowTryCopyToVram(bool8 copyToVram)
+{
+    if (sTopBarWindowId != 0xFF)
+    {
+        FillWindowPixelBuffer(sTopBarWindowId, PIXEL_FILL(15));
+        if (copyToVram)
+            CopyWindowToVram(sTopBarWindowId, COPYWIN_FULL);
+    }
+}
+#endif
+
 void DestroyTopBarWindow(void)
 {
     if (sTopBarWindowId != 0xFF)

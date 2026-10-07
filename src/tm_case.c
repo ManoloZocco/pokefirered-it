@@ -944,6 +944,10 @@ static void ReturnToList(u8 taskId)
 static void Task_SelectedTMHM_Field(u8 taskId)
 {
     u8 * strbuf;
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    u8 tmName[64];
+    s32 i;
+#endif
     
     // Create context window
     TMCase_SetWindowBorder2(WIN_SELECTED_MSG);
@@ -976,6 +980,27 @@ static void Task_SelectedTMHM_Field(u8 taskId)
     Menu_InitCursor(sTMCaseDynamicResources->contextMenuWindowId, FONT_NORMAL, 0, 2, GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_HEIGHT) + 2, sTMCaseDynamicResources->numMenuActions, 0);
     
     // Print label text next to the context window
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    strbuf = Alloc(256);
+    GetTMNumberAndMoveString(tmName, gSpecialVar_ItemId);
+    for (i = 0; i < 31 && tmName[i] != EOS; i++)
+        gStringVar1[i] = tmName[i];
+    gStringVar1[i] = EOS;
+    StringExpandPlaceholders(strbuf, gText_Var1IsSelected);
+    TMCase_Print(WIN_SELECTED_MSG, FONT_NORMAL, strbuf, 0, 2, 1, 0, 0, COLOR_DARK);
+    Free(strbuf);
+    if (IS_HM(gSpecialVar_ItemId))
+    {
+        u8 y = 2;
+        if (gText_Var1IsSelected[0] != PLACEHOLDER_BEGIN)
+        {
+            u8 height = GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_HEIGHT);
+            y = height + 2;
+        }
+        PlaceHMTileInWindow(WIN_SELECTED_MSG, 0, y);
+        CopyWindowToVram(WIN_SELECTED_MSG, COPYWIN_GFX);
+    }
+#else
     strbuf = Alloc(256);
     GetTMNumberAndMoveString(strbuf, gSpecialVar_ItemId);
     StringAppend(strbuf, gText_Var1IsSelected + 2); // +2 skips over the stringvar
@@ -986,6 +1011,7 @@ static void Task_SelectedTMHM_Field(u8 taskId)
         PlaceHMTileInWindow(WIN_SELECTED_MSG, 0, 2);
         CopyWindowToVram(WIN_SELECTED_MSG, COPYWIN_GFX);
     }
+#endif
 
     ScheduleBgCopyTilemapToVram(0);
     ScheduleBgCopyTilemapToVram(1);

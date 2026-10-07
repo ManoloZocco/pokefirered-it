@@ -396,12 +396,26 @@ void PSA_PrintMessage(u8 messageId)
     switch (messageId)
     {
     case 0: // Item was used on Mon
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        StringCopy(gStringVar2, ItemId_GetName(itemId));
+        GetMonData(pokemon, MON_DATA_NICKNAME, gStringVar1);
+        StringExpandPlaceholders(scene->textBuf, gText_WasUsedOn);
+#else
         str = StringCopy(scene->textBuf, ItemId_GetName(itemId));
         str = StringCopy(str, gText_WasUsedOn);
         GetMonData(pokemon, MON_DATA_NICKNAME, str);
         StringAppend(scene->textBuf, gText_Period);
+#endif
         break;
     case 1: // Mon's level was elevated to level
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        level = GetMonData(pokemon, MON_DATA_LEVEL);
+        GetMonData(pokemon, MON_DATA_NICKNAME, gStringVar1);
+        if (level < MAX_LEVEL)
+            level++;
+        ConvertIntToDecimalStringN(gStringVar2, level, STR_CONV_MODE_LEFT_ALIGN, level < MAX_LEVEL ? 2 : 3);
+        StringExpandPlaceholders(scene->textBuf, gText_LevelRoseTo);
+#else
         level = GetMonData(pokemon, MON_DATA_LEVEL);
         GetMonData(pokemon, MON_DATA_NICKNAME, scene->textBuf);
         str = StringAppend(scene->textBuf, gText_LevelRoseTo);
@@ -409,6 +423,7 @@ void PSA_PrintMessage(u8 messageId)
             level++;
         str = ConvertIntToDecimalStringN(str, level, STR_CONV_MODE_LEFT_ALIGN, level < MAX_LEVEL ? 2 : 3);
         StringAppend(str, gText_Period2);
+#endif
         break;
     case 9: // Mon learned move
         DynamicPlaceholderTextUtil_Reset();
