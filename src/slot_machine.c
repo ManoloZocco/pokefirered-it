@@ -736,9 +736,21 @@ bool8 (*const sSlotMachineSetupTasks[])(u8 *, struct SlotMachineSetupTaskData *)
 };
 
 #if defined(FIRERED)
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+extern const u16 sBg_Pal[5][16];
+#else
 static const u16 sBg_Pal[][16]             = INCBIN_U16("graphics/slot_machine/firered/bg.gbapal");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+extern const u32 sBg_Tiles[];
+#else
 static const u32 sBg_Tiles[]               = INCBIN_U32("graphics/slot_machine/firered/bg.4bpp.lz");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+extern const u32 sBg_Tilemap[];
+#else
 static const u32 sBg_Tilemap[]             = INCBIN_U32("graphics/slot_machine/firered/bg.bin.lz");
+#endif
 static const u16 sBgPal_MatchLines[]       = INCBIN_U16("graphics/slot_machine/firered/match_lines.gbapal");
 static const u16 sBgPal_PayoutLight[][16]  = INCBIN_U16("graphics/slot_machine/firered/payout_lights.gbapal");
 static const u32 sButtonPressed_Tiles[]    = INCBIN_U32("graphics/slot_machine/firered/button_pressed.4bpp.lz");

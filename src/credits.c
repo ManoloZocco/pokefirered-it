@@ -357,10 +357,29 @@ static const u32 sPikachu2_Tiles[] = INCBIN_U32("graphics/credits/pikachu_2.4bpp
 
 static const u32 sUnused = 0xF0;
 
+#if GAME_LANGUAGE != LANGUAGE_ITALIAN
 static const u16 sTheEnd_Pal[] = INCBIN_U16("graphics/credits/the_end.gbapal");
+#endif
+#if GAME_LANGUAGE != LANGUAGE_ITALIAN
 static const u8 sTheEnd_Tiles[] = INCBIN_U8("graphics/credits/the_end.4bpp.lz");
+#endif
+#if GAME_LANGUAGE != LANGUAGE_ITALIAN
 static const u8 sTheEnd_Tilemap[] = INCBIN_U8("graphics/credits/the_end.bin.lz");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const struct CompressedGraphicsHeader sCopyrightOrTheEndGfxHeaders[] = {
+    {
+        .tiles = gCreditsTheEnd_Tiles,
+        .map = gCreditsTheEnd_Tilemap,
+        .palette = gCreditsTheEnd_Pal
+    }, {
+        .tiles = gCreditsCopyright_Tiles,
+        .map = gCreditsCopyright_Tilemap,
+        .palette = gCreditsCopyright_Pal
+    }
+};
+#else
 static const struct CompressedGraphicsHeader sCopyrightOrTheEndGfxHeaders[] = {
     {
         .tiles = gCreditsCopyright_Tiles,
@@ -372,6 +391,7 @@ static const struct CompressedGraphicsHeader sCopyrightOrTheEndGfxHeaders[] = {
         .palette = sTheEnd_Pal
     }
 };
+#endif
 
 #define CREDITS_PRINT(text, duration) { CREDITSSCRCMD_PRINT, CREDITS_STRING_##text, duration }
 #define CREDITS_MAPNEXT(map, duration) { CREDITSSCRCMD_MAPNEXT, CREDITS_MAP_##map, duration }

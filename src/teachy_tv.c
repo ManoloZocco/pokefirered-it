@@ -869,11 +869,19 @@ static void TTVcmd_TextPrinterSwitchStringByOptionChosen2(u8 taskId)
     ++data[3];
 }
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u16 sBg1EndGraphic[] = 
+{
+    0xD3, 0xD4, 0xD5, 0xD6,
+    0xE3, 0xE4, 0xE5, 0xE6,
+};
+#else
 static const u16 sBg1EndGraphic[] = 
 {
     0xD1, 0xD2, 0xD3, 0xD4, 0xD5, 0xD6, 0xD7, 0xD8,
     0xE1, 0xE2, 0xE3, 0xE4, 0xE5, 0xE6, 0xE7, 0xE8,
 };
+#endif
 
 static const struct Subsprite sSubspriteArray[] = 
 {
@@ -1026,7 +1034,11 @@ static void TTVcmd_RenderAndRemoveBg1EndGraphic(u8 taskId)
     s16 *data = gTasks[taskId].data;
     if (!data[2])
     {
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        CopyToBgTilemapBufferRect_ChangePalette(1, sBg1EndGraphic, 20, 10, 4, 2, 0x11);
+#else
         CopyToBgTilemapBufferRect_ChangePalette(1, sBg1EndGraphic, 20, 10, 8, 2, 0x11);
+#endif
         ScheduleBgCopyTilemapToVram(1);
     }
     if (++data[2] > 126)

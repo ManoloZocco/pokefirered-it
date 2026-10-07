@@ -140,9 +140,21 @@ static void Task_DexScreen_RegisterMonToPokedex(u8 taskId);
 
 #include "data/pokemon_graphics/footprint_table.h"
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+extern const u32 sCategoryMonInfoBgTiles[];
+#else
 const u32 sCategoryMonInfoBgTiles[] = INCBIN_U32("graphics/pokedex/mini_page.4bpp.lz");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+extern const u32 sKantoDexTiles[];
+#else
 const u32 sKantoDexTiles[] = INCBIN_U32("graphics/pokedex/kanto_dex_bgtiles.4bpp.lz");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+extern const u32 sNatDexTiles[];
+#else
 const u32 sNatDexTiles[] = INCBIN_U32("graphics/pokedex/national_dex_bgtiles.4bpp.lz");
+#endif
 const u16 sKantoDexPalette[0x100] = INCBIN_U16("graphics/pokedex/kanto_dex_bgpals.gbapal");
 
 const u16 sDexScreen_CategoryCursorPals[] = {
@@ -617,7 +629,11 @@ const struct WindowTemplate sWindowTemplate_DexEntry_SpeciesStats = {
     .width = 13,
     .height = 8,
     .paletteNum = 0,
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    .baseBlock = 0x01f0
+#else
     .baseBlock = 0x01e8
+#endif
 };
 
 const struct WindowTemplate sWindowTemplate_DexEntry_FlavorText = {
@@ -625,9 +641,17 @@ const struct WindowTemplate sWindowTemplate_DexEntry_FlavorText = {
     .tilemapLeft = 0,
     .tilemapTop = 11,
     .width = 30,
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    .height = 8,
+#else
     .height = 7,
+#endif
     .paletteNum = 0,
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    .baseBlock = 0x0258
+#else
     .baseBlock = 0x0250
+#endif
 };
 
 const struct WindowTemplate sWindowTemplate_AreaMap_MonIcon = {

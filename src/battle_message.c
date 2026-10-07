@@ -45,394 +45,2189 @@ static void ExpandBattleTextBuffPlaceholders(const u8 *src, u8 *dst);
 static const u8 sText_Empty1[] = _("");
 static const u8 sText_Trainer1LoseText[] = _("{B_TRAINER1_LOSE_TEXT}");
 static const u8 sText_Trainer2LoseText[] = _("{B_TRAINER2_LOSE_TEXT}");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Trainer1RecallPkmn1[] = _("{B_TRAINER1_NAME}: {RIVAL}, rientra!");
+#else
 static const u8 sText_Trainer1RecallPkmn1[] = _("{B_TRAINER1_NAME}: {B_OPPONENT_MON1_NAME}, come back!");
+#endif
 static const u8 sText_Trainer1WinText[] = _("{B_TRAINER1_WIN_TEXT}");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Trainer1RecallPkmn2[] = _("{B_TRAINER1_NAME}: {EVIL_TEAM}, rientra!");
+#else
 static const u8 sText_Trainer1RecallPkmn2[] = _("{B_TRAINER1_NAME}: {B_OPPONENT_MON2_NAME}, come back!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Trainer1RecallBoth[] = _("{B_TRAINER1_NAME}: {RIVAL} e\n"
+    "{EVIL_TEAM}, rientrate!");
+#else
 static const u8 sText_Trainer1RecallBoth[] = _("{B_TRAINER1_NAME}: {B_OPPONENT_MON1_NAME} and\n{B_OPPONENT_MON2_NAME}, come back!");
+#endif
 static const u8 sText_Trainer2WinText[] = _("{B_TRAINER2_WIN_TEXT}");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnGainedEXP[] = _("{UNKNOWN_STR} riceve{PLAYER} \n"
+    "{B_BUFF3} punti ESP.!\p");
+#else
 static const u8 sText_PkmnGainedEXP[] = _("{B_BUFF1} gained{B_BUFF2}\n{B_BUFF3} EXP. Points!\p");
+#endif
 static const u8 sText_EmptyString4[] = _("");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ABoosted[] = _(" la bellezza di");
+#else
 static const u8 sText_ABoosted[] = _(" a boosted");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnGrewToLv[] = _("{UNKNOWN_STR} sale al L. {PLAYER}!{WAIT_SE}\p");
+#else
 static const u8 sText_PkmnGrewToLv[] = _("{B_BUFF1} grew to\nLV. {B_BUFF2}!{WAIT_SE}\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnLearnedMove[] = _("{UNKNOWN_STR} impara {PLAYER}!{WAIT_SE}\p");
+#else
 static const u8 sText_PkmnLearnedMove[] = _("{B_BUFF1} learned\n{B_BUFF2}!{WAIT_SE}\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TryToLearnMove1[] = _("{UNKNOWN_STR} sta cercando di imparare\n"
+    "{PLAYER}.\p");
+#else
 static const u8 sText_TryToLearnMove1[] = _("{B_BUFF1} is trying to\nlearn {B_BUFF2}.\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TryToLearnMove2[] = _("Ma {UNKNOWN_STR} non può conoscere\n"
+    "più di quattro mosse.\p");
+#else
 static const u8 sText_TryToLearnMove2[] = _("But, {B_BUFF1} can't learn\nmore than four moves.\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TryToLearnMove3[] = _("Vuoi cancellare una mossa per\n"
+    "far posto a {PLAYER}?");
+#else
 static const u8 sText_TryToLearnMove3[] = _("Delete a move to make\nroom for {B_BUFF2}?");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnForgotMove[] = _("{UNKNOWN_STR} scorda {PLAYER}…\p");
+#else
 static const u8 sText_PkmnForgotMove[] = _("{B_BUFF1} forgot\n{B_BUFF2}.\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_StopLearningMove[] = _("{PAUSE 32}Bloccare l’apprendimento\n"
+    "di {PLAYER}?");
+#else
 static const u8 sText_StopLearningMove[] = _("{PAUSE 32}Stop learning\n{B_BUFF2}?");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_DidNotLearnMove[] = _("{UNKNOWN_STR} non ha imparato\n"
+    "{PLAYER}.\p");
+#else
 static const u8 sText_DidNotLearnMove[] = _("{B_BUFF1} did not learn\n{B_BUFF2}.\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_UseNextPkmn[] = _("Usare un altro POKéMON?");
+#else
 static const u8 sText_UseNextPkmn[] = _("Use next POKéMON?");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_AttackMissed[] = _("{B_ATK_NAME_WITH_PREFIX} fallisce!");
+#else
 static const u8 sText_AttackMissed[] = _("{B_ATK_NAME_WITH_PREFIX}'s\nattack missed!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnProtectedItself[] = _("{B_DEF_NAME_WITH_PREFIX} si protegge!");
+#else
 static const u8 sText_PkmnProtectedItself[] = _("{B_DEF_NAME_WITH_PREFIX}\nprotected itself!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_AvoidedDamage[] = _("{B_DEF_NAME_WITH_PREFIX} evita\n"
+    "il colpo con {B_DEF_ABILITY}!");
+#else
 static const u8 sText_AvoidedDamage[] = _("{B_DEF_NAME_WITH_PREFIX} avoided\ndamage with {B_DEF_ABILITY}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnMakesGroundMiss[] = _("{B_DEF_NAME_WITH_PREFIX} neutralizza le\n"
+    "mosse di TERRA con {B_DEF_ABILITY}!");
+#else
 static const u8 sText_PkmnMakesGroundMiss[] = _("{B_DEF_NAME_WITH_PREFIX} makes GROUND\nmoves miss with {B_DEF_ABILITY}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnAvoidedAttack[] = _("{B_DEF_NAME_WITH_PREFIX} evita l’attacco!");
+#else
 static const u8 sText_PkmnAvoidedAttack[] = _("{B_DEF_NAME_WITH_PREFIX} avoided\nthe attack!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ItDoesntAffect[] = _("Non ha effetto su\n"
+    "{B_DEF_NAME_WITH_PREFIX}…");
+#else
 static const u8 sText_ItDoesntAffect[] = _("It doesn't affect\n{B_DEF_NAME_WITH_PREFIX}…");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_AttackerFainted[] = _("{B_ATK_NAME_WITH_PREFIX} è esausto!\p");
+#else
 static const u8 sText_AttackerFainted[] = _("{B_ATK_NAME_WITH_PREFIX}\nfainted!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TargetFainted[] = _("{B_DEF_NAME_WITH_PREFIX} è esausto!\p");
+#else
 static const u8 sText_TargetFainted[] = _("{B_DEF_NAME_WITH_PREFIX}\nfainted!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerGotMoney[] = _("{B_PLAYER_NAME} vince\n"
+    "¥{UNKNOWN_STR}!\p");
+#else
 static const u8 sText_PlayerGotMoney[] = _("{B_PLAYER_NAME} got ¥{B_BUFF1}\nfor winning!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerWhiteout[] = _("{B_PLAYER_NAME} non ha più\n"
+    "POKéMON utili!\p");
+#else
 static const u8 sText_PlayerWhiteout[] = _("{B_PLAYER_NAME} is out of\nusable POKéMON!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerPanicked[] = _("Nel panico, {B_PLAYER_NAME} perde ¥{UNKNOWN_STR}…\p"
+    "… … … …\p"
+    "{B_PLAYER_NAME} è fuori combattimento!{PAUSE_UNTIL_PRESS}");
+#else
 static const u8 sText_PlayerPanicked[] = _("{B_PLAYER_NAME} panicked and lost ¥{B_BUFF1}…\p… … … …\p{B_PLAYER_NAME} whited out!{PAUSE_UNTIL_PRESS}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerWhiteoutAgainstTrainer[] = _("{B_PLAYER_NAME} non ha più\n"
+    "POKéMON utili!\p"
+    "La sfida è vinta da\n"
+    "{B_TRAINER1_NAME}, {B_TRAINER1_CLASS}!{PAUSE_UNTIL_PRESS}");
+#else
 static const u8 sText_PlayerWhiteoutAgainstTrainer[] = _("{B_PLAYER_NAME} is out of\nusable POKéMON!\pPlayer lost against\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!{PAUSE_UNTIL_PRESS}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerPaidAsPrizeMoney[] = _("{B_PLAYER_NAME} paga ¥{UNKNOWN_STR} per la sconfitta.\p"
+    "… … … …\p"
+    "{B_PLAYER_NAME} è fuori combattimento!{PAUSE_UNTIL_PRESS}");
+#else
 static const u8 sText_PlayerPaidAsPrizeMoney[] = _("{B_PLAYER_NAME} paid ¥{B_BUFF1} as the prize\nmoney…\p… … … …\p{B_PLAYER_NAME} whited out!{PAUSE_UNTIL_PRESS}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerWhiteout2[] = _("{B_PLAYER_NAME} è fuori combattimento!{PAUSE_UNTIL_PRESS}");
+#else
 static const u8 sText_PlayerWhiteout2[] = _("{B_PLAYER_NAME} whited out!{PAUSE_UNTIL_PRESS}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PreventsEscape[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} impedisce\n"
+    "la fuga con {B_SCR_ACTIVE_ABILITY}!\p");
+#else
 static const u8 sText_PreventsEscape[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} prevents\nescape with {B_SCR_ACTIVE_ABILITY}!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_CantEscape2[] = _("Non si scappa!\p");
+#else
 static const u8 sText_CantEscape2[] = _("Can't escape!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_AttackerCantEscape[] = _("{B_ATK_NAME_WITH_PREFIX}\n"
+    "non può scappare!");
+#else
 static const u8 sText_AttackerCantEscape[] = _("{B_ATK_NAME_WITH_PREFIX} can't escape!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_HitXTimes[] = _("Colpi subiti: {UNKNOWN_STR}!");
+#else
 static const u8 sText_HitXTimes[] = _("Hit {B_BUFF1} time(s)!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFellAsleep[] = _("{B_EFF_NAME_WITH_PREFIX}\n"
+    "s’è addormentato!");
+#else
 static const u8 sText_PkmnFellAsleep[] = _("{B_EFF_NAME_WITH_PREFIX}\nfell asleep!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnMadeSleep[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "addormenta {B_EFF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnMadeSleep[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nmade {B_EFF_NAME_WITH_PREFIX} sleep!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnAlreadyAsleep[] = _("{B_DEF_NAME_WITH_PREFIX} sta già dormendo!");
+#else
 static const u8 sText_PkmnAlreadyAsleep[] = _("{B_DEF_NAME_WITH_PREFIX} is\nalready asleep!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnAlreadyAsleep2[] = _("{B_ATK_NAME_WITH_PREFIX} sta già dormendo!");
+#else
 static const u8 sText_PkmnAlreadyAsleep2[] = _("{B_ATK_NAME_WITH_PREFIX} is\nalready asleep!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWasntAffected[] = _("{B_DEF_NAME_WITH_PREFIX} è incolume!");
+#else
 static const u8 sText_PkmnWasntAffected[] = _("{B_DEF_NAME_WITH_PREFIX}\nwasn't affected!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWasPoisoned[] = _("{B_EFF_NAME_WITH_PREFIX} è stato \n"
+    "avvelenato!");
+#else
 static const u8 sText_PkmnWasPoisoned[] = _("{B_EFF_NAME_WITH_PREFIX}\nwas poisoned!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnPoisonedBy[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "avvelena {B_EFF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnPoisonedBy[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\npoisoned {B_EFF_NAME_WITH_PREFIX}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHurtByPoison[] = _("Il veleno ha effetto\n"
+    "su {B_ATK_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnHurtByPoison[] = _("{B_ATK_NAME_WITH_PREFIX} is hurt\nby poison!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnAlreadyPoisoned[] = _("{B_DEF_NAME_WITH_PREFIX} è già\n"
+    "avvelenato.");
+#else
 static const u8 sText_PkmnAlreadyPoisoned[] = _("{B_DEF_NAME_WITH_PREFIX} is already\npoisoned.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnBadlyPoisoned[] = _("{B_EFF_NAME_WITH_PREFIX}\n"
+    "è iperavvelenato!");
+#else
 static const u8 sText_PkmnBadlyPoisoned[] = _("{B_EFF_NAME_WITH_PREFIX} is badly\npoisoned!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnEnergyDrained[] = _("Viene prelevata energia\n"
+    "da {B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnEnergyDrained[] = _("{B_DEF_NAME_WITH_PREFIX} had its\nenergy drained!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWasBurned[] = _("{B_EFF_NAME_WITH_PREFIX} è stato \n"
+    "scottato!");
+#else
 static const u8 sText_PkmnWasBurned[] = _("{B_EFF_NAME_WITH_PREFIX} was burned!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnBurnedBy[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "scotta {B_EFF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnBurnedBy[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nburned {B_EFF_NAME_WITH_PREFIX}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHurtByBurn[] = _("{B_ATK_NAME_WITH_PREFIX} soffre\n"
+    "per la scottatura!");
+#else
 static const u8 sText_PkmnHurtByBurn[] = _("{B_ATK_NAME_WITH_PREFIX} is hurt\nby its burn!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnAlreadyHasBurn[] = _("{B_DEF_NAME_WITH_PREFIX} è già scottato.");
+#else
 static const u8 sText_PkmnAlreadyHasBurn[] = _("{B_DEF_NAME_WITH_PREFIX} already\nhas a burn.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWasFrozen[] = _("{B_EFF_NAME_WITH_PREFIX} è stato\n"
+    "congelato!");
+#else
 static const u8 sText_PkmnWasFrozen[] = _("{B_EFF_NAME_WITH_PREFIX} was\nfrozen solid!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFrozenBy[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "congela {B_EFF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnFrozenBy[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nfroze {B_EFF_NAME_WITH_PREFIX} solid!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnIsFrozen[] = _("{B_ATK_NAME_WITH_PREFIX} è congelato!");
+#else
 static const u8 sText_PkmnIsFrozen[] = _("{B_ATK_NAME_WITH_PREFIX} is\nfrozen solid!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWasDefrosted[] = _("{B_DEF_NAME_WITH_PREFIX} è stato\n"
+    "scongelato!");
+#else
 static const u8 sText_PkmnWasDefrosted[] = _("{B_DEF_NAME_WITH_PREFIX} was\ndefrosted!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWasDefrosted2[] = _("{B_ATK_NAME_WITH_PREFIX} è stato\n"
+    "scongelato!");
+#else
 static const u8 sText_PkmnWasDefrosted2[] = _("{B_ATK_NAME_WITH_PREFIX} was\ndefrosted!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWasDefrostedBy[] = _("{B_ATK_NAME_WITH_PREFIX} è stato\n"
+    "scongelato da {B_CURRENT_MOVE}!");
+#else
 static const u8 sText_PkmnWasDefrostedBy[] = _("{B_ATK_NAME_WITH_PREFIX} was\ndefrosted by {B_CURRENT_MOVE}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWasParalyzed[] = _("{B_EFF_NAME_WITH_PREFIX} è stato\n"
+    "paralizzato!\l"
+    "Forse non riuscirà ad attaccare!");
+#else
 static const u8 sText_PkmnWasParalyzed[] = _("{B_EFF_NAME_WITH_PREFIX} is paralyzed!\nIt may be unable to move!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWasParalyzedBy[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "paralizza {B_EFF_NAME_WITH_PREFIX}!\l"
+    "Forse non riuscirà ad attaccare!");
+#else
 static const u8 sText_PkmnWasParalyzedBy[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nparalyzed {B_EFF_NAME_WITH_PREFIX}!\lIt may be unable to move!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnIsParalyzed[] = _("{B_ATK_NAME_WITH_PREFIX} è paralizzato!\n"
+    "Non può attaccare!");
+#else
 static const u8 sText_PkmnIsParalyzed[] = _("{B_ATK_NAME_WITH_PREFIX} is paralyzed!\nIt can't move!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnIsAlreadyParalyzed[] = _("{B_DEF_NAME_WITH_PREFIX}\n"
+    "è già paralizzato!");
+#else
 static const u8 sText_PkmnIsAlreadyParalyzed[] = _("{B_DEF_NAME_WITH_PREFIX} is\nalready paralyzed!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHealedParalysis[] = _("{B_DEF_NAME_WITH_PREFIX}\n"
+    "è guarito dalla paralisi!");
+#else
 static const u8 sText_PkmnHealedParalysis[] = _("{B_DEF_NAME_WITH_PREFIX} was\nhealed of paralysis!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnDreamEaten[] = _("Mangia il sogno di\n"
+    "{B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnDreamEaten[] = _("{B_DEF_NAME_WITH_PREFIX}'s\ndream was eaten!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_StatsWontIncrease[] = _("Non aumenta\n"
+    "{UNKNOWN_STR} di {B_ATK_NAME_WITH_PREFIX}.");
+#else
 static const u8 sText_StatsWontIncrease[] = _("{B_ATK_NAME_WITH_PREFIX}'s {B_BUFF1}\nwon't go higher!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_StatsWontDecrease[] = _("Non diminuisce \n"
+    "{UNKNOWN_STR} di {B_DEF_NAME_WITH_PREFIX}.");
+#else
 static const u8 sText_StatsWontDecrease[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_BUFF1}\nwon't go lower!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TeamStoppedWorking[] = _("{UNKNOWN_STR} della tua squadra\n"
+    "non funziona!");
+#else
 static const u8 sText_TeamStoppedWorking[] = _("Your team's {B_BUFF1}\nstopped working!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_FoeStoppedWorking[] = _("{UNKNOWN_STR} dell’avversario\n"
+    "non funziona!");
+#else
 static const u8 sText_FoeStoppedWorking[] = _("The foe's {B_BUFF1}\nstopped working!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnIsConfused[] = _("{B_ATK_NAME_WITH_PREFIX} è confuso!");
+#else
 static const u8 sText_PkmnIsConfused[] = _("{B_ATK_NAME_WITH_PREFIX} is\nconfused!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHealedConfusion[] = _("{B_ATK_NAME_WITH_PREFIX} \n"
+    "non è più confuso!");
+#else
 static const u8 sText_PkmnHealedConfusion[] = _("{B_ATK_NAME_WITH_PREFIX} snapped\nout of confusion!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWasConfused[] = _("{B_EFF_NAME_WITH_PREFIX} è stato confuso!");
+#else
 static const u8 sText_PkmnWasConfused[] = _("{B_EFF_NAME_WITH_PREFIX} became\nconfused!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnAlreadyConfused[] = _("{B_DEF_NAME_WITH_PREFIX} è già confuso!");
+#else
 static const u8 sText_PkmnAlreadyConfused[] = _("{B_DEF_NAME_WITH_PREFIX} is\nalready confused!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFellInLove[] = _("{B_DEF_NAME_WITH_PREFIX} è innamorato!");
+#else
 static const u8 sText_PkmnFellInLove[] = _("{B_DEF_NAME_WITH_PREFIX}\nfell in love!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnInLove[] = _("{B_ATK_NAME_WITH_PREFIX} è innamorato\n"
+    "di {B_SCR_ACTIVE_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnInLove[] = _("{B_ATK_NAME_WITH_PREFIX} is in love\nwith {B_SCR_ACTIVE_NAME_WITH_PREFIX}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnImmobilizedByLove[] = _("L’innamoramento impedisce\n"
+    "a {B_ATK_NAME_WITH_PREFIX} di attaccare!");
+#else
 static const u8 sText_PkmnImmobilizedByLove[] = _("{B_ATK_NAME_WITH_PREFIX} is\nimmobilized by love!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnBlownAway[] = _("{B_DEF_NAME_WITH_PREFIX} è spazzato via!");
+#else
 static const u8 sText_PkmnBlownAway[] = _("{B_DEF_NAME_WITH_PREFIX} was\nblown away!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnChangedType[] = _("{B_ATK_NAME_WITH_PREFIX} si trasforma\n"
+    "nel tipo {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnChangedType[] = _("{B_ATK_NAME_WITH_PREFIX} transformed\ninto the {B_BUFF1} type!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFlinched[] = _("{B_ATK_NAME_WITH_PREFIX} tentenna!");
+#else
 static const u8 sText_PkmnFlinched[] = _("{B_ATK_NAME_WITH_PREFIX} flinched!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnRegainedHealth[] = _("{B_DEF_NAME_WITH_PREFIX} s’è ripreso!");
+#else
 static const u8 sText_PkmnRegainedHealth[] = _("{B_DEF_NAME_WITH_PREFIX} regained\nhealth!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHPFull[] = _("{B_DEF_NAME_WITH_PREFIX} ha tutti i PS!");
+#else
 static const u8 sText_PkmnHPFull[] = _("{B_DEF_NAME_WITH_PREFIX}'s\nHP is full!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnRaisedSpDef[] = _("{B_CURRENT_MOVE} del POKéMON {B_ATK_PREFIX2}\n"
+    "aumenta la DIF. SPEC.!");
+#else
 static const u8 sText_PkmnRaisedSpDef[] = _("{B_ATK_PREFIX2}'s {B_CURRENT_MOVE}\nraised SP. DEF!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnRaisedSpDefALittle[] = _("{B_CURRENT_MOVE} del POKéMON {B_ATK_PREFIX2}\n"
+    "aumenta un po’ la DIF. SPEC.!");
+#else
 static const u8 sText_PkmnRaisedSpDefALittle[] = _("{B_ATK_PREFIX2}'s {B_CURRENT_MOVE}\nraised SP. DEF a little!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnRaisedDef[] = _("{B_CURRENT_MOVE} del POKéMON {B_ATK_PREFIX2}\n"
+    "aumenta la DIFESA!");
+#else
 static const u8 sText_PkmnRaisedDef[] = _("{B_ATK_PREFIX2}'s {B_CURRENT_MOVE}\nraised DEFENSE!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnRaisedDefALittle[] = _("{B_CURRENT_MOVE} del POKéMON {B_ATK_PREFIX2}\n"
+    "aumenta un po’ la DIFESA!");
+#else
 static const u8 sText_PkmnRaisedDefALittle[] = _("{B_ATK_PREFIX2}'s {B_CURRENT_MOVE}\nraised DEFENSE a little!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCoveredByVeil[] = _("Un velo ricopre la squadra\n"
+    "del POKéMON {B_ATK_PREFIX2}!");
+#else
 static const u8 sText_PkmnCoveredByVeil[] = _("{B_ATK_PREFIX2}'s party is covered\nby a veil!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnUsedSafeguard[] = _("SALVAGUARDIA protegge\n"
+    "la squadra di {B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnUsedSafeguard[] = _("{B_DEF_NAME_WITH_PREFIX}'s party is protected\nby SAFEGUARD!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSafeguardExpired[] = _("Cade SALVAGUARDIA della\n"
+    "squadra del POKéMON {B_ATK_PREFIX3}!");
+#else
 static const u8 sText_PkmnSafeguardExpired[] = _("{B_ATK_PREFIX3}'s party is no longer\nprotected by SAFEGUARD!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWentToSleep[] = _("{B_ATK_NAME_WITH_PREFIX} va a dormire!");
+#else
 static const u8 sText_PkmnWentToSleep[] = _("{B_ATK_NAME_WITH_PREFIX} went\nto sleep!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSleptHealthy[] = _("{B_ATK_NAME_WITH_PREFIX}\n"
+    "dorme e si riprende!");
+#else
 static const u8 sText_PkmnSleptHealthy[] = _("{B_ATK_NAME_WITH_PREFIX} slept and\nbecame healthy!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWhippedWhirlwind[] = _("{B_ATK_NAME_WITH_PREFIX}\n"
+    "genera un turbine!");
+#else
 static const u8 sText_PkmnWhippedWhirlwind[] = _("{B_ATK_NAME_WITH_PREFIX} whipped\nup a whirlwind!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnTookSunlight[] = _("{B_ATK_NAME_WITH_PREFIX} assorbe la luce!");
+#else
 static const u8 sText_PkmnTookSunlight[] = _("{B_ATK_NAME_WITH_PREFIX} took\nin sunlight!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnLoweredHead[] = _("{B_ATK_NAME_WITH_PREFIX} \n"
+    "abbassa la testa!");
+#else
 static const u8 sText_PkmnLoweredHead[] = _("{B_ATK_NAME_WITH_PREFIX} lowered\nits head!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnIsGlowing[] = _("{B_ATK_NAME_WITH_PREFIX} sta brillando!");
+#else
 static const u8 sText_PkmnIsGlowing[] = _("{B_ATK_NAME_WITH_PREFIX} is glowing!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFlewHigh[] = _("{B_ATK_NAME_WITH_PREFIX} vola in alto!");
+#else
 static const u8 sText_PkmnFlewHigh[] = _("{B_ATK_NAME_WITH_PREFIX} flew\nup high!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnDugHole[] = _("{B_ATK_NAME_WITH_PREFIX} scava una fossa!");
+#else
 static const u8 sText_PkmnDugHole[] = _("{B_ATK_NAME_WITH_PREFIX} dug a hole!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHidUnderwater[] = _("{B_ATK_NAME_WITH_PREFIX} \n"
+    "sparisce sott’acqua!");
+#else
 static const u8 sText_PkmnHidUnderwater[] = _("{B_ATK_NAME_WITH_PREFIX} hid\nunderwater!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSprangUp[] = _("{B_ATK_NAME_WITH_PREFIX} salta fuori!");
+#else
 static const u8 sText_PkmnSprangUp[] = _("{B_ATK_NAME_WITH_PREFIX} sprang up!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSqueezedByBind[] = _("{B_ATK_NAME_WITH_PREFIX} stritola\n"
+    "{B_DEF_NAME_WITH_PREFIX} con LEGATUTTO!");
+#else
 static const u8 sText_PkmnSqueezedByBind[] = _("{B_DEF_NAME_WITH_PREFIX} was squeezed by\n{B_ATK_NAME_WITH_PREFIX}'s BIND!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnTrappedInVortex[] = _("{B_DEF_NAME_WITH_PREFIX} è intrappolato\n"
+    "nel vortice!");
+#else
 static const u8 sText_PkmnTrappedInVortex[] = _("{B_DEF_NAME_WITH_PREFIX} was trapped\nin the vortex!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnTrappedBySandTomb[] = _("{B_DEF_NAME_WITH_PREFIX} è intrappolato\n"
+    "da SABBIOTOMBA!");
+#else
 static const u8 sText_PkmnTrappedBySandTomb[] = _("{B_DEF_NAME_WITH_PREFIX} was trapped\nby SAND TOMB!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWrappedBy[] = _("{B_ATK_NAME_WITH_PREFIX} usa AVVOLGI-\n"
+    "BOTTA su {B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnWrappedBy[] = _("{B_DEF_NAME_WITH_PREFIX} was WRAPPED by\n{B_ATK_NAME_WITH_PREFIX}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnClamped[] = _("{B_ATK_NAME_WITH_PREFIX} usa\n"
+    "TENAGLIA su {B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnClamped[] = _("{B_ATK_NAME_WITH_PREFIX} CLAMPED\n{B_DEF_NAME_WITH_PREFIX}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHurtBy[] = _("{B_ATK_NAME_WITH_PREFIX} è ferito\n"
+    "da {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnHurtBy[] = _("{B_ATK_NAME_WITH_PREFIX} is hurt\nby {B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFreedFrom[] = _("{B_ATK_NAME_WITH_PREFIX} è liberato\n"
+    "da {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnFreedFrom[] = _("{B_ATK_NAME_WITH_PREFIX} was freed\nfrom {B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCrashed[] = _("{B_ATK_NAME_WITH_PREFIX}\n"
+    "si sbilancia e si schianta!");
+#else
 static const u8 sText_PkmnCrashed[] = _("{B_ATK_NAME_WITH_PREFIX} kept going\nand crashed!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gBattleText_MistShroud[] = _("Il POKéMON {B_ATK_PREFIX2}\n"
+    "è avvolto dalla NEBBIA!");
+#else
 const u8 gBattleText_MistShroud[] = _("{B_ATK_PREFIX2} became\nshrouded in MIST!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnProtectedByMist[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "è protetto dalla NEBBIA!");
+#else
 static const u8 sText_PkmnProtectedByMist[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} is protected\nby MIST!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gBattleText_GetPumped[] = _("{B_ATK_NAME_WITH_PREFIX} si gonfia!");
+#else
 const u8 gBattleText_GetPumped[] = _("{B_ATK_NAME_WITH_PREFIX} is getting\npumped!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHitWithRecoil[] = _("{B_ATK_NAME_WITH_PREFIX}\n"
+    "subisce il contraccolpo!");
+#else
 static const u8 sText_PkmnHitWithRecoil[] = _("{B_ATK_NAME_WITH_PREFIX} is hit\nwith recoil!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnProtectedItself2[] = _("{B_ATK_NAME_WITH_PREFIX} è pronto a \n"
+    "proteggersi!");
+#else
 static const u8 sText_PkmnProtectedItself2[] = _("{B_ATK_NAME_WITH_PREFIX} protected\nitself!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnBuffetedBySandstorm[] = _("{B_ATK_NAME_WITH_PREFIX} è colpito\n"
+    "da una tempesta di sabbia!");
+#else
 static const u8 sText_PkmnBuffetedBySandstorm[] = _("{B_ATK_NAME_WITH_PREFIX} is buffeted\nby the sandstorm!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnPeltedByHail[] = _("{B_ATK_NAME_WITH_PREFIX} è colpito\n"
+    "da GRANDINE!");
+#else
 static const u8 sText_PkmnPeltedByHail[] = _("{B_ATK_NAME_WITH_PREFIX} is pelted\nby HAIL!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXWoreOff[] = _("Finito l’effetto di\n"
+    "{UNKNOWN_STR} del POKéMON {B_ATK_PREFIX1}!");
+#else
 static const u8 sText_PkmnsXWoreOff[] = _("{B_ATK_PREFIX1}'s {B_BUFF1}\nwore off!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSeeded[] = _("{B_DEF_NAME_WITH_PREFIX} è pieno di semi!");
+#else
 static const u8 sText_PkmnSeeded[] = _("{B_DEF_NAME_WITH_PREFIX} was seeded!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnEvadedAttack[] = _("{B_DEF_NAME_WITH_PREFIX} schiva l’attacco!");
+#else
 static const u8 sText_PkmnEvadedAttack[] = _("{B_DEF_NAME_WITH_PREFIX} evaded\nthe attack!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSappedByLeechSeed[] = _("PARASSISEME sottrae energia\n"
+    "a {B_ATK_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnSappedByLeechSeed[] = _("{B_ATK_NAME_WITH_PREFIX}'s health is\nsapped by LEECH SEED!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFastAsleep[] = _("{B_ATK_NAME_WITH_PREFIX} dorme.");
+#else
 static const u8 sText_PkmnFastAsleep[] = _("{B_ATK_NAME_WITH_PREFIX} is fast\nasleep.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWokeUp[] = _("{B_ATK_NAME_WITH_PREFIX} si è svegliato!");
+#else
 static const u8 sText_PkmnWokeUp[] = _("{B_ATK_NAME_WITH_PREFIX} woke up!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnUproarKeptAwake[] = _("Ma BARAONDA di\n"
+    "{B_SCR_ACTIVE_NAME_WITH_PREFIX} lo tiene sveglio!");
+#else
 static const u8 sText_PkmnUproarKeptAwake[] = _("But {B_SCR_ACTIVE_NAME_WITH_PREFIX}'s UPROAR\nkept it awake!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWokeUpInUproar[] = _("{B_ATK_NAME_WITH_PREFIX} si sveglia\n"
+    "a causa di BARAONDA!");
+#else
 static const u8 sText_PkmnWokeUpInUproar[] = _("{B_ATK_NAME_WITH_PREFIX} woke up\nin the UPROAR!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCausedUproar[] = _("{B_ATK_NAME_WITH_PREFIX} scatena\n"
+    "una BARAONDA!");
+#else
 static const u8 sText_PkmnCausedUproar[] = _("{B_ATK_NAME_WITH_PREFIX} caused\nan UPROAR!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnMakingUproar[] = _("{B_ATK_NAME_WITH_PREFIX} sta facendo\n"
+    "una BARAONDA!");
+#else
 static const u8 sText_PkmnMakingUproar[] = _("{B_ATK_NAME_WITH_PREFIX} is making\nan UPROAR!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCalmedDown[] = _("{B_ATK_NAME_WITH_PREFIX} si calma.");
+#else
 static const u8 sText_PkmnCalmedDown[] = _("{B_ATK_NAME_WITH_PREFIX} calmed down.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCantSleepInUproar[] = _("Ma {B_DEF_NAME_WITH_PREFIX} non riesce\n"
+    "a dormire con BARAONDA!");
+#else
 static const u8 sText_PkmnCantSleepInUproar[] = _("But {B_DEF_NAME_WITH_PREFIX} can't\nsleep in an UPROAR!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnStockpiled[] = _("{B_ATK_NAME_WITH_PREFIX} usa ACCUMULO:\n"
+    "{UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnStockpiled[] = _("{B_ATK_NAME_WITH_PREFIX} STOCKPILED\n{B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCantStockpile[] = _("{B_ATK_NAME_WITH_PREFIX} non può più\n"
+    "usare ACCUMULO!");
+#else
 static const u8 sText_PkmnCantStockpile[] = _("{B_ATK_NAME_WITH_PREFIX} can't\nSTOCKPILE any more!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCantSleepInUproar2[] = _("Ma {B_DEF_NAME_WITH_PREFIX} non riesce\n"
+    "a dormire con BARAONDA!");
+#else
 static const u8 sText_PkmnCantSleepInUproar2[] = _("But {B_DEF_NAME_WITH_PREFIX} can't\nsleep in an UPROAR!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_UproarKeptPkmnAwake[] = _("Ma BARAONDA di\n"
+    "{B_DEF_NAME_WITH_PREFIX} lo tiene sveglio!");
+#else
 static const u8 sText_UproarKeptPkmnAwake[] = _("But the UPROAR kept\n{B_DEF_NAME_WITH_PREFIX} awake!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnStayedAwakeUsing[] = _("{B_DEF_NAME_WITH_PREFIX} rimane sveglio\n"
+    "grazie a {B_DEF_ABILITY}!");
+#else
 static const u8 sText_PkmnStayedAwakeUsing[] = _("{B_DEF_NAME_WITH_PREFIX} stayed awake\nusing its {B_DEF_ABILITY}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnStoringEnergy[] = _("{B_ATK_NAME_WITH_PREFIX} \n"
+    "accumula energia!");
+#else
 static const u8 sText_PkmnStoringEnergy[] = _("{B_ATK_NAME_WITH_PREFIX} is storing\nenergy!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnUnleashedEnergy[] = _("{B_ATK_NAME_WITH_PREFIX} libera energia!");
+#else
 static const u8 sText_PkmnUnleashedEnergy[] = _("{B_ATK_NAME_WITH_PREFIX} unleashed\nenergy!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFatigueConfusion[] = _("{B_ATK_NAME_WITH_PREFIX} è confuso\n"
+    "per la fatica!");
+#else
 static const u8 sText_PkmnFatigueConfusion[] = _("{B_ATK_NAME_WITH_PREFIX} became\nconfused due to fatigue!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnPickedUpItem[] = _("{B_PLAYER_NAME} raccoglie ¥{UNKNOWN_STR}!\p");
+#else
 static const u8 sText_PkmnPickedUpItem[] = _("{B_PLAYER_NAME} picked up\n¥{B_BUFF1}!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnUnaffected[] = _("{B_DEF_NAME_WITH_PREFIX} è incolume!");
+#else
 static const u8 sText_PkmnUnaffected[] = _("{B_DEF_NAME_WITH_PREFIX} is\nunaffected!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnTransformedInto[] = _("{B_ATK_NAME_WITH_PREFIX} si trasforma\n"
+    "in {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnTransformedInto[] = _("{B_ATK_NAME_WITH_PREFIX} transformed\ninto {B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnMadeSubstitute[] = _("{B_ATK_NAME_WITH_PREFIX} crea \n"
+    "un SOSTITUTO!");
+#else
 static const u8 sText_PkmnMadeSubstitute[] = _("{B_ATK_NAME_WITH_PREFIX} made\na SUBSTITUTE!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHasSubstitute[] = _("{B_ATK_NAME_WITH_PREFIX} ha già\n"
+    "un SOSTITUTO!");
+#else
 static const u8 sText_PkmnHasSubstitute[] = _("{B_ATK_NAME_WITH_PREFIX} already\nhas a SUBSTITUTE!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SubstituteDamaged[] = _("Il SOSTITUTO è colpito\n"
+    "al posto di {B_DEF_NAME_WITH_PREFIX}!\p");
+#else
 static const u8 sText_SubstituteDamaged[] = _("The SUBSTITUTE took damage\nfor {B_DEF_NAME_WITH_PREFIX}!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSubstituteFaded[] = _("Il SOSTITUTO di\n"
+    "{B_DEF_NAME_WITH_PREFIX} svanisce!\p");
+#else
 static const u8 sText_PkmnSubstituteFaded[] = _("{B_DEF_NAME_WITH_PREFIX}'s\nSUBSTITUTE faded!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnMustRecharge[] = _("{B_ATK_NAME_WITH_PREFIX} deve ricaricarsi!");
+#else
 static const u8 sText_PkmnMustRecharge[] = _("{B_ATK_NAME_WITH_PREFIX} must\nrecharge!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnRageBuilding[] = _("Cresce l’IRA di\n"
+    "{B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnRageBuilding[] = _("{B_DEF_NAME_WITH_PREFIX}'s RAGE\nis building!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnMoveWasDisabled[] = _("INIBITORE ha messo {UNKNOWN_STR}\n"
+    "di {B_DEF_NAME_WITH_PREFIX} fuori uso!");
+#else
 static const u8 sText_PkmnMoveWasDisabled[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_BUFF1}\nwas disabled!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnMoveDisabledNoMore[] = _("Termina l’effetto di INIBITORE\n"
+    "su {B_ATK_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnMoveDisabledNoMore[] = _("{B_ATK_NAME_WITH_PREFIX} is disabled\nno more!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnGotEncore[] = _("{B_DEF_NAME_WITH_PREFIX} è colpito\n"
+    "da RIPETI!");
+#else
 static const u8 sText_PkmnGotEncore[] = _("{B_DEF_NAME_WITH_PREFIX} got\nan ENCORE!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnEncoreEnded[] = _("Termina l’effetto di RIPETI\n"
+    "su {B_ATK_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnEncoreEnded[] = _("{B_ATK_NAME_WITH_PREFIX}'s ENCORE\nended!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnTookAim[] = _("{B_ATK_NAME_WITH_PREFIX} prende\n"
+    "la mira su {B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnTookAim[] = _("{B_ATK_NAME_WITH_PREFIX} took aim\nat {B_DEF_NAME_WITH_PREFIX}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSketchedMove[] = _("{B_ATK_NAME_WITH_PREFIX} disegna\n"
+    "uno SCHIZZO di {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnSketchedMove[] = _("{B_ATK_NAME_WITH_PREFIX} SKETCHED\n{B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnTryingToTakeFoe[] = _("{B_ATK_NAME_WITH_PREFIX} tenta di\n"
+    "trascinare con sé l’avversario!");
+#else
 static const u8 sText_PkmnTryingToTakeFoe[] = _("{B_ATK_NAME_WITH_PREFIX} is trying\nto take its foe with it!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnTookFoe[] = _("{B_DEF_NAME_WITH_PREFIX} trascina\n"
+    "con sé {B_ATK_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnTookFoe[] = _("{B_DEF_NAME_WITH_PREFIX} took\n{B_ATK_NAME_WITH_PREFIX} with it!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnReducedPP[] = _("{UNKNOWN_STR} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "cala di {PLAYER}!");
+#else
 static const u8 sText_PkmnReducedPP[] = _("Reduced {B_DEF_NAME_WITH_PREFIX}'s\n{B_BUFF1} by {B_BUFF2}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnStoleItem[] = _("{B_ATK_NAME_WITH_PREFIX} ruba\n"
+    "{B_LAST_ITEM} di\l"
+    "{B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnStoleItem[] = _("{B_ATK_NAME_WITH_PREFIX} stole\n{B_DEF_NAME_WITH_PREFIX}'s {B_LAST_ITEM}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TargetCantEscapeNow[] = _("{B_DEF_NAME_WITH_PREFIX} \n"
+    "non può scappare!");
+#else
 static const u8 sText_TargetCantEscapeNow[] = _("{B_DEF_NAME_WITH_PREFIX} can't\nescape now!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFellIntoNightmare[] = _("{B_DEF_NAME_WITH_PREFIX} ha un INCUBO!");
+#else
 static const u8 sText_PkmnFellIntoNightmare[] = _("{B_DEF_NAME_WITH_PREFIX} fell into\na NIGHTMARE!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnLockedInNightmare[] = _("{B_ATK_NAME_WITH_PREFIX} è\n"
+    "intrappolato in un INCUBO!");
+#else
 static const u8 sText_PkmnLockedInNightmare[] = _("{B_ATK_NAME_WITH_PREFIX} is locked\nin a NIGHTMARE!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnLaidCurse[] = _("{B_ATK_NAME_WITH_PREFIX} riduce i suoi PS\n"
+    "per lanciare una MALEDIZIONE\l"
+    "su {B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnLaidCurse[] = _("{B_ATK_NAME_WITH_PREFIX} cut its own HP and\nlaid a CURSE on {B_DEF_NAME_WITH_PREFIX}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnAfflictedByCurse[] = _("{B_ATK_NAME_WITH_PREFIX} è colpito\n"
+    "dalla MALEDIZIONE!");
+#else
 static const u8 sText_PkmnAfflictedByCurse[] = _("{B_ATK_NAME_WITH_PREFIX} is afflicted\nby the CURSE!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SpikesScattered[] = _("Ci sono PUNTE ovunque!");
+#else
 static const u8 sText_SpikesScattered[] = _("SPIKES were scattered all around\nthe opponent's side!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHurtBySpikes[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "soffre per le PUNTE!");
+#else
 static const u8 sText_PkmnHurtBySpikes[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} is hurt\nby SPIKES!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnIdentified[] = _("{B_ATK_NAME_WITH_PREFIX} identifica\n"
+    "{B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnIdentified[] = _("{B_ATK_NAME_WITH_PREFIX} identified\n{B_DEF_NAME_WITH_PREFIX}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnPerishCountFell[] = _("ULTIMOCANTO di\n"
+    "{B_ATK_NAME_WITH_PREFIX}: meno {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnPerishCountFell[] = _("{B_ATK_NAME_WITH_PREFIX}'s PERISH count\nfell to {B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnBracedItself[] = _("{B_ATK_NAME_WITH_PREFIX} si rinvigorisce!");
+#else
 static const u8 sText_PkmnBracedItself[] = _("{B_ATK_NAME_WITH_PREFIX} braced\nitself!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnEnduredHit[] = _("{B_DEF_NAME_WITH_PREFIX} RESISTE!");
+#else
 static const u8 sText_PkmnEnduredHit[] = _("{B_DEF_NAME_WITH_PREFIX} ENDURED\nthe hit!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_MagnitudeStrength[] = _("MAGNITUDO {UNKNOWN_STR}!");
+#else
 static const u8 sText_MagnitudeStrength[] = _("MAGNITUDE {B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCutHPMaxedAttack[] = _("{B_ATK_NAME_WITH_PREFIX} riduce i suoi PS\n"
+    "per massimizzare l’ATTACCO!");
+#else
 static const u8 sText_PkmnCutHPMaxedAttack[] = _("{B_ATK_NAME_WITH_PREFIX} cut its own HP\nand maximized ATTACK!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCopiedStatChanges[] = _("{B_ATK_NAME_WITH_PREFIX} copia modifiche\n"
+    "statistiche di {B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnCopiedStatChanges[] = _("{B_ATK_NAME_WITH_PREFIX} copied\n{B_DEF_NAME_WITH_PREFIX}'s stat changes!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnGotFree[] = _("{B_ATK_NAME_WITH_PREFIX} si libera da\n"
+    "{UNKNOWN_STR} di\l"
+    "{B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnGotFree[] = _("{B_ATK_NAME_WITH_PREFIX} got free of\n{B_DEF_NAME_WITH_PREFIX}'s {B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnShedLeechSeed[] = _("{B_ATK_NAME_WITH_PREFIX}\n"
+    "sparge PARASSISEME!");
+#else
 static const u8 sText_PkmnShedLeechSeed[] = _("{B_ATK_NAME_WITH_PREFIX} shed\nLEECH SEED!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnBlewAwaySpikes[] = _("{B_ATK_NAME_WITH_PREFIX}\n"
+    "spazza via le PUNTE!");
+#else
 static const u8 sText_PkmnBlewAwaySpikes[] = _("{B_ATK_NAME_WITH_PREFIX} blew away\nSPIKES!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFledFromBattle[] = _("{B_ATK_NAME_WITH_PREFIX} se la dà a\n"
+    "gambe!");
+#else
 static const u8 sText_PkmnFledFromBattle[] = _("{B_ATK_NAME_WITH_PREFIX} fled from\nbattle!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnForesawAttack[] = _("{B_ATK_NAME_WITH_PREFIX} \n"
+    "prevede l’attacco!");
+#else
 static const u8 sText_PkmnForesawAttack[] = _("{B_ATK_NAME_WITH_PREFIX} foresaw\nan attack!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnTookAttack[] = _("{B_DEF_NAME_WITH_PREFIX} subisce\n"
+    "{UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnTookAttack[] = _("{B_DEF_NAME_WITH_PREFIX} took the\n{B_BUFF1} attack!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnChoseXAsDestiny[] = _("{B_ATK_NAME_WITH_PREFIX} sceglie\n"
+    "{B_CURRENT_MOVE} come suo destino!");
+#else
 static const u8 sText_PkmnChoseXAsDestiny[] = _("{B_ATK_NAME_WITH_PREFIX} chose\n{B_CURRENT_MOVE} as its destiny!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnAttack[] = _("Attacco di {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnAttack[] = _("{B_BUFF1}'s attack!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCenterAttention[] = _("{B_ATK_NAME_WITH_PREFIX} è al\n"
+    "centro dell’attenzione!");
+#else
 static const u8 sText_PkmnCenterAttention[] = _("{B_ATK_NAME_WITH_PREFIX} became the\ncenter of attention!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnChargingPower[] = _("{B_ATK_NAME_WITH_PREFIX}\n"
+    "inizia a caricarsi!");
+#else
 static const u8 sText_PkmnChargingPower[] = _("{B_ATK_NAME_WITH_PREFIX} began\ncharging power!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_NaturePowerTurnedInto[] = _("NATURFORZA si trasforma in\n"
+    "{B_CURRENT_MOVE}!");
+#else
 static const u8 sText_NaturePowerTurnedInto[] = _("NATURE POWER turned into\n{B_CURRENT_MOVE}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnStatusNormal[] = _("Lo stato di {B_ATK_NAME_WITH_PREFIX}\n"
+    "torna normale!");
+#else
 static const u8 sText_PkmnStatusNormal[] = _("{B_ATK_NAME_WITH_PREFIX}'s status\nreturned to normal!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSubjectedToTorment[] = _("{B_DEF_NAME_WITH_PREFIX} subisce\n"
+    "l’ATTACCALITE!");
+#else
 static const u8 sText_PkmnSubjectedToTorment[] = _("{B_DEF_NAME_WITH_PREFIX} was subjected\nto TORMENT!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnTighteningFocus[] = _("{B_ATK_NAME_WITH_PREFIX} \n"
+    "restringe la mira!");
+#else
 static const u8 sText_PkmnTighteningFocus[] = _("{B_ATK_NAME_WITH_PREFIX} is tightening\nits focus!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFellForTaunt[] = _("{B_DEF_NAME_WITH_PREFIX}\n"
+    "è in balia di PROVOCAZIONE!");
+#else
 static const u8 sText_PkmnFellForTaunt[] = _("{B_DEF_NAME_WITH_PREFIX} fell for\nthe TAUNT!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnReadyToHelp[] = _("{B_ATK_NAME_WITH_PREFIX} è pronto ad\n"
+    "aiutare {B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnReadyToHelp[] = _("{B_ATK_NAME_WITH_PREFIX} is ready to\nhelp {B_DEF_NAME_WITH_PREFIX}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSwitchedItems[] = _("{B_ATK_NAME_WITH_PREFIX} scambia\n"
+    "lo strumento!");
+#else
 static const u8 sText_PkmnSwitchedItems[] = _("{B_ATK_NAME_WITH_PREFIX} switched\nitems with its opponent!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnObtainedX[] = _("{B_ATK_NAME_WITH_PREFIX} ottiene\n"
+    "{UNKNOWN_STR}.");
+#else
 static const u8 sText_PkmnObtainedX[] = _("{B_ATK_NAME_WITH_PREFIX} obtained\n{B_BUFF1}.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnObtainedX2[] = _("{B_DEF_NAME_WITH_PREFIX} ottiene\n"
+    "{PLAYER}.");
+#else
 static const u8 sText_PkmnObtainedX2[] = _("{B_DEF_NAME_WITH_PREFIX} obtained\n{B_BUFF2}.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnObtainedXYObtainedZ[] = _("{B_ATK_NAME_WITH_PREFIX} ottiene\n"
+    "{UNKNOWN_STR}.\p"
+    "{B_DEF_NAME_WITH_PREFIX} ottiene\n"
+    "{PLAYER}.");
+#else
 static const u8 sText_PkmnObtainedXYObtainedZ[] = _("{B_ATK_NAME_WITH_PREFIX} obtained\n{B_BUFF1}.\p{B_DEF_NAME_WITH_PREFIX} obtained\n{B_BUFF2}.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCopiedFoe[] = _("{B_ATK_NAME_WITH_PREFIX} copia\n"
+    "{B_DEF_ABILITY} di\l"
+    "{B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnCopiedFoe[] = _("{B_ATK_NAME_WITH_PREFIX} copied\n{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnMadeWish[] = _("{B_ATK_NAME_WITH_PREFIX}\n"
+    "esprime un DESIDERIO!");
+#else
 static const u8 sText_PkmnMadeWish[] = _("{B_ATK_NAME_WITH_PREFIX} made a WISH!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWishCameTrue[] = _("Il DESIDERIO di {UNKNOWN_STR}\n"
+    "si avvera!");
+#else
 static const u8 sText_PkmnWishCameTrue[] = _("{B_BUFF1}'s WISH\ncame true!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnPlantedRoots[] = _("{B_ATK_NAME_WITH_PREFIX} pianta le radici!");
+#else
 static const u8 sText_PkmnPlantedRoots[] = _("{B_ATK_NAME_WITH_PREFIX} planted its roots!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnAbsorbedNutrients[] = _("{B_ATK_NAME_WITH_PREFIX} assorbe\n"
+    "sostanze nutritive con le radici!");
+#else
 static const u8 sText_PkmnAbsorbedNutrients[] = _("{B_ATK_NAME_WITH_PREFIX} absorbed\nnutrients with its roots!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnAnchoredItself[] = _("{B_DEF_NAME_WITH_PREFIX} è ancorato\n"
+    "al suolo grazie alle radici!");
+#else
 static const u8 sText_PkmnAnchoredItself[] = _("{B_DEF_NAME_WITH_PREFIX} anchored\nitself with its roots!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWasMadeDrowsy[] = _("{B_ATK_NAME_WITH_PREFIX} fa\n"
+    "assopire {B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnWasMadeDrowsy[] = _("{B_ATK_NAME_WITH_PREFIX} made\n{B_DEF_NAME_WITH_PREFIX} drowsy!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnKnockedOff[] = _("{B_ATK_NAME_WITH_PREFIX} blocca\n"
+    "{B_LAST_ITEM} di\l"
+    "{B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnKnockedOff[] = _("{B_ATK_NAME_WITH_PREFIX} knocked off\n{B_DEF_NAME_WITH_PREFIX}'s {B_LAST_ITEM}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSwappedAbilities[] = _("{B_ATK_NAME_WITH_PREFIX} scambia abilità!");
+#else
 static const u8 sText_PkmnSwappedAbilities[] = _("{B_ATK_NAME_WITH_PREFIX} swapped abilities\nwith its opponent!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSealedOpponentMove[] = _("{B_ATK_NAME_WITH_PREFIX} blocca una\n"
+    "o più mosse dell’avversario!");
+#else
 static const u8 sText_PkmnSealedOpponentMove[] = _("{B_ATK_NAME_WITH_PREFIX} sealed the\nopponent's move(s)!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWantsGrudge[] = _("{B_ATK_NAME_WITH_PREFIX} serba\n"
+    "RANCORE all’avversario!");
+#else
 static const u8 sText_PkmnWantsGrudge[] = _("{B_ATK_NAME_WITH_PREFIX} wants the\nopponent to bear a GRUDGE!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnLostPPGrudge[] = _("{UNKNOWN_STR} di {B_ATK_NAME_WITH_PREFIX}\n"
+    "perde tutti i PP\l"
+    "a causa di RANCORE!");
+#else
 static const u8 sText_PkmnLostPPGrudge[] = _("{B_ATK_NAME_WITH_PREFIX}'s {B_BUFF1} lost\nall its PP due to the GRUDGE!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnShroudedItself[] = _("{B_ATK_NAME_WITH_PREFIX} si avvolge\n"
+    "in {B_CURRENT_MOVE}!");
+#else
 static const u8 sText_PkmnShroudedItself[] = _("{B_ATK_NAME_WITH_PREFIX} shrouded\nitself in {B_CURRENT_MOVE}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnMoveBounced[] = _("{B_CURRENT_MOVE} di {B_ATK_NAME_WITH_PREFIX}\n"
+    "rimbalza a causa di MAGIVELO!");
+#else
 static const u8 sText_PkmnMoveBounced[] = _("{B_ATK_NAME_WITH_PREFIX}'s {B_CURRENT_MOVE}\nwas bounced back by MAGIC COAT!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWaitsForTarget[] = _("{B_ATK_NAME_WITH_PREFIX} aspetta\n"
+    "la mossa dell’avversario!");
+#else
 static const u8 sText_PkmnWaitsForTarget[] = _("{B_ATK_NAME_WITH_PREFIX} waits for its foe\nto make a move!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSnatchedMove[] = _("{B_DEF_NAME_WITH_PREFIX} ruba la mossa di\n"
+    "{B_SCR_ACTIVE_NAME_WITH_PREFIX} con SCIPPO!");
+#else
 static const u8 sText_PkmnSnatchedMove[] = _("{B_DEF_NAME_WITH_PREFIX} SNATCHED\n{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s move!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ElectricityWeakened[] = _("La potenza dell’elettricità\n"
+    "è stata indebolita!");
+#else
 static const u8 sText_ElectricityWeakened[] = _("Electricity's power was\nweakened!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_FireWeakened[] = _("La potenza del fuoco\n"
+    "è stata indebolita!");
+#else
 static const u8 sText_FireWeakened[] = _("Fire's power was\nweakened!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_XFoundOneY[] = _("{B_ATK_NAME_WITH_PREFIX}\n"
+    "trova {B_LAST_ITEM}!");
+#else
 static const u8 sText_XFoundOneY[] = _("{B_ATK_NAME_WITH_PREFIX} found\none {B_LAST_ITEM}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SoothingAroma[] = _("La zona è pervasa da\n"
+    "un piacevole profumo!");
+#else
 static const u8 sText_SoothingAroma[] = _("A soothing aroma wafted\nthrough the area!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ItemsCantBeUsedNow[] = _("Impossibile usare strumenti qui.{PAUSE 64}");
+#else
 static const u8 sText_ItemsCantBeUsedNow[] = _("Items can't be used now.{PAUSE 64}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ForXCommaYZ[] = _("Per {B_SCR_ACTIVE_NAME_WITH_PREFIX},\n"
+    "la {B_LAST_ITEM} {UNKNOWN_STR}");
+#else
 static const u8 sText_ForXCommaYZ[] = _("For {B_SCR_ACTIVE_NAME_WITH_PREFIX},\n{B_LAST_ITEM} {B_BUFF1}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnUsedXToGetPumped[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} usa\n"
+    "{B_LAST_ITEM}: aumentano\l"
+    "i brutti colpi!");
+#else
 static const u8 sText_PkmnUsedXToGetPumped[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} used\n{B_LAST_ITEM} to hustle!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnLostFocus[] = _("{B_ATK_NAME_WITH_PREFIX} perde la mira\n"
+    "e rimane immobile!");
+#else
 static const u8 sText_PkmnLostFocus[] = _("{B_ATK_NAME_WITH_PREFIX} lost its\nfocus and couldn't move!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWasDraggedOut[] = _("{B_DEF_NAME_WITH_PREFIX} è tirato dentro!\p");
+#else
 static const u8 sText_PkmnWasDraggedOut[] = _("{B_DEF_NAME_WITH_PREFIX} was\ndragged out!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TheWallShattered[] = _("La barriera si frantuma!");
+#else
 static const u8 sText_TheWallShattered[] = _("The wall shattered!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ButNoEffect[] = _("Ma è inefficace!");
+#else
 static const u8 sText_ButNoEffect[] = _("But it had no effect!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHasNoMovesLeft[] = _("{B_ACTIVE_NAME_WITH_PREFIX}\n"
+    "non ha più mosse!\p");
+#else
 static const u8 sText_PkmnHasNoMovesLeft[] = _("{B_ACTIVE_NAME_WITH_PREFIX} has no\nmoves left!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnMoveIsDisabled[] = _("A causa di INIBITORE, {B_CURRENT_MOVE}\n"
+    "di {B_ACTIVE_NAME_WITH_PREFIX} è fuori uso!\p");
+#else
 static const u8 sText_PkmnMoveIsDisabled[] = _("{B_ACTIVE_NAME_WITH_PREFIX}'s {B_CURRENT_MOVE}\nis disabled!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCantUseMoveTorment[] = _("{B_ACTIVE_NAME_WITH_PREFIX} non può usare la\n"
+    "stessa mossa 2 volte per\l"
+    "l’ATTACCALITE!\p");
+#else
 static const u8 sText_PkmnCantUseMoveTorment[] = _("{B_ACTIVE_NAME_WITH_PREFIX} can't use the same\nmove in a row due to the TORMENT!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCantUseMoveTaunt[] = _("{B_ACTIVE_NAME_WITH_PREFIX} non può usare\n"
+    "{B_CURRENT_MOVE} dopo PROVOCAZIONE!\p");
+#else
 static const u8 sText_PkmnCantUseMoveTaunt[] = _("{B_ACTIVE_NAME_WITH_PREFIX} can't use\n{B_CURRENT_MOVE} after the TAUNT!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCantUseMoveSealed[] = _("{B_ACTIVE_NAME_WITH_PREFIX} non può usare\n"
+    "la mossa bloccata {B_CURRENT_MOVE}!\p");
+#else
 static const u8 sText_PkmnCantUseMoveSealed[] = _("{B_ACTIVE_NAME_WITH_PREFIX} can't use the\nsealed {B_CURRENT_MOVE}!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnMadeItRain[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "provoca la pioggia!");
+#else
 static const u8 sText_PkmnMadeItRain[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nmade it rain!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnRaisedSpeed[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "aumenta la VELOCITÀ!");
+#else
 static const u8 sText_PkmnRaisedSpeed[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nraised its SPEED!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnProtectedBy[] = _("{B_DEF_NAME_WITH_PREFIX} è protetto\n"
+    "da {B_DEF_ABILITY}!");
+#else
 static const u8 sText_PkmnProtectedBy[] = _("{B_DEF_NAME_WITH_PREFIX} was protected\nby {B_DEF_ABILITY}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnPreventsUsage[] = _("{B_DEF_ABILITY} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "impedisce a {B_ATK_NAME_WITH_PREFIX}\l"
+    "di usare {B_CURRENT_MOVE}!");
+#else
 static const u8 sText_PkmnPreventsUsage[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nprevents {B_ATK_NAME_WITH_PREFIX}\lfrom using {B_CURRENT_MOVE}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnRestoredHPUsing[] = _("{B_DEF_NAME_WITH_PREFIX} ricarica PS\n"
+    "usando {B_DEF_ABILITY}!");
+#else
 static const u8 sText_PkmnRestoredHPUsing[] = _("{B_DEF_NAME_WITH_PREFIX} restored HP\nusing its {B_DEF_ABILITY}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXMadeYUseless[] = _("{B_DEF_ABILITY} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "neutralizza {B_CURRENT_MOVE}!");
+#else
 static const u8 sText_PkmnsXMadeYUseless[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nmade {B_CURRENT_MOVE} useless!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnChangedTypeWith[] = _("{B_DEF_ABILITY} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "lo ha reso di tipo {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnChangedTypeWith[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nmade it the {B_BUFF1} type!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnPreventsParalysisWith[] = _("{B_DEF_ABILITY} di {B_EFF_NAME_WITH_PREFIX}\n"
+    "previene la paralisi!");
+#else
 static const u8 sText_PkmnPreventsParalysisWith[] = _("{B_EFF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nprevents paralysis!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnPreventsRomanceWith[] = _("{B_DEF_ABILITY} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "previene l’innamoramento!");
+#else
 static const u8 sText_PkmnPreventsRomanceWith[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nprevents romance!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnPreventsPoisoningWith[] = _("{B_DEF_ABILITY} di {B_EFF_NAME_WITH_PREFIX}\n"
+    "previene l’avvelenamento!");
+#else
 static const u8 sText_PkmnPreventsPoisoningWith[] = _("{B_EFF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nprevents poisoning!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnPreventsConfusionWith[] = _("{B_DEF_ABILITY} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "previene la confusione!");
+#else
 static const u8 sText_PkmnPreventsConfusionWith[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nprevents confusion!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnRaisedFirePowerWith[] = _("{B_DEF_ABILITY} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "aumenta la potenza del tipo FUOCO!");
+#else
 static const u8 sText_PkmnRaisedFirePowerWith[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nraised its FIRE power!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnAnchorsItselfWith[] = _("{B_DEF_NAME_WITH_PREFIX} è ancorato\n"
+    "al suolo grazie a {B_DEF_ABILITY}!");
+#else
 static const u8 sText_PkmnAnchorsItselfWith[] = _("{B_DEF_NAME_WITH_PREFIX} anchors\nitself with {B_DEF_ABILITY}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnCutsAttackWith[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "riduce ATT. di {B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnCutsAttackWith[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\ncuts {B_DEF_NAME_WITH_PREFIX}'s ATTACK!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnPreventsStatLossWith[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "evita calo delle statistiche!");
+#else
 static const u8 sText_PkmnPreventsStatLossWith[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nprevents stat loss!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHurtsWith[] = _("{B_DEF_ABILITY} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "colpisce {B_ATK_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnHurtsWith[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nhurt {B_ATK_NAME_WITH_PREFIX}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnTraced[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} TRACCIA\n"
+    "{PLAYER} di\l"
+    "{UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnTraced[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} TRACED\n{B_BUFF1}'s {B_BUFF2}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXPreventsBurns[] = _("{B_EFF_ABILITY} di {B_EFF_NAME_WITH_PREFIX}\n"
+    "previene le scottature!");
+#else
 static const u8 sText_PkmnsXPreventsBurns[] = _("{B_EFF_NAME_WITH_PREFIX}'s {B_EFF_ABILITY}\nprevents burns!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXBlocksY[] = _("{B_DEF_ABILITY} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "blocca {B_CURRENT_MOVE}!");
+#else
 static const u8 sText_PkmnsXBlocksY[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nblocks {B_CURRENT_MOVE}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXBlocksY2[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "blocca {B_CURRENT_MOVE}!");
+#else
 static const u8 sText_PkmnsXBlocksY2[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nblocks {B_CURRENT_MOVE}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXRestoredHPALittle2[] = _("{B_ATK_ABILITY} di {B_ATK_NAME_WITH_PREFIX}\n"
+    "ristabilisce parte dei PS!");
+#else
 static const u8 sText_PkmnsXRestoredHPALittle2[] = _("{B_ATK_NAME_WITH_PREFIX}'s {B_ATK_ABILITY}\nrestored its HP a little!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXWhippedUpSandstorm[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "genera una tempesta di sabbia!");
+#else
 static const u8 sText_PkmnsXWhippedUpSandstorm[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nwhipped up a sandstorm!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXIntensifiedSun[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "intensifica i raggi solari!");
+#else
 static const u8 sText_PkmnsXIntensifiedSun[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nintensified the sun's rays!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXPreventsYLoss[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "evita calo di {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnsXPreventsYLoss[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nprevents {B_BUFF1} loss!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXInfatuatedY[] = _("{B_DEF_ABILITY} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "fa infatuare {B_ATK_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnsXInfatuatedY[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\ninfatuated {B_ATK_NAME_WITH_PREFIX}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXMadeYIneffective[] = _("{B_DEF_ABILITY} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "rende inefficace {B_CURRENT_MOVE}!");
+#else
 static const u8 sText_PkmnsXMadeYIneffective[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nmade {B_CURRENT_MOVE} ineffective!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXCuredYProblem[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "cura il problema di {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnsXCuredYProblem[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\ncured its {B_BUFF1} problem!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ItSuckedLiquidOoze[] = _("Succhia la MELMA!");
+#else
 static const u8 sText_ItSuckedLiquidOoze[] = _("It sucked up the\nLIQUID OOZE!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnTransformed[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} si trasforma!");
+#else
 static const u8 sText_PkmnTransformed[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} transformed!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXTookAttack[] = _("{B_DEF_ABILITY} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "riceve l’attacco!");
+#else
 static const u8 sText_PkmnsXTookAttack[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\ntook the attack!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_PkmnsXPreventsSwitching[] = _("{B_LAST_ABILITY} di {UNKNOWN_STR}\n"
+    "evita lo scambio!\p");
+#else
 const u8 gText_PkmnsXPreventsSwitching[] = _("{B_BUFF1}'s {B_LAST_ABILITY}\nprevents switching!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PreventedFromWorking[] = _("{B_DEF_ABILITY} di {B_DEF_NAME_WITH_PREFIX}\n"
+    "blocca {UNKNOWN_STR}\l"
+    "di {B_SCR_ACTIVE_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PreventedFromWorking[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nprevented {B_SCR_ACTIVE_NAME_WITH_PREFIX}'s\l{B_BUFF1} from working!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXMadeItIneffective[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "l’ha neutralizzato!");
+#else
 static const u8 sText_PkmnsXMadeItIneffective[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nmade it ineffective!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXPreventsFlinching[] = _("{B_EFF_ABILITY} di {B_EFF_NAME_WITH_PREFIX}\n"
+    "evita il tentennamento!");
+#else
 static const u8 sText_PkmnsXPreventsFlinching[] = _("{B_EFF_NAME_WITH_PREFIX}'s {B_EFF_ABILITY}\nprevents flinching!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXPreventsYsZ[] = _("{B_ATK_ABILITY} di {B_ATK_NAME_WITH_PREFIX}\n"
+    "blocca {B_DEF_ABILITY}\l"
+    "di {B_DEF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnsXPreventsYsZ[] = _("{B_ATK_NAME_WITH_PREFIX}'s {B_ATK_ABILITY}\nprevents {B_DEF_NAME_WITH_PREFIX}'s\l{B_DEF_ABILITY} from working!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXCuredItsYProblem[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "cura il problema di {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnsXCuredItsYProblem[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\ncured its {B_BUFF1} problem!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsXHadNoEffectOnY[] = _("{B_SCR_ACTIVE_ABILITY} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "non agisce su {B_EFF_NAME_WITH_PREFIX}!");
+#else
 static const u8 sText_PkmnsXHadNoEffectOnY[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nhad no effect on {B_EFF_NAME_WITH_PREFIX}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TooScaredToMove[] = _("{B_ATK_NAME_WITH_PREFIX} non si muove!\n"
+    "Ha una fifa…");
+#else
 static const u8 sText_TooScaredToMove[] = _("{B_ATK_NAME_WITH_PREFIX} is too scared to move!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_GetOutGetOut[] = _("SPETTRO: Fuori… fuori…");
+#else
 static const u8 sText_GetOutGetOut[] = _("GHOST: Get out…… Get out……");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_StatSharply[] = _("sale di molto!");
+#else
 static const u8 sText_StatSharply[] = _("sharply ");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gBattleText_Rose[] = _("sale!");
+#else
 const u8 gBattleText_Rose[] = _("rose!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_StatHarshly[] = _("cala a picco!");
+#else
 static const u8 sText_StatHarshly[] = _("harshly ");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_StatFell[] = _("cala!");
+#else
 static const u8 sText_StatFell[] = _("fell!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_AttackersStatRose[] = _("Ehi, {UNKNOWN_STR} di \n"
+    "{B_ATK_NAME_WITH_PREFIX} {PLAYER}");
+#else
 static const u8 sText_AttackersStatRose[] = _("{B_ATK_NAME_WITH_PREFIX}'s {B_BUFF1}\n{B_BUFF2}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_DefendersStatRose[] = _("Ehi, {UNKNOWN_STR} di\n"
+    "{B_DEF_NAME_WITH_PREFIX} {PLAYER}");
+#else
 const u8 gText_DefendersStatRose[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_BUFF1}\n{B_BUFF2}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_UsingItemTheStatOfPkmnRose[] = _("Con {B_LAST_ITEM}, {UNKNOWN_STR} di\n"
+    "{B_SCR_ACTIVE_NAME_WITH_PREFIX} {PLAYER}");
+#else
 static const u8 sText_UsingItemTheStatOfPkmnRose[] = _("Using {B_LAST_ITEM}, the {B_BUFF1}\nof {B_SCR_ACTIVE_NAME_WITH_PREFIX} {B_BUFF2}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_AttackersStatFell[] = _("{UNKNOWN_STR} di {B_ATK_NAME_WITH_PREFIX}\n"
+    "{PLAYER}");
+#else
 static const u8 sText_AttackersStatFell[] = _("{B_ATK_NAME_WITH_PREFIX}'s {B_BUFF1}\n{B_BUFF2}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_DefendersStatFell[] = _("Ehi, {UNKNOWN_STR} di\n"
+    "{B_DEF_NAME_WITH_PREFIX} {PLAYER}");
+#else
 static const u8 sText_DefendersStatFell[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_BUFF1}\n{B_BUFF2}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_StatsWontIncrease2[] = _("Statistiche di {B_ATK_NAME_WITH_PREFIX}\n"
+    "non aumenteranno!");
+#else
 static const u8 sText_StatsWontIncrease2[] = _("{B_ATK_NAME_WITH_PREFIX}'s stats won't\ngo any higher!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_StatsWontDecrease2[] = _("Statistiche di {B_DEF_NAME_WITH_PREFIX}\n"
+    "non caleranno!");
+#else
 static const u8 sText_StatsWontDecrease2[] = _("{B_DEF_NAME_WITH_PREFIX}'s stats won't\ngo any lower!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_CriticalHit[] = _("Brutto colpo!");
+#else
 static const u8 sText_CriticalHit[] = _("A critical hit!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_OneHitKO[] = _("KO in un attacco!");
+#else
 static const u8 sText_OneHitKO[] = _("It's a one-hit KO!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_123Poof[] = _("{PAUSE 32}1, {PAUSE 15}2 e {PAUSE 15}… {PAUSE 15}… {PAUSE 15}…{PAUSE 15}{PLAY_SE}ぅ  puf!\p");
+#else
 static const u8 sText_123Poof[] = _("{PAUSE 32}1, {PAUSE 15}2, and{PAUSE 15}… {PAUSE 15}… {PAUSE 15}… {PAUSE 15}{PLAY_SE SE_BALL_BOUNCE_1}Poof!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_AndEllipsis[] = _("e al suo posto…\p");
+#else
 static const u8 sText_AndEllipsis[] = _("And…\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_HMMovesCantBeForgotten[] = _("Ora è impossibile\n"
+    "scordare mosse MN.\p");
+#else
 static const u8 sText_HMMovesCantBeForgotten[] = _("HM moves can't be\nforgotten now.\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_NotVeryEffective[] = _("Non è molto efficace…");
+#else
 static const u8 sText_NotVeryEffective[] = _("It's not very effective…");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SuperEffective[] = _("È superefficace!");
+#else
 static const u8 sText_SuperEffective[] = _("It's super effective!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_GotAwaySafely[] = _("{PLAY_SE}Ù Scampato pericolo!\p");
+#else
 static const u8 sText_GotAwaySafely[] = _("{PLAY_SE SE_FLEE}Got away safely!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFledUsingIts[] = _("{PLAY_SE}Ù {B_ATK_NAME_WITH_PREFIX} fugge\n"
+    "usando {B_LAST_ITEM}!\p");
+#else
 static const u8 sText_PkmnFledUsingIts[] = _("{PLAY_SE SE_FLEE}{B_ATK_NAME_WITH_PREFIX} fled\nusing its {B_LAST_ITEM}!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnFledUsing[] = _("{PLAY_SE}Ù {B_ATK_NAME_WITH_PREFIX} fugge\n"
+    "usando {B_ATK_ABILITY}!\p");
+#else
 static const u8 sText_PkmnFledUsing[] = _("{PLAY_SE SE_FLEE}{B_ATK_NAME_WITH_PREFIX} fled\nusing {B_ATK_ABILITY}!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_WildPkmnFled[] = _("{PLAY_SE}Ù {UNKNOWN_STR} selvatico fugge!");
+#else
 static const u8 sText_WildPkmnFled[] = _("{PLAY_SE SE_FLEE}Wild {B_BUFF1} fled!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerDefeatedLinkTrainer[] = _("Hai avuto la meglio su\n"
+    "{B_LINK_OPPONENT1_NAME}!");
+#else
 static const u8 sText_PlayerDefeatedLinkTrainer[] = _("Player defeated\n{B_LINK_OPPONENT1_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TwoLinkTrainersDefeated[] = _("{B_LINK_OPPONENT2_NAME} e {B_LINK_OPPONENT1_NAME} hanno\n"
+    "perso la sfida!");
+#else
 static const u8 sText_TwoLinkTrainersDefeated[] = _("Player beat {B_LINK_OPPONENT1_NAME}\nand {B_LINK_OPPONENT2_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerLostAgainstLinkTrainer[] = _("{B_LINK_OPPONENT1_NAME}\n"
+    "ha vinto la sfida!");
+#else
 static const u8 sText_PlayerLostAgainstLinkTrainer[] = _("Player lost against\n{B_LINK_OPPONENT1_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerLostToTwo[] = _("{B_LINK_OPPONENT2_NAME} e {B_LINK_OPPONENT1_NAME}\n"
+    "hanno vinto la sfida!");
+#else
 static const u8 sText_PlayerLostToTwo[] = _("Player lost to {B_LINK_OPPONENT1_NAME}\nand {B_LINK_OPPONENT2_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerBattledToDrawLinkTrainer[] = _("La sfida contro {B_LINK_OPPONENT1_NAME}\n"
+    "si è conclusa in parità!");
+#else
 static const u8 sText_PlayerBattledToDrawLinkTrainer[] = _("Player battled to a draw against\n{B_LINK_OPPONENT1_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerBattledToDrawVsTwo[] = _("La sfida con {B_LINK_OPPONENT2_NAME} e\n"
+    "{B_LINK_OPPONENT1_NAME} si è conclusa in\l"
+    "parità!");
+#else
 static const u8 sText_PlayerBattledToDrawVsTwo[] = _("Player battled to a draw against\n{B_LINK_OPPONENT1_NAME} and {B_LINK_OPPONENT2_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_WildFled[] = _("{PLAY_SE}Ù {B_LINK_OPPONENT1_NAME} se l’è data a gambe!");
+#else
 static const u8 sText_WildFled[] = _("{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME} fled!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TwoWildFled[] = _("{PLAY_SE}Ù {B_LINK_OPPONENT1_NAME} e\n"
+    "{B_LINK_OPPONENT2_NAME} se la sono data a gambe!");
+#else
 static const u8 sText_TwoWildFled[] = _("{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME} and\n{B_LINK_OPPONENT2_NAME} fled!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_NoRunningFromTrainers[] = _("Non puoi sottrarti alla\n"
+    "lotta con un ALLENATORE!\p");
+#else
 static const u8 sText_NoRunningFromTrainers[] = _("No! There's no running\nfrom a TRAINER battle!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_CantEscape[] = _("Non si scappa!\p");
+#else
 static const u8 sText_CantEscape[] = _("Can't escape!\p");
+#endif
 static const u8 sText_DontLeaveBirch[] = _(""); // Dummied
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ButNothingHappened[] = _("Ma non succede nulla!");
+#else
 static const u8 sText_ButNothingHappened[] = _("But nothing happened!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ButItFailed[] = _("Ma fallisce!");
+#else
 static const u8 sText_ButItFailed[] = _("But it failed!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ItHurtConfusion[] = _("È così confuso da\n"
+    "colpirsi da solo!");
+#else
 static const u8 sText_ItHurtConfusion[] = _("It hurt itself in its\nconfusion!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_MirrorMoveFailed[] = _("La SPECULMOSSA ha fallito!");
+#else
 static const u8 sText_MirrorMoveFailed[] = _("The MIRROR MOVE failed!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_StartedToRain[] = _("Inizia a piovere!");
+#else
 static const u8 sText_StartedToRain[] = _("It started to rain!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_DownpourStarted[] = _("Inizia un acquazzone!");
+#else
 static const u8 sText_DownpourStarted[] = _("A downpour started!"); // corresponds to DownpourText in pokegold and pokecrystal and is used by Rain Dance in GSC
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_RainContinues[] = _("Continua a piovere.");
+#else
 static const u8 sText_RainContinues[] = _("Rain continues to fall.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_DownpourContinues[] = _("L’acquazzone continua.");
+#else
 static const u8 sText_DownpourContinues[] = _("The downpour continues."); // unused
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_RainStopped[] = _("Ha smesso di piovere.");
+#else
 static const u8 sText_RainStopped[] = _("The rain stopped.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SandstormBrewed[] = _("Sta arrivando una tempesta di sabbia!");
+#else
 static const u8 sText_SandstormBrewed[] = _("A sandstorm brewed!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SandstormRages[] = _("La tempesta di sabbia imperversa!");
+#else
 static const u8 sText_SandstormRages[] = _("The sandstorm rages.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SandstormSubsided[] = _("La tempesta di sabbia cessa.");
+#else
 static const u8 sText_SandstormSubsided[] = _("The sandstorm subsided.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SunlightGotBright[] = _("La luce solare diventa intensa!");
+#else
 static const u8 sText_SunlightGotBright[] = _("The sunlight got bright!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SunlightStrong[] = _("La luce solare è fortissima!");
+#else
 static const u8 sText_SunlightStrong[] = _("The sunlight is strong.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SunlightFaded[] = _("La luce solare torna normale!");
+#else
 static const u8 sText_SunlightFaded[] = _("The sunlight faded.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_StartedHail[] = _("Inizia a grandinare!");
+#else
 static const u8 sText_StartedHail[] = _("It started to hail!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_HailContinues[] = _("Continua a grandinare.");
+#else
 static const u8 sText_HailContinues[] = _("Hail continues to fall.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_HailStopped[] = _("Ha smesso di grandinare.");
+#else
 static const u8 sText_HailStopped[] = _("The hail stopped.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_FailedToSpitUp[] = _("Ma SFOGHENERGIA\n"
+    "fallisce!");
+#else
 static const u8 sText_FailedToSpitUp[] = _("But it failed to SPIT UP\na thing!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_FailedToSwallow[] = _("Ma INTROENERGIA\n"
+    "fallisce!");
+#else
 static const u8 sText_FailedToSwallow[] = _("But it failed to SWALLOW\na thing!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_WindBecameHeatWave[] = _("Il vento si è trasformato in\n"
+    "ONDACALDA!");
+#else
 static const u8 sText_WindBecameHeatWave[] = _("The wind turned into a\nHEAT WAVE!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_StatChangesGone[] = _("Eliminate tutte le modifiche\n"
+    "delle statistiche!");
+#else
 static const u8 sText_StatChangesGone[] = _("All stat changes were\neliminated!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_CoinsScattered[] = _("Ci sono monete sparse ovunque!");
+#else
 static const u8 sText_CoinsScattered[] = _("Coins scattered everywhere!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TooWeakForSubstitute[] = _("Troppo debole! Non può creare\n"
+    "un SOSTITUTO!");
+#else
 static const u8 sText_TooWeakForSubstitute[] = _("It was too weak to make\na SUBSTITUTE!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SharedPain[] = _("I POKéMON condividono\n"
+    "i PS!");
+#else
 static const u8 sText_SharedPain[] = _("The battlers shared\ntheir pain!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_BellChimed[] = _("Suona la campana!");
+#else
 static const u8 sText_BellChimed[] = _("A bell chimed!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_FaintInThree[] = _("Tutti i POKéMON che la ascoltano\n"
+    "saranno esausti in tre turni!");
+#else
 static const u8 sText_FaintInThree[] = _("All affected POKéMON will\nfaint in three turns!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_NoPPLeft[] = _("Non ha più PP per\n"
+    "questa mossa!\p");
+#else
 static const u8 sText_NoPPLeft[] = _("There's no PP left for\nthis move!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ButNoPPLeft[] = _("Ma non ha più PP per\n"
+    "questa mossa!");
+#else
 static const u8 sText_ButNoPPLeft[] = _("But there was no PP left\nfor the move!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnIgnoresAsleep[] = _("{B_ATK_NAME_WITH_PREFIX} ignora gli\n"
+    "ordini, sta dormendo!");
+#else
 static const u8 sText_PkmnIgnoresAsleep[] = _("{B_ATK_NAME_WITH_PREFIX} ignored\norders while asleep!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnIgnoredOrders[] = _("{B_ATK_NAME_WITH_PREFIX} ignora gli\n"
+    "ordini!");
+#else
 static const u8 sText_PkmnIgnoredOrders[] = _("{B_ATK_NAME_WITH_PREFIX} ignored\norders!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnBeganToNap[] = _("{B_ATK_NAME_WITH_PREFIX} fa un riposino!");
+#else
 static const u8 sText_PkmnBeganToNap[] = _("{B_ATK_NAME_WITH_PREFIX} began to nap!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnLoafing[] = _("{B_ATK_NAME_WITH_PREFIX} sta ciondolando!");
+#else
 static const u8 sText_PkmnLoafing[] = _("{B_ATK_NAME_WITH_PREFIX} is\nloafing around!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWontObey[] = _("{B_ATK_NAME_WITH_PREFIX} non obbedisce!");
+#else
 static const u8 sText_PkmnWontObey[] = _("{B_ATK_NAME_WITH_PREFIX} won't\nobey!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnTurnedAway[] = _("{B_ATK_NAME_WITH_PREFIX} disobbedisce!");
+#else
 static const u8 sText_PkmnTurnedAway[] = _("{B_ATK_NAME_WITH_PREFIX} turned away!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnPretendNotNotice[] = _("{B_ATK_NAME_WITH_PREFIX} fa finta \n"
+    "di niente!");
+#else
 static const u8 sText_PkmnPretendNotNotice[] = _("{B_ATK_NAME_WITH_PREFIX} pretended\nnot to notice!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_EnemyAboutToSwitchPkmn[] = _("La prossima scelta di {B_TRAINER1_NAME},\n"
+    "{B_TRAINER1_CLASS}, sarà {PLAYER}.\p"
+    "{B_PLAYER_NAME}, vuoi cambiare\n"
+    "POKéMON?");
+#else
 static const u8 sText_EnemyAboutToSwitchPkmn[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME} is\nabout to use {B_BUFF2}.\pWill {B_PLAYER_NAME} change\nPOKéMON?");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnLearnedMove2[] = _("{B_ATK_NAME_WITH_PREFIX} ha imparato\n"
+    "{UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnLearnedMove2[] = _("{B_ATK_NAME_WITH_PREFIX} learned\n{B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerDefeatedLinkTrainerTrainer1[] = _("Hai avuto la meglio su\n"
+    "{B_TRAINER1_NAME}, {B_TRAINER1_CLASS}!\p");
+#else
 static const u8 sText_PlayerDefeatedLinkTrainerTrainer1[] = _("Player defeated\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ThrewARock[] = _("{B_PLAYER_NAME} lancia\n"
+    "un SASSO a {RIVAL}!");
+#else
 static const u8 sText_ThrewARock[] = _("{B_PLAYER_NAME} threw a ROCK\nat the {B_OPPONENT_MON1_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ThrewSomeBait[] = _("{B_PLAYER_NAME} lancia\n"
+    "l’ESCA a {RIVAL}!");
+#else
 static const u8 sText_ThrewSomeBait[] = _("{B_PLAYER_NAME} threw some BAIT\nat the {B_OPPONENT_MON1_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnWatchingCarefully[] = _("{RIVAL} guarda\n"
+    "attentamente!");
+#else
 static const u8 sText_PkmnWatchingCarefully[] = _("{B_OPPONENT_MON1_NAME} is watching\ncarefully!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnIsAngry[] = _("{RIVAL} è infuriato!");
+#else
 static const u8 sText_PkmnIsAngry[] = _("{B_OPPONENT_MON1_NAME} is angry!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnIsEating[] = _("{RIVAL} mangia!");
+#else
 static const u8 sText_PkmnIsEating[] = _("{B_OPPONENT_MON1_NAME} is eating!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_OutOfSafariBalls[] = _("{PLAY_SE}ぢ ANNUNCIO: Hai finito tutte le\n"
+    "SAFARI BALL! Fine del gioco!\p");
+#else
 static const u8 sText_OutOfSafariBalls[] = _("{PLAY_SE SE_DING_DONG}ANNOUNCER: You're out of\nSAFARI BALLS! Game over!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_WildPkmnAppeared[] = _("Appare {RIVAL} selvatico!\p");
+#else
 static const u8 sText_WildPkmnAppeared[] = _("Wild {B_OPPONENT_MON1_NAME} appeared!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_WildPkmnAppeared2[] = _("Appare {RIVAL} selvatico!\p");
+#else
 static const u8 sText_WildPkmnAppeared2[] = _("Wild {B_OPPONENT_MON1_NAME} appeared!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_WildPkmnAppearedPause[] = _("Appare {RIVAL} selvatico!{PAUSE 127}");
+#else
 static const u8 sText_WildPkmnAppearedPause[] = _("Wild {B_OPPONENT_MON1_NAME} appeared!{PAUSE 127}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TwoWildPkmnAppeared[] = _("Appaiono {EVIL_TEAM} e\n"
+    "{RIVAL} selvatici!\p");
+#else
 static const u8 sText_TwoWildPkmnAppeared[] = _("Wild {B_OPPONENT_MON1_NAME} and\n{B_OPPONENT_MON2_NAME} appeared!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_GhostAppearedCantId[] = _("Appare lo SPETTRO!\p"
+    "Uffa!\n"
+    "Lo SPETTRO non può essere\l"
+    "identificato!\p");
+#else
 static const u8 sText_GhostAppearedCantId[] = _("The GHOST appeared!\pDarn!\nThe GHOST can't be ID'd!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TheGhostAppeared[] = _("Appare lo SPETTRO!\p");
+#else
 static const u8 sText_TheGhostAppeared[] = _("The GHOST appeared!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SilphScopeUnveil[] = _("La SPETTROSONDA rivela l’identità\n"
+    "dello SPETTRO!");
+#else
 static const u8 sText_SilphScopeUnveil[] = _("SILPH SCOPE unveiled the GHOST's\nidentity!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TheGhostWas[] = _("Lo SPETTRO era MAROWAK!\p");
+#else
 static const u8 sText_TheGhostWas[] = _("The GHOST was MAROWAK!\p\n");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Trainer1WantsToBattle[] = _("Parte la sfida di\n"
+    "{B_TRAINER1_NAME}, {B_TRAINER1_CLASS}!\p");
+#else
 static const u8 sText_Trainer1WantsToBattle[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME}\nwould like to battle!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_LinkTrainerWantsToBattle[] = _("Parte la sfida di\n"
+    "{B_LINK_OPPONENT1_NAME}!");
+#else
 static const u8 sText_LinkTrainerWantsToBattle[] = _("{B_LINK_OPPONENT1_NAME}\nwants to battle!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TwoLinkTrainersWantToBattle[] = _("Parte la sfida di\n"
+    "{B_LINK_OPPONENT1_NAME} e {B_LINK_OPPONENT2_NAME}!");
+#else
 static const u8 sText_TwoLinkTrainersWantToBattle[] = _("{B_LINK_OPPONENT1_NAME} and {B_LINK_OPPONENT2_NAME}\nwant to battle!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Trainer1SentOutPkmn[] = _("È il turno di {RIVAL}, mandato in\n"
+    "campo da {B_TRAINER1_NAME}, {B_TRAINER1_CLASS}!{PAUSE 60}");
+#else
 static const u8 sText_Trainer1SentOutPkmn[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME} sent\nout {B_OPPONENT_MON1_NAME}!{PAUSE 60}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Trainer1SentOutTwoPkmn[] = _("Ecco {RIVAL} e {EVIL_TEAM},\n"
+    "mandati in campo da\l"
+    "{B_TRAINER1_NAME}, {B_TRAINER1_CLASS}!{PAUSE 60}");
+#else
 static const u8 sText_Trainer1SentOutTwoPkmn[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME} sent\nout {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME}!{PAUSE 60}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Trainer1SentOutPkmn2[] = _("È il turno di {UNKNOWN_STR}, mandato in\n"
+    "campo da {B_TRAINER1_NAME}, {B_TRAINER1_CLASS}!");
+#else
 static const u8 sText_Trainer1SentOutPkmn2[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME} sent\nout {B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_LinkTrainerSentOutPkmn[] = _("{B_LINK_OPPONENT1_NAME} manda\n"
+    "in campo {RIVAL}!");
+#else
 static const u8 sText_LinkTrainerSentOutPkmn[] = _("{B_LINK_OPPONENT1_NAME} sent out\n{B_OPPONENT_MON1_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_LinkTrainerSentOutTwoPkmn[] = _("{B_LINK_OPPONENT1_NAME} manda in campo\n"
+    "{RIVAL} e {EVIL_TEAM}!");
+#else
 static const u8 sText_LinkTrainerSentOutTwoPkmn[] = _("{B_LINK_OPPONENT1_NAME} sent out\n{B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TwoLinkTrainersSentOutPkmn[] = _("{B_LINK_OPPONENT1_NAME} manda in campo\n"
+    "{EVIL_LEADER}!\p"
+    "{B_LINK_OPPONENT2_NAME} manda in campo\n"
+    "{EVIL_LEGENDARY}!");
+#else
 static const u8 sText_TwoLinkTrainersSentOutPkmn[] = _("{B_LINK_OPPONENT1_NAME} sent out {B_LINK_OPPONENT_MON1_NAME}!\n{B_LINK_OPPONENT2_NAME} sent out {B_LINK_OPPONENT_MON2_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_LinkTrainerSentOutPkmn2[] = _("{B_LINK_OPPONENT1_NAME} manda in campo\n"
+    "{UNKNOWN_STR}!");
+#else
 static const u8 sText_LinkTrainerSentOutPkmn2[] = _("{B_LINK_OPPONENT1_NAME} sent out\n{B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_LinkTrainerMultiSentOutPkmn[] = _("{B_LINK_SCR_TRAINER_NAME} manda in campo\n"
+    "{UNKNOWN_STR}!");
+#else
 static const u8 sText_LinkTrainerMultiSentOutPkmn[] = _("{B_LINK_SCR_TRAINER_NAME} sent out\n{B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_GoPkmn[] = _("Vai, {KUN}!");
+#else
 static const u8 sText_GoPkmn[] = _("Go! {B_PLAYER_MON1_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_GoTwoPkmn[] = _("Avanti, {KUN} e\n"
+    "{VERSION}!");
+#else
 static const u8 sText_GoTwoPkmn[] = _("Go! {B_PLAYER_MON1_NAME} and\n{B_PLAYER_MON2_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_GoPkmn2[] = _("Vai, {UNKNOWN_STR}!");
+#else
 static const u8 sText_GoPkmn2[] = _("Go! {B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_DoItPkmn[] = _("Dai, {UNKNOWN_STR}!");
+#else
 static const u8 sText_DoItPkmn[] = _("Do it! {B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_GoForItPkmn[] = _("Coraggio, {UNKNOWN_STR}!");
+#else
 static const u8 sText_GoForItPkmn[] = _("Go for it, {B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_YourFoesWeakGetEmPkmn[] = _("Nemico debole!\n"
+    "Forza, {UNKNOWN_STR}!");
+#else
 static const u8 sText_YourFoesWeakGetEmPkmn[] = _("Your foe's weak!\nGet 'em, {B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_LinkPartnerSentOutPkmnGoPkmn[] = _("{B_LINK_PARTNER_NAME} manda in campo\n"
+    "{GOOD_LEADER}!\p"
+    "Vai, {GOOD_TEAM}!");
+#else
 static const u8 sText_LinkPartnerSentOutPkmnGoPkmn[] = _("{B_LINK_PARTNER_NAME} sent out {B_LINK_PLAYER_MON2_NAME}!\nGo! {B_LINK_PLAYER_MON1_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnThatsEnough[] = _("{UNKNOWN_STR}, basta così!\n"
+    "Rientra!");
+#else
 static const u8 sText_PkmnThatsEnough[] = _("{B_BUFF1}, that's enough!\nCome back!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnComeBack[] = _("{UNKNOWN_STR}, rientra!");
+#else
 static const u8 sText_PkmnComeBack[] = _("{B_BUFF1}, come back!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnOkComeBack[] = _("{UNKNOWN_STR}, OK!\n"
+    "Rientra!");
+#else
 static const u8 sText_PkmnOkComeBack[] = _("{B_BUFF1}, OK!\nCome back!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 sText_PkmnGoodComeBack[] = _("{UNKNOWN_STR}, bene!\n"
+    "Rientra!");
+#else
 const u8 sText_PkmnGoodComeBack[] = _("{B_BUFF1}, good!\nCome back!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Trainer1WithdrewPkmn[] = _("{UNKNOWN_STR} è ritirato dalla lotta\n"
+    "da {B_TRAINER1_NAME}, {B_TRAINER1_CLASS}!");
+#else
 static const u8 sText_Trainer1WithdrewPkmn[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME}\nwithdrew {B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_LinkTrainer1WithdrewPkmn[] = _("{B_LINK_OPPONENT1_NAME} ritira\n"
+    "{UNKNOWN_STR}!");
+#else
 static const u8 sText_LinkTrainer1WithdrewPkmn[] = _("{B_LINK_OPPONENT1_NAME} withdrew\n{B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_LinkTrainer2WithdrewPkmn[] = _("{B_LINK_SCR_TRAINER_NAME} ritira\n"
+    "{UNKNOWN_STR}!");
+#else
 static const u8 sText_LinkTrainer2WithdrewPkmn[] = _("{B_LINK_SCR_TRAINER_NAME} withdrew\n{B_BUFF1}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_WildPkmnPrefix[] = _(" selvatico");
+#else
 static const u8 sText_WildPkmnPrefix[] = _("Wild ");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_FoePkmnPrefix[] = _(" nemico");
+#else
 static const u8 sText_FoePkmnPrefix[] = _("Foe ");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_FoePkmnPrefix2[] = _("nemico");
+#else
 static const u8 sText_FoePkmnPrefix2[] = _("Foe");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_AllyPkmnPrefix[] = _("amico");
+#else
 static const u8 sText_AllyPkmnPrefix[] = _("Ally");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_FoePkmnPrefix3[] = _("nemico");
+#else
 static const u8 sText_FoePkmnPrefix3[] = _("Foe");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_AllyPkmnPrefix2[] = _("amico");
+#else
 static const u8 sText_AllyPkmnPrefix2[] = _("Ally");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_FoePkmnPrefix4[] = _("nemico");
+#else
 static const u8 sText_FoePkmnPrefix4[] = _("Foe");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_AllyPkmnPrefix3[] = _("amico");
+#else
 static const u8 sText_AllyPkmnPrefix3[] = _("Ally");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_AttackerUsedX[] = _("{B_ATK_NAME_WITH_PREFIX} usa\n"
+    "{PLAYER}");
+#else
 static const u8 sText_AttackerUsedX[] = _("{B_ATK_NAME_WITH_PREFIX} used\n{B_BUFF2}");
+#endif
 static const u8 sText_ExclamationMark[] = _("!");
 static const u8 sText_ExclamationMark2[] = _("!");
 static const u8 sText_ExclamationMark3[] = _("!");
 static const u8 sText_ExclamationMark4[] = _("!");
 static const u8 sText_ExclamationMark5[] = _("!");
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_HP2[] = _("PS");
+#else
 static const u8 sText_HP2[] = _("HP");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Attack2[] = _("ATTACCO");
+#else
 static const u8 sText_Attack2[] = _("ATTACK");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Defense2[] = _("DIFESA");
+#else
 static const u8 sText_Defense2[] = _("DEFENSE");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Speed[] = _("VELOC.");
+#else
 static const u8 sText_Speed[] = _("SPEED");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SpAtk2[] = _("ATT. SPEC.");
+#else
 static const u8 sText_SpAtk2[] = _("SP. ATK");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SpDef2[] = _("DIF. SPEC.");
+#else
 static const u8 sText_SpDef2[] = _("SP. DEF");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Accuracy[] = _("precisione");
+#else
 static const u8 sText_Accuracy[] = _("accuracy");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Evasiveness[] = _("elusione");
+#else
 static const u8 sText_Evasiveness[] = _("evasiveness");
+#endif
 
 const u8 *const gStatNamesTable[] = {
     sText_HP2,
@@ -445,11 +2240,31 @@ const u8 *const gStatNamesTable[] = {
     sText_Evasiveness
 };
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PokeblockWasTooSpicy[] = _("è troppo pepata!");
+#else
 static const u8 sText_PokeblockWasTooSpicy[] = _("was too spicy!"); //
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PokeblockWasTooDry[] = _("è troppo secca!");
+#else
 static const u8 sText_PokeblockWasTooDry[] = _("was too dry!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PokeblockWasTooSweet[] = _("è troppo dolce!");
+#else
 static const u8 sText_PokeblockWasTooSweet[] = _("was too sweet!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PokeblockWasTooBitter[] = _("è troppo amara!");
+#else
 static const u8 sText_PokeblockWasTooBitter[] = _("was too bitter!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PokeblockWasTooSour[] = _("è troppo aspra!");
+#else
 static const u8 sText_PokeblockWasTooSour[] = _("was too sour!");
+#endif
 
 const u8 *const gPokeblockWasTooXStringTable[] = {
     sText_PokeblockWasTooSpicy,
@@ -459,60 +2274,333 @@ const u8 *const gPokeblockWasTooXStringTable[] = {
     sText_PokeblockWasTooSour
 };
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerUsedItem[] = _("{B_PLAYER_NAME} usa {B_LAST_ITEM}!");
+#else
 static const u8 sText_PlayerUsedItem[] = _("{B_PLAYER_NAME} used\n{B_LAST_ITEM}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_OldManUsedItem[] = _("Il vecchietto usa\n"
+    "{B_LAST_ITEM}!");
+#else
 static const u8 sText_OldManUsedItem[] = _("The old man used\n{B_LAST_ITEM}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PokedudeUsedItem[] = _("GUIDO usa\n"
+    "{B_LAST_ITEM}!");
+#else
 static const u8 sText_PokedudeUsedItem[] = _("The POKé DUDE used\n{B_LAST_ITEM}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Trainer1UsedItem[] = _("{B_LAST_ITEM} è lo strumento usato\n"
+    "da {B_TRAINER1_NAME}, {B_TRAINER1_CLASS}!");
+#else
 static const u8 sText_Trainer1UsedItem[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME}\nused {B_LAST_ITEM}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_TrainerBlockedBall[] = _("La BALL è stata bloccata!");
+#else
 static const u8 sText_TrainerBlockedBall[] = _("The TRAINER blocked the BALL!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_DontBeAThief[] = _("Non si ruba!");
+#else
 static const u8 sText_DontBeAThief[] = _("Don't be a thief!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ItDodgedBall[] = _("Ha schivato la BALL! Questo\n"
+    "POKéMON non può essere catturato!");
+#else
 static const u8 sText_ItDodgedBall[] = _("It dodged the thrown BALL!\nThis POKéMON can't be caught!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_YouMissedPkmn[] = _("Ti è sfuggito il POKéMON!");
+#else
 static const u8 sText_YouMissedPkmn[] = _("You missed the POKéMON!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnBrokeFree[] = _("Oh, no!\n"
+    "Il POKéMON si è liberato!");
+#else
 static const u8 sText_PkmnBrokeFree[] = _("Oh, no!\nThe POKéMON broke free!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ItAppearedCaught[] = _("Ah! Sembrava preso,\n"
+    "eh? E invece no!");
+#else
 static const u8 sText_ItAppearedCaught[] = _("Aww!\nIt appeared to be caught!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_AarghAlmostHadIt[] = _("Grrr!\n"
+    "Per un pelo!");
+#else
 static const u8 sText_AarghAlmostHadIt[] = _("Aargh!\nAlmost had it!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ShootSoClose[] = _("Nooo!\n"
+    "Era così vicino!");
+#else
 static const u8 sText_ShootSoClose[] = _("Shoot!\nIt was so close, too!");
+#endif
 static const u8 sText_ItDodgedBall2[] = _("よけられた!\nこいつは つかまりそうにないぞ!"); // Unused version of the Marowak ghost dodging text
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_GotchaPkmnCaught[] = _("Preso!\n"
+    "{RIVAL} è catturato!{WAIT_SE}{PLAY_BGM}ぢÀ\p");
+#else
 static const u8 sText_GotchaPkmnCaught[] = _("Gotcha!\n{B_OPPONENT_MON1_NAME} was caught!{WAIT_SE}{PLAY_BGM MUS_CAUGHT}\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_GotchaPkmnCaught2[] = _("Preso!\n"
+    "{RIVAL} è catturato!{WAIT_SE}{PLAY_BGM}ぢÀ{PAUSE 127}");
+#else
 static const u8 sText_GotchaPkmnCaught2[] = _("Gotcha!\n{B_OPPONENT_MON1_NAME} was caught!{WAIT_SE}{PLAY_BGM MUS_CAUGHT}{PAUSE 127}");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_GiveNicknameCaptured[] = _("Vuoi dare un soprannome\n"
+    "a {RIVAL}?");
+#else
 static const u8 sText_GiveNicknameCaptured[] = _("Give a nickname to the\ncaptured {B_OPPONENT_MON1_NAME}?");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnSentToPC[] = _("{RIVAL} è stato inviato\n"
+    "al PC di {B_PC_CREATOR_NAME}.");
+#else
 static const u8 sText_PkmnSentToPC[] = _("{B_OPPONENT_MON1_NAME} was sent to\n{B_PC_CREATOR_NAME} PC.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Someones[] = _("???");
+#else
 static const u8 sText_Someones[] = _("someone's");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Bills[] = _("BILL");
+#else
 static const u8 sText_Bills[] = _("BILL's");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnDataAddedToDex[] = _("I dati di {RIVAL} sono stati\n"
+    "inseriti nel POKéDEX.\p");
+#else
 static const u8 sText_PkmnDataAddedToDex[] = _("{B_OPPONENT_MON1_NAME}'s data was\nadded to the POKéDEX.\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ItIsRaining[] = _("Piove.");
+#else
 static const u8 sText_ItIsRaining[] = _("It is raining."); // used only in RSE when a battle starts in a rainy area
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SandstormIsRaging[] = _("Imperversa una tempesta di sabbia.");
+#else
 static const u8 sText_SandstormIsRaging[] = _("A sandstorm is raging.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_BoxIsFull[] = _("I BOX sono pieni!\n"
+    "Non ne puoi catturare altri!\p");
+#else
 static const u8 sText_BoxIsFull[] = _("The BOX is full!\nYou can't catch any more!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_EnigmaBerry[] = _("BACCAENIGMA");
+#else
 static const u8 sText_EnigmaBerry[] = _("ENIGMA BERRY");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_BerrySuffix[] = _("BACCA{STR_VAR_3}");
+#else
 static const u8 sText_BerrySuffix[] = _(" BERRY");
+#endif
 static const u8 sText_Enigma[] = _("ナゾ");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsItemCuredParalysis[] = _("{B_LAST_ITEM} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "guarisce la paralisi!");
+#else
 static const u8 sText_PkmnsItemCuredParalysis[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\ncured paralysis!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsItemCuredPoison[] = _("{B_LAST_ITEM} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "guarisce l’avvelenamento!");
+#else
 static const u8 sText_PkmnsItemCuredPoison[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\ncured poison!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsItemHealedBurn[] = _("{B_LAST_ITEM} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "guarisce la scottatura!");
+#else
 static const u8 sText_PkmnsItemHealedBurn[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\nhealed its burn!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsItemDefrostedIt[] = _("{B_LAST_ITEM} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "l’ha scongelato!");
+#else
 static const u8 sText_PkmnsItemDefrostedIt[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\ndefrosted it!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsItemWokeIt[] = _("{B_LAST_ITEM} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "l’ha svegliato!");
+#else
 static const u8 sText_PkmnsItemWokeIt[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\nwoke it from its sleep!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsItemSnappedOut[] = _("{B_LAST_ITEM} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "elimina la sua confusione!");
+#else
 static const u8 sText_PkmnsItemSnappedOut[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\nsnapped it out of confusion!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsItemCuredProblem[] = _("{B_LAST_ITEM} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "risolve il problema di {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnsItemCuredProblem[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\ncured its {B_BUFF1} problem!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsItemNormalizedStatus[] = _("{B_LAST_ITEM} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "normalizza il suo stato!");
+#else
 static const u8 sText_PkmnsItemNormalizedStatus[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\nnormalized its status!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsItemRestoredHealth[] = _("{B_LAST_ITEM} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "ristabilisce la salute!");
+#else
 static const u8 sText_PkmnsItemRestoredHealth[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\nrestored health!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsItemRestoredPP[] = _("{B_LAST_ITEM} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "ristabilisce i PP di {UNKNOWN_STR}!");
+#else
 static const u8 sText_PkmnsItemRestoredPP[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\nrestored {B_BUFF1}'s PP!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsItemRestoredStatus[] = _("{B_LAST_ITEM} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "ristabilisce le sue statistiche!");
+#else
 static const u8 sText_PkmnsItemRestoredStatus[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\nrestored its status!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnsItemRestoredHPALittle[] = _("{B_LAST_ITEM} di {B_SCR_ACTIVE_NAME_WITH_PREFIX}\n"
+    "ristabilisce parte dei PS!");
+#else
 static const u8 sText_PkmnsItemRestoredHPALittle[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_LAST_ITEM}\nrestored its HP a little!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ItemAllowsOnlyYMove[] = _("{B_LAST_ITEM} consente di usare\n"
+    "soltanto {B_CURRENT_MOVE}!\p");
+#else
 static const u8 sText_ItemAllowsOnlyYMove[] = _("{B_LAST_ITEM}'s effect allows only\n{B_CURRENT_MOVE} to be used!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHungOnWithX[] = _("{B_DEF_NAME_WITH_PREFIX} resiste\n"
+    "usando {B_LAST_ITEM}!");
+#else
 static const u8 sText_PkmnHungOnWithX[] = _("{B_DEF_NAME_WITH_PREFIX} hung on\nusing its {B_LAST_ITEM}!");
+#endif
 const u8 gText_EmptyString3[] = _("");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayedFluteCatchyTune[] = _("{B_PLAYER_NAME} ha suonato il {B_LAST_ITEM}.\p"
+    "È una melodia orecchiabile!");
+#else
 static const u8 sText_PlayedFluteCatchyTune[] = _("{B_PLAYER_NAME} played the {B_LAST_ITEM}.\pNow, that's a catchy tune!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayedThe[] = _("{B_PLAYER_NAME} suona\n"
+    "il {B_LAST_ITEM}.");
+#else
 static const u8 sText_PlayedThe[] = _("{B_PLAYER_NAME} played the\n{B_LAST_ITEM}.");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PkmnHearingFluteAwoke[] = _("Il FLAUTO risveglia il POKéMON\n"
+    "addormentato.");
+#else
 static const u8 sText_PkmnHearingFluteAwoke[] = _("The POKéMON hearing the FLUTE\nawoke!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_YouThrowABallNowRight[] = _("Ora si lancia una BALL, vero?\n"
+    "Cercherò di fare del mio meglio!");
+#else
 static const u8 sText_YouThrowABallNowRight[] = _("You throw a BALL now, right?\nI… I'll do my best!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_ForPetesSake[] = _("OAK: Ehi, quanta fretta!\p"
+    "{B_PLAYER_NAME}, è la tua prima lotta,\n"
+    "vero?\p"
+    "Beh, allora devo farti\n"
+    "un’introduzione.\p"
+    "In una Lotta di POKéMON, gli\n"
+    "ALLENATORI si sfidano facendo\l"
+    "combattere i loro POKéMON.\p");
+#else
 const u8 gText_ForPetesSake[] = _("OAK: Oh, for Pete's sake…\nSo pushy, as always.\p{B_PLAYER_NAME}.\pYou've never had a POKéMON battle\nbefore, have you?\pA POKéMON battle is when TRAINERS\npit their POKéMON against each\lother.\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_TheTrainerThat[] = _("Vince chi manda KO tutti i POKéMON\n"
+    "dell’ALLENATORE avversario,\l"
+    "riducendo a zero i loro PS.\p");
+#else
 const u8 gText_TheTrainerThat[] = _("The TRAINER that makes the other\nTRAINER's POKéMON faint by lowering\ltheir HP to “0,” wins.\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_TryBattling[] = _("Forse, però, invece di tante\n"
+    "parole, è meglio una\l"
+    "dimostrazione pratica. \p"
+    "Dai, prova a lottare!");
+#else
 const u8 gText_TryBattling[] = _("But rather than talking about it,\nyou'll learn more from experience.\pTry battling and see for yourself.\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_InflictingDamageIsKey[] = _("OAK: L’obiettivo principale di ogni\n"
+    "lotta è infliggere danni\l"
+    "all’avversario.\p");
+#else
 const u8 gText_InflictingDamageIsKey[] = _("OAK: Inflicting damage on the foe\nis the key to any battle.\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_LoweringStats[] = _("OAK: Diminuendo le statistiche\n"
+    "dell’avversario potrai acquisire un\l"
+    "vantaggio.\p");
+#else
 const u8 gText_LoweringStats[] = _("OAK: Lowering the foe's stats\nwill put you at an advantage.\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_KeepAnEyeOnHP[] = _("OAK: Non perdere mai di vista i PS\n"
+    "del tuo POKéMON in campo.\p"
+    "Se si riducono a zero, il POKéMON\n"
+    "va KO e non può più lottare.\p");
+#else
 const u8 gText_KeepAnEyeOnHP[] = _("OAK: Keep your eyes on your\nPOKéMON's HP.\pIt will faint if the HP drops to\n“0.”\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_OakNoRunningFromATrainer[] = _("OAK: No! Non puoi sottrarti ad una\n"
+    "lotta con un ALLENATORE!\p");
+#else
 const u8 gText_OakNoRunningFromATrainer[] = _("OAK: No! There's no running away\nfrom a TRAINER POKéMON battle!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_WinEarnsPrizeMoney[] = _("OAK: Eccellente!\p"
+    "Se vinci ottieni un premio in denaro\n"
+    "e i tuoi POKéMON guadagnano\l"
+    "punti ESP.\p"
+    "Rafforza i tuoi POKéMON sfidando\n"
+    "gli ALLENATORI!\p");
+#else
 const u8 gText_WinEarnsPrizeMoney[] = _("OAK: Hm! Excellent!\pIf you win, you earn prize money,\nand your POKéMON will grow!\pBattle other TRAINERS and make\nyour POKéMON strong!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_HowDissapointing[] = _("OAK: Che delusione…\p"
+    "Se vinci ottieni un premio in denaro\n"
+    "e i tuoi POKéMON guadagnano\l"
+    "punti ESP.\p"
+    "Ma se perdi, {B_PLAYER_NAME}, sei tu a\n"
+    "dover pagare un premio in denaro.\p"
+    "OK, per questa volta pago io per\n"
+    "te, visto che non lo sapevi.\p"
+    "Fuori di qui, però, nessuno ti farà\n"
+    "sconti, ricordatelo!\p"
+    "Per questo ti conviene rafforzare\n"
+    "la tua squadra affrontando i\l"
+    "POKéMON selvatici che incontri.\p");
+#else
 const u8 gText_HowDissapointing[] = _("OAK: Hm…\nHow disappointing…\pIf you win, you earn prize money,\nand your POKéMON grow.\pBut if you lose, {B_PLAYER_NAME}, you end\nup paying prize money…\pHowever, since you had no warning\nthis time, I'll pay for you.\pBut things won't be this way once\nyou step outside these doors.\pThat's why you must strengthen your\nPOKéMON by battling wild POKéMON.\p");
+#endif
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_START] = {
     [STRINGID_TRAINER1LOSETEXT - BATTLESTRINGS_TABLE_START]              = sText_Trainer1LoseText,
@@ -1271,32 +3359,113 @@ const u16 gTrappingMoves[NUM_TRAPPING_MOVES + 1] =
     0xFFFF // Never read
 };
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_PkmnIsEvolving[] = _("Cosa?\n"
+    "{STR_VAR_1} si sta evolvendo!");
+#else
 const u8 gText_PkmnIsEvolving[] = _("What?\n{STR_VAR_1} is evolving!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_CongratsPkmnEvolved[] = _("Complimenti! Il tuo {STR_VAR_1}\n"
+    "si è evoluto in {STR_VAR_2}!{WAIT_SE}\p");
+#else
 const u8 gText_CongratsPkmnEvolved[] = _("Congratulations! Your {STR_VAR_1}\nevolved into {STR_VAR_2}!{WAIT_SE}\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_PkmnStoppedEvolving[] = _("Bloccata evoluzione\n"
+    "di {STR_VAR_1}!\p");
+#else
 const u8 gText_PkmnStoppedEvolving[] = _("Huh? {STR_VAR_1}\nstopped evolving!\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_EllipsisQuestionMark[] = _("… …?\p");
+#else
 const u8 gText_EllipsisQuestionMark[] = _("……?\p");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_WhatWillPkmnDo[] = _("Cosa deve fare\n"
+    "{B_ACTIVE_NAME_WITH_PREFIX}?");
+#else
 const u8 gText_WhatWillPkmnDo[] = _("What will\n{B_ACTIVE_NAME_WITH_PREFIX} do?");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_WhatWillPlayerThrow[] = _("Cosa farà {B_PLAYER_NAME}?");
+#else
 const u8 gText_WhatWillPlayerThrow[] = _("What will {B_PLAYER_NAME}\nthrow?");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_WhatWillOldManDo[] = _("Cosa deve fare\n"
+    "il vecchietto?");
+#else
 const u8 gText_WhatWillOldManDo[] = _("What will the\nold man do?");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_LinkStandby[] = _("{PAUSE 16}Un momento…");
+#else
 const u8 gText_LinkStandby[] = _("{PAUSE 16}Link standby…");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_BattleMenu[] = _("{PALETTE}È{COLOR_HIGHLIGHT_SHADOW}ÒÓÔLOTTA{CLEAR_TO 56}ZAINO\n"
+    "POKéMON{CLEAR_TO 56}FUGA");
+#else
 const u8 gText_BattleMenu[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}FIGHT{CLEAR_TO 56}BAG\nPOKéMON{CLEAR_TO 56}RUN");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_SafariZoneMenu[] = _("{PALETTE}È{COLOR_HIGHLIGHT_SHADOW}ÒÓÔBALL{CLEAR_TO 56}ESCA\n"
+    "SASSO{CLEAR_TO 56}FUGA");
+#else
 const u8 gText_SafariZoneMenu[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}BALL{CLEAR_TO 56}BAIT\nROCK{CLEAR_TO 56}RUN");
+#endif
 const u8 gText_MoveInterfacePP[] = _("PP ");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_MoveInterfaceType[] = _("TIPO/");
+#else
 const u8 gText_MoveInterfaceType[] = _("TYPE/");
+#endif
 const u8 gText_MoveInterfaceDynamicColors[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}");
 const u8 gText_WhichMoveToForget_Unused[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}どの わざを\nわすれさせたい?");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_BattleYesNoChoice[] = _("{PALETTE}È{COLOR_HIGHLIGHT_SHADOW}ÒÓÔSÌ\n"
+    "NO");
+#else
 const u8 gText_BattleYesNoChoice[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}Yes\nNo");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_BattleSwitchWhich[] = _("{PALETTE}È{COLOR_HIGHLIGHT_SHADOW}ÒÓÔSposta\n"
+    "quale?");
+#else
 const u8 gText_BattleSwitchWhich[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}Switch\nwhich?");
+#endif
 static const u8 sText_UnusedColors[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}");
 static const u8 sText_RightArrow2[] = _("{RIGHT_ARROW_2}");
 static const u8 sText_Plus[] = _("{PLUS}");
 static const u8 sText_Dash[] = _("-");
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_MaxHP[] = _("{FONT_SMALL}PS{FONT_NORMAL} max");
+#else
 static const u8 sText_MaxHP[] = _("{FONT_SMALL}Max{FONT_NORMAL} HP");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Attack[] = _("ATTACCO");
+#else
 static const u8 sText_Attack[] = _("ATTACK ");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Defense[] = _("DIFESA");
+#else
 static const u8 sText_Defense[] = _("DEFENSE");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SpAtk[] = _("ATT. SPEC.");
+#else
 static const u8 sText_SpAtk[] = _("SP. ATK");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SpDef[] = _("DIF. SPEC.");
+#else
 static const u8 sText_SpDef[] = _("SP. DEF");
+#endif
 
 // Unused
 static const u8 *const sStatNamesTable2[] =
@@ -1309,49 +3478,205 @@ static const u8 *const sStatNamesTable2[] =
     sText_Speed
 };
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_SafariBalls[] = _("{HIGHLIGHT DARK_GRAY}SAFARI BALL");
+#else
 const u8 gText_SafariBalls[] = _("{HIGHLIGHT 2}SAFARI BALLS"); //
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_HighlightRed_Left[] = _("{HIGHLIGHT DARK_GRAY}Ancora ");
+#else
 const u8 gText_HighlightRed_Left[] = _("{HIGHLIGHT 2}Left: ");
+#endif
 const u8 gText_HighlightRed[] = _("{HIGHLIGHT 2}");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_Sleep[] = _("sonno");
+#else
 const u8 gText_Sleep[] = _("sleep");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_Poison[] = _("avvelenamento");
+#else
 const u8 gText_Poison[] = _("poison");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_Burn[] = _("scottatura");
+#else
 const u8 gText_Burn[] = _("burn");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_Paralysis[] = _("paralisi");
+#else
 const u8 gText_Paralysis[] = _("paralysis");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_Ice[] = _("congelamento");
+#else
 const u8 gText_Ice[] = _("ice");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_Confusion[] = _("confusione");
+#else
 const u8 gText_Confusion[] = _("confusion");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_Love[] = _("amore");
+#else
 const u8 gText_Love[] = _("love");
+#endif
 const u8 gText_BattleTowerBan_Space[] = _("  ");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_BattleTowerBan_Newline1[] = _("\l");
+#else
 const u8 gText_BattleTowerBan_Newline1[] = _("\n");
+#endif
 const u8 gText_BattleTowerBan_Newline2[] = _("\n");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_BattleTowerBan_Is1[] = _(" sono");
+#else
 const u8 gText_BattleTowerBan_Is1[] = _(" is");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_BattleTowerBan_Is2[] = _(" sono");
+#else
 const u8 gText_BattleTowerBan_Is2[] = _(" is");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_BadEgg[] = _("UOVO peste");
+#else
 const u8 gText_BadEgg[] = _("Bad EGG");
+#endif
 const u8 gText_BattleWallyName[] = _("ミツル");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_Win[] = _("{HIGHLIGHT TRANSPARENT}Vinto");
+#else
 const u8 gText_Win[] = _("{HIGHLIGHT 0}Win");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_Loss[] = _("{HIGHLIGHT TRANSPARENT}Perso");
+#else
 const u8 gText_Loss[] = _("{HIGHLIGHT 0}Loss");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_Draw[] = _("{HIGHLIGHT TRANSPARENT}Pari");
+#else
 const u8 gText_Draw[] = _("{HIGHLIGHT 0}Draw");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_SpaceIs[] = _(" è");
+#else
 static const u8 sText_SpaceIs[] = _(" is");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_ApostropheS[] = _("di ");
+#else
 static const u8 sText_ApostropheS[] = _("'s");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_ANormalMove[] = _("una mossa NORMALE");
+#else
 const u8 gText_ANormalMove[] = _("a NORMAL move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_AFightingMove[] = _("una mossa LOTTA");
+#else
 const u8 gText_AFightingMove[] = _("a FIGHTING move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_AFlyingMove[] = _("una mossa VOLANTE");
+#else
 const u8 gText_AFlyingMove[] = _("a FLYING move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_APoisonMove[] = _("una mossa VELENO");
+#else
 const u8 gText_APoisonMove[] = _("a POISON move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_AGroundMove[] = _("una mossa TERRA");
+#else
 const u8 gText_AGroundMove[] = _("a GROUND move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_ARockMove[] = _("una mossa ROCCIA");
+#else
 const u8 gText_ARockMove[] = _("a ROCK move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_ABugMove[] = _("una mossa COLEOTTERO");
+#else
 const u8 gText_ABugMove[] = _("a BUG move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_AGhostMove[] = _("una mossa SPETTRO");
+#else
 const u8 gText_AGhostMove[] = _("a GHOST move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_ASteelMove[] = _("una mossa ACCIAIO");
+#else
 const u8 gText_ASteelMove[] = _("a STEEL move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_AMysteryMove[] = _("una mossa ???");
+#else
 const u8 gText_AMysteryMove[] = _("a ??? move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_AFireMove[] = _("una mossa FUOCO");
+#else
 const u8 gText_AFireMove[] = _("a FIRE move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_AWaterMove[] = _("una mossa ACQUA");
+#else
 const u8 gText_AWaterMove[] = _("a WATER move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_AGrassMove[] = _("una mossa ERBA");
+#else
 const u8 gText_AGrassMove[] = _("a GRASS move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_AnElectricMove[] = _("una mossa ELETTRO");
+#else
 const u8 gText_AnElectricMove[] = _("an ELECTRIC move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_APsychicMove[] = _("una mossa PSICO");
+#else
 const u8 gText_APsychicMove[] = _("a PSYCHIC move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_AnIceMove[] = _("una mossa GHIACCIO");
+#else
 const u8 gText_AnIceMove[] = _("an ICE move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_ADragonMove[] = _("una mossa DRAGO");
+#else
 const u8 gText_ADragonMove[] = _("a DRAGON move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_ADarkMove[] = _("una mossa BUIO");
+#else
 const u8 gText_ADarkMove[] = _("a DARK move");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_TimeBoard[] = _("LAVAGNA RECORD");
+#else
 const u8 gText_TimeBoard[] = _("TIME BOARD");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_ClearTime[] = _("TEMPO");
+#else
 const u8 gText_ClearTime[] = _("CLEAR TIME"); // Unused
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gText_XMinYZSec[] = _("{STR_VAR_1} min. {STR_VAR_2},{STR_VAR_3} sec.");
+#else
 const u8 gText_XMinYZSec[] = _("{STR_VAR_1}MIN. {STR_VAR_2}.{STR_VAR_3}SEC.");
+#endif
 const u8 gText_Unused_1F[] = _("1F");
 const u8 gText_Unused_2F[] = _("2F");
 const u8 gText_Unused_3F[] = _("3F");
@@ -1359,7 +3684,11 @@ const u8 gText_Unused_4F[] = _("4F");
 const u8 gText_Unused_5F[] = _("5F");
 const u8 gText_Unused_6F[] = _("6F");
 const u8 gText_Unused_7F[] = _("7F");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
 const u8 gText_Unused_8F[] = _("8F");
+#else
+const u8 gText_Unused_8F[] = _("8F");
+#endif
 
 const u8 *const gTrainerTowerChallengeTypeTexts[NUM_TOWER_CHALLENGE_TYPES] =
 {
@@ -1369,9 +3698,24 @@ const u8 *const gTrainerTowerChallengeTypeTexts[NUM_TOWER_CHALLENGE_TYPES] =
     gOtherText_Mixed
 };
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_Trainer1Fled[] = _("{PLAY_SE}Ù {B_TRAINER1_NAME}, {B_TRAINER1_CLASS}, fugge!");
+#else
 static const u8 sText_Trainer1Fled[] = _("{PLAY_SE SE_FLEE}{B_TRAINER1_CLASS} {B_TRAINER1_NAME} fled!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerLostAgainstTrainer1[] = _("La sfida è vinta da\n"
+    "{B_TRAINER1_NAME}, {B_TRAINER1_CLASS}!");
+#else
 static const u8 sText_PlayerLostAgainstTrainer1[] = _("Player lost against\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sText_PlayerBattledToDrawTrainer1[] = _("La sfida contro {B_TRAINER1_NAME},\n"
+    "{B_TRAINER1_CLASS}, si è conclusa\l"
+    "in parità!");
+#else
 static const u8 sText_PlayerBattledToDrawTrainer1[] = _("Player battled to a draw against\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!");
+#endif
 
 static const u8 *const sATypeMove_Table[NUMBER_OF_MON_TYPES] =
 {

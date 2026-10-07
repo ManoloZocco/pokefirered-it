@@ -152,11 +152,23 @@ static u8 GetCardType(void);
 static void CreateTrainerCardTrainerPic(void);
 
 static const u32 sTrainerCardStickers_Gfx[]           = INCBIN_U32("graphics/trainer_card/stickers.4bpp.lz");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+extern const u32 sHoennTrainerCardFront_Tilemap[];
+#else
 static const u32 sHoennTrainerCardFront_Tilemap[]     = INCBIN_U32("graphics/trainer_card/rse/front.bin.lz");
+#endif
 static const u32 sKantoTrainerCardFront_Tilemap[]     = INCBIN_U32("graphics/trainer_card/front.bin.lz");
 static const u32 sHoennTrainerCardBack_Tilemap[]      = INCBIN_U32("graphics/trainer_card/rse/back.bin.lz");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+extern const u32 sKantoTrainerCardBack_Tilemap[];
+#else
 static const u32 sKantoTrainerCardBack_Tilemap[]      = INCBIN_U32("graphics/trainer_card/back.bin.lz");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+extern const u32 sHoennTrainerCardFrontLink_Tilemap[];
+#else
 static const u32 sHoennTrainerCardFrontLink_Tilemap[] = INCBIN_U32("graphics/trainer_card/rse/front_link.bin.lz");
+#endif
 static const u32 sKantoTrainerCardFrontLink_Tilemap[] = INCBIN_U32("graphics/trainer_card/front_link.bin.lz");
 static const u32 sHoennTrainerCardBg_Tilemap[]        = INCBIN_U32("graphics/trainer_card/rse/bg.bin.lz");
 static const u32 sKantoTrainerCardBg_Tilemap[]        = INCBIN_U32("graphics/trainer_card/bg.bin.lz");
@@ -342,8 +354,10 @@ static bool8 (*const sTrainerCardFlipTasks[])(struct Task *) =
 
 static const u8 sTrainerCardFrontNameXPositions[] = {0x14, 0x10};
 static const u8 sTrainerCardFrontNameYPositions[] = {0x1D, 0x21};
+#if GAME_LANGUAGE != LANGUAGE_ITALIAN
 static const u8 sTrainerCardIdXPositions[] = {0x8E, 0x80};
 static const u8 sTrainerCardIdYPositions[] = {0xA, 0x9};
+#endif
 static const u8 *const sTimeColonTextColors[] = {sTrainerCardTextColors, sTimeColonInvisibleTextColors};
 static const u8 sTrainerCardTimeHoursXPositions[] = {0x65, 0x55};
 static const u8 sTrainerCardTimeHoursYPositions[] = {0x77, 0x67};
@@ -351,14 +365,22 @@ static const u8 sTrainerCardTimeMinutesXPositions[] = {0x7C, 0x6C};
 static const u8 sTrainerCardTimeMinutesYPositions[] = {0x58, 0x59};
 static const u8 sTrainerCardProfilePhraseXPositions[] = {0x73, 0x69};
 static const u8 sTrainerCardProfilePhraseYPositions[] = {0x82, 0x78};
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sTrainerCardBackNameXPositions[] = {0x94, 0xD8};
+#else
 static const u8 sTrainerCardBackNameXPositions[] = {0x8A, 0xD8};
+#endif
 static const u8 sTrainerCardBackNameYPositions[] = {0xB, 0xA};
 static const u8 sTrainerCardHofDebutXPositions[] = {0xA, 0x10, 0x0, 0x0};
 static const u8 *const sLinkTrainerCardRecordStrings[] = {gText_LinkBattles, gText_LinkCableBattles};
 static const u8 sPokemonIconPalSlots[] = {5, 6, 7, 8, 9, 10};
 static const u8 sPokemonIconXOffsets[] = {0, 4, 8, 12, 16, 20};
 static const u8 sStickerPalSlots[] = {11, 12, 13, 14};
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sStarYOffsets[] = {7, 7, 0, 0};
+#else
 static const u8 sStarYOffsets[] = {7, 6, 0, 0};
+#endif
 
 static const struct TrainerCard sLinkPlayerTrainerCardTemplate1 = 
 {

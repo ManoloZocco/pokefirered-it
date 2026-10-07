@@ -1,573 +1,1279 @@
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SMALL_DESK[] = _("Piccolo tavolo\n"
+    "per una persona.");
+#else
 const u8 DecorDesc_SMALL_DESK[] = _(
     "A small desk built\n"
         "for one.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_POKEMON_DESK[] = _("Piccolo tavolo\n"
+    "a forma di\n"
+    "POKé BALL.");
+#else
 const u8 DecorDesc_POKEMON_DESK[] = _(
     "A small desk built in\n"
         "the shape of a POKé\n"
         "BALL.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_HEAVY_DESK[] = _("Grande tavolo\n"
+    "d’acciaio. Mettici\n"
+    "delle decorazioni.");
+#else
 const u8 DecorDesc_HEAVY_DESK[] = _(
     "A large desk made\n"
         "of steel. Put some\n"
         "decorations on it.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_RAGGED_DESK[] = _("Grande tavolo\n"
+    "di legno. Mettici\n"
+    "delle decorazioni.");
+#else
 const u8 DecorDesc_RAGGED_DESK[] = _(
     "A large desk made\n"
         "of wood. Put some\n"
         "decorations on it.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_COMFORT_DESK[] = _("Grande tavolo\n"
+    "di foglie. Mettici\n"
+    "delle decorazioni.");
+#else
 const u8 DecorDesc_COMFORT_DESK[] = _(
     "A large desk made\n"
         "of leaves. Put some\n"
         "decorations on it.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_PRETTY_DESK[] = _("Enorme tavolo\n"
+    "di vetro. Mettici\n"
+    "delle decorazioni.");
+#else
 const u8 DecorDesc_PRETTY_DESK[] = _(
     "A huge desk made\n"
         "of glass. Holds lots\n"
         "of decorations.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_BRICK_DESK[] = _("Enorme tavolo\n"
+    "di mattoni. Mettici\n"
+    "delle decorazioni.");
+#else
 const u8 DecorDesc_BRICK_DESK[] = _(
     "A huge desk made\n"
         "of brick. Holds lots\n"
         "of decorations.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_CAMP_DESK[] = _("Grande tavolo\n"
+    "di tronchi. Mettici\n"
+    "delle decorazioni.");
+#else
 const u8 DecorDesc_CAMP_DESK[] = _(
     "A huge desk made\n"
         "of logs. Put lots of\n"
         "decorations on it.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_HARD_DESK[] = _("Grande tavolo\n"
+    "di rocce. Mettici\n"
+    "delle decorazioni.");
+#else
 const u8 DecorDesc_HARD_DESK[] = _(
     "A huge desk made\n"
         "of rocks. Holds\n"
         "many decorations.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SMALL_CHAIR[] = _("Piccola sedia\n"
+    "per una persona.");
+#else
 const u8 DecorDesc_SMALL_CHAIR[] = _(
     "A small chair made\n"
         "for one.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_POKEMON_CHAIR[] = _("Piccola sedia\n"
+    "a forma di\n"
+    "POKé BALL.");
+#else
 const u8 DecorDesc_POKEMON_CHAIR[] = _(
     "A small chair built\n"
         "in the shape of a\n"
         "POKé BALL.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_HEAVY_CHAIR[] = _("Piccola sedia\n"
+    "d’acciaio.");
+#else
 const u8 DecorDesc_HEAVY_CHAIR[] = _(
     "A small chair made\n"
         "of steel.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_PRETTY_CHAIR[] = _("Piccola sedia\n"
+    "di vetro.");
+#else
 const u8 DecorDesc_PRETTY_CHAIR[] = _(
     "A small chair made\n"
         "of glass.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_COMFORT_CHAIR[] = _("Piccola sedia\n"
+    "di foglie.");
+#else
 const u8 DecorDesc_COMFORT_CHAIR[] = _(
     "A small chair made\n"
         "of leaves.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_RAGGED_CHAIR[] = _("Piccola sedia\n"
+    "di legno.");
+#else
 const u8 DecorDesc_RAGGED_CHAIR[] = _(
     "A small chair made\n"
         "of wood.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_BRICK_CHAIR[] = _("Piccola sedia\n"
+    "di mattoni.");
+#else
 const u8 DecorDesc_BRICK_CHAIR[] = _(
     "A small chair made\n"
         "of brick.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_CAMP_CHAIR[] = _("Piccola sedia\n"
+    "ricavata da un\n"
+    "tronco.");
+#else
 const u8 DecorDesc_CAMP_CHAIR[] = _(
     "A small chair made\n"
         "of logs.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_HARD_CHAIR[] = _("Piccola sedia\n"
+    "di pietra.");
+#else
 const u8 DecorDesc_HARD_CHAIR[] = _(
     "A small chair made\n"
         "of rock.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_RED_PLANT[] = _("Pianta di colore\n"
+    "rosso sgargiante,\n"
+    "in un vaso.");
+#else
 const u8 DecorDesc_RED_PLANT[] = _(
     "A vivid red potted\n"
         "plant.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_TROPICAL_PLANT[] = _("Pianta tropicale\n"
+    "dai bei fiori,\n"
+    "in un vaso.");
+#else
 const u8 DecorDesc_TROPICAL_PLANT[] = _(
     "A flowering tropical\n"
         "plant in a pot.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_PRETTY_FLOWERS[] = _("Un grazioso\n"
+    "vaso di fiori.");
+#else
 const u8 DecorDesc_PRETTY_FLOWERS[] = _(
     "A pot of cute\n"
         "flowers.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_COLORFUL_PLANT[] = _("Pianta in un grande\n"
+    "vaso, con molti\n"
+    "fiori sgargianti.");
+#else
 const u8 DecorDesc_COLORFUL_PLANT[] = _(
     "A large pot with\n"
         "many colorful\n"
         "flowers.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_BIG_PLANT[] = _("Grande pianta ad\n"
+    "ombrello, in un\n"
+    "vaso.");
+#else
 const u8 DecorDesc_BIG_PLANT[] = _(
     "A large, umbrella-\n"
         "shaped plant in a\n"
         "big pot.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_GORGEOUS_PLANT[] = _("Pianta grande e\n"
+    "imponente, in un\n"
+    "grosso vaso.");
+#else
 const u8 DecorDesc_GORGEOUS_PLANT[] = _(
     "A large, impressive\n"
         "plant in a big pot.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_RED_BRICK[] = _("Mattone rosso: vi\n"
+    "si possono mettere\n"
+    "sopra decorazioni.");
+#else
 const u8 DecorDesc_RED_BRICK[] = _(
     "A red-colored brick.\n"
         "Decorations can be\n"
         "placed on top.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_YELLOW_BRICK[] = _("Mattone giallo: vi\n"
+    "si possono mettere\n"
+    "sopra decorazioni.");
+#else
 const u8 DecorDesc_YELLOW_BRICK[] = _(
     "A yellow-colored\n"
         "brick. Put some\n"
         "decorations on top.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_BLUE_BRICK[] = _("Mattone blu: vi\n"
+    "si possono mettere\n"
+    "sopra decorazioni.");
+#else
 const u8 DecorDesc_BLUE_BRICK[] = _(
     "A blue-colored\n"
         "brick. Put some\n"
         "decorations on top.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_RED_BALLOON[] = _("Pallone rosso pieno\n"
+    "d’acqua. Esplode se\n"
+    "calpestato.");
+#else
 const u8 DecorDesc_RED_BALLOON[] = _(
     "A red balloon filled\n"
         "with water. Bursts\n"
         "if stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_BLUE_BALLOON[] = _("Pallone blu pieno\n"
+    "d’acqua. Esplode se\n"
+    "calpestato.");
+#else
 const u8 DecorDesc_BLUE_BALLOON[] = _(
     "A blue balloon filled\n"
         "with water. Bursts\n"
         "if stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_YELLOW_BALLOON[] = _("Pallone giallo pieno\n"
+    "d’acqua. Esplode se\n"
+    "calpestato.");
+#else
 const u8 DecorDesc_YELLOW_BALLOON[] = _(
     "A yellow balloon\n"
         "filled with water.\n"
         "Pops if stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_RED_TENT[] = _("Grande tenda rossa\n"
+    "in cui ci si può\n"
+    "nascondere.");
+#else
 const u8 DecorDesc_RED_TENT[] = _(
     "A large red tent.\n"
         "You can hide inside\n"
         "it.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_BLUE_TENT[] = _("Grande tenda blu\n"
+    "in cui ci si può\n"
+    "nascondere.");
+#else
 const u8 DecorDesc_BLUE_TENT[] = _(
     "A large blue tent.\n"
         "You can hide inside\n"
         "it.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SOLID_BOARD[] = _("Si pone su una buca\n"
+    "per attraversarla.");
+#else
 const u8 DecorDesc_SOLID_BOARD[] = _(
     "Place over a hole to\n"
         "cross to the other\n"
         "side.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SLIDE[] = _("Si usa per scendere\n"
+    "dalle piattaforme.");
+#else
 const u8 DecorDesc_SLIDE[] = _(
     "Use to slide down\n"
         "from the platform.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_FENCE_LENGTH[] = _("Piccola barriera\n"
+    "che blocca il\n"
+    "passaggio.");
+#else
 const u8 DecorDesc_FENCE_LENGTH[] = _(
     "A small fence that\n"
         "blocks passage.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_FENCE_WIDTH[] = _("Piccola barriera\n"
+    "che blocca il\n"
+    "passaggio.");
+#else
 const u8 DecorDesc_FENCE_WIDTH[] = _(
     "A small fence that\n"
         "blocks passage.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_TIRE[] = _("Grande ruota. Vi si\n"
+    "possono appoggiare\n"
+    "decorazioni.");
+#else
 const u8 DecorDesc_TIRE[] = _(
     "An old large tire.\n"
         "Decorations can be\n"
         "placed on top.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_STAND[] = _("Piano rialzato\n"
+    "provvisto di\n"
+    "scalini.");
+#else
 const u8 DecorDesc_STAND[] = _(
     "A large pedestal\n"
         "with steps.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_MUD_BALL[] = _("Palla di fango.\n"
+    "Se la si calpesta\n"
+    "si sfalda.");
+#else
 const u8 DecorDesc_MUD_BALL[] = _(
     "A large ball of mud.\n"
         "Crumbles if stepped\n"
         "on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_BREAKABLE_DOOR[] = _("Strana porta a cui\n"
+    "si può passare\n"
+    "attraverso.");
+#else
 const u8 DecorDesc_BREAKABLE_DOOR[] = _(
     "A weird door that\n"
         "people can walk\n"
         "right through.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SAND_ORNAMENT[] = _("Statua di\n"
+    "sabbia. Se la si\n"
+    "tocca si sfalda.");
+#else
 const u8 DecorDesc_SAND_ORNAMENT[] = _(
     "An ornament made\n"
         "of sand. Crumbles if\n"
         "touched.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SILVER_SHIELD[] = _("Premio per 50\n"
+    "vittorie di seguito\n"
+    "nella TORRE LOTTA.");
+#else
 const u8 DecorDesc_SILVER_SHIELD[] = _(
     "Awarded for 50\n"
         "straight wins at\n"
         "the BATTLE TOWER.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_GOLD_SHIELD[] = _("Premio per 100\n"
+    "vittorie di seguito\n"
+    "nella TORRE LOTTA.");
+#else
 const u8 DecorDesc_GOLD_SHIELD[] = _(
     "Awarded for 100\n"
         "straight wins at\n"
         "the BATTLE TOWER.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_GLASS_ORNAMENT[] = _("Copia vitrea di una\n"
+    "famosa scultura\n"
+    "del MUSEO d’ARTE.");
+#else
 const u8 DecorDesc_GLASS_ORNAMENT[] = _(
     "A glass replica of\n"
         "a famous sculpture\n"
         "at the ART MUSEUM.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_TV[] = _("Piccola TV\n"
+    "giocattolo grigia.");
+#else
 const u8 DecorDesc_TV[] = _(
     "A small, gray-\n"
         "colored toy TV.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_ROUND_TV[] = _("TV giocattolo a\n"
+    "forma di SEEDOT.");
+#else
 const u8 DecorDesc_ROUND_TV[] = _(
     "A toy TV modeled\n"
         "in the image of a\n"
         "SEEDOT.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_CUTE_TV[] = _("TV giocattolo a\n"
+    "forma di SKITTY.");
+#else
 const u8 DecorDesc_CUTE_TV[] = _(
     "A toy TV modeled\n"
         "in the image of a\n"
         "SKITTY.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_GLITTER_MAT[] = _("Strano tappeto. Se\n"
+    "lo si calpesta si\n"
+    "illumina.");
+#else
 const u8 DecorDesc_GLITTER_MAT[] = _(
     "An odd mat that\n"
         "glitters if stepped\n"
         "on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_JUMP_MAT[] = _("Tappeto scherzo\n"
+    "che salta se lo si\n"
+    "calpesta.");
+#else
 const u8 DecorDesc_JUMP_MAT[] = _(
     "A trick mat that\n"
         "jumps when it is\n"
         "stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SPIN_MAT[] = _("Tappeto scherzo:\n"
+    "se lo calpesti\n"
+    "ti fa girare.");
+#else
 const u8 DecorDesc_SPIN_MAT[] = _(
     "A trick mat that\n"
         "spins around when\n"
         "stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_C_LOW_NOTE_MAT[] = _("Se si calpesta il\n"
+    "tappeto, riproduce\n"
+    "la nota DO BASSO.");
+#else
 const u8 DecorDesc_C_LOW_NOTE_MAT[] = _(
     "A mat that plays\n"
         "a low C note when\n"
         "stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_D_NOTE_MAT[] = _("Se si calpesta il\n"
+    "tappeto, riproduce\n"
+    "la nota RE.");
+#else
 const u8 DecorDesc_D_NOTE_MAT[] = _(
     "A mat that plays\n"
         "a D note when\n"
         "stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_E_NOTE_MAT[] = _("Se si calpesta il\n"
+    "tappeto, riproduce\n"
+    "la nota  MI.");
+#else
 const u8 DecorDesc_E_NOTE_MAT[] = _(
     "A mat that plays\n"
         "an E note when\n"
         "stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_F_NOTE_MAT[] = _("Se si calpesta il\n"
+    "tappeto, riproduce\n"
+    "la nota FA.");
+#else
 const u8 DecorDesc_F_NOTE_MAT[] = _(
     "A mat that plays\n"
         "an F note when\n"
         "stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_G_NOTE_MAT[] = _("Se si calpesta il\n"
+    "tappeto, riproduce\n"
+    "la nota SOL.");
+#else
 const u8 DecorDesc_G_NOTE_MAT[] = _(
     "A mat that plays\n"
         "a G note when\n"
         "stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_A_NOTE_MAT[] = _("Se si calpesta il\n"
+    "tappeto, riproduce\n"
+    "la nota LA.");
+#else
 const u8 DecorDesc_A_NOTE_MAT[] = _(
     "A mat that plays\n"
         "an A note when\n"
         "stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_B_NOTE_MAT[] = _("Se si calpesta il\n"
+    "tappeto, riproduce\n"
+    "la nota SI.");
+#else
 const u8 DecorDesc_B_NOTE_MAT[] = _(
     "A mat that plays\n"
         "a B note when\n"
         "stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_C_HIGH_NOTE_MAT[] = _("Se si calpesta il\n"
+    "tappeto, riproduce\n"
+    "la nota DO ALTO.");
+#else
 const u8 DecorDesc_C_HIGH_NOTE_MAT[] = _(
     "A mat that plays\n"
         "a high C note when\n"
         "stepped on.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SURF_MAT[] = _("Porta il simbolo di\n"
+    "SURF. Appoggiaci\n"
+    "degli strumenti.");
+#else
 const u8 DecorDesc_SURF_MAT[] = _(
     "A mat designed with\n"
         "a SURF image.\n"
         "Put items on top.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_THUNDER_MAT[] = _("Porta il simbolo di\n"
+    "TUONO. Appoggiaci\n"
+    "degli strumenti.");
+#else
 const u8 DecorDesc_THUNDER_MAT[] = _(
     "A mat designed with\n"
         "a THUNDER image.\n"
         "Put items on top.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_FIRE_BLAST_MAT[] = _("Porta il simbolo di\n"
+    "FUOCOBOMBA. Appog-\n"
+    "giaci strumenti.");
+#else
 const u8 DecorDesc_FIRE_BLAST_MAT[] = _(
     "A mat designed with\n"
         "a FIRE BLAST image.\n"
         "Put items on top.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_POWDER_SNOW_MAT[] = _("Porta il simbolo di\n"
+    "POLNEVE. Appog-\n"
+    "giaci strumenti.");
+#else
 const u8 DecorDesc_POWDER_SNOW_MAT[] = _(
     "A mat with a POWDER\n"
         "SNOW image design.\n"
         "Put items on top.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_ATTRACT_MAT[] = _("Porta il simbolo di\n"
+    "ATTRAZIONE. Ap-\n"
+    "poggiaci strumenti.");
+#else
 const u8 DecorDesc_ATTRACT_MAT[] = _(
     "A mat designed with\n"
         "an ATTRACT image.\n"
         "Put items on top.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_FISSURE_MAT[] = _("Porta il simbolo di\n"
+    "ABISSO. Appoggiaci\n"
+    "degli strumenti.");
+#else
 const u8 DecorDesc_FISSURE_MAT[] = _(
     "A mat designed with\n"
         "a FISSURE image.\n"
         "Put items on top.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SPIKES_MAT[] = _("Porta il simbolo di\n"
+    "PUNTE. Appoggiaci\n"
+    "degli strumenti.");
+#else
 const u8 DecorDesc_SPIKES_MAT[] = _(
     "A mat designed with\n"
         "a SPIKES image.\n"
         "Put items on top.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_BALL_POSTER[] = _("Piccolo poster con\n"
+    "immagini di\n"
+    "POKé BALL.");
+#else
 const u8 DecorDesc_BALL_POSTER[] = _(
     "A small poster\n"
         "printed with POKé\n"
         "BALLS.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_GREEN_POSTER[] = _("Piccolo poster \n"
+    "con l’immagine\n"
+    "di TREECKO.");
+#else
 const u8 DecorDesc_GREEN_POSTER[] = _(
     "A small poster with\n"
         "a TREECKO print.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_RED_POSTER[] = _("Piccolo poster \n"
+    "con l’immagine\n"
+    "di TORCHIC.");
+#else
 const u8 DecorDesc_RED_POSTER[] = _(
     "A small poster with\n"
         "a TORCHIC print.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_BLUE_POSTER[] = _("Piccolo poster \n"
+    "con l’immagine\n"
+    "di MUDKIP.");
+#else
 const u8 DecorDesc_BLUE_POSTER[] = _(
     "A small poster with\n"
         "a MUDKIP print.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_CUTE_POSTER[] = _("Piccolo poster \n"
+    "con l’immagine\n"
+    "di AZURILL.");
+#else
 const u8 DecorDesc_CUTE_POSTER[] = _(
     "A small poster with\n"
         "an AZURILL print.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_PIKA_POSTER[] = _("Grande poster \n"
+    "con PIKACHU\n"
+    "e PICHU.");
+#else
 const u8 DecorDesc_PIKA_POSTER[] = _(
     "A large poster with\n"
         "a PIKACHU and\n"
         "PICHU print.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_LONG_POSTER[] = _("Grande poster \n"
+    "con l’immagine\n"
+    "di SEVIPER.");
+#else
 const u8 DecorDesc_LONG_POSTER[] = _(
     "A large poster with\n"
         "a SEVIPER print.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SEA_POSTER[] = _("Grande poster \n"
+    "con l’immagine\n"
+    "di RELICANTH.");
+#else
 const u8 DecorDesc_SEA_POSTER[] = _(
     "A large poster with\n"
         "a RELICANTH print.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SKY_POSTER[] = _("Grande poster \n"
+    "con l’immagine\n"
+    "di WINGULL.");
+#else
 const u8 DecorDesc_SKY_POSTER[] = _(
     "A large poster with\n"
         "a WINGULL print.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_KISS_POSTER[] = _("Grande poster \n"
+    "con l’immagine\n"
+    "di SMOOCHUM.");
+#else
 const u8 DecorDesc_KISS_POSTER[] = _(
     "A large poster with\n"
         "a SMOOCHUM print.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_PICHU_DOLL[] = _("PICHU. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_PICHU_DOLL[] = _(
     "A PICHU doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_PIKACHU_DOLL[] = _("PIKACHU. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_PIKACHU_DOLL[] = _(
     "A PIKACHU doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_MARILL_DOLL[] = _("MARILL. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_MARILL_DOLL[] = _(
     "A MARILL doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_TOGEPI_DOLL[] = _("TOGEPI. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_TOGEPI_DOLL[] = _(
     "A TOGEPI doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_CYNDAQUIL_DOLL[] = _("CYNDAQUIL. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_CYNDAQUIL_DOLL[] = _(
     "A CYNDAQUIL doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_CHIKORITA_DOLL[] = _("CHIKORITA. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_CHIKORITA_DOLL[] = _(
     "A CHIKORITA doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_TOTODILE_DOLL[] = _("TOTODILE. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_TOTODILE_DOLL[] = _(
     "A TOTODILE doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_JIGGLYPUFF_DOLL[] = _("JIGGLYPUFF. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_JIGGLYPUFF_DOLL[] = _(
     "A JIGGLYPUFF doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_MEOWTH_DOLL[] = _("MEOWTH. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_MEOWTH_DOLL[] = _(
     "A MEOWTH doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_CLEFAIRY_DOLL[] = _("CLEFAIRY. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_CLEFAIRY_DOLL[] = _(
     "A CLEFAIRY doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_DITTO_DOLL[] = _("DITTO. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_DITTO_DOLL[] = _(
     "A DITTO doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SMOOCHUM_DOLL[] = _("SMOOCHUM. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_SMOOCHUM_DOLL[] = _(
     "A SMOOCHUM doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_TREECKO_DOLL[] = _("TREECKO. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_TREECKO_DOLL[] = _(
     "A TREECKO doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_TORCHIC_DOLL[] = _("TORCHIC. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_TORCHIC_DOLL[] = _(
     "A TORCHIC doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_MUDKIP_DOLL[] = _("MUDKIP. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_MUDKIP_DOLL[] = _(
     "A MUDKIP doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_DUSKULL_DOLL[] = _("DUSKULL. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_DUSKULL_DOLL[] = _(
     "A DUSKULL doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_WYNAUT_DOLL[] = _("WYNAUT. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_WYNAUT_DOLL[] = _(
     "A WYNAUT doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_BALTOY_DOLL[] = _("BALTOY. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_BALTOY_DOLL[] = _(
     "A BALTOY doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_KECLEON_DOLL[] = _("KECLEON. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_KECLEON_DOLL[] = _(
     "A KECLEON doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_AZURILL_DOLL[] = _("AZURILL. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_AZURILL_DOLL[] = _(
     "An AZURILL doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SKITTY_DOLL[] = _("SKITTY. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_SKITTY_DOLL[] = _(
     "A SKITTY doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SWABLU_DOLL[] = _("SWABLU. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_SWABLU_DOLL[] = _(
     "A SWABLU doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_GULPIN_DOLL[] = _("GULPIN. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_GULPIN_DOLL[] = _(
     "A GULPIN doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_LOTAD_DOLL[] = _("LOTAD. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_LOTAD_DOLL[] = _(
     "A LOTAD doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SEEDOT_DOLL[] = _("SEEDOT. Metti\n"
+    "la bambola su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_SEEDOT_DOLL[] = _(
     "A SEEDOT doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_PIKA_CUSHION[] = _("PIKACHU. Metti il\n"
+    "cuscino su un\n"
+    "tappeto o tavolo.");
+#else
 const u8 DecorDesc_PIKA_CUSHION[] = _(
     "A PIKACHU cushion.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_ROUND_CUSHION[] = _("MARILL. Metti il\n"
+    "cuscino su un\n"
+    "tappeto o tavolo.");
+#else
 const u8 DecorDesc_ROUND_CUSHION[] = _(
     "A MARILL cushion.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_KISS_CUSHION[] = _("SMOOCHUM. Metti il\n"
+    "cuscino su un\n"
+    "tappeto o tavolo.");
+#else
 const u8 DecorDesc_KISS_CUSHION[] = _(
     "A SMOOCHUM\n"
         "cushion. Place it on\n"
         "a mat or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_ZIGZAG_CUSHION[] = _("ZIGZAGOON. Metti il\n"
+    "cuscino su un\n"
+    "tappeto o tavolo.");
+#else
 const u8 DecorDesc_ZIGZAG_CUSHION[] = _(
     "A ZIGZAGOON\n"
         "cushion. Place it on\n"
         "a mat or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SPIN_CUSHION[] = _("SPINDA. Metti il\n"
+    "cuscino su un\n"
+    "tappeto o tavolo.");
+#else
 const u8 DecorDesc_SPIN_CUSHION[] = _(
     "A SPINDA cushion.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_DIAMOND_CUSHION[] = _("SABLEYE. Metti il\n"
+    "cuscino su un\n"
+    "tappeto o tavolo.");
+#else
 const u8 DecorDesc_DIAMOND_CUSHION[] = _(
     "A SABLEYE cushion.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_BALL_CUSHION[] = _("BALL. Metti il\n"
+    "cuscino su un\n"
+    "tappeto o tavolo.");
+#else
 const u8 DecorDesc_BALL_CUSHION[] = _(
     "A BALL cushion.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_GRASS_CUSHION[] = _("ERBA. Metti \n"
+    "il cuscino su un \n"
+    "tappeto o tavolo.");
+#else
 const u8 DecorDesc_GRASS_CUSHION[] = _(
     "A grass-mark\n"
         "cushion. Place it on\n"
         "a mat or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_FIRE_CUSHION[] = _("FUOCO. Metti il\n"
+    "cuscino su un\n"
+    "tappeto o tavolo.");
+#else
 const u8 DecorDesc_FIRE_CUSHION[] = _(
     "A fire-mark\n"
         "cushion. Place it on\n"
         "a mat or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_WATER_CUSHION[] = _("ACQUA. Metti il\n"
+    "cuscino su un\n"
+    "tappeto o tavolo.");
+#else
 const u8 DecorDesc_WATER_CUSHION[] = _(
     "A water-mark\n"
         "cushion. Place it on\n"
         "a mat or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_SNORLAX_DOLL[] = _("Grande bambola da\n"
+    "appoggiare su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_SNORLAX_DOLL[] = _(
     "A large doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_RHYDON_DOLL[] = _("Grande bambola da\n"
+    "appoggiare su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_RHYDON_DOLL[] = _(
     "A large doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_LAPRAS_DOLL[] = _("Grande bambola da\n"
+    "appoggiare su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_LAPRAS_DOLL[] = _(
     "A large doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_VENUSAUR_DOLL[] = _("Grande bambola da\n"
+    "appoggiare su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_VENUSAUR_DOLL[] = _(
     "A large doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_CHARIZARD_DOLL[] = _("Grande bambola da\n"
+    "appoggiare su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_CHARIZARD_DOLL[] = _(
     "A large doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_BLASTOISE_DOLL[] = _("Grande bambola da\n"
+    "appoggiare su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_BLASTOISE_DOLL[] = _(
     "A large doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_WAILMER_DOLL[] = _("Grande bambola da\n"
+    "appoggiare su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_WAILMER_DOLL[] = _(
     "A large doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_REGIROCK_DOLL[] = _("Grande bambola da\n"
+    "appoggiare su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_REGIROCK_DOLL[] = _(
     "A large doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_REGICE_DOLL[] = _("Grande bambola da\n"
+    "appoggiare su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_REGICE_DOLL[] = _(
     "A large doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 DecorDesc_REGISTEEL_DOLL[] = _("Grande bambola da\n"
+    "appoggiare su un\n"
+    "tavolo o tappeto.");
+#else
 const u8 DecorDesc_REGISTEEL_DOLL[] = _(
     "A large doll.\n"
         "Place it on a mat\n"
         "or a desk.");
+#endif

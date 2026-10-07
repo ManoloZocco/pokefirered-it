@@ -1365,9 +1365,21 @@ const u16 gTitleScreen_Slash_Pal[] = INCBIN_U16("graphics/title_screen/leafgreen
 
 const u32 gTitleScreen_BlankSprite_Tiles[] = INCBIN_U32("graphics/title_screen/blank_sprite.4bpp.lz");
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u16 gCreditsTheEnd_Pal[] = INCBIN_U16("graphics/it/the_end_pal.bin");
+#else
 const u16 gCreditsCopyright_Pal[] = INCBIN_U16("graphics/credits/copyright.gbapal");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gCreditsTheEnd_Tiles[] = INCBIN_U8("graphics/it/the_end_tiles.lz.bin");
+#else
 const u8 gCreditsCopyright_Tiles[] = INCBIN_U8("graphics/credits/copyright.4bpp.lz");
+#endif
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 gCreditsTheEnd_Tilemap[] = INCBIN_U8("graphics/it/the_end_map.lz.bin");
+#else
 const u8 gCreditsCopyright_Tilemap[] = INCBIN_U8("graphics/credits/copyright.bin.lz");
+#endif
 
 const u32 gTradeGba_Pal[] = INCBIN_U32("graphics/trade/gba.gbapal");
 const u32 gTradeGba2_Pal[] = INCBIN_U32("graphics/trade/gba_pal2.gbapal");

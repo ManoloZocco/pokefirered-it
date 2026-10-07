@@ -262,7 +262,11 @@ static const u32 sStar_Gfx[]          = INCBIN_U32("graphics/intro/game_freak/st
 static const u16 sSparkles_Pal[]      = INCBIN_U16("graphics/intro/game_freak/sparkles.gbapal");
 static const u32 sSparklesSmall_Gfx[] = INCBIN_U32("graphics/intro/game_freak/sparkles_small.4bpp.lz");
 static const u32 sSparklesBig_Gfx[]   = INCBIN_U32("graphics/intro/game_freak/sparkles_big.4bpp.lz");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+extern const u32 sPresents_Gfx[];
+#else
 static const u32 sPresents_Gfx[]      = INCBIN_U32("graphics/intro/game_freak/presents.4bpp.lz");
+#endif
 
 // Scene 1 (Grass close up)
 static const u16 sScene1_Grass_Pal[] = INCBIN_U16("graphics/intro/scene_1/grass.gbapal");

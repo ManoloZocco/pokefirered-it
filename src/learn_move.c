@@ -184,7 +184,11 @@ static const u8 sJPText_TatakauWaza[] = _("たたかうわざ");
 static const u8 sJPText_Taipu[] = _("タイプ/");
 static const u8 sJPText_PP[] = _("PP/");
 static const u8 sJPText_Iryoku[] = _("いりょく/");
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sJPText_Meichuu[] = _("òÁÙ=Â/");
+#else
 static const u8 sJPText_Meichuu[] = _("めいちゅう/");
+#endif
 
 static const struct MoveTutorMoveInfoHeaders sMoveTutorMoveInfoHeaders[][5] =
 {

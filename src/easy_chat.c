@@ -68,13 +68,32 @@ static const u8 *const sEasyChatGroupNamePointers[] = {
     [EC_GROUP_POKEMON_2] = gEasyChatGroupName_Pokemon2,
 };
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u16 sDefaultProfileWords[] = {
+    0x140D,
+    0x0E04,
+    0x102A,
+    0x020E,
+};
+#else
 static const u16 sDefaultProfileWords[] = {
     EC_WORD_I_AM,
     EC_WORD_A,
     EC_WORD_POKEMON,
     EC_WORD_FRIEND,
 };
+#endif
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u16 sDefaultBattleStartWords[] = {
+    0x1001,
+    0x1E20,
+    0x0620,
+    0x0C03,
+    0x0803,
+    0x0C00,
+};
+#else
 static const u16 sDefaultBattleStartWords[] = {
     EC_WORD_ARE,
     EC_WORD_YOU,
@@ -83,6 +102,7 @@ static const u16 sDefaultBattleStartWords[] = {
     EC_WORD_HERE_I_COME,
     EC_WORD_EXCL,
 };
+#endif
 
 static const u16 sDeoxysValue[] = {
     SPECIES_DEOXYS,

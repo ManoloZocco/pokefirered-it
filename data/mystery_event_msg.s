@@ -32,10 +32,18 @@ MysteryEventScript_StampCard::
 	end
 
 sText_MysteryGiftStampCard:
+.ifdef ITALIAN
+	.string "Grazie per usare il Sistema SCHEDA\n"
+	.string "BOLLINI.\p"
+	.string "Il numero di BOLLINI che ancora ti\n"
+	.string "serve per completare la SCHEDA\l"
+	.string "è {STR_VAR_1}.$"
+.else
 	.string "Thank you for using the STAMP CARD\n"
 	.string "System.\p"
 	.string "You have {STR_VAR_1} more to collect to\n"
 	.string "fill your STAMP CARD.$"
+.endif
 
 MysteryEventScript_SurfPichu::
 	setvaddress MysteryEventScript_SurfPichu
@@ -98,17 +106,33 @@ SurfPichu_Slot5:
 	return
 
 sText_MysteryGiftEgg:
+.ifdef ITALIAN
+	.string "Grazie per usare il Sistema\n"
+	.string "DONO SEGRETO.\p"
+	.string "Abbiamo un regalo per te da un\n"
+	.string "CENTRO POKéMON, un UOVO POKéMON!\p"
+	.string "Trattalo con tanto amore!$"
+.else
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.\p"
 	.string "From the POKéMON CENTER we\n"
 	.string "have a gift - a POKéMON EGG!\p"
 	.string "Please raise it with love and\n"
 	.string "kindness.$"
+.endif
 
 sText_FullParty:
+.ifdef ITALIAN
+	.string "Non hai più posto nella tua\n"
+	.string "squadra.\p"
+	.string "Torna a trovarmi dopo aver\n"
+	.string "depositato uno o più\l"
+	.string "POKéMON nel PC.$"
+.else
 	.string "Oh, your party appears to be full.\p"
 	.string "Please come see me after storing\n"
 	.string "a POKéMON on a PC.$"
+.endif
 
 MysteryEventScript_VisitingTrainer::
 	setvaddress MysteryEventScript_VisitingTrainer
@@ -132,6 +156,23 @@ MysteryEventScript_VisitingTrainerArrived:
 	end
 
 sText_MysteryGiftVisitingTrainer:
+.ifdef ITALIAN
+	.string "Grazie per usare il Sistema\n"
+	.string "DONO SEGRETO.\p"
+	.string "La SCHEDA SEGRETA ti\n"
+	.string "permette di partecipare ad\l"
+	.string "un sondaggio al POKéMON-MARKET.\p"
+	.string "Così, potrai invitare gli\n"
+	.string "ALLENATORI al SETTIPELAGO.\p"
+	.string "Ora ti do la password che ti serve\n"
+	.string "per partecipare a un sondaggio:\p"
+	.string "BATTI CINQUE ACUTI\n"
+	.string "ALLENATORE.\p"
+	.string "Scrivi questa password su\n"
+	.string "un sondaggio e invialo al\l"
+	.string "SISTEMA COMUNICAZIONE\l"
+	.string "WIRELESS.$"
+.else
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.\p"
 	.string "By holding this WONDER CARD, you\n"
@@ -146,8 +187,21 @@ sText_MysteryGiftVisitingTrainer:
 	.string "Write that in on a survey and send\n"
 	.string "it to the WIRELESS\l"
 	.string "COMMUNICATION SYSTEM.$"
+.endif
 
 sText_MysteryGiftVisitingTrainer_2:
+.ifdef ITALIAN
+	.string "Grazie per usare il Sistema\n"
+	.string "DONO SEGRETO.\p"
+	.string "Un ALLENATORE è appena\n"
+	.string "sbarcato sul SETTIPELAGO\l"
+	.string "per cercarti.\p"
+	.string "Buon divertimento nella lotta\n"
+	.string "contro questo ALLENATORE!\p"
+	.string "Inserendo altre password,\n"
+	.string "potrai invitare altri ALLENATORI!\p"
+	.string "Cerca altre password valide!$"
+.else
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.\p"
 	.string "A TRAINER has arrived in the SEVII\n"
@@ -158,6 +212,7 @@ sText_MysteryGiftVisitingTrainer_2:
 	.string "entering other passwords.\p"
 	.string "Try looking for other passwords\n"
 	.string "that may work.$"
+.endif
 
 MysteryEventScript_BattleCard::
 	setvaddress MysteryEventScript_BattleCard
@@ -185,6 +240,17 @@ MysteryEventScript_BattleCardInfo:
 	end
 
 sText_MysteryGiftBattleCountCard:
+.ifdef ITALIAN
+	.string "Grazie per usare il Sistema\n"
+	.string "DONO SEGRETO.\p"
+	.string "La tua SCHEDA CONTALOTTE\n"
+	.string "calcola il numero di LOTTE contro\l"
+	.string "ALLENATORI con la stessa SCHEDA.\p"
+	.string "Cerca altri ALLENATORI che hanno\n"
+	.string "la SCHEDA CONTALOTTE e sfidali!\p"
+	.string "I risultati saranno diffusi tra le\n"
+	.string "NOTIZIE!$"
+.else
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.\p"
 	.string "Your BATTLE COUNT CARD keeps\n"
@@ -195,8 +261,18 @@ sText_MysteryGiftBattleCountCard:
 	.string "You may check the overall rankings\n"
 	.string "by reading the NEWS.\p"
 	.string "Please do give it a try!$"
+.endif
 
 sText_MysteryGiftBattleCountCard_2:
+.ifdef ITALIAN
+	.string "Grazie per usare il Sistema\n"
+	.string "DONO SEGRETO!\p"
+	.string "Congratulazioni! Hai ottenuto\n"
+	.string "un premio per aver vinto tre lotte!\p"
+	.string "Speriamo che questo ti aiuti ad\n"
+	.string "impegnarti ancora di più nella\l"
+	.string "lotta!$"
+.else
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.\p"
 	.string "Congratulations!\p"
@@ -204,6 +280,7 @@ sText_MysteryGiftBattleCountCard_2:
 	.string "three battles!\p"
 	.string "We hope you will be inspired to\n"
 	.string "battle some more.$"
+.endif
 
 MysteryEventScript_AuroraTicket::
 	setvaddress MysteryEventScript_AuroraTicket
@@ -242,26 +319,52 @@ AuroraTicket_Obtained:
 	end
 
 sText_AuroraTicket1:
+.ifdef ITALIAN
+	.string "Grazie per usare il Sistema\n"
+	.string "DONO SEGRETO.\p"
+	.string "Tu sei {PLAYER}, vero? Ho qui\n"
+	.string "un biglietto per te.$"
+.else
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.\p"
 	.string "You must be {PLAYER}.\n"
 	.string "There is a ticket here for you.$"
+.endif
 
 sText_AuroraTicket2:
+.ifdef ITALIAN
+	.string "Dovrebbe servirti al porto di\n"
+	.string "ARANCIOPOLI.\p"
+	.string "Ti conviene andare a vedere\n"
+	.string "di persona.$"
+.else
 	.string "It appears to be for use at the\n"
 	.string "VERMILION CITY port.\p"
 	.string "Why not give it a try and see what\n"
 	.string "it is about?$"
+.endif
 
 sText_AuroraTicketGot:
+.ifdef ITALIAN
+	.string "Grazie per usare il Sistema\n"
+	.string "DONO SEGRETO.$"
+.else
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.$"
+.endif
 
 sText_AuroraTicketNoPlace:
+.ifdef ITALIAN
+	.string "Oh, mi spiace. La TASCA STRUMENTI\n"
+	.string "BASE del tuo ZAINO è piena.\p"
+	.string "Torna a trovarmi dopo aver\n"
+	.string "depositato qualcosa nel PC.$"
+.else
 	.string "Oh, I'm sorry, {PLAYER}. Your BAG's\n"
 	.string "KEY ITEMS POCKET is full.\p"
 	.string "Please store something on your PC,\n"
 	.string "then come back for this.$"
+.endif
 
 MysteryEventScript_MysticTicket::
 	setvaddress MysteryEventScript_MysticTicket
@@ -301,26 +404,52 @@ MysticTicket_Obtained:
 	end
 
 sText_MysticTicket2:
+.ifdef ITALIAN
+	.string "Grazie per usare il Sistema\n"
+	.string "DONO SEGRETO.\p"
+	.string "Tu sei {PLAYER}, vero? Ho qui\n"
+	.string "un biglietto per te.$"
+.else
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.\p"
 	.string "You must be {PLAYER}.\n"
 	.string "There is a ticket here for you.$"
+.endif
 
 sText_MysticTicket1:
+.ifdef ITALIAN
+	.string "Dovrebbe servirti al porto di\n"
+	.string "ARANCIOPOLI.\p"
+	.string "Ti conviene andare a vedere\n"
+	.string "di persona.$"
+.else
 	.string "It appears to be for use at the\n"
 	.string "VERMILION CITY port.\p"
 	.string "Why not give it a try and see what\n"
 	.string "it is about?$"
+.endif
 
 sText_MysticTicketGot:
+.ifdef ITALIAN
+	.string "Grazie per usare il Sistema\n"
+	.string "DONO SEGRETO.$"
+.else
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.$"
+.endif
 
 sText_MysticTicketNoPlace:
+.ifdef ITALIAN
+	.string "Oh, mi spiace. La TASCA STRUMENTI\n"
+	.string "BASE del tuo ZAINO è piena.\p"
+	.string "Torna a trovarmi dopo aver\n"
+	.string "depositato qualcosa nel PC.$"
+.else
 	.string "Oh, I'm sorry, {PLAYER}. Your BAG's\n"
 	.string "KEY ITEMS POCKET is full.\p"
 	.string "Please store something on your PC,\n"
 	.string "then come back for this.$"
+.endif
 
 MysteryEventScript_AlteringCave::
 	setvaddress MysteryEventScript_AlteringCave
@@ -337,6 +466,15 @@ MysteryEventScript_AlteringCave_:
 	end
 
 sText_MysteryGiftAlteringCave:
+.ifdef ITALIAN
+	.string "Grazie per usare il Sistema\n"
+	.string "DONO SEGRETO.\p"
+	.string "Recentemente sono stati visti\n"
+	.string "POKéMON rari nella GROTTA\l"
+	.string "MUTEVOLE, sull’ISOLA SOLITARIA.\p"
+	.string "Perché non vai a vedere\n"
+	.string "di persona?$"
+.else
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.\p"
 	.string "Recently, there have been rumors\n"
@@ -345,3 +483,4 @@ sText_MysteryGiftAlteringCave:
 	.string "CAVE on OUTCAST ISLAND.\p"
 	.string "Why not visit there and check if\n"
 	.string "the rumors are indeed true?$"
+.endif

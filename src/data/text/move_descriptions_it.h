@@ -353,7 +353,10 @@ const u8 gMoveDescription_RockBlast[] = _("Lancio di massi sul\nnemico che dura\
 const u8 gMoveDescription_ShockWave[] = _("Rapido ed\ninevitabile attacco\nelettrico.");
 const u8 gMoveDescription_WaterPulse[] = _("Esplosione d’acqua\nche può confondere\nil nemico.");
 const u8 gMoveDescription_DoomDesire[] = _("Forte luce solare\nche colpisce dopo\n2 turni.");
-const u8 gMoveDescription_PsychoBoost[] = _("Potente attacco, ma\nriduce di molto\nl’ATT. SPEC. di chi\nlo usa.");
+const u8 gMoveDescription_PsychoBoost[] = _("Potente attacco, ma\n"
+    "riduce di molto\n"
+    "l’ATT. SPEC. di chi\n"
+    "lo usa.");
 
 const u8 *const gMoveDescriptionPointers[] = {
     [MOVE_POUND          - 1] = gMoveDescription_Pound,
