@@ -6453,8 +6453,10 @@ u8 *MonSpritesGfxManager_GetSpritePtr(u8 spriteNum)
 }
 
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-void Dummy_08044d1c(void)
+const u8 *DecompressBattleString(const u8 *src)
 {
+    return src;
 }
 #endif
+
 

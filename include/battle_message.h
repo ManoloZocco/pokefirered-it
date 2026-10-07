@@ -255,5 +255,12 @@ extern const u8 gText_HighlightRed_Left[];
 extern const u8 gText_Win[];
 extern const u8 gText_Loss[];
 extern const u8 gText_Draw[];
+ 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const u8 *DecompressBattleString(const u8 *src);
+#define DECOMPRESS_BATTLE_STRING(str) DecompressBattleString(str)
+#else
+#define DECOMPRESS_BATTLE_STRING(str) (str)
+#endif
 
 #endif // GUARD_BATTLE_MESSAGE_H

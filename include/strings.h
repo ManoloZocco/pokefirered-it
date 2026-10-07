@@ -1544,5 +1544,10 @@ extern const u8 gText_PokeSum_EggOrigin_Trade[];
 extern const u8 gText_PokeSum_EggOrigin_NicePlace[];
 extern const u8 gText_PokeSum_EggOrigin_Spa[];
 extern const u8 gText_PokeSum_EggOrigin_Trade[];
+ 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+extern const u8 gText_Scolara[];
+extern const u8 gText_Capipalestra[];
+#endif
 
 #endif //GUARD_STRINGS_H
