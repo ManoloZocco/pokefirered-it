@@ -442,7 +442,11 @@ void ReadMail(struct Mail * mail, void (*savedCallback)(void), bool8 messageExis
     u16 sp0;
     u16 species;
     sMailViewResources = AllocZeroed(sizeof(struct MailViewResources));
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    sMailViewResources->unused = 4;
+#else
     sMailViewResources->unused = 2;
+#endif
     sMailViewResources->mailArrangementType = 1;
     sMailViewResources->copyEasyChatWord = CopyEasyChatWord;
     sMailViewResources->convertEasyChatWordsToString = ConvertEasyChatWordsToString;

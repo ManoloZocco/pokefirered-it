@@ -116,6 +116,14 @@ static void Task_FCOpenOrCloseInfoBox(u8 taskId);
 static void UpdateInfoBoxTilemap(u8 bg, s16 state);
 static void PlaceListMenuCursor(bool8 isActive);
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+#define ICONDESC_FILL_W 120
+#define ICONDESC_TEXT_W 0x74
+#else
+#define ICONDESC_FILL_W 88
+#define ICONDESC_TEXT_W 0x54
+#endif
+
 static const u16 sFameCheckerTilemap[] = INCBIN_U16("graphics/fame_checker/tilemap1.bin");
 static const u8 sQuestionMarkSpriteGfx[] = INCBIN_U8("graphics/fame_checker/question_mark.4bpp");
 static const u8 sSpinningPokeballSpriteGfx[] = INCBIN_U8("graphics/fame_checker/spinning_pokeball.4bpp");
@@ -753,7 +761,7 @@ static void Task_TopMenuHandleInput(u8 taskId)
             else if (cursorPos != sFameCheckerData->numUnlockedPersons - 1) // anything but CANCEL
             {
                 PlaySE(SE_M_LOCK_ON);
-                FillWindowPixelRect(FCWINDOWID_ICONDESC, PIXEL_FILL(0), 0, 0, 88, 32);
+                FillWindowPixelRect(FCWINDOWID_ICONDESC, PIXEL_FILL(0), 0, 0, ICONDESC_FILL_W, 32);
                 FC_PutWindowTilemapAndCopyWindowToVramMode3(FCWINDOWID_ICONDESC);
                 UpdateInfoBoxTilemap(2, 4);
                 UpdateInfoBoxTilemap(1, 5);
@@ -1404,11 +1412,11 @@ static void UpdateIconDescriptionBox(u8 whichText)
     u32 idx = 6 * sFameCheckerData->unlockedPersons[FameCheckerGetCursorY()] + whichText;
     HandleFlavorTextModeSwitch(TRUE);
     gIconDescriptionBoxIsOpen = 1;
-    FillWindowPixelRect(FCWINDOWID_ICONDESC, PIXEL_FILL(0), 0, 0, 0x58, 0x20);
-    width = (0x54 - GetStringWidth(FONT_SMALL, sFlavorTextOriginLocationTexts[idx], 0)) / 2;
+    FillWindowPixelRect(FCWINDOWID_ICONDESC, PIXEL_FILL(0), 0, 0, ICONDESC_FILL_W, 0x20);
+    width = (ICONDESC_TEXT_W - GetStringWidth(FONT_SMALL, sFlavorTextOriginLocationTexts[idx], 0)) / 2;
     AddTextPrinterParameterized4(FCWINDOWID_ICONDESC, FONT_SMALL, width, 0, 0, 2, sTextColor_DkGrey, -1, sFlavorTextOriginLocationTexts[idx]);
     StringExpandPlaceholders(gStringVar1, sFlavorTextOriginObjectNameTexts[idx]);
-    width = (0x54 - GetStringWidth(FONT_SMALL, gStringVar1, 0)) / 2;
+    width = (ICONDESC_TEXT_W - GetStringWidth(FONT_SMALL, gStringVar1, 0)) / 2;
     AddTextPrinterParameterized4(FCWINDOWID_ICONDESC, FONT_SMALL, width, 10, 0, 2, sTextColor_DkGrey, -1, gStringVar1);
     FC_PutWindowTilemapAndCopyWindowToVramMode3(FCWINDOWID_ICONDESC);
 }

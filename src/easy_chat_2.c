@@ -282,24 +282,42 @@ void ShowEasyChatScreen(void)
     DoEasyChatScreen(gSpecialVar_0x8004, words, CB2_ReturnToFieldContinueScript);
 }
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u16 sECPhrase_MysteryEventIsExciting[] = {
+    6167,
+    5178,
+    4107,
+    8207
+};
+#else
 static const u16 sECPhrase_MysteryEventIsExciting[] = {
     EC_WORD_MYSTERY,
     EC_WORD_EVENT,
     EC_WORD_IS,
     EC_WORD_EXCITING
 };
+#endif
 
 static void CompareProfileResponseWithPassphrase(void)
 {
     gSpecialVar_0x8004 = IsPhraseDifferentThanPlayerInput(sECPhrase_MysteryEventIsExciting, NELEMS(sECPhrase_MysteryEventIsExciting));
 }
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u16 sECPhrase_LinkTogetherWithAll[] = {
+    2580,
+    3639,
+    521,
+    3072
+};
+#else
 static const u16 sECPhrase_LinkTogetherWithAll[] = {
     EC_WORD_LINK,
     EC_WORD_TOGETHER,
     EC_WORD_WITH,
     EC_WORD_ALL
 };
+#endif
 
 static void CompareQuestionnaireResponseWithPassphrase(void)
 {

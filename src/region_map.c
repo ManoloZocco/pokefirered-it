@@ -498,7 +498,11 @@ static const struct WindowTemplate sRegionMapWindowTemplates[] = {
         .bg = 3,
         .tilemapLeft = 18,
         .tilemapTop = 0,
+        #if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        .width = 6,
+#else
         .width = 5,
+#endif
         .height = 2,
         .paletteNum = 12,
         .baseBlock = 0x150
@@ -508,10 +512,18 @@ static const struct WindowTemplate sRegionMapWindowTemplates[] = {
         .bg = 3,
         .tilemapLeft = 24,
         .tilemapTop = 0,
+        #if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        .width = 6,
+#else
         .width = 5,
+#endif
         .height = 2,
         .paletteNum = 12,
+        #if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        .baseBlock = 0x15c
+#else
         .baseBlock = 0x15a
+#endif
     }, DUMMY_WIN_TEMPLATE
 };
 

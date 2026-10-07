@@ -615,9 +615,17 @@ static const struct WindowTemplate sWindowTemplate_CategoryMonInfo = {
 const struct WindowTemplate sWindowTemplate_DexEntry_MonPic = {
     .bg = 1,
     .tilemapLeft = 19,
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    .tilemapTop = 2,
+#else
     .tilemapTop = 3,
+#endif
     .width = 8,
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    .height = 9,
+#else
     .height = 8,
+#endif
     .paletteNum = 9,
     .baseBlock = 0x01a8
 };

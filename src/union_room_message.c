@@ -40,65 +40,69 @@ ALIGNED(4) const u8 gText_UR_AwaitingLinkPressStart[] = _("{STR_VAR_1}! Awaiting
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
 static const u8 sText_SingleBattle[] = _("(ングルバトル& ÉÁÎÁÒñ");
 #else
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+ALIGNED(4) static const u8 sText_SingleBattle[] = _("(ングルバトル& ÉÁÎÁÒñ");
+#else
 ALIGNED(4) static const u8 sText_SingleBattle[] = _("シングルバトルを かいさいする");
 #endif
+#endif
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-static const u8 sText_DoubleBattle[] = _("ダブルバトル& ÉÁÎÁÒñ");
+ALIGNED(4) static const u8 sText_DoubleBattle[] = _("ダブルバトル& ÉÁÎÁÒñ");
 #else
 ALIGNED(4) static const u8 sText_DoubleBattle[] = _("ダブルバトルを かいさいする");
 #endif
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-static const u8 sText_MultiBattle[] = _(" íルチバトル& ÉÁÎÁÒñ");
+ALIGNED(4) static const u8 sText_MultiBattle[] = _("íルチバトル& ÉÁÎÁÒñ");
 #else
 ALIGNED(4) static const u8 sText_MultiBattle[] = _("マルチバトルを かいさいする");
 #endif
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-static const u8 sText_TradePokemon[] = _(" ポケモンこÂÉ+& ÉÁÎÁÒñ");
+ALIGNED(4) static const u8 sText_TradePokemon[] = _("ポケモンこÂÉ+& ÉÁÎÁÒñ");
 #else
 ALIGNED(4) static const u8 sText_TradePokemon[] = _("ポケモンこうかんを かいさいする");
 #endif
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-static const u8 sText_Chat[] = _("   チャット& ÉÁÎÁÒñ");
+ALIGNED(4) static const u8 sText_Chat[] = _("チャット& ÉÁÎÁÒñ");
 #else
 ALIGNED(4) static const u8 sText_Chat[] = _("チャットを かいさいする");
 #endif
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-static const u8 sText_DistWonderCard[] = _("   êÏぎßカ-ド&Ëばñ");
+ALIGNED(4) static const u8 sText_DistWonderCard[] = _("êÏぎßカ-ド&Ëばñ");
 #else
 ALIGNED(4) static const u8 sText_DistWonderCard[] = _("ふしぎなカードをくばる");
 #endif
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-static const u8 sText_DistWonderNews[] = _("êÏぎßニ<-)&Ëばñ");
+ALIGNED(4) static const u8 sText_DistWonderNews[] = _("êÏぎßニ<-)&Ëばñ");
 #else
 ALIGNED(4) static const u8 sText_DistWonderNews[] = _("ふしぎなニュースをくばる");
 #endif
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-static const u8 sText_DistMysteryEvent[] = _("   êÏぎßでÊごÑ& ÉÁÎÁÒñ");
+ALIGNED(4) static const u8 sText_DistMysteryEvent[] = _("êÏぎßでÊごÑ& ÉÁÎÁÒñ");
 #else
 ALIGNED(4) static const u8 sText_DistMysteryEvent[] = _("ふしぎなできごとを かいさいする");
 #endif
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-static const u8 sText_HoldPokemonJump[] = _("   ßわÑび& ÉÁÎÁÒñ");
+ALIGNED(4) static const u8 sText_HoldPokemonJump[] = _("ßわÑび& ÉÁÎÁÒñ");
 #else
 ALIGNED(4) static const u8 sText_HoldPokemonJump[] = _("なわとびを かいさいする");
 #endif
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-static const u8 sText_HoldBerryCrush[] = _("   Êçîíッ(ャ-& ÉÁÎÁÒñ");
+ALIGNED(4) static const u8 sText_HoldBerryCrush[] = _("Êçîíッ(ャ-& ÉÁÎÁÒñ");
 #else
 ALIGNED(4) static const u8 sText_HoldBerryCrush[] = _("きのみマッシャーを かいさいする");
 #endif
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-static const u8 sText_HoldBerryPicking[] = _("   Êçîどû& ÉÁÎÁÒñ");
+ALIGNED(4) static const u8 sText_HoldBerryPicking[] = _("Êçîどû& ÉÁÎÁÒñ");
 #else
 ALIGNED(4) static const u8 sText_HoldBerryPicking[] = _("きのみどりを かいさいする");
 #endif
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-static const u8 sText_HoldSpinTrade[] = _("  ぐñぐñこÂÉ+& ÉÁÎÁÒñ");
+ALIGNED(4) static const u8 sText_HoldSpinTrade[] = _("ぐñぐñこÂÉ+& ÉÁÎÁÒñ");
 #else
 ALIGNED(4) static const u8 sText_HoldSpinTrade[] = _("ぐるぐるこうかんを かいさいする");
 #endif
 #if GAME_LANGUAGE == LANGUAGE_ITALIAN
-static const u8 sText_HoldSpinShop[] = _("   ぐñぐñ(>ップ& ÉÁÎÁÒñ");
+ALIGNED(4) static const u8 sText_HoldSpinShop[] = _("ぐñぐñ(>ップ& ÉÁÎÁÒñ");
 #else
 ALIGNED(4) static const u8 sText_HoldSpinShop[] = _("ぐるぐるショップを かいさいする");
 #endif

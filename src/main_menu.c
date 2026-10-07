@@ -642,10 +642,15 @@ static bool8 HandleMenuInput(u8 taskId)
 static void PrintMessageOnWindow4(const u8 *str)
 {
     FillWindowPixelBuffer(MAIN_MENU_WINDOW_ERROR, PIXEL_FILL(10));
+#if GAME_LANGUAGE != LANGUAGE_ITALIAN
     MainMenu_DrawWindow(&sWindowTemplate[MAIN_MENU_WINDOW_ERROR]);
+#endif
     AddTextPrinterParameterized3(MAIN_MENU_WINDOW_ERROR, FONT_NORMAL, 0, 2, sTextColor1, 2, str);
     PutWindowTilemap(MAIN_MENU_WINDOW_ERROR);
     CopyWindowToVram(MAIN_MENU_WINDOW_ERROR, COPYWIN_GFX);
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    MainMenu_DrawWindow(&sWindowTemplate[MAIN_MENU_WINDOW_ERROR]);
+#endif
     SetGpuReg(REG_OFFSET_WIN0H, WIN_RANGE( 19, 221));
     SetGpuReg(REG_OFFSET_WIN0V, WIN_RANGE(115, 157));
 }
@@ -748,7 +753,11 @@ static void MainMenu_DrawWindow(const struct WindowTemplate * windowTemplate)
         windowTemplate->tilemapLeft, 
         windowTemplate->tilemapTop - 1, 
         windowTemplate->width, 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        1,
+#else
         windowTemplate->height, 
+#endif
         2
     );
     FillBgTilemapBufferRect(

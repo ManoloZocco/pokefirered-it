@@ -351,7 +351,12 @@ ifneq ($(NODEP),1)
 -include $(addprefix $(OBJ_DIR)/,$(REGULAR_DATA_ASM_SRCS:.s=.d))
 endif
 
-$(OBJ_DIR)/sym_bss.ld: sym_bss.txt
+ifeq ($(GAME_LANGUAGE),ITALIAN)
+SYM_BSS_TXT := sym_bss_it.txt
+else
+SYM_BSS_TXT := sym_bss.txt
+endif
+$(OBJ_DIR)/sym_bss.ld: $(SYM_BSS_TXT)
 	$(RAMSCRGEN) .bss $< ENGLISH > $@
 
 $(OBJ_DIR)/sym_bss_rev10.ld: sym_bss_rev10.txt
