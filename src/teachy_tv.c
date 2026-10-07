@@ -460,6 +460,9 @@ static void TeachyTvMainCallback(void)
         sResources->grassAnimDisabled = 0;
         sResources->scrollIndicatorArrowPairId = 0xFF;
         SetVBlankHBlankCallbacksToNull();
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        ResetVramOamAndBgCntRegs();
+#endif
         ClearScheduledBgCopiesToVram();
         ScanlineEffect_Stop();
         FreeAllSpritePalettes();

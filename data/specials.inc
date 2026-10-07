@@ -452,7 +452,4 @@ gSpecials::
 	def_special UpdateLoreleiDollCollection
 	def_special LoopWingFlapSound
 	def_special CreateEnemyEventMon
-.ifdef ITALIAN
-	def_special SetDeoxysStats
-.endif
 gSpecialsEnd::

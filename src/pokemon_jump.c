@@ -3340,6 +3340,7 @@ static void PrintPrizeMessage(u16 itemId, u16 quantity)
 {
     CopyItemName(itemId, sPokemonJumpGfx->itemName);
     ConvertIntToDecimalStringN(sPokemonJumpGfx->itemQuantityStr, quantity, STR_CONV_MODE_LEFT_ALIGN, 1);
+#if GAME_LANGUAGE != LANGUAGE_ITALIAN
     if (itemId >= FIRST_BERRY_INDEX && itemId < LAST_BERRY_INDEX)
     {
         if (quantity > 1)
@@ -3353,6 +3354,7 @@ static void PrintPrizeMessage(u16 itemId, u16 quantity)
             }
         }
     }
+#endif
     DynamicPlaceholderTextUtil_Reset();
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(0, sPokemonJumpGfx->itemName);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(1, sPokemonJumpGfx->itemQuantityStr);
