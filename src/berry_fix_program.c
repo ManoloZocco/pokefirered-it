@@ -230,8 +230,13 @@ static const u16 sPalette[] = {
     0x6546, 0x7B14, 0x7FFF, 0x318C, 0x675A, 0x0000, 0x0000, 0x0000
 };
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 sTextColor[3] = { 0x0A, 0x0B, 0x0C };
+static const u8 sTextColor2[3] = { 0x00, 0x0A, 0x0D };
+#else
 static const u8 sTextColor[] = { 0x0A, 0x0B, 0x0C, 0x00 };
 static const u8 sTextColor2[] = { 0x0A, 0x0D, 0x00, 0x00 };
+#endif
 
 static const u8 *const sSceneTexts[] = {
     [SCENE_ENSURE_CONNECT] = sText_Scene0,
@@ -377,10 +382,17 @@ static void InitBerryFixBgAndWindows(void)
     SetGpuReg(REG_OFFSET_BG0VOFS, 0);
     SetGpuReg(REG_OFFSET_BG1HOFS, 0);
     SetGpuReg(REG_OFFSET_BG1VOFS, 0);
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    SetGpuReg(REG_OFFSET_BLDCNT, 0);
+    DmaFill32(3, 0, (void *)VRAM, VRAM_SIZE);
+    DmaFill32(3, 0, (void *)OAM, OAM_SIZE);
+    DmaFill32(3, 0, (void *)PLTT, PLTT_SIZE);
+#else
     SetGpuReg(REG_OFFSET_BLDY, 0);
     DmaFill32(3, 0, (void *)VRAM, VRAM_SIZE);
     DmaFill32(3, 0, (void *)PLTT, PLTT_SIZE);
     DmaFill32(3, 0, (void *)OAM, OAM_SIZE);
+#endif
     ResetBgsAndClearDma3BusyFlags(0);
     InitBgsFromTemplates(0, sBgTemplates, ARRAY_COUNT(sBgTemplates));
     ChangeBgX(0, 0, BG_COORD_SET);

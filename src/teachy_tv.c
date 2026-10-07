@@ -1051,7 +1051,11 @@ static void TTVcmd_RenderAndRemoveBg1EndGraphic(u8 taskId)
 
 static void TeachyTvClearBg1EndGraphicText(void)
 {
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    FillBgTilemapBufferRect_Palette0(1, 0, 20, 10, 4, 2);
+#else
     FillBgTilemapBufferRect_Palette0(1, 0, 20, 10, 8, 2);
+#endif
     ScheduleBgCopyTilemapToVram(1);
 }
 

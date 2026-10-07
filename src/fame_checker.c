@@ -1681,6 +1681,69 @@ static void Task_FCOpenOrCloseInfoBox(u8 taskId)
     }
 }
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static void UpdateInfoBoxTilemap(u8 bg, s16 state)
+{
+    if (state == 0 || state == 3)
+    {
+        FillBgTilemapBufferRect(bg, 0x8C, 12, 10,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0xA1, 13, 10, 14,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x8D, 27, 10,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x8E, 28, 10,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x8F, 12, 11,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x00, 13, 11, 15,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x90, 28, 11,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x91, 12, 12,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0xA3, 13, 12, 14,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x92, 27, 12,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x93, 28, 12,  1,  1, 1);
+    }
+    else if (state == 1)
+    {
+        FillBgTilemapBufferRect(bg, 0x9B, 12, 10,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x9C, 13, 10, 15,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x96, 28, 10,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x9D, 12, 11,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x00, 13, 11, 15,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x90, 28, 11,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x9E, 12, 12,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x9F, 13, 12, 15,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x99, 28, 12,  1,  1, 1);
+    }
+    else if (state == 2)
+    {
+        FillBgTilemapBufferRect(bg, 0x94, 12, 10,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x95, 13, 10, 15,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x96, 28, 10,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x8F, 12, 11,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x9A, 13, 11, 15,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x90, 28, 11,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x97, 12, 12,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x98, 13, 12, 15,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x99, 28, 12,  1,  1, 1);
+    }
+    else if (state == 4)
+    {
+        FillBgTilemapBufferRect(bg, 0x83, 12, 10,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0xA0, 13, 10, 14,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x84, 27, 10,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x85, 28, 10,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x86, 12, 11,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0xA2, 13, 11, 14,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x87, 27, 11,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x88, 28, 11,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x83, 12, 12,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0xA0, 13, 12, 14,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x84, 27, 12,  1,  1, 1);
+        FillBgTilemapBufferRect(bg, 0x85, 28, 12,  1,  1, 1);
+    }
+    else if (state == 5)
+    {
+        FillBgTilemapBufferRect(bg, 0x00, 12, 10, 17,  3, 1);
+    }
+    CopyBgTilemapBufferToVram(bg);
+}
+#else
 static void UpdateInfoBoxTilemap(u8 bg, s16 state)
 {
     if (state == 0 || state == 3)
@@ -1742,6 +1805,7 @@ static void UpdateInfoBoxTilemap(u8 bg, s16 state)
     }
     CopyBgTilemapBufferToVram(bg);
 }
+#endif
 
 static void PlaceListMenuCursor(bool8 isActive)
 {

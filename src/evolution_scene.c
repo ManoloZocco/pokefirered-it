@@ -798,8 +798,8 @@ static void Task_EvolutionScene(u8 taskId)
                 {
                     StopMapMusic();
                     Overworld_PlaySpecialMapMusic();
-                    gTasks[taskId].tBits |= TASK_BIT_LEARN_MOVE;
                 }
+                gTasks[taskId].tBits |= TASK_BIT_LEARN_MOVE;
 #else
                 StopMapMusic();
                 Overworld_PlaySpecialMapMusic();
