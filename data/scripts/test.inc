@@ -22,6 +22,11 @@ Test_Text_ThisIsACoordEvent::
 	.string "テストよう　メッセージです！\n"
 	.string "ざひょう　チェックの　イベントです$"
 
+.ifdef ITALIAN
+Test_Text_Empty::
+	.string " $"
+.else
 	.align 2
 Test_Text_Empty::
 	.string "$"
+.endif

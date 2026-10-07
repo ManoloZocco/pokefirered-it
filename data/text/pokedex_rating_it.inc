@@ -1,5 +1,5 @@
 PokedexRating_Text_HowIsPokedexComingAlong::
-	.string "K: Che piacere vederti!\n"
+	.string "OAK: Che piacere vederti!\n"
 	.string "Come va il tuo POKéDEX?\p"
 	.string "Fammi vedere!$"
 PokedexRating_Text_SeenXOwnedY::

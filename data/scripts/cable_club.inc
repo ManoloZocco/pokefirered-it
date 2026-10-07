@@ -164,6 +164,9 @@ CableClub_EventScript_PlayerExitUnionRoom::
 CableClub_EventScript_TrainerCardDataOverwritten::
 	message CableClub_Text_TrainerCardDataOverwritten
 	waitmessage
+.ifdef ITALIAN
+	delay 60
+.endif
 	playse SE_PIN
 	message CableClub_Text_HopeToSeeYouAgain
 	waitmessage
@@ -1288,6 +1291,9 @@ TwoIsland_JoyfulGameCorner_EventScript_ShowDodrioBerryPickingRecords::
 	releaseall
 	end
 
+.ifdef ITALIAN
+	.include "data/text/cable_club_it.inc"
+.else
 CableClub_Text_WelcomeWhichCableClubService::
 	.string "Welcome to the POKéMON CABLE\n"
 	.string "CLUB.\p"
@@ -1387,78 +1393,37 @@ CableClub_Text_PleaseConfirmNumberAndRestart::
 	.string "Please confirm the number of\n"
 	.string "players and start again.$"
 
-.ifdef ITALIAN
-Text_TerminateLinkIfYouLeaveRoom::
-	.string "giocatori.$"
-.else
 Text_TerminateLinkIfYouLeaveRoom::
 	.string "The link will be terminated if you\n"
 	.string "leave the room. Is that okay?$"
 
-.endif
-.ifdef ITALIAN
-Text_TerminateLinkConfirmation::
-	.string "Controlla il numero di giocatori\n"
-	.string "e riprova.$"
-.else
 Text_TerminateLinkConfirmation::
 	.string "Terminating link…\n"
 	.string "You will be escorted out of\l"
 	.string "the room. Please wait.$"
 
-.endif
-.ifdef ITALIAN
-Text_TrainerTooBusyToNotice::
-	.string "Il collegamento verrà interrotto se\n"
-	.string "esci dalla sala. Vuoi uscire?$"
-.else
 Text_TrainerTooBusyToNotice::
 	.string "This TRAINER is too busy to\n"
 	.string "notice…$"
 
-.endif
-.ifdef ITALIAN
-Text_LookedAtPlayersTrainerCard::
-	.string "Interruzione del collegamento…\n"
-	.string "Uscirai dalla sala. Attendi.$"
-.else
 Text_LookedAtPlayersTrainerCard::
 	.string "Score! Got to look at {STR_VAR_1}'s\n"
 	.string "TRAINER CARD!$"
 
-.endif
-.ifdef ITALIAN
-Text_LookedAtPlayersTrainerCardColored::
-	.string "L'ALLENATORE è troppo impegnato…$"
-.else
 Text_LookedAtPlayersTrainerCardColored::
 	.string "Score! Got to look at {STR_VAR_1}'s\n"
 	.string "TRAINER CARD!\p"
 	.string "It's a {STR_VAR_2} card!$"
 
-.endif
-.ifdef ITALIAN
-Text_TakeSeatStartBattle::
-	.string "Bene! Puoi vedere la SCHEDA\n"
-	.string "ALLENATORE di {STR_VAR_1}!$"
-.else
 Text_TakeSeatStartBattle::
 	.string "Please take your seat and start\n"
 	.string "your battle.$"
 
-.endif
-.ifdef ITALIAN
-Text_TakeSeatStartTrade::
-	.string "Bene! Puoi vedere la SCHEDA\n"
-	.string "ALLENATORE di {STR_VAR_1}!\p"
-	.string "È una scheda {STR_VAR_2}!$"
-.else
 Text_TakeSeatStartTrade::
 	.string "Please take your seat and start\n"
 	.string "your trade.$"
 
 @ Unused, leftover from RS
-.endif
 RecordCorner_Text_ThanksForComing::
 	.string "ごりよう　ありがとう　ございました$"
 
@@ -1550,36 +1515,16 @@ CableClub_Text_OhExcuseMe::
 	.string "あ‥‥\n"
 	.string "おきゃくさま！$"
 
-.ifdef ITALIAN
-Text_PlayerIsPlayingRightNowGoForIt::
-	.string "POKéMON.\p"
-	.string "Purtroppo, l'adattatore wireless\n"
-	.string "per GBA non risulta collegato.\p"
-	.string "Torna più tardi.$"
-.else
 Text_PlayerIsPlayingRightNowGoForIt::
 	.string "It appears as if {STR_VAR_1} is playing\n"
 	.string "right now.\l"
 	.string "Go for it!$"
 
-.endif
-.ifdef ITALIAN
-Text_DescribeWhichGame::
-	.string "À……\n"
-	.string "ÈÊゃËÎま!$"
-.else
 Text_DescribeWhichGame::
 	.string "I can explain game rules to you,\n"
 	.string "if you'd like.\p"
 	.string "Which game should I describe?$"
 
-.endif
-.ifdef ITALIAN
-Text_PokemonJumpInfo::
-	.string "Sembra che {STR_VAR_1} voglia\n"
-	.string "giocare.\l"
-	.string "Dai, cosa aspetti!$"
-.else
 Text_PokemonJumpInfo::
 	.string "“POKéMON JUMP”\p"
 	.string "Make your POKéMON skip the\n"
@@ -1593,14 +1538,6 @@ Text_PokemonJumpInfo::
 	.string "Good things happen if everyone\n"
 	.string "jumps in time.$"
 
-.endif
-.ifdef ITALIAN
-Text_DodrioBerryPickingInfo::
-	.string "Se vuoi posso spiegarti le\n"
-	.string "regole.\p"
-	.string "Quale gioco vuoi che ti\n"
-	.string "descriva?$"
-.else
 Text_DodrioBerryPickingInfo::
 	.string "“DODRIO BERRY-PICKING”\p"
 	.string "Command DODRIO's three heads to\n"
@@ -1610,129 +1547,47 @@ Text_DodrioBerryPickingInfo::
 	.string "To play this game, you must have\n"
 	.string "a DODRIO.$"
 
-.endif
-.ifdef ITALIAN
-Text_TalkToManToPlay::
-	.string "POKéSALTI\p"
-	.string "Fai saltare la corda al POKéMON\n"
-	.string "premendo il pulsante A.\p"
-	.string "Possono partecipare solo POKéMON\n"
-	.string "non più alti di 70 cm (all'incirca).\p"
-	.string "I POKéMON che sanno solo scavare,\n"
-	.string "nuotare o volare non sono\p"
-	.string "abili nel salto, quindi non possono\n"
-	.string "partecipare.\p"
-	.string "Se tutti saltano al momento \n"
-	.string "giusto, succedono belle cose!$"
-.else
 Text_TalkToManToPlay::
 	.string "If you want to play a game,\n"
 	.string "please tell the man beside me.$"
 
-.endif
-.ifdef ITALIAN
-Text_WelcomeCanYouWait::
-	.byte 0xBE, 0xC9, 0xBE, 0xCC, 0xC3, 0xC9, 0x00, 0xCA, 0xC3, 0xC1, 0xC6, 0xC3
-	.byte 0xBB, 0xBC, 0xBB, 0xBD, 0xBD, 0xC2, 0xBF, 0xFB, 0xCD, 0xE4, 0xE3, 0xE7
-	.byte 0xE8, 0xD5, 0x00, 0xE0, 0xD9, 0x00, 0xE8, 0xE6, 0xD9, 0x00, 0xE8, 0xD9
-	.byte 0xE7, 0xE8, 0xD9, 0x00, 0xD8, 0xDD, 0x00, 0xBE, 0xC9, 0xBE, 0xCC, 0xC3
-	.byte 0xC9, 0x00, 0xE4, 0xD9, 0xE6, 0xFE, 0xE6, 0xD5, 0xD7, 0xD7, 0xE3, 0xDB
-	.byte 0xE0, 0xDD, 0xD9, 0xE6, 0xD9, 0x00, 0xE0, 0xD9, 0x00, 0xBC, 0xBB, 0xBD
-	.byte 0xBD, 0xC2, 0xBF, 0x00, 0xD7, 0xDC, 0xD9, 0x00, 0xD7, 0xD5, 0xD8, 0xE3
-	.byte 0xE2, 0xE3, 0xAD, 0xFB, 0xCA, 0xE6, 0xD9, 0xE1, 0xDD, 0x00, 0xE0, 0xD5
-	.byte 0x00, 0xE4, 0xE9, 0xE0, 0xE7, 0xD5, 0xE2, 0xE8, 0xDD, 0xD9, 0xE6, 0xD5
-	.byte 0x00, 0xD8, 0xDD, 0x00, 0xD7, 0xE3, 0xE1, 0xD5, 0xE2, 0xD8, 0xE3, 0x00
-	.byte 0xF9, 0x04, 0xFE, 0xD5, 0x00, 0xD8, 0xD9, 0xE7, 0xE8, 0xE6, 0xD5, 0xB8
-	.byte 0x00, 0xDD, 0xE2, 0x00, 0xD5, 0xE0, 0xE8, 0xE3, 0x00, 0xD9, 0x00, 0xD5
-	.byte 0x00, 0xE7, 0xDD, 0xE2, 0xDD, 0xE7, 0xE8, 0xE6, 0xD5, 0xAD, 0xFB, 0xC3
-	.byte 0xE2, 0x00, 0xE5, 0xE9, 0xD9, 0xE7, 0xE8, 0xE3, 0x00, 0xE1, 0xE3, 0xD8
-	.byte 0xE3, 0xB8, 0x00, 0xD7, 0xE3, 0xE2, 0xE8, 0xE6, 0xE3, 0xE0, 0xE0, 0xDD
-	.byte 0x00, 0xE0, 0xD9, 0x00, 0xE8, 0xD9, 0xE7, 0xE8, 0xD9, 0xFE, 0xD8, 0xDD
-	.byte 0x00, 0xBE, 0xC9, 0xBE, 0xCC, 0xC3, 0xC9, 0xAD, 0xFB, 0xBD, 0xDC, 0xDD
-	.byte 0xD5, 0xE6, 0xD5, 0xE1, 0xD9, 0xE2, 0xE8, 0xD9, 0xB8, 0x00, 0xD8, 0xD9
-	.byte 0xEA, 0xDD, 0x00, 0xD5, 0xEA, 0xD9, 0xE6, 0xD9, 0x00, 0xE9, 0xE2, 0x00
-	.byte 0xBE, 0xC9, 0xBE, 0xCC, 0xC3, 0xC9, 0xFE, 0xDD, 0xE2, 0x00, 0xE7, 0xE5
-	.byte 0xE9, 0xD5, 0xD8, 0xE6, 0xD5, 0x00, 0xE4, 0xD9, 0xE6, 0x00, 0xE4, 0xD5
-	.byte 0xE6, 0xE8, 0xD9, 0xD7, 0xDD, 0xE4, 0xD5, 0xE6, 0xD9, 0xAD, 0xFF
-.else
 Text_WelcomeCanYouWait::
 	.string "Hi, welcome!\n"
 	.string "You can play games over the\l"
 	.string "Wireless Communication System.\p"
 	.string "Can you wait just a little bit?$"
 
-.endif
 CableClub_Text_ComeAgain::
 	.string "All right, come again!$"
 
-.ifdef ITALIAN
-Text_AdapterNotConnectedMinigame::
-	.string "no dei\n"
-	.string "giochi, parla con il signore qui\l"
-	.string "di fianco.$"
-.else
 Text_AdapterNotConnectedMinigame::
 	.string "The Wireless Adapter isn't\n"
 	.string "connected.\p"
 	.string "Come back when it's hooked up!$"
 
-.endif
-.ifdef ITALIAN
-Text_PlayWhichGame::
-	.string "Ciao!\n"
-	.string "Con il Sistema di Comunicazione\l"
-	.string "Wireless puoi giocare a minigiochi.\p"
-	.string "Puoi attendere un attimo?$"
-.else
 Text_PlayWhichGame::
 	.string "All right, which game did you want\n"
 	.string "to play?$"
 
-.endif
-.ifdef ITALIAN
-Text_EnterWhichPokemon::
-	.string "Va bene! Torna a trovarmi!$"
-.else
 Text_EnterWhichPokemon::
 	.string "Which POKéMON would you like to\n"
 	.string "enter?$"
 
-.endif
-.ifdef ITALIAN
-Text_AllGoodToGo::
-	.string "L'adattatore wireless per GBA non è\n"
-	.string "collegato.\p"
-	.string "Torna dopo averlo connesso!$"
-.else
 Text_AllGoodToGo::
 	.string "Okay, you're all good to go.\n"
 	.string "Don't let the others beat you!$"
 
 @ Unused, translated in Emerald
-.endif
-.ifdef ITALIAN
-Text_LeavingDoComeAgain::
-	.string "Va bene. A quale minigioco\n"
-	.string "vuoi giocare?$"
-.else
 Text_LeavingDoComeAgain::
 	.string "きょうは　けえるのか？\n"
 	.string "またこいよ！$"
 
-.endif
 EventScript_ExplainPokemonJumpRequirements::
 	.string "It doesn't look like you have any\n"
 	.string "POKéMON that you can enter…\p"
 	.string "Would you like me to explain what\n"
 	.string "kinds of POKéMON can enter?$"
 
-.ifdef ITALIAN
-Text_ShortJumpingPokemonAllowed::
-	.string "he\n"
-	.string "possa partecipare.\p"
-	.string "Vuoi che ti spieghi quali POKéMON\n"
-	.string "si possono iscrivere?$"
-.else
 Text_ShortJumpingPokemonAllowed::
 	.string "“POKéMON JUMP” is open to POKéMON\n"
 	.string "around 28 inches or less.\p"
@@ -1742,18 +1597,6 @@ Text_ShortJumpingPokemonAllowed::
 	.string "swim, burrow, or fly.\p"
 	.string "That's all you need to know.$"
 
-.endif
-.ifdef ITALIAN
-Text_OnlyDodrioAllowed::
-	.string "Il gioco POKéSALTI è riservato a\n"
-	.string "POKéMON di altezza non superiore\l"
-	.string "a 70 cm (all'incirca).\p"
-	.string "Non puoi iscrivere i POKéMON che\n"
-	.string "non sanno saltare.\p"
-	.string "Intendo dire, i POKéMON che sanno\n"
-	.string "solo nuotare, scavare o volare.\p"
-	.string "Tutto qui!$"
-.else
 Text_OnlyDodrioAllowed::
 	.string "“DODRIO BERRY-PICKING”…\n"
 	.string "Well, the name says it all.\p"
@@ -1761,19 +1604,10 @@ Text_OnlyDodrioAllowed::
 	.string "this game.$"
 
 @ Unused, translated in Emerald
-.endif
-.ifdef ITALIAN
-Text_RetryFromStartPlease::
-	.string "DODRIO PIGLIABACCHE…\n"
-	.string "Beh, già dal nome si capisce, no?\p"
-	.string "Per partecipare devi avere un\n"
-	.string "DODRIO.$"
-.else
 Text_RetryFromStartPlease::
 	.string "もういちど　はじめから\n"
 	.string "やりなおして　みて　くれ$"
 
-.endif
 CableClub_Text_WelcomeWhichDirectCornerRoom::
 	.string "Welcome to the POKéMON WIRELESS\n"
 	.string "CLUB DIRECT CORNER.\p"
@@ -1924,3 +1758,4 @@ CableClub_Text_ExplainWirelessClub::
 CableClub_Text_HopeYouEnjoyWirelessSystem::
 	.string "I hope you enjoy the Wireless\n"
 	.string "Communication System.$"
+.endif

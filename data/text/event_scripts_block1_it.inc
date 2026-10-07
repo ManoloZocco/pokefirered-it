@@ -1,5 +1,5 @@
 Text_WouldYouLikeToMixRecords::
-	.string "  ニヘフÂVuoi scambiare dati con altri\n"
+	.string "Vuoi scambiare dati con altri\n"
 	.string "ALLENATORI?$"
 
 Text_WeHopeToSeeYouAgain2::

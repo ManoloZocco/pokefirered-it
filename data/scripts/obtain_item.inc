@@ -188,7 +188,12 @@ EventScript_FoundMultipleItems::
 	return
 
 EventScript_NoRoomForHiddenItem::
+.ifdef ITALIAN
+	message Text_FoundOneItem
+	waitmessage
+.else
 	msgbox Text_FoundOneItem
+.endif
 	msgbox Text_TooBadBagFull
 	setvar VAR_RESULT, 0
 	releaseall

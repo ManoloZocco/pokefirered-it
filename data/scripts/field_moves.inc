@@ -46,7 +46,7 @@ EventScript_DontCutTree::
 
 .ifdef ITALIAN
 Text_CutTreeDown::
-	.string "Ô Ç♀éËÌÂヒÁâヒÁL'albero si può abbattere con\n"
+	.string "L’albero si può abbattere con\n"
 	.string "TAGLIO.\p"
 	.string "Vuoi usare TAGLIO?$"
 .else

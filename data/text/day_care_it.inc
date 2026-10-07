@@ -1,5 +1,8 @@
 DayCare_Text_ImDaycareManSpeakToMyWife::
-	.string "o preziosi amici.\p"
+	.string "Sono il PADRONE della PENSIONE\n"
+	.string "POKéMON.\p"
+	.string "Aiutiamo gli ALLENATORI a prendersi\n"
+	.string "cura dei loro preziosi amici.\p"
 	.string "Se vuoi che alleviamo anche i tuoi\n"
 	.string "POKéMON, rivolgiti a mia moglie.$"
 DayCare_Text_DoYouWantEgg::

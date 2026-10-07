@@ -109,18 +109,44 @@ EventScript_GiveProfile:
 	end
 
 Text_IdLoveToHearYourProfile:
+.ifdef ITALIAN
+	.string "Ciao, che piacere vederti!\p"
+	.string "…Beh, potresti almeno\n"
+	.string "salutare!\p"
+	.string "Dimmi qualcosa di te!\p"
+	.string "Mi piacerebbe conoscere il tuo\n"
+	.string "profilo.$"
+.else
 	.string "Hi, glad to meet you!\p"
 	.string "…That's unfriendly of you.\n"
 	.string "How about saying hi back?\p"
 	.string "So, come on, tell me about\n"
 	.string "yourself.\p"
 	.string "I'd love to hear your profile!$"
+.endif
 
 Text_TellMeWhatsYourProfile:
+.ifdef ITALIAN
+	.string "Dimmi qualcosa di te!\n"
+	.string "Qual è il tuo profilo?$"
+.else
 	.string "Tell me something good about\n"
 	.string "yourself. What's your profile?$"
+.endif
 
 Text_ExplainProfile:
+.ifdef ITALIAN
+	.string "Il profilo è composto da quattro\n"
+	.string "parole o espressioni.\p"
+	.string "Per crearlo, devi combinare le\n"
+	.string "parole e le espressioni che trovi\l"
+	.string "nella lista sotto varie categorie.\p"
+	.string "Scegli una categoria, poi\n"
+	.string "seleziona una parola o\l"
+	.string "un’espressione al suo interno.\p"
+	.string "Prova! È più facile a dirsi\n"
+	.string "che a farsi!$"
+.else
 	.string "A profile is written using four\n"
 	.string "words or phrases.\p"
 	.string "There're plenty of words to choose\n"
@@ -131,47 +157,100 @@ Text_ExplainProfile:
 	.string "a word or phrase.\p"
 	.string "…It's easier than it sounds.\n"
 	.string "Why don't you try it?$"
+.endif
 
 Text_WhatsYourProfile:
+.ifdef ITALIAN
+	.string "Qual è il tuo profilo?$"
+.else
 	.string "What's your profile?$"
+.endif
 
 Text_DontBeLikeThat:
+.ifdef ITALIAN
+	.string "Non fare così…\n"
+	.string "Dimmi il tuo profilo, dai!$"
+.else
 	.string "Aww… Don't be like that.\n"
 	.string "You can tell me your profile.$"
+.endif
 
 Text_DecidedNotTo:
+.ifdef ITALIAN
+	.string "Ah, hai cambiato idea?\n"
+	.string "Beh, deciditi…$"
+.else
 	.string "Oh, you've decided not to?\n"
 	.string "You're fickle, aren't you?$"
+.endif
 
 Text_HiWeMeetAgain:
+.ifdef ITALIAN
+	.string "Ehi, ci si rincontra!$"
+.else
 	.string "Hi!\n"
 	.string "We meet again!$"
+.endif
 
 Text_ChangeYourProfile:
+.ifdef ITALIAN
+	.string "Vuoi cambiare il tuo profilo?$"
+.else
 	.string "Would you like to change your\n"
 	.string "profile?$"
+.endif
 
 Text_WhatAreYouLikeNow:
+.ifdef ITALIAN
+	.string "Qual è il tuo profilo attuale?$"
+.else
 	.string "What are you like now?\n"
 	.string "I'd really like to know.$"
+.endif
 
 Text_LikeProfileWayItIs:
+.ifdef ITALIAN
+	.string "Ah, quindi il tuo profilo ti piace\n"
+	.string "così com’è… \p"
+	.string "Anche secondo me non è male.$"
+.else
 	.string "Okay, you like your profile the\n"
 	.string "way it is.\p"
 	.string "I think so, too.$"
+.endif
 
 Text_ProfileSaysSomethingAboutYou:
+.ifdef ITALIAN
+	.string "Hmhm…\p"
+	.string "Il tuo profilo parla un po’\n"
+	.string "di te.\p"
+	.string "E ora che ti ho conosciuto\n"
+	.string "meglio, possiamo diventare\l"
+	.string "grandi amici!$"
+.else
 	.string "Hmhm…\p"
 	.string "Your profile really says something\n"
 	.string "about who you are.\p"
 	.string "Now that I know you better, it \n"
 	.string "makes us better friends than ever!$"
+.endif
 
 Text_HeardThatBefore:
+.ifdef ITALIAN
+	.string "L’ho già sentito dire…\p"
+	.string "Mi sembra che lo dicesse sempre\n"
+	.string "mio cugino, che abita lontano.$"
+.else
 	.string "Oh, I've heard that before…\p"
 	.string "My cousin, who lives far away,\n"
 	.string "always used to say that, I think.$"
+.endif
 
 Text_TellMoreNextTime:
+.ifdef ITALIAN
+	.string "La prossima volta mi dirai\n"
+	.string "qualcos’altro di te, OK?$"
+.else
 	.string "Please tell me more about\n"
 	.string "yourself next time!$"
+.endif
