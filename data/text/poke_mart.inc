@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/poke_mart_it.inc"
+.else
 Text_MayIHelpYou::
 	.string "Hi, there!\n"
 	.string "May I help you?$"
@@ -27,3 +30,5 @@ Text_YouCanAccessMysteryGift::
 Text_ThankYouForAccessingMysteryGift::
 	.string "Thank you for accessing the\n"
 	.string "MYSTERY GIFT System.$"
+
+.endif

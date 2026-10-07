@@ -35,8 +35,13 @@ static bool8 UnlockedECMonOrMove(u16, u8);
 static bool32 EC_IsDeoxys(u16 species);
 static bool8 IsWordUnlocked(u16 word);
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+#include "data/easy_chat/it/easy_chat_groups.h"
+#include "data/easy_chat/it/easy_chat_words_by_letter.h"
+#else
 #include "data/easy_chat/easy_chat_groups.h"
 #include "data/easy_chat/easy_chat_words_by_letter.h"
+#endif
 
 static const u8 *const sEasyChatGroupNamePointers[] = {
     [EC_GROUP_POKEMON] = gEasyChatGroupName_Pokemon,
@@ -213,6 +218,142 @@ u8 *ConvertEasyChatWordsToString(u8 *dest, const u16 *src, u16 columns, u16 rows
     *dest = EOS;
     return dest;
 }
+
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+
+__attribute__((naked))
+u8 *ConvertEasyChatWordsToString2(u8 *dest, const u16 *src, u16 columns, u16 rows)
+{
+    asm(".syntax unified\n\
+    push {r4, r5, r6, r7, lr}\n\
+    mov r7, sl\n\
+    mov r6, r9\n\
+    mov r5, r8\n\
+    push {r5, r6, r7}\n\
+    sub sp, #12\n\
+    adds r4, r0, #0\n\
+    adds r5, r1, #0\n\
+    lsls r2, r2, #16\n\
+    lsrs r2, r2, #16\n\
+    mov r8, r2\n\
+    lsls r3, r3, #16\n\
+    lsrs r3, r3, #16\n\
+    str r3, [sp, #0]\n\
+    mov r7, r8\n\
+    movs r0, #0\n\
+    str r0, [sp, #4]\n\
+    subs r0, r7, #1\n\
+    lsls r0, r0, #16\n\
+    lsrs r0, r0, #16\n\
+    mov r8, r0\n\
+    movs r0, #0\n\
+    cmp r0, r3\n\
+    bcs _080BDAC2\n\
+_080BDA28:\n\
+    adds r3, r5, #0\n\
+    movs r2, #0\n\
+    movs r1, #0\n\
+    adds r0, #1\n\
+    mov sl, r0\n\
+    cmp r2, r7\n\
+    bcs _080BDA4E\n\
+    ldr r6, _080BDA58\n\
+_080BDA38:\n\
+    lsls r0, r1, #1\n\
+    adds r0, r0, r3\n\
+    ldrh r0, [r0, #0]\n\
+    cmp r0, r6\n\
+    beq _080BDA44\n\
+    movs r2, #1\n\
+_080BDA44:\n\
+    adds r0, r1, #1\n\
+    lsls r0, r0, #16\n\
+    lsrs r1, r0, #16\n\
+    cmp r1, r7\n\
+    bcc _080BDA38\n\
+_080BDA4E:\n\
+    cmp r2, #0\n\
+    bne _080BDA5C\n\
+    lsls r0, r7, #1\n\
+    adds r5, r5, r0\n\
+    b _080BDAB6\n\
+    .align 2, 0\n\
+_080BDA58:\n\
+    .word 0x0000ffff\n\
+_080BDA5C:\n\
+    movs r6, #0\n\
+    ldr r1, [sp, #4]\n\
+    adds r1, #1\n\
+    mov r9, r1\n\
+    cmp r6, r8\n\
+    bcs _080BDA90\n\
+    ldr r2, _080BDAA8\n\
+_080BDA6A:\n\
+    ldrh r1, [r5, #0]\n\
+    adds r0, r4, #0\n\
+    str r2, [sp, #8]\n\
+    bl CopyEasyChatWord\n\
+    adds r4, r0, #0\n\
+    ldrh r0, [r5, #0]\n\
+    ldr r2, [sp, #8]\n\
+    cmp r0, r2\n\
+    beq _080BDA84\n\
+    movs r0, #0\n\
+    strb r0, [r4, #0]\n\
+    adds r4, #1\n\
+_080BDA84:\n\
+    adds r5, #2\n\
+    adds r0, r6, #1\n\
+    lsls r0, r0, #16\n\
+    lsrs r6, r0, #16\n\
+    cmp r6, r8\n\
+    bcc _080BDA6A\n\
+_080BDA90:\n\
+    ldrh r1, [r5, #0]\n\
+    adds r5, #2\n\
+    adds r0, r4, #0\n\
+    bl CopyEasyChatWord\n\
+    adds r4, r0, #0\n\
+    ldr r0, [sp, #4]\n\
+    cmp r0, #0\n\
+    bne _080BDAAC\n\
+    movs r0, #0xfe\n\
+    b _080BDAAE\n\
+    .align 2, 0\n\
+_080BDAA8:\n\
+    .word 0x0000ffff\n\
+_080BDAAC:\n\
+    movs r0, #0xfa\n\
+_080BDAAE:\n\
+    strb r0, [r4, #0]\n\
+    adds r4, #1\n\
+    mov r1, r9\n\
+    str r1, [sp, #4]\n\
+_080BDAB6:\n\
+    mov r1, sl\n\
+    lsls r0, r1, #16\n\
+    lsrs r0, r0, #16\n\
+    ldr r1, [sp, #0]\n\
+    cmp r0, r1\n\
+    bcc _080BDA28\n\
+_080BDAC2:\n\
+    subs r4, #1\n\
+    movs r0, #0xff\n\
+    strb r0, [r4, #0]\n\
+    adds r0, r4, #0\n\
+    add sp, #12\n\
+    pop {r3, r4, r5}\n\
+    mov r8, r3\n\
+    mov r9, r4\n\
+    mov sl, r5\n\
+    pop {r4, r5, r6, r7}\n\
+    pop {r1}\n\
+    bx r1\n\
+    .syntax divided\n\
+    ");
+}
+
+#endif
 
 static u16 GetEasyChatWordStringLength(u16 easyChatWord)
 {

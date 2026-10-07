@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/aide_it.inc"
+.else
 Aide_Text_HaventCaughtEnoughMonsForItem::
 	.string "Let's see…\n"
 	.string "Uh-oh! You have caught only\l"
@@ -13,3 +16,5 @@ Aide_Text_GetEnoughMonsComeBackForItem::
 Aide_Text_DontHaveAnyRoomForItem::
 	.string "Oh! I see you don't have any\n"
 	.string "room for the {STR_VAR_2}.$"
+
+.endif

@@ -623,7 +623,11 @@ static const u32 sStarObjTiles[] = INCBIN_U32( "graphics/summary_screen/shiny_st
 static const u32 sBgTilemap_MovesInfoPage[] = INCBIN_U32( "graphics/summary_screen/moves_info_page.bin.lz");
 static const u32 sBgTilemap_MovesPage[] = INCBIN_U32( "graphics/summary_screen/moves_page.bin.lz");
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+#include "data/text/nature_names_it.h"
+#else
 #include "data/text/nature_names.h"
+#endif
 
 static const u8 *const sEggHatchTimeTexts[] = {
     gText_PokeSum_EggHatch_LongTime,

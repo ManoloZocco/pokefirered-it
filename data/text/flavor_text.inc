@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/flavor_text_it.inc"
+.else
 @ Flavor text for interacting with various background objects
 
 Text_Bookshelf::
@@ -120,3 +123,5 @@ Text_Burglary::
 Text_PlayerFacingTVScreen::
 	.string "There's a POKéMON on TV!\n"
 	.string "It looks like it's having fun.$"
+
+.endif

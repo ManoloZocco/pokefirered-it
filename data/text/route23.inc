@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/route23_it.inc"
+.else
 Text_OnlySkilledTrainersAllowedThrough::
 	.string "Only truly skilled TRAINERS are\n"
 	.string "allowed through.\p"
@@ -26,3 +29,5 @@ Text_OnlyPassWithBadgeOhGoAhead::
 	.string "Oh! That is the {STR_VAR_1}!{PAUSE_MUSIC}{PLAY_BGM}{MUS_LEVEL_UP}{PAUSE 0x60}{RESUME_MUSIC}\p"
 	.string "Okay, then.\n"
 	.string "Please, go right ahead.$"
+
+.endif

@@ -6451,3 +6451,10 @@ u8 *MonSpritesGfxManager_GetSpritePtr(u8 spriteNum)
         return sMonSpritesGfxManager->spritePointers[spriteNum];
     }
 }
+
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+void Dummy_08044d1c(void)
+{
+}
+#endif
+

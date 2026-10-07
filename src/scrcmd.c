@@ -1631,8 +1631,10 @@ bool8 ScrCmd_bufferitemname(struct ScriptContext * ctx)
     return FALSE;
 }
 
+#if GAME_LANGUAGE != LANGUAGE_ITALIAN
 static const u8 sText_S[] = _("S");
 static const u8 sText_IES[] = _("IES");
+#endif
 
 bool8 ScrCmd_bufferitemnameplural(struct ScriptContext * ctx)
 {
@@ -1641,6 +1643,7 @@ bool8 ScrCmd_bufferitemnameplural(struct ScriptContext * ctx)
     u16 quantity = VarGet(ScriptReadHalfword(ctx));
 
     CopyItemName(itemId, sScriptStringVars[stringVarIndex]);
+#if GAME_LANGUAGE != LANGUAGE_ITALIAN
     if (itemId == ITEM_POKE_BALL && quantity >= 2)
         StringAppend(sScriptStringVars[stringVarIndex], sText_S);
     else if (itemId >= FIRST_BERRY_INDEX && itemId < LAST_BERRY_INDEX && quantity >= 2)
@@ -1653,6 +1656,7 @@ bool8 ScrCmd_bufferitemnameplural(struct ScriptContext * ctx)
             StringAppend(sScriptStringVars[stringVarIndex], sText_IES);
         }
     }
+#endif
 
     return FALSE;
 }

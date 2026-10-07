@@ -10,7 +10,7 @@
 // Ruby's actual debug build does not use the AGBPrint features.
 
 // Revision 10 disabled asserts in some other way, comment out NDEBUG there to bring them back.
-#if REVISION >= 0xA
+#if REVISION >= 0xA || defined(ITALIAN)
 #define NDEBUG
 #endif
 

@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/save_it.inc"
+.else
 gText_WouldYouLikeToSaveTheGame::
 	.string "Would you like to save the game?$"
 
@@ -24,3 +27,5 @@ gText_DifferentGameFile::
 	.string "POKéMON, will be entirely lost.\p"
 	.string "Are you sure you want to save now\n"
 	.string "and overwrite the other save file?$"
+
+.endif

@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/safari_zone_it.inc"
+.else
 @ The text here is a copy/paste from Hoenn's Safari Zone, and any unused text was left untranslated
 
 SafariZone_Text_WouldYouLikeToExit::
@@ -166,3 +169,5 @@ SafariZone_RestHouse_Text_FatMan::
 	.string "ポケモンを　つかまえると\p"
 	.string "おなじ　ような　せいかくの　ポケモンが\n"
 	.string "あつまる　きが　するなあ$"
+
+.endif

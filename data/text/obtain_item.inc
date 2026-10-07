@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/obtain_item_it.inc"
+.else
 Text_ObtainedTheX::
 	.string "Obtained the {STR_VAR_2}!$"
 
@@ -45,3 +48,5 @@ Text_NoRoomForAnotherDecor::
 Text_DecorTransferredToPC::
 	.string "The {STR_VAR_2} was transferred\n"
 	.string "to the PC.$"
+
+.endif

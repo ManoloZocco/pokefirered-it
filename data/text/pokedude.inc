@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/pokedude_it.inc"
+.else
 Pokedude_Text_SpeedierBattlerGoesFirst::
 	.string "POKé DUDE: The speedier of the\n"
 	.string "battlers gets to attack first.$"
@@ -128,3 +131,5 @@ Pokedude_Text_PickBestKindOfBall::
 	.string "consider the condition and the\l"
 	.string "type of POKéMON, and pick the kind\l"
 	.string "of BALL that would work best.$"
+
+.endif

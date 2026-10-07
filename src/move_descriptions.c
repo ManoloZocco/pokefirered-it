@@ -1,5 +1,8 @@
 #include "global.h"
 #include "constants/moves.h"
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+#include "data/text/move_descriptions_it.h"
+#else
 
 const u8 gMoveDescription_Pound[] = _("A physical attack\ndelivered with a\nlong tail or a\nforeleg, etc.");
 const u8 gMoveDescription_KarateChop[] = _("The foe is attacked\nwith a sharp chop.\nIt has a high\ncritical-hit ratio.");
@@ -712,3 +715,4 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] = {
     [MOVE_DOOM_DESIRE   - 1] = gMoveDescription_DoomDesire,
     [MOVE_PSYCHO_BOOST  - 1] = gMoveDescription_PsychoBoost,
 };
+#endif

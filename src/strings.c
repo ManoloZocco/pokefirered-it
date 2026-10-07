@@ -1,5 +1,8 @@
 #include "global.h"
 #include "strings.h"
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+#include "data/text/strings_it.h"
+#else
 
 const u8 gExpandedPlaceholder_Empty[] = _("");
 const u8 gExpandedPlaceholder_Kun[] = _("");
@@ -1333,3 +1336,4 @@ const u8 gText_Receive[] = _("RECEIVE");
 const u8 gText_Send[] = _("SEND");
 const u8 gText_Toss[] = _("TOSS");
 const u8 gText_DelAllCancelOk[] = _("DEL. ALL{CLEAR_TO 0x57}CANCEL{CLEAR_TO 0xA4}OK");
+#endif

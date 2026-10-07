@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/day_care_it.inc"
+.else
 @ Same as Hoenn's day-care text, used by the Four Island Day-Care. Unused text translated in Emerald
 
 DayCare_Text_ImDaycareManSpeakToMyWife::
@@ -128,3 +131,5 @@ DayCare_Text_WhatWillYouBattleWith::
 
 DayCare_Text_Huh::
 	.string "Huh?$"
+
+.endif

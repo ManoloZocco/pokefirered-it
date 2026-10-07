@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/braille_it.inc"
+.else
 Braille_Text_Up::
 	.braille "UP$"
 
@@ -114,3 +117,5 @@ Braille_Text_WorldWaits::
 
 Braille_Text_ForYou::
 	.braille "FOR YOU.$"
+
+.endif

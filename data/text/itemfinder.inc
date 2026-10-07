@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/itemfinder_it.inc"
+.else
 @ Unused
 Text_ItemfinderResponding::
 	.string "おッ！　ダウジングマシンが\n"
@@ -8,3 +11,5 @@ Text_ItemfinderResponding::
 Text_DugUpItemFromGround::
 	.string "{PLAYER} dug up one {STR_VAR_2}\n"
 	.string "from deep in the ground.$"
+
+.endif

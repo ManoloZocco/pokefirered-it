@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/white_out_it.inc"
+.else
 Text_FirstShouldRestoreMonsHealth::
 	.string "First, you should restore your\n"
 	.string "POKéMON to full health.$"
@@ -51,3 +54,5 @@ Text_WhitedOut::
 	.string "{PLAYER} is out of usable\n"
 	.string "POKéMON!\p"
 	.string "{PLAYER} whited out!$"
+
+.endif

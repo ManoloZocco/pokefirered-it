@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/competitive_brothers_it.inc"
+.else
 @ The text here is a copy/paste from Hoenn's competitive brothers, the NPCs in Sootopolis who request to see big Barboach/Shroomish (Seedot/Lotad in Emerald). It's all unused and untranslated
 
 SootopolisCity_Text_PleaseShowMeBigMon::
@@ -37,3 +40,5 @@ SootopolisCity_Text_TooBadDontHaveBigMon::
 SootopolisCity_Text_BiggestMonPlayersXCmColossus::
     .string "しじょう　さいだいの　{STR_VAR_1}！\n"
     .string "{STR_VAR_2}の　{STR_VAR_3}cmのやつ！$"
+
+.endif

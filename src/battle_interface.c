@@ -764,8 +764,14 @@ static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
     u32 xPos;
     u8 *objVram;
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    u8 *str = text + StringLength(text);
+    objVram = ConvertIntToDecimalStringN(str, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
+    xPos = 5 * (3 - (objVram - str));
+#else
     objVram = ConvertIntToDecimalStringN(text + 2, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
     xPos = 5 * (3 - (objVram - (text + 2)));
+#endif
 
     windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(text, xPos, 3, &windowId);
     spriteTileNum = gSprites[healthboxSpriteId].oam.tileNum * TILE_SIZE_4BPP;
@@ -1117,11 +1123,13 @@ u8 CreatePartyStatusSummarySprites(u8 battlerId, struct HpAndStatus *partyInfo, 
         speed = 5;
     }
 
+#if GAME_LANGUAGE != LANGUAGE_ITALIAN
     for (i = 0, nValidMons = 0; i < PARTY_SIZE; i++)
     {
         if (partyInfo[i].hp != HP_EMPTY_SLOT)
             nValidMons++;
     }
+#endif
 
     LoadCompressedSpriteSheetUsingHeap(&sPartySummaryBarSpriteSheets[isOpponent]);
     LoadSpriteSheet(&sPartySummaryBallSpriteSheets[isOpponent]);
@@ -1172,6 +1180,96 @@ u8 CreatePartyStatusSummarySprites(u8 battlerId, struct HpAndStatus *partyInfo, 
         gSprites[ballIconSpritesIds[i]].sIsOpponent = isOpponent;
     }
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    if (GetBattlerSide(battlerId) == B_SIDE_PLAYER)
+    {
+        if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
+        {
+            u8 *ballPtr = ballIconSpritesIds;
+            struct HpAndStatus *info = partyInfo;
+            for (i = 5; i >= 0; i--, info++, ballPtr++)
+            {
+                if (info->hp == HP_EMPTY_SLOT) 
+                {
+                    gSprites[*ballPtr].oam.tileNum += 1;
+                    gSprites[*ballPtr].sIsEmptyBall = TRUE;
+                }
+                else if (info->hp == 0)
+                    gSprites[*ballPtr].oam.tileNum += 3;
+                else if (info->status != STATUS1_NONE)
+                    gSprites[*ballPtr].oam.tileNum += 2;
+            }
+        }
+        else
+        {
+            u8 *ballPtr = ballIconSpritesIds;
+            struct HpAndStatus *info = partyInfo;
+            s = 5;
+
+            for (i = 5; i >= 0; i--, info++)
+            {
+                if (info->hp == HP_EMPTY_SLOT) 
+                {
+                    gSprites[ballIconSpritesIds[s]].oam.tileNum += 1;
+                    gSprites[ballIconSpritesIds[s]].sIsEmptyBall = TRUE;
+                    s--;
+                }
+                else
+                {
+                    if (info->hp == 0)
+                        gSprites[*ballPtr].oam.tileNum += 3;
+                    else if (info->status != STATUS1_NONE)
+                        gSprites[*ballPtr].oam.tileNum += 2;
+                    ballPtr++;
+                }
+            }
+        }
+    }
+    else
+    {
+        if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
+        {
+            u8 *ballPtr = ballIconSpritesIds + 5;
+            struct HpAndStatus *info = partyInfo;
+            for (i = 5; i >= 0; i--, info++, ballPtr--)
+            {
+                if (info->hp == HP_EMPTY_SLOT)
+                {
+                    gSprites[*ballPtr].oam.tileNum += 1;
+                    gSprites[*ballPtr].sIsEmptyBall = TRUE;
+                }
+                else if (info->hp == 0)
+                    gSprites[*ballPtr].oam.tileNum += 3;
+                else if (info->status != STATUS1_NONE)
+                    gSprites[*ballPtr].oam.tileNum += 2;
+            }
+        }
+        else
+        {
+            u8 *ballPtr = ballIconSpritesIds + 5;
+            struct HpAndStatus *info = partyInfo;
+            s = 0;
+
+            for (i = 5; i >= 0; i--, info++)
+            {
+                if (info->hp == HP_EMPTY_SLOT)
+                {
+                    gSprites[ballIconSpritesIds[s]].oam.tileNum += 1;
+                    gSprites[ballIconSpritesIds[s]].sIsEmptyBall = TRUE;
+                    s++;
+                }
+                else
+                {
+                    if (info->hp == 0)
+                        gSprites[*ballPtr].oam.tileNum += 3;
+                    else if (info->status != STATUS1_NONE)
+                        gSprites[*ballPtr].oam.tileNum += 2;
+                    ballPtr--;
+                }
+            }
+        }
+    }
+#else
     if (GetBattlerSide(battlerId) == B_SIDE_PLAYER)
     {
         for (i = 0; i < PARTY_SIZE; i++)
@@ -1235,6 +1333,7 @@ u8 CreatePartyStatusSummarySprites(u8 battlerId, struct HpAndStatus *partyInfo, 
             }
         }
     }
+#endif
 
     taskId = CreateTask(TaskDummy, 5);
     gTasks[taskId].tBattler = battlerId;

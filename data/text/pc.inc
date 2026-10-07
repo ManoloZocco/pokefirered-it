@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/pc_it.inc"
+.else
 Text_BootedUpPC::
 	.string "{PLAYER} booted up the PC.$"
 
@@ -15,3 +18,5 @@ Text_AccessedPlayersPC::
 
 Text_AccessedBillsPC::
 	.string "Accessed BILL's PC.$"
+
+.endif

@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/trainer_card_it.inc"
+.else
 CeladonCity_GameCorner_Text_TryPokemonPrinter::
 	.string "It's a POKéMON PRINTER!\p"
 	.string "It can put a print of your POKéMON\n"
@@ -165,3 +168,5 @@ FourIsland_House2_Text_LivingLegendLinkWins::
 	.string "Oh, no, no can do.\p"
 	.string "You're practically a living legend.\n"
 	.string "I have no SITCKERS left to give.$"
+
+.endif

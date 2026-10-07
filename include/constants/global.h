@@ -28,6 +28,8 @@
 
 #ifdef ENGLISH
 #define GAME_LANGUAGE (LANGUAGE_ENGLISH)
+#elif defined(ITALIAN)
+#define GAME_LANGUAGE (LANGUAGE_ITALIAN)
 #endif
 
 // capacities of various saveblock objects

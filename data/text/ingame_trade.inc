@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/ingame_trade_it.inc"
+.else
 Trade_Text_LookingForMonWannaTradeForMon::
 	.string "I'm looking for the POKéMON\n"
 	.string "{STR_VAR_1}!\p"
@@ -58,3 +61,5 @@ Trade_Text_ThanksYoureAPal::
 Trade_Text_HowIsMyOldMon::
 	.string "How is my old {STR_VAR_2}?\n"
 	.string "My {STR_VAR_1} is doing great!$"
+
+.endif

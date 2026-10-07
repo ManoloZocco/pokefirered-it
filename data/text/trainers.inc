@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/trainers_it.inc"
+.else
 VSSeeker_Text_BatteryNotChargedNeedXSteps::
 	.string "The battery isn't charged enough.\p"
 	.string "No. of steps required to fully\n"
@@ -1005,3 +1008,5 @@ SevenIsland_TanobyRuins_Text_EdnaRematchIntro::
 SevenIsland_TanobyRuins_Text_CliffordRematchIntro::
 	.string "Today, in addition to our lesson,\n"
 	.string "we came to see the chamber again.$"
+
+.endif

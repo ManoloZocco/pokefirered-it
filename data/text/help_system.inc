@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/help_system_it.inc"
+.else
 Help_Text_WhatShouldIDo::
 	.string "What should I do in this situation?$"
 
@@ -1879,3 +1882,5 @@ Help_Text_TypeMatchupOwnPokemonBug::
 	.string "   {CIRCLE_DOT}: FIRE, FLYING, ROCK\p"
 	.string "   {TRIANGLE}: GRASS, FIGHTING, GROUND$"
 
+
+.endif

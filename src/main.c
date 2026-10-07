@@ -40,7 +40,9 @@ const u8 gGameLanguage = GAME_LANGUAGE;
 #if MODERN
 const char BuildDateTime[] = __DATE__ " " __TIME__;
 #else
-#if REVISION == 0
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+const char BuildDateTime[] = "2004 07 26 17:40";
+#elif REVISION == 0
 const char BuildDateTime[] = "2004 04 26 11:20";
 #elif REVISION == 1
 const char BuildDateTime[] = "2004 07 20 09:30";
@@ -168,7 +170,7 @@ void AgbMain()
 #endif
 #endif
 
-#if REVISION >= 1
+#if REVISION >= 1 || GAME_LANGUAGE == LANGUAGE_ITALIAN
     if (gFlashMemoryPresent != TRUE)
         SetMainCallback2(NULL);
 #endif
@@ -400,11 +402,11 @@ static void VBlankIntr(void)
 
     gPcmDmaCounter = gSoundInfo.pcmDmaCounter;
 
-#if !defined(NDEBUG) || REVISION >= 0xA
+#if !defined(NDEBUG) || REVISION >= 0xA || GAME_LANGUAGE == LANGUAGE_ITALIAN
     sVcountBeforeSound = REG_VCOUNT;
 #endif
     m4aSoundMain();
-#if !defined(NDEBUG) || REVISION >= 0xA
+#if !defined(NDEBUG) || REVISION >= 0xA || GAME_LANGUAGE == LANGUAGE_ITALIAN
     sVcountAfterSound = REG_VCOUNT;
 #endif
 
@@ -433,7 +435,7 @@ static void HBlankIntr(void)
 
 static void VCountIntr(void)
 {
-#if !defined(NDEBUG) || REVISION >= 0xA
+#if !defined(NDEBUG) || REVISION >= 0xA || GAME_LANGUAGE == LANGUAGE_ITALIAN
     sVcountAtIntr = REG_VCOUNT;
 #endif
     m4aSoundVSync();

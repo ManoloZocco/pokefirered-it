@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/berries_it.inc"
+.else
 @ The text here is a copy/paste from Hoenn's various berry NPCs, all unused and untranslated
 
 PetalburgCity_Gym_Text_GiveEnigmaBerry::
@@ -224,3 +227,5 @@ SootopolisCity_Text_OhDoesntMatter::
 	.string "そっか‥\n"
 	.string "かんけいないのか‥\p"
 	.string "しりたいことって　たくさんあるなー$"
+
+.endif

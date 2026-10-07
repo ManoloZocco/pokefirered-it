@@ -60,6 +60,9 @@ static bool8 LoadOptionMenuPalette(void);
 static void Task_OptionMenu(u8 taskId);
 static u8 OptionMenu_ProcessInput(void);
 static void BufferOptionMenuString(u8 selection);
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static void DrawOptionMenuTexts(void);
+#endif
 static void CloseAndSaveOptionMenu(u8 taskId);
 static void PrintOptionMenuHeader(void);
 static void DrawOptionMenuBg(void);
@@ -380,6 +383,17 @@ static void Task_OptionMenu(u8 taskId)
         case 1:
             sOptionMenuPtr->loadState++;
             break;
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        case 2:
+            LoadBgTiles(1, GetUserWindowGraphics(sOptionMenuPtr->option[MENUITEM_FRAMETYPE])->tiles, 0x120, 0x1AA);
+            LoadPalette(GetUserWindowGraphics(sOptionMenuPtr->option[MENUITEM_FRAMETYPE])->palette, BG_PLTT_ID(2), PLTT_SIZE_4BPP);
+        case 4:
+            DrawOptionMenuTexts();
+            break;
+        case 3:
+            UpdateSettingSelectionDisplay(sOptionMenuPtr->cursorPos);
+            break;
+#else
         case 2:
             LoadBgTiles(1, GetUserWindowGraphics(sOptionMenuPtr->option[MENUITEM_FRAMETYPE])->tiles, 0x120, 0x1AA);
             LoadPalette(GetUserWindowGraphics(sOptionMenuPtr->option[MENUITEM_FRAMETYPE])->palette, BG_PLTT_ID(2), PLTT_SIZE_4BPP);
@@ -391,6 +405,7 @@ static void Task_OptionMenu(u8 taskId)
         case 4:
             BufferOptionMenuString(sOptionMenuPtr->cursorPos);
             break;
+#endif
         }
         break;
     case 3:
@@ -504,6 +519,39 @@ static void BufferOptionMenuString(u8 selection)
     PutWindowTilemap(1);
     CopyWindowToVram(1, COPYWIN_FULL);
 }
+
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static void DrawOptionMenuTexts(void)
+{
+    u8 str[20];
+    u8 buf[12];
+    u8 dst[3];
+    u8 fontHeight;
+    u8 lineHeight;
+    u8 y;
+
+    memcpy(dst, sOptionMenuTextColor, sizeof(dst));
+    fontHeight = GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_HEIGHT);
+    lineHeight = fontHeight - 1;
+    FillWindowPixelRect(1, 1, 0x82, 2, 70, fontHeight + (lineHeight * 6));
+    AddTextPrinterParameterized3(1, FONT_NORMAL, 0x82, 2, dst, -1, sTextSpeedOptions[sOptionMenuPtr->option[MENUITEM_TEXTSPEED]]);
+    y = lineHeight + 2;
+    AddTextPrinterParameterized3(1, FONT_NORMAL, 0x82, y, dst, -1, sBattleSceneOptions[sOptionMenuPtr->option[MENUITEM_BATTLESCENE]]);
+    y += lineHeight;
+    AddTextPrinterParameterized3(1, FONT_NORMAL, 0x82, y, dst, -1, sBattleStyleOptions[sOptionMenuPtr->option[MENUITEM_BATTLESTYLE]]);
+    y += lineHeight;
+    AddTextPrinterParameterized3(1, FONT_NORMAL, 0x82, y, dst, -1, sSoundOptions[sOptionMenuPtr->option[MENUITEM_SOUND]]);
+    y += lineHeight;
+    AddTextPrinterParameterized3(1, FONT_NORMAL, 0x82, y, dst, -1, sButtonTypeOptions[sOptionMenuPtr->option[MENUITEM_BUTTONMODE]]);
+    y += lineHeight;
+    StringCopy(str, gText_FrameType);
+    ConvertIntToDecimalStringN(buf, sOptionMenuPtr->option[MENUITEM_FRAMETYPE] + 1, STR_CONV_MODE_RIGHT_ALIGN, 2);
+    StringAppendN(str, buf, 3);
+    AddTextPrinterParameterized3(1, FONT_NORMAL, 0x82, y, dst, -1, str);
+    PutWindowTilemap(1);
+    CopyWindowToVram(1, COPYWIN_FULL);
+}
+#endif
 
 static void CloseAndSaveOptionMenu(u8 taskId)
 {

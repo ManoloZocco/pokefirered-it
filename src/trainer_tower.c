@@ -630,6 +630,9 @@ static void SetTrainerTowerNPCGraphics(void)
 
 static void TT_ConvertEasyChatMessageToString(u16 *ecWords, u8 *dest)
 {
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    ConvertEasyChatWordsToString2(dest, ecWords, 2, 3);
+#else
     s32 i;
     ConvertEasyChatWordsToString(dest, ecWords, 3, 2);
     if ((unsigned)GetStringWidth(FONT_NORMAL, dest, -1) > 196)
@@ -646,6 +649,7 @@ static void TT_ConvertEasyChatMessageToString(u16 *ecWords, u8 *dest)
         // Replace \n with \l at the end of line 2
         dest[i] = CHAR_PROMPT_SCROLL;
     }
+#endif
 }
 
 static void BufferTowerOpponentSpeech(void)

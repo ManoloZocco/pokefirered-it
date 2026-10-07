@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/new_game_intro_it.inc"
+.else
 gOtherText_NewName::
     .string "NEW NAME$"
 
@@ -241,3 +244,5 @@ gOakSpeech_Text_LetsGo::
     .string "about to unfold!\p"
     .string "A world of dreams and adventures\n"
     .string "with POKéMON awaits! Let's go!$"
+
+.endif

@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/fame_checker_it.inc"
+.else
 gFameCheckerFlavorText_ProfOak0:: @ 0x81AD106
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
 	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}OAK POKéMON RESEARCH LAB$"
@@ -1485,3 +1488,5 @@ PokemonJournal_Text_SpecialFeatureMrFuji::
 	.string "down our interview requests.\p"
 	.string "He is a kindly man who is adored\n"
 	.string "and respected in LAVENDER TOWN.$"
+
+.endif

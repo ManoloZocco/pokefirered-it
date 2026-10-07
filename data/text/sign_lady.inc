@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/sign_lady_it.inc"
+.else
 @ For the NPC in Pallet Town that talks about the Trainer Tips sign
 
 PalletTown_Text_HmmIsThatRight::
@@ -28,3 +31,5 @@ PalletTown_Text_LookCopiedTrainerTipsSign::
 PalletTown_Text_PressStartToOpenMenuCopy::
 	.string "TRAINER TIPS!\p"
 	.string "Press START to open the MENU!$"
+
+.endif

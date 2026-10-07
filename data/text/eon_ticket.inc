@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/eon_ticket_it.inc"
+.else
 @ The text here is a copy/paste from Hoenn's Eon Ticket event, all unused and untranslated
 
 Text_DadLetterArrivedForYouPlayer::
@@ -42,3 +45,5 @@ SouthernIsland_Interior_Text_Sign::
 SouthernIsland_Exterior_Text_Sign::
 	.string "きおく　かすみし　ものは\n"
 	.string "こころに　きざみつける　ことを　のぞむ‥‥$"
+
+.endif

@@ -202,11 +202,48 @@ static void MapNamePopupPrintMapNameOnWindow(u16 windowId)
     AddTextPrinterParameterized(windowId, FONT_NORMAL, mapName, xpos, 2, TEXT_SKIP_DRAW, NULL);
 }
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static const u8 *const sFloorStrings_AboveGround[] = {
+    gText_1F,
+    gText_2F,
+    gText_3F,
+    gText_4F,
+    gText_5F,
+    gText_6F,
+    gText_7F,
+    gText_8F,
+    gText_9F,
+    gText_10F,
+    gText_11F,
+    gText_Rooftop
+};
+
+static const u8 *const sFloorStrings_Basement[] = {
+    gText_B1F,
+    gText_B2F,
+    gText_B3F,
+    gText_B4F
+};
+#endif
+
 static u8 *MapNamePopupAppendFloorNum(u8 *dest, s8 floorNum)
 {
     if (floorNum == 0)
         return dest;
     *dest++ = CHAR_SPACE;
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    {
+        const u8 *str;
+
+        if (floorNum == FLOOR_ROOFTOP)
+            str = gText_Rooftop2;
+        else if (floorNum >= 0)
+            str = sFloorStrings_AboveGround[floorNum - 1];
+        else
+            str = sFloorStrings_Basement[~floorNum];
+        return StringCopy(dest, str);
+    }
+#else
     if (floorNum == FLOOR_ROOFTOP)
         return StringCopy(dest, gText_Rooftop2);
     if (floorNum < 0)
@@ -218,6 +255,7 @@ static u8 *MapNamePopupAppendFloorNum(u8 *dest, s8 floorNum)
     *dest++ = CHAR_F;
     *dest = EOS;
     return dest;
+#endif
 }
 
 #undef tPalIntoFadedBuffer

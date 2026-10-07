@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/pokedex_rating_it.inc"
+.else
 PokedexRating_Text_HowIsPokedexComingAlong::
 	.string "OAK: Good to see you!\n"
 	.string "How is your POKéDEX coming along?\p"
@@ -121,3 +124,5 @@ PokedexRating_Text_LoveSeeingYourPokedex::
 	.string "Actually, I know how it is, but I\n"
 	.string "love seeing it anyway!\p"
 	.string "Let's see…$"
+
+.endif

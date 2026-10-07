@@ -1136,10 +1136,28 @@ static void PrintIdOnCard(void)
 {
     u8 buffer[32];
     u8 *txtPtr;
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    u32 x;
+    u8 y;
+#endif
 
     txtPtr = StringCopy(buffer, gText_TrainerCardIDNo);
     ConvertIntToDecimalStringN(txtPtr, sTrainerCardDataPtr->trainerCard.rse.trainerId, STR_CONV_MODE_LEADING_ZEROS, 5);
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    if (sTrainerCardDataPtr->cardType == CARD_TYPE_FRLG)
+    {
+        x = (88 - GetStringWidth(sTrainerCardFontIds[1], buffer, 0)) / 2u + 128;
+        y = 10;
+    }
+    else
+    {
+        x = 128;
+        y = 9;
+    }
+    AddTextPrinterParameterized3(1, sTrainerCardFontIds[1], x, y, sTrainerCardTextColors, TEXT_SKIP_DRAW, buffer);
+#else
     AddTextPrinterParameterized3(1, sTrainerCardFontIds[1], sTrainerCardIdXPositions[sTrainerCardDataPtr->cardType], sTrainerCardIdYPositions[sTrainerCardDataPtr->cardType], sTrainerCardTextColors, TEXT_SKIP_DRAW, buffer);
+#endif
 }
 
 static void PrintMoneyOnCard(void)
@@ -1257,7 +1275,12 @@ static void BufferNameForCardBack(void)
     ConvertInternationalString(sTrainerCardDataPtr->strings[TRAINER_CARD_STRING_NAME], sTrainerCardDataPtr->language);
     if (sTrainerCardDataPtr->cardType == CARD_TYPE_RSE)
     {
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        StringCopy(gStringVar1, sTrainerCardDataPtr->strings[TRAINER_CARD_STRING_NAME]);
+        StringExpandPlaceholders(sTrainerCardDataPtr->strings[TRAINER_CARD_STRING_NAME], gText_Var1sTrainerCard);
+#else
         StringAppend(sTrainerCardDataPtr->strings[TRAINER_CARD_STRING_NAME], gText_Var1sTrainerCard);
+#endif
     }
 }
 

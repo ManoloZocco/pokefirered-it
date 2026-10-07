@@ -513,6 +513,9 @@ gStdScriptsEnd::
 	.include "data/maps/SixIsland_WaterPath_House2/scripts.inc"
 	.include "data/maps/SevenIsland_SevaultCanyon_House/scripts.inc"
 
+.ifdef ITALIAN
+	.include "data/maps/all_text_it.inc"
+.else
 	.include "data/maps/ViridianForest/text.inc"
 	.include "data/maps/MtMoon_1F/text.inc"
 	.include "data/maps/MtMoon_B2F/text.inc"
@@ -804,10 +807,14 @@ gStdScriptsEnd::
 	.include "data/maps/SixIsland_WaterPath_House2/text.inc"
 	.include "data/maps/SevenIsland_SevaultCanyon_House/text.inc"
 
+.endif
 	.include "data/scripts/std_msgbox.inc"
 	.include "data/scripts/trainer_battle.inc"
 
 @ Unused
+.ifdef ITALIAN
+	.include "data/text/event_scripts_block1_it.inc"
+.else
 Text_WouldYouLikeToMixRecords::
 	.string "Would you like to mix records with\n"
 	.string "other TRAINERS?$"
@@ -1010,6 +1017,7 @@ Text_MoveCanOnlyBeLearnedOnce::
 	.string "This move can be learned only\n"
 	.string "once. Is that okay?$"
 
+.endif
 EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_OAK_IN_HIS_LAB
 	setflag FLAG_HIDE_OAK_IN_PALLET_TOWN

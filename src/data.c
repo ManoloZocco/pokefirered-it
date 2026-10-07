@@ -299,7 +299,14 @@ const union AnimCmd *const gAnims_MonPic[] =
 #include "data/pokemon_graphics/enemy_mon_elevation.h"
 
 #include "data/trainer_parties.h"
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+#include "data/text/trainer_class_names_it.h"
+#include "data/trainers_it.h"
+#include "data/text/species_names_it.h"
+#include "data/text/move_names_it.h"
+#else
 #include "data/text/trainer_class_names.h"
 #include "data/trainers.h"
 #include "data/text/species_names.h"
 #include "data/text/move_names.h"
+#endif

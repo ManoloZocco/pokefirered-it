@@ -1,3 +1,6 @@
+.ifdef ITALIAN
+	.include "data/text/pc_transfer_it.inc"
+.else
 Text_MonSentToBoxInSomeonesPC::
     .string "{STR_VAR_2} was transferred to\n"
     .string "Someone's PC.\p"
@@ -37,3 +40,5 @@ Text_NoMoreRoomForPokemon::
     .string "There's no more room for POKéMON!\p"
     .string "The POKéMON BOXES are full and\n"
     .string "can't accept any more!$"
+
+.endif

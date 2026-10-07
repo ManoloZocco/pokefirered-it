@@ -200,8 +200,13 @@ const u16 sBlitTiles_WideEllipse[] = INCBIN_U16("graphics/pokedex/blit_wide_elli
 
 static const u8 gExpandedPlaceholder_PokedexDescription[] = _("");
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+#include "data/pokemon/pokedex_text_it.h"
+#include "data/pokemon/pokedex_entries_it.h"
+#else
 #include "data/pokemon/pokedex_text.h"
 #include "data/pokemon/pokedex_entries.h"
+#endif
 
 static const struct BgTemplate sBgTemplates[] = {
     {

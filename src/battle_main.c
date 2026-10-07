@@ -557,7 +557,11 @@ const struct TrainerMoney gTrainerMoneyTable[] =
     { 0xFF, 5},
 };
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+#include "data/text/abilities_it.h"
+#else
 #include "data/text/abilities.h"
+#endif
 
 static void (*const sTurnActionsFuncsTable[])(void) =
 {
