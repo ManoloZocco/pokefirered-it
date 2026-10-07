@@ -1270,6 +1270,10 @@ static bool32 DoCopyrightOrTheEndGfxScene(void)
         if (!gPaletteFade.active)
         {
             sCreditsMgr->subseqno = 0;
+        #if GAME_LANGUAGE == LANGUAGE_ITALIAN
+            if (sCreditsMgr->whichMon != 0)
+                FadeOutMapMusic(16);
+        #endif
             return TRUE;
         }
         break;

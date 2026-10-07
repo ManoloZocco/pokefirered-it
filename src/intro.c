@@ -1258,7 +1258,7 @@ static void IntroCB_GF_RevealLogo(struct IntroSequenceData * this)
         if (!IsDma3ManagerBusyWithBgCopy())
         {
             DestroySprite(this->gameFreakLogoArtSprite);
-        #if REVISION >= 1
+        #if REVISION >= 1 || GAME_LANGUAGE == LANGUAGE_ITALIAN
             GFScene_CreatePresentsSprite();
         #endif
             this->timer = 0;
@@ -2104,7 +2104,7 @@ static struct Sprite *GFScene_CreateLogoSprite(void)
     return &gSprites[spriteId];
 }
 
-#if REVISION >= 1
+#if REVISION >= 1 || GAME_LANGUAGE == LANGUAGE_ITALIAN
 static void GFScene_CreatePresentsSprite(void)
 {
     int i;

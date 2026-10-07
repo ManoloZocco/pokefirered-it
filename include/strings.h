@@ -998,6 +998,7 @@ extern const u8 gText_PokedexPokemon[];
 extern const u8 gText_HT[];
 extern const u8 gText_WT[];
 extern const u8 gText_Lbs[];
+extern const u8 gText_PokedexQuotationMark[];
 extern const u8 gText_Cry[];
 extern const u8 gText_NextDataCancel[];
 extern const u8 gText_Next[];

@@ -115,7 +115,11 @@ static void Task_ItemContext_FieldOrBattle(u8 taskId);
 static void Task_FieldItemContextMenuHandleInput(u8 taskId);
 static void Task_ItemMenuAction_Use(u8 taskId);
 static void Task_ItemMenuAction_Toss(u8 taskId);
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static void Task_ConfirmTossItems(u16 itemIndex, u8 taskId);
+#else
 static void Task_ConfirmTossItems(u8 taskId);
+#endif
 static void Task_TossItem_No(u8 taskId);
 static void Task_SelectQuantityToToss(u8 taskId);
 static void Task_TossItem_Yes(u8 taskId);
@@ -1234,6 +1238,35 @@ static void BeginMovingItemInPocket(u8 taskId, s16 itemIndex)
     gTasks[taskId].func = Task_MoveItemInPocket_HandleInput;
 }
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static void Task_MoveItemInPocket_HandleInput(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+    s32 input;
+    u16 itemsAbove;
+    u16 cursorPos;
+    if (IsActiveOverworldLinkBusy() == TRUE)
+        return;
+    if (JOY_NEW(A_BUTTON | SELECT_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        sBagMenuDisplay->itemOriginalLocation = 0xFF;
+        ListMenuGetScrollAndRow(data[0], &cursorPos, &itemsAbove);
+        ExecuteMoveItemInPocket(taskId, cursorPos + itemsAbove);
+        return;
+    }
+    input = ListMenu_ProcessInput(data[0]);
+    ListMenuGetScrollAndRow(data[0], &gBagMenuState.cursorPos[gBagMenuState.pocket], &gBagMenuState.itemsAbove[gBagMenuState.pocket]);
+    UpdateSwapLinePos(0, ListMenuGetYCoordForPrintingArrowCursor(data[0]));
+    if (input == LIST_CANCEL)
+    {
+        PlaySE(SE_SELECT);
+        sBagMenuDisplay->itemOriginalLocation = 0xFF;
+        ListMenuGetScrollAndRow(data[0], &cursorPos, &itemsAbove);
+        AbortMovingItemInPocket(taskId, cursorPos + itemsAbove);
+    }
+}
+#else
 static void Task_MoveItemInPocket_HandleInput(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
@@ -1270,6 +1303,8 @@ static void Task_MoveItemInPocket_HandleInput(u8 taskId)
         break;
     }
 }
+
+#endif
 
 static void ExecuteMoveItemInPocket(u8 taskId, u32 itemIndex)
 {
@@ -1490,7 +1525,11 @@ static void Task_ItemMenuAction_Toss(u8 taskId)
     data[8] = 1;
     if (data[2] == 1)
     {
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        Task_ConfirmTossItems(data[1], taskId);
+#else
         Task_ConfirmTossItems(taskId);
+#endif
     }
     else
     {
@@ -1499,9 +1538,16 @@ static void Task_ItemMenuAction_Toss(u8 taskId)
     }
 }
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+static void Task_ConfirmTossItems(u16 itemIndex, u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+    CopyItemName(BagGetItemIdByPocketPosition(gBagMenuState.pocket + 1, itemIndex), gStringVar1);
+#else
 static void Task_ConfirmTossItems(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
+#endif
     ConvertIntToDecimalStringN(gStringVar2, data[8], STR_CONV_MODE_LEFT_ALIGN, 3);
     StringExpandPlaceholders(gStringVar4, gText_ThrowAwayStrVar2OfThisItemQM);
     BagPrintTextOnWindow(ShowBagWindow(6, 1), FONT_NORMAL, gStringVar4, 0, 2, 1, 0, 0, 1);
@@ -1533,7 +1579,11 @@ static void Task_SelectQuantityToToss(u8 taskId)
         HideBagWindow(0);
         ScheduleBgCopyTilemapToVram(0);
         BagDestroyPocketScrollArrowPair();
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+        Task_ConfirmTossItems(data[1], taskId);
+#else
         Task_ConfirmTossItems(taskId);
+#endif
     }
     else if (JOY_NEW(B_BUTTON))
     {
