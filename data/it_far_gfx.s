@@ -1,4 +1,5 @@
 @ Italian localized graphics block, extracted from the retail ROM (0x08EAF540-0x08EB22EC)
+.ifdef ITALIAN
 	.section .rodata
 	.align 2
 	.global sHoennTrainerCardFront_Tilemap
@@ -55,3 +56,4 @@ sNatDexTiles:
 	.global sCategoryMonInfoBgTiles
 sCategoryMonInfoBgTiles:
 	.incbin "graphics/it/far_gfx.bin", 0x2c64, 0x148
+.endif
