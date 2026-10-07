@@ -1,3 +1,8 @@
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+#define BERRYFIX_GFX_TABLE sBerryFixGraphics2
+#else
+#define BERRYFIX_GFX_TABLE sBerryFixGraphics
+#endif
 #include "global.h"
 #include "gpu_regs.h"
 #include "multiboot.h"
@@ -472,9 +477,9 @@ static void LoadBerryFixScene(int scene)
     }
 
     CopyBgTilemapBufferToVram(0);
-    LZ77UnCompVram(sBerryFixGraphics[scene][0], (void *)BG_CHAR_ADDR(1));
-    LZ77UnCompVram(sBerryFixGraphics[scene][1], (void *)BG_SCREEN_ADDR(31));
-    CpuCopy32(sBerryFixGraphics[scene][2], (void *)BG_PLTT, 0x100);
+    LZ77UnCompVram(BERRYFIX_GFX_TABLE[scene][0], (void *)BG_CHAR_ADDR(1));
+    LZ77UnCompVram(BERRYFIX_GFX_TABLE[scene][1], (void *)BG_SCREEN_ADDR(31));
+    CpuCopy32(BERRYFIX_GFX_TABLE[scene][2], (void *)BG_PLTT, 0x100);
     ShowBg(0);
     ShowBg(1);
 }
