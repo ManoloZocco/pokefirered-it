@@ -793,9 +793,18 @@ static void Task_EvolutionScene(u8 taskId)
             {
                 u8 text[20];
 
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+                if (!(gTasks[taskId].tBits & TASK_BIT_LEARN_MOVE))
+                {
+                    StopMapMusic();
+                    Overworld_PlaySpecialMapMusic();
+                    gTasks[taskId].tBits |= TASK_BIT_LEARN_MOVE;
+                }
+#else
                 StopMapMusic();
                 Overworld_PlaySpecialMapMusic();
                 gTasks[taskId].tBits |= TASK_BIT_LEARN_MOVE;
+#endif
                 gTasks[taskId].tLearnsFirstMove = FALSE;
                 gTasks[taskId].tLearnMoveState = MVSTATE_INTRO_MSG_1;
                 GetMonData(mon, MON_DATA_NICKNAME, text);

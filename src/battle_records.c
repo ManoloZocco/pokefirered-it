@@ -486,7 +486,11 @@ static void PrintTotalRecord(struct LinkBattleRecords * records)
     }
 
     StringExpandPlaceholders(gStringVar4, gString_BattleRecords_TotalRecord);
+#if GAME_LANGUAGE == LANGUAGE_ITALIAN
+    AddTextPrinterParameterized4(0, FONT_NORMAL, 2, 24, 0, 2, sTextColor, 0, gStringVar4);
+#else
     AddTextPrinterParameterized4(0, FONT_NORMAL, 12, 24, 0, 2, sTextColor, 0, gStringVar4);
+#endif
 }
 
 static void PrintOpponentBattleRecord(struct LinkBattleRecord * record, u8 y)
